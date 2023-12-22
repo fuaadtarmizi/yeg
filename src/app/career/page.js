@@ -26,8 +26,8 @@ function career() {
       </div>
             </div>
             <section1>
-            <div className="px-4 lg:px-28">
-            <div className="grid grid-cols-3 gap-6">
+            <div className="px-4 lg:px-28 flex justify-center">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 ">
             <div className="relative">
                     <Image
                     className="rounded-md hover:shadow-slate-500 hover:shadow-2xl shadow-md hover:scale-150 duration-300"
