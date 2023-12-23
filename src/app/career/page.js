@@ -75,7 +75,7 @@ function career() {
               <h>Contact Us</h>
                 <div className="grid space-y-4">
                   
-                  <a href="https://wa.me/01140085978" className="font-sans text-blue-500 underline">https://wa.me/01140085978</a>
+                  <a href="https://wa.me/+601140085978" className="font-sans text-blue-500 underline">https://wa.me/+601140085978</a>
                   <a href="mailto:hr@youreducationguidance.my/" className="font-sans text-blue-500 underline">hr@youreducationguidance.my/</a>
                 </div>
                 </div>
