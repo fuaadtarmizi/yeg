@@ -9,8 +9,8 @@ function misa() {
       <div className="flex justify-center">
                 <Image
                     className="rounded-sm "
-                    src="/acm.jpg"
-                    alt="acm"
+                    src="/misa.jpg"
+                    alt="misa"
                     width="900"
                     height="200"
                     style={{

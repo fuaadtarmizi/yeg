@@ -150,7 +150,7 @@ export default function home() {
           </div>
           <div className="w-full h-full space-y-3  grid justify-center">
             <p className=" font-normal text-md text-slate-700 "><a className="border-b-2 border-yellow-600 font-bold" href="https://www.youtube.com/watch?v=Lc5s03bj3LI">YEG Academy</a> adalah organisasi pendidikan di Malaysia yang menawarkan bidang pembelajaran dan kerjaya selari dengan permintaaan pasaran kerjaya pada masa kini. Sehubungan dengan itu, YEG Academy bertanggungjawab untuk memahami kekuatan, nilai dan keperluan khas setiap pelajar, sambil berusaha untuk memasukkan semua ahli keluarga dalam proses perancangan pendidikan. </p>
-            <p className="text-slate-700">Demi memastikan kualiti pendidikan yang terbaik dapat diberikan kepada para pelajar dan calon, YEG Academy telah meningkatkan tahap kerjasama dengan pelbagai institusi professional seperti Innovative International College (IIC), Akademi Mutawwif Training & Consultation, MEATECH Technical Training Centre, Ranaco Marine Sdn Bhd, MAHSA Universiti dan Pelita Akademi Sdn Bhd </p>
+            <p className="text-slate-700">Demi memastikan kualiti pendidikan yang terbaik dapat diberikan kepada para pelajar dan calon, YEG Academy telah meningkatkan tahap kerjasama dengan pelbagai institusi professional seperti Innovative International College (IIC), Akademi Mutawwif Training & Consultation, MEATECH Technical Training Centre, MAHSA Universiti dan Pelita Akademi Sdn Bhd </p>
           </div>
           <div className=" flex justify-between ">
           <Image
