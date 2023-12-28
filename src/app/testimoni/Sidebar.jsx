@@ -43,7 +43,8 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-800 p-4">
       <div className="flex items-center justify-between">
-        <div className="text-white font-bold text-xl">
+        <a href="/"
+        className="text-white font-bold text-xl">
         <Image
                       className=""
                       src="/logoyeg.svg"
@@ -54,7 +55,7 @@ const Navbar = () => {
                         objectFit: "contain",
                       }}
                     />
-        </div>
+        </a>
         <button
           className="lg:hidden text-white focus:outline-none"
           onClick={toggleNavbar}
