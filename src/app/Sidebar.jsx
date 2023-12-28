@@ -55,13 +55,13 @@ const Navbar = () => {
                       }}
                     />
         </div>
-        <button
+        <a href="/"
           className="lg:hidden text-white focus:outline-none"
           onClick={toggleNavbar}
         >
           <p className="">menu</p>
          
-        </button>
+        </a>
       </div>
     
 
