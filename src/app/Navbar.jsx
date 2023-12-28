@@ -137,7 +137,7 @@ function Navbar() {
                         
                         <NavigationMenuItem>
                             <button className="lg:flex hidden text-white group h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium   disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
-                            <a className="" href="./article">Article</a>
+                            <a className="" href="./article">Artikal</a>
                                 </button>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
@@ -147,12 +147,12 @@ function Navbar() {
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <button className="lg:flex hidden text-white group h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium   disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
-                            <a className="" href="./career">Career</a>
+                            <a className="" href="./career">Karier</a>
                                 </button>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <button className="lg:flex hidden text-white group h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium   disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
-                            <a className="" href="./enroll">Enroll</a>
+                            <a className="" href="./enroll">Enrol</a>
                                 </button>
                         </NavigationMenuItem>
 

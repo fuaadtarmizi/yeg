@@ -8,11 +8,11 @@ function sphu() {
       <title>YEG Academy - Kursus Kerjaya</title>
       
       <section1>
-      <div className="flex justify-center">
+      <div className=" flex justify-center">
                 <Image
-                    className="rounded-sm "
-                    src="/coursehajiumrah.svg"
-                    alt="coursehajiumrah"
+                    className="rounded-sm"
+                    src="/dhumy.jpg"
+                    alt="dhumy"
                     width="900"
                     height="200"
                     style={{

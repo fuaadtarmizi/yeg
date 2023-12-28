@@ -11,8 +11,8 @@ function sphu() {
       <div className="flex justify-center">
                 <Image
                     className="rounded-sm "
-                    src="/courseacm.svg"
-                    alt="courseacm"
+                    src="/acm.jpg"
+                    alt="acm"
                     width="900"
                     height="200"
                     style={{

@@ -6,6 +6,18 @@ import Footer from "./Footer"
 function misa() {
   return (
     <main>
+      <div className="flex justify-center">
+                <Image
+                    className="rounded-sm "
+                    src="/acm.jpg"
+                    alt="acm"
+                    width="900"
+                    height="200"
+                    style={{
+                    objectFit:"contain",
+                    }}
+                />
+          </div>
       <title>YEG Academy - Kursus Kerjaya</title>
       
       <section1>

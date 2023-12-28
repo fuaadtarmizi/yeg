@@ -12,8 +12,8 @@ function dle() {
       <div className="flex justify-center">
                 <Image
                     className="rounded-sm "
-                    src="/courseundang.svg"
-                    alt="courseacm"
+                    src="/ppu.jpg"
+                    alt="ppu"
                     width="900"
                     height="200"
                     style={{

@@ -11,8 +11,8 @@ function dhumywbl() {
       <div className="flex justify-center">
                 <Image
                     className="rounded-sm "
-                    src="/coursehajiumrah.svg"
-                    alt="coursehajiumrah"
+                    src="/dhumy.jpg"
+                    alt="dhumy"
                     width="900"
                     height="200"
                     style={{

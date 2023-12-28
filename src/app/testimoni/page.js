@@ -779,8 +779,8 @@ function page() {
                         }}
                     />
                     <div className="grid">
-                        <h className="text-lg font-medium">Zul</h>
-                        <h className="text-xs">Diploma in Perhotelan</h>
+                        <h className="text-lg font-medium">Wahid</h>
+                        <h className="text-xs">SPHU</h>
                         </div>
                     </div>
                 </card4>
@@ -805,8 +805,8 @@ function page() {
                         }}
                     />
                     <div className="grid">
-                        <h className="text-lg font-medium">Haikal</h>
-                        <h className="text-xs">DHUMY-WBL</h>
+                        <h className="text-lg font-medium">Siti</h>
+                        <h className="text-xs">DHUMY</h>
                         </div>
                     </div>
                 </card5>
