@@ -332,19 +332,19 @@ export default function home() {
         </card>
         <card className=" w-full h-full flex justify-center items-center rounded-md group " style={{ backgroundImage: 'url("/mutawif.svg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="flex justify-center">
-            <span className="group-hover:bg-black group-hover:rounded-md p-3 duration-1000 items-center group-hover:text-2xl group-hover:font-bold group-hover:text-white text-transparent">PENGURUSAN HAJI & UMRAH</span>
+            <span className="group-hover:bg-black group-hover:rounded-md p-3 duration-1000 items-center lg:group-hover:text-2xl group-hover:text-lg group-hover:font-bold group-hover:text-white text-transparent">PENGURUSAN HAJI & UMRAH</span>
           </div>
           <div className="py-52"></div>
         </card>
         <card className=" w-full h-full flex justify-center items-center rounded-md  group" style={{ backgroundImage: 'url("/oilandgas.svg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="flex justify-center">
-            <span className="group-hover:bg-black group-hover:rounded-md p-3 duration-1000 items-center group-hover:text-2xl group-hover:font-bold group-hover:text-white text-transparent">BIDANG MARITIM, MINYAK & GAS</span>
+            <span className="group-hover:bg-black group-hover:rounded-md p-3 duration-1000 items-center lg:group-hover:text-2xl group-hover:text-lg group-hover:font-bold group-hover:text-white text-transparent">BIDANG MARITIM, MINYAK & GAS</span>
           </div>
           <div className="py-52"></div>
         </card>
         <card className=" w-full h-full flex justify-center items-center rounded-md  group" style={{ backgroundImage: 'url("/aviation.svg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="flex justify-center">
-            <span className="group-hover:bg-black group-hover:rounded-md p-3 duration-1000 items-center group-hover:text-2xl group-hover:font-bold group-hover:text-white text-transparent">BIDANG PENERBANGAN</span>
+            <span className="group-hover:bg-black group-hover:rounded-md p-3 duration-1000 items-center lg:group-hover:text-2xl group-hover:text-lg group-hover:font-bold group-hover:text-white text-transparent">BIDANG PENERBANGAN</span>
           </div>
           <div className="py-52"></div>
         </card>

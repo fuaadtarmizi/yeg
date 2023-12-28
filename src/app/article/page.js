@@ -32,7 +32,7 @@ function page() {
                 className="group p-3 flex justify-center rounded-md hover:shadow-slate-500 hover:shadow-xl shadow-md duration-300" style={{ backgroundImage: 'url("/article1(1).svg")', backgroundSize: 'cover', backgroundPosition: 'center',  }}>
                 <div className="py-20">
                     <div className="w-full flex items-center">
-                        <h className="font-bold p-3 group-hover:rounded-md group-hover:bg-black duration-500 text-xl px-8 text-white">PERMINTAAN KERJAYA TERKINI</h>
+                        <h className="font-bold p-3 group-hover:rounded-md group-hover:bg-black duration-500 text-xl px-8 text-white">" PERMINTAAN KERJAYA TERKINI "</h>
                     </div>
                     </div>
                 </a>
@@ -41,7 +41,7 @@ function page() {
                     className="group p-3 flex justify-center rounded-md hover:shadow-slate-500 hover:shadow-xl shadow-md duration-300" style={{ backgroundImage: 'url("/article2(1).jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
                     <div className="py-20">
                     <div className="w-full flex items-center">
-                        <h className="font-bold p-3 group-hover:rounded-md group-hover:bg-black duration-500 text-xl px-8 text-white">SENANG DAPAT KERJA?</h>
+                        <h className="font-bold p-3 group-hover:rounded-md group-hover:bg-black duration-500 text-xl px-8 text-white">" SENANG DAPAT KERJA? "</h>
                     </div>
                     </div>   
                     </a>
@@ -49,7 +49,7 @@ function page() {
                     className="group p-3 flex justify-center rounded-md hover:shadow-slate-500 hover:shadow-xl shadow-md duration-300" style={{ backgroundImage: 'url("article3(9).png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     <div className="py-20">
                     <div className="w-full flex items-center">
-                        <h className="font-bold p-3 group-hover:rounded-md group-hover:bg-black duration-500 text-xl px-8 text-white">KURSUS UNTUK RESKILL</h>
+                        <h className="font-bold p-3 group-hover:rounded-md group-hover:bg-black duration-500 text-xl px-8 text-white">" KURSUS UNTUK RESKILL"</h>
                     </div>
                     </div> 
                     </a>
@@ -57,7 +57,7 @@ function page() {
                     className="group p-3 flex justify-center rounded-md hover:shadow-slate-500 hover:shadow-xl shadow-md duration-300" style={{ backgroundImage: 'url("/article3(5).png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     <div className="py-20">
                     <div className="w-full flex items-center">
-                        <h className="font-bold p-3 group-hover:rounded-md group-hover:bg-black duration-500 text-xl px-8 text-white">BIDANG KERJAYA</h>
+                        <h className="font-bold p-3 group-hover:rounded-md group-hover:bg-black duration-500 text-xl px-8 text-white">" BIDANG KERJAYA "</h>
                     </div>
                     </div>
                     </a>
@@ -65,7 +65,7 @@ function page() {
                     className="group p-3 flex justify-center rounded-md hover:shadow-slate-500 hover:shadow-xl shadow-md duration-300" style={{ backgroundImage: 'url("/article3(6).png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     <div className="py-20">
                     <div className="w-full flex items-center">
-                        <h className="font-bold p-3 group-hover:rounded-md group-hover:bg-black duration-500 text-xl px-8 text-white">SKILL FOR RESKILL</h>
+                        <h className="font-bold p-3 group-hover:rounded-md group-hover:bg-black duration-500 text-xl px-8 text-white">" SKILL FOR RESKILL "</h>
                     </div>
                     </div>
                     </a>
