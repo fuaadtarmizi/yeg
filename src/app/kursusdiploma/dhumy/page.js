@@ -20,7 +20,7 @@ function sphu() {
                     }}
                 />
           </div>
-        <div className="py-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-6">
+        <div className="py-4 grid grid-cols-1 px-6">
           <div className="p-4">
             <div className="py-4">
               <h className="font-bold">DIPLOMA PENGURUSAN HAJI DAN UMRAH (DHUMY)</h>
@@ -47,35 +47,6 @@ function sphu() {
               <h className="">Syarat-Syarat Kelayakan</h>
               <li className="px-4">Berumur 18 Tahun hingga 27 Tahun </li>
               <li className="px-4">Lulus Sijil Pelajaran Malaysia (SPM) dengan sekurang-kurangnya 3 kredit</li>
-            </div>
-            </div>
-          </div>
-          <div className=" p-4">
-          <div className="py-4">
-              <h className="font-bold">SIJIL PROFESIONAL HAJI DAN UMRAH (SPHU)</h>
-            </div>
-            <div className="py-3 grid space-y-5">
-              <h className="font-semibold">PROGRAM KERJAYA</h>
-              <h>Pengalaman Terbaik</h>
-            </div>
-          <div className="space-y-5">
-            <div className="flex justify-center">
-              <h className="text-justify">Perkembangan teknologi masa kini secara global turut mempengaruhi kemajuan pelbagai sektor dalam industri haji dan umrah. Ia memberi satu cabaran baru kepada para pemain industri untuk menyediakan pekerja-pekerja profesional terutamanya dari kalangan mutawwif dan mutawwifah untuk membimbing kenaikan jumlah jemaah haji saban tahun. Secara tidak langsung, ia turut membuka peluang kepada masyarakat untuk terlibat secara langsung dan tidak langsung dalam membuka peluang pekerjaan baru.</h>
-            </div>
-            <div className="grid justify-center space-y-2">
-              <h className="text-justify">Program ini memberi pendedahan yang luas dan terperinci dalam merungkaikan ilmu pengurusan Haji dan Umrah. Jadi, kami menawarkan program yang dapat meningkatkan kemahiran diri secara holistik:</h>
-              <li className="px-4">Sijil Profesional Haji dan Umrah</li>
-            </div>
-            <div className="grid space-y-2">
-              <h className="">Dengan Kursus Ini, Anda Akan Peroleh</h>
-              <li className="px-4">Menerima modul lengkap dan dipelajari secara atas talian</li>
-              <li className="px-4">Dilatih oleh tenaga pengajar dari kalangan pemain industri berpengalaman </li>
-              <li className="px-4">Diberi akses portal 24 jam selama 1-2 tahun</li>
-            </div>
-            <div className="grid space-y-2">
-              <h className="">Syarat-Syarat Kelayakan</h>
-              <li className="px-4">Berumur 18 Tahun ke atas</li>
-              <li className="px-4">Sihat tubuh badan</li>
             </div>
             </div>
           </div>

@@ -20,36 +20,7 @@ function sphu() {
                     }}
                 />
           </div>
-        <div className="py-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-6">
-          <div className="p-4">
-            <div className="py-4">
-              <h className="font-bold">DIPLOMA PENGURUSAN HAJI DAN UMRAH (DHUMY)</h>
-            </div>
-            <div className="py-3 grid space-y-5">
-              <h className="font-semibold">DIPLOMA</h>
-              <h>Pengalaman Pembelajaran Penuh Inspirasi</h>
-            </div>
-            <div className="space-y-5">
-            <div className="flex justify-center">
-              <h className="text-justify">Inovasi dalam dunia pendidikan menjadi satu keperluan pada masa kini. Dengan perkembangan luar biasa di sektor haji dan umrah, kaedah pembelajaran secara berstruktur dan peluang membina kerjaya sebagai pelopor di dalam industri ini dilihat sebagai satu peluang penting untuk diteliti. Menjalankan tugas dalam industri ini turut menjadi satu kerjaya yang semakin penting dan diperlukan kerana terdapat peningkatan jumlah jemaah haji dan umrah disamping kepentingan membimbing dan mempelajari pengurusan ibadah haji secara menyeluruh.</h>
-            </div>
-            <div className="grid justify-center space-y-2">
-              <h className="text-justify">Program ini memberi peluang para pelajar untuk mendalami ilmu pengurusan haji dan umrah secara dekat dengan penglibatan pakar industri dan modul terbaik diinovasikan masa kini. Ia turut mendapat akreditasi sepenuhnya oleh Agensi Kelayakan Malaysia (MQA). Kami menawarkan program Diploma yang menjadi pilihan ramai iaitu:</h>
-              <li className="px-4">Diploma Pengurusan Haji & Umrah (MQA/FA 11377)</li>
-            </div>
-            <div className="grid space-y-2">
-              <h className="">Dengan Kursus Ini, Anda Akan </h>
-              <li className="px-4">Praktikal 1 ke 3 bulan di Mekah dan Madinah</li>
-              <li className="px-4">Para pengajar terdiri daripada tenaga pakar industri</li>
-              <li className="px-4">Mendapat bantuan pendidikan pembelajaran </li>
-            </div>
-            <div className="grid space-y-2">
-              <h className="">Syarat-Syarat Kelayakan</h>
-              <li className="px-4">Berumur 18 Tahun hingga 27 Tahun </li>
-              <li className="px-4">Lulus Sijil Pelajaran Malaysia (SPM) dengan sekurang-kurangnya 3 kredit</li>
-            </div>
-            </div>
-          </div>
+        <div className="py-4 grid grid-cols-1 max-w-7xl px-6">
           <div className=" p-4">
           <div className="py-4">
               <h className="font-bold">SIJIL PROFESIONAL HAJI DAN UMRAH (SPHU)</h>

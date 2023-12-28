@@ -20,7 +20,7 @@ function sphu() {
                     }}
                 />
           </div>
-        <div className="py-4 grid grid-cols-1 px-6">
+        <div className="py-4 grid grid-cols-1  px-6">
           
           <div className=" p-4">
             <div className="py-3 grid space-y-5">
