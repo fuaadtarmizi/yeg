@@ -235,12 +235,12 @@ yang tinggi.</h>
                     <div className="px-3 lg:px-8 grid space-y-6 pt-6">
         <h className="font-semibold">3. Kejuruteraan Penerbangan:</h>
         <h className="px-3 lg:px-8">Industri penerbangan dijangka terus berkembang seperti kenyataan yang dikeluarkan
-oleh IATA iaitu hasil penumpang pada 2024 bakal meningkat sebanyak 1.8 peratus
-berbanding 2023. Selain itu, EXCO pelaburan, perdagangan dan mobiliti turut
-menjelaskan bahawa permintaan kerjaya terkini bagi negara memerlukan ramai pekerja
-mahir dalam subsektor penerbangan seperti penyelenggaraan, pembaikan dan baik
-pulih (MRO), pembuatan aero, persepaduan sistem, rekaan dan kejuruteraan serta
-pendidikan.</h>
+                oleh IATA iaitu hasil penumpang pada 2024 bakal meningkat sebanyak 1.8 peratus
+                berbanding 2023. Selain itu, EXCO pelaburan, perdagangan dan mobiliti turut
+                menjelaskan bahawa permintaan kerjaya terkini bagi negara memerlukan ramai pekerja
+                mahir dalam subsektor penerbangan seperti penyelenggaraan, pembaikan dan baik
+                pulih (MRO), pembuatan aero, persepaduan sistem, rekaan dan kejuruteraan serta
+                pendidikan.</h>
       </div>
       <div className="w-full flex justify-center px-3 lg:px-8">
                 <Image

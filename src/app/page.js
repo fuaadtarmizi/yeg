@@ -35,7 +35,8 @@ export default function home() {
         </div>
       </div>
     </section1>
-    <section2 className="w-full absolute pt-48 top-3/4 px-24 hidden lg:block">
+    <div className="sticky">
+    <section2 className="w-full absolute -bottom-12 px-24 hidden md:block lg:block">
       <div className="w-full h-full bg-white rounded-md flex justify-center shadow-md space-x-8">
       <div className="flex items-center">
         <Image
@@ -116,10 +117,10 @@ export default function home() {
         </div>
         </div>
     </section2>
+    </div>
     <div className="py-8 lg:py-10 md:[height:80px]"></div>
-    
     <section3>
-      <div className="px-4 lg:px-16 py-10 flex justify-center ">
+      <div className=" py-10 flex justify-center ">
         <div className="lg:text-6xl text-3xl text-slate-800 font-semibold text-center"><span className="text-yellow-600">REVOLUSI KARIER ANDA </span>DENGAN PLATFORM PENDIDIKAN TERKINI</div>
       </div>
       <div className="w-full h-full grid  lg:grid-cols-12 gap-2 md:col-span-1 py-8 p-2 bg-slate-200">
@@ -187,7 +188,6 @@ export default function home() {
       </div>
     </section3>
       <div className="py-8 lg:py-10 md:[height:80px]"></div>
-     
     <section4>
     <div className="w-full h-full px-4 lg:px-16 grid text-slate-800 ">
         <span className="lg:text-6xl text-2xl font-semibold py-3 text-center">KENAPA YEG ADALAH PILIHAN YANG TEPAT UNTUK ANDA?</span>
@@ -326,36 +326,37 @@ export default function home() {
     <div className=" px-4 lg:px-16 ">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 "> 
       <card className="w-full h-full p-3 ">
-      <div className="">
+      <div className="w-full flex justify-center">
         <span className="font-sans font-semibold text-yellow-800 ">EKSPLORASI KEPAKARAN YEG ACADEMY:</span>
         </div>
         <div h-full className="">
         <h3 className=" text-6xl font-bold text-slate-800 text-center ">BENTUK <span className=" grid text-4xl">MASA DEPAN</span> ANDA</h3>
         </div>
         <div className=" flex items-end justify-center">
-        <a className="group  " href="./kursuskerjaya/sphu">
-          <span className="font-sans text-gray-600">Click pada Navbar di atas</span>
+        <div className="group  " href="./kursuskerjaya/sphu">
+        <span className="text-slate-700 font-bold bg-gradient-to-r mt-3 from-yellow-500 to-yellow-500 bg-no-repeat [background-position:0_88%] [background-size:1%_100%] motion-safe:transition-all motion-safe:duration-700 group-hover:[background-size:100%_100%] focus:[background-size:100%_100%]">
+          Klik pada Navbar di atas.</span>
         <div className=" group-hover:translate-x-full duration-500">
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.14645 11.1464C1.95118 11.3417 1.95118 11.6583 2.14645 11.8536C2.34171 12.0488 2.65829 12.0488 2.85355 11.8536L6.85355 7.85355C7.04882 7.65829 7.04882 7.34171 6.85355 7.14645L2.85355 3.14645C2.65829 2.95118 2.34171 2.95118 2.14645 3.14645C1.95118 3.34171 1.95118 3.65829 2.14645 3.85355L5.79289 7.5L2.14645 11.1464ZM8.14645 11.1464C7.95118 11.3417 7.95118 11.6583 8.14645 11.8536C8.34171 12.0488 8.65829 12.0488 8.85355 11.8536L12.8536 7.85355C13.0488 7.65829 13.0488 7.34171 12.8536 7.14645L8.85355 3.14645C8.65829 2.95118 8.34171 2.95118 8.14645 3.14645C7.95118 3.34171 7.95118 3.65829 8.14645 3.85355L11.7929 7.5L8.14645 11.1464Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
         </div>
-        </a>
+        </div>
         </div>
         </card>
         <card className=" w-full h-full flex justify-center items-center rounded-md group " style={{ backgroundImage: 'url("/mutawif.svg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-          <div className=" w-11/12 h-5/6  group-hover:border ">
-            <span className="hover:animate-out duration-1000 h-full flex justify-center items-center group-hover:text-4xl group-hover:font-bold group-hover:text-yellow-400 text-transparent">PENGURUSAN HAJI & UMRAH</span>
+          <div className="flex justify-center">
+            <span className="group-hover:bg-black group-hover:rounded-md p-3 duration-1000 items-center group-hover:text-2xl group-hover:font-bold group-hover:text-white text-transparent">PENGURUSAN HAJI & UMRAH</span>
           </div>
           <div className="py-52"></div>
         </card>
         <card className=" w-full h-full flex justify-center items-center rounded-md  group" style={{ backgroundImage: 'url("/oilandgas.svg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-          <div className=" w-11/12 h-5/6  ">
-            <span className="hover:animate-out duration-1000 h-full flex justify-center items-center group-hover:text-4xl group-hover:font-bold group-hover:text-slate-800 text-transparent">BIDANG MARITIM, MINYAK & GAS</span>
+          <div className="flex justify-center">
+            <span className="group-hover:bg-black group-hover:rounded-md p-3 duration-1000 items-center group-hover:text-2xl group-hover:font-bold group-hover:text-white text-transparent">BIDANG MARITIM, MINYAK & GAS</span>
           </div>
           <div className="py-52"></div>
         </card>
         <card className=" w-full h-full flex justify-center items-center rounded-md  group" style={{ backgroundImage: 'url("/aviation.svg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-          <div className=" w-11/12 h-5/6  ">
-            <span className="hover:animate-out duration-1000 h-full flex justify-center items-center group-hover:text-4xl group-hover:font-bold group-hover:text-slate-800  text-transparent">BIDANG PENERBANGAN</span>
+          <div className="flex justify-center">
+            <span className="group-hover:bg-black group-hover:rounded-md p-3 duration-1000 items-center group-hover:text-2xl group-hover:font-bold group-hover:text-white text-transparent">BIDANG PENERBANGAN</span>
           </div>
           <div className="py-52"></div>
         </card>
@@ -404,12 +405,12 @@ export default function home() {
     <section8>
     <div className="lg:px-28 px-4">
       <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"> 
-      <card className=" w-full h-full p-8 space-y-8 hover:bg-slate-800 duration-300 border rounded-md  hover:shadow-xl">
+      <card1 className=" w-full h-full p-8 space-y-8 hover:bg-slate-800 duration-500 border rounded-md  hover:shadow-xl group">
         <div className="py-4" >
         <Image
           id="image1"
             className=""
-            src="/section8(1).svg"
+            src="/section8(2).svg"
             alt="glob"
             width="45"
             height="10"
@@ -422,21 +423,21 @@ export default function home() {
         <span className="font-sans text-yellow-800 font-bold text-xl"> PROGRAM KERJAYA</span>
         </div>
         <div h-full className="">
-        <h3 className=" text-base font-bold text-slate-500 hover:text-white">Terokai pelbagai bidang kerjaya dengan <span className="italic">'upskill' </span>dan <span className="italic">'reskill'</span> potensi diri sehingga ke tahap profesional.</h3>
+        <h3 className=" text-base font-bold text-slate-500 group-hover:text-white">Terokai pelbagai bidang kerjaya dengan <span className="italic">'upskill' </span>dan <span className="italic">'reskill'</span> potensi diri sehingga ke tahap profesional.</h3>
         </div>
         <div className="flex items-end underline underline-offset-8 decoration-2">
-        <a className="group ">
+        <a href="/"
+        className=" ">
           <div className="flex items-center ">
-          <span className=" font-sans  font-semibold hover:text-white ">Click pada Navbar di atas</span>
-        <div className=" group-hover:translate-x-full duration-500 hover:text-white"> 
+          <span className=" font-sans  font-semibold group-hover:text-white ">Click pada Navbar di atas</span>
+        <div className=" group-hover:translate-x-full duration-500 group-hover:text-white"> 
         <svg  width="18" height="18" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.14645 11.1464C1.95118 11.3417 1.95118 11.6583 2.14645 11.8536C2.34171 12.0488 2.65829 12.0488 2.85355 11.8536L6.85355 7.85355C7.04882 7.65829 7.04882 7.34171 6.85355 7.14645L2.85355 3.14645C2.65829 2.95118 2.34171 2.95118 2.14645 3.14645C1.95118 3.34171 1.95118 3.65829 2.14645 3.85355L5.79289 7.5L2.14645 11.1464ZM8.14645 11.1464C7.95118 11.3417 7.95118 11.6583 8.14645 11.8536C8.34171 12.0488 8.65829 12.0488 8.85355 11.8536L12.8536 7.85355C13.0488 7.65829 13.0488 7.34171 12.8536 7.14645L8.85355 3.14645C8.65829 2.95118 8.34171 2.95118 8.14645 3.14645C7.95118 3.34171 7.95118 3.65829 8.14645 3.85355L11.7929 7.5L8.14645 11.1464Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
         </div>
         </div>
         </a>
         </div>
-        </card>
-        
-        <card className="w-full h-full p-8 space-y-8 hover:bg-slate-800 duration-300 border hover:shadow-xl rounded-md">
+        </card1>
+        <card2 className="w-full h-full p-8 space-y-8 hover:bg-slate-800 duration-500 border hover:shadow-xl rounded-md group">
         <div className=""> 
         <Image
           id="image1"
@@ -454,22 +455,23 @@ export default function home() {
         <span className="font-sans text-yellow-800 font-bold text-xl">PROGRAM WORK-BASED LEARNING</span>
         </div>
         <div h-full className="">
-        <h3 className=" text-base font-bold text-slate-500 hover:text-white">Sertai program diploma dengan inovasi 12 bulan pembelajaran secara teori dan 18 bulan latihan industri bergaji penuh.</h3>
+        <h3 className=" text-base font-bold text-slate-500 group-hover:text-white">Sertai program diploma dengan inovasi 12 bulan pembelajaran secara teori dan 18 bulan latihan industri bergaji penuh.</h3>
         </div>
         <div className="flex items-end underline underline-offset-8 decoration-2">
-        <button className="group ">
+        <a href="/"
+        className=" ">
           <div className="flex items-center ">
-          <span className=" font-sans  font-semibold hover:text-white ">Click pada Navbar di atas</span>
-        <div className=" group-hover:translate-x-full duration-500 hover:text-white"> 
+          <span className=" font-sans  font-semibold group-hover:text-white ">Click pada Navbar di atas</span>
+        <div className=" group-hover:translate-x-full duration-500 group-hover:text-white"> 
         <svg  width="18" height="18" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.14645 11.1464C1.95118 11.3417 1.95118 11.6583 2.14645 11.8536C2.34171 12.0488 2.65829 12.0488 2.85355 11.8536L6.85355 7.85355C7.04882 7.65829 7.04882 7.34171 6.85355 7.14645L2.85355 3.14645C2.65829 2.95118 2.34171 2.95118 2.14645 3.14645C1.95118 3.34171 1.95118 3.65829 2.14645 3.85355L5.79289 7.5L2.14645 11.1464ZM8.14645 11.1464C7.95118 11.3417 7.95118 11.6583 8.14645 11.8536C8.34171 12.0488 8.65829 12.0488 8.85355 11.8536L12.8536 7.85355C13.0488 7.65829 13.0488 7.34171 12.8536 7.14645L8.85355 3.14645C8.65829 2.95118 8.34171 2.95118 8.14645 3.14645C7.95118 3.34171 7.95118 3.65829 8.14645 3.85355L11.7929 7.5L8.14645 11.1464Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
         </div>
         </div>
-        </button> 
+        </a> 
         </div>
         <div className=" "></div>     
-        </card>
+        </card2>
        
-        <card className="w-full h-full p-8 space-y-8 hover:bg-slate-800 border duration-300 hover:shadow-xl rounded-md">
+        <card3 className="w-full h-full p-8 space-y-8 hover:bg-slate-800 border duration-500 hover:shadow-xl rounded-md group">
         <div>
         <Image
           id="image1"
@@ -487,27 +489,29 @@ export default function home() {
         <span className="font-sans text-yellow-800 font-bold text-xl">PROGRAM DIPLOMA</span>
         </div>
         <div h-full className="">
-        <h3 className=" text-base font-bold text-slate-500 hover:text-white">Selaraskan minat anda dengan peluang pendidikan yang memberi permintaan kerjaya yang tinggi di Malaysia</h3>
+        <h3 className=" text-base font-bold text-slate-500 group-hover:text-white">Selaraskan minat anda dengan peluang pendidikan yang memberi permintaan kerjaya yang tinggi di Malaysia</h3>
         </div>
         <div className="flex items-end underline underline-offset-8 decoration-2">
-        <button className="group ">
+        <a href="/"
+        className="">
           <div className="flex items-center ">
-          <span className=" font-sans  font-semibold hover:text-white ">Click pada Navbar di atas</span>
-        <div className=" group-hover:translate-x-full duration-500 hover:text-white"> 
+          <span className=" font-sans  font-semibold group-hover:text-white ">Click pada Navbar di atas</span>
+        <div className=" group-hover:translate-x-full duration-500 group-hover:text-white"> 
         <svg  width="18" height="18" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.14645 11.1464C1.95118 11.3417 1.95118 11.6583 2.14645 11.8536C2.34171 12.0488 2.65829 12.0488 2.85355 11.8536L6.85355 7.85355C7.04882 7.65829 7.04882 7.34171 6.85355 7.14645L2.85355 3.14645C2.65829 2.95118 2.34171 2.95118 2.14645 3.14645C1.95118 3.34171 1.95118 3.65829 2.14645 3.85355L5.79289 7.5L2.14645 11.1464ZM8.14645 11.1464C7.95118 11.3417 7.95118 11.6583 8.14645 11.8536C8.34171 12.0488 8.65829 12.0488 8.85355 11.8536L12.8536 7.85355C13.0488 7.65829 13.0488 7.34171 12.8536 7.14645L8.85355 3.14645C8.65829 2.95118 8.34171 2.95118 8.14645 3.14645C7.95118 3.34171 7.95118 3.65829 8.14645 3.85355L11.7929 7.5L8.14645 11.1464Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
         </div>
         </div>
-        </button>
+        </a>
         
         </div>
         <div className=" "></div>
-        </card>    
+        </card3>    
       </div>
     </div>
     </section8>
     <div className="py-8 lg:py-10 md:[height:80px]"></div>
     <section9 >
-      <div className=" lg:px-28 ">
+      <div className="flex justify-center">
+      <div className=" w-full  max-w-7xl ">
       <div className="hidden lg:block w-full h-full lg:grid-cols-3 gap-4 space-y-10">
         <div className="flex col-span-3 justify-end ">
         <div className="flex items-center px-10">
@@ -567,19 +571,24 @@ export default function home() {
         </div> 
       </div>
       </div>
+      </div>
     </section9>  
     <section10>
     <div className="px-4 lg:px-28 pt-8">
       <div className=" grid grid-cols-1 lg:grid-cols-3 gap-5">
         <div className="text-transparent">11111111111111111111111111111</div>
-        <div className=" grid">
-          <div className="grid space-y-3">
+        <div className="group w-full flex justify-center">
+        <div className="grid w-full max-w-sm">
+          <div className=" grid space-y-3">
           <h className="text-lg font-semibold text-yellow-700">KEUPAYAAN TANPA BATASAN</h>
           <h className="text-sm text-slate-700 leading-relaxed">Luaskan pengalaman pengajian ke tahap lebih unggul dengan penglibatan pakar industri, merasai persekitaran akademik yang unik dan mengembangkan kemahiran kerjaya ke peringkat global.</h>
           </div>
           <div className=" py-4">
-          <button className="rounded-md hover:text-white text-slate-700 p-1 px-1 pr-5 bg-gradient-to-r from-slate-700 to-slate-600 bg-no-repeat [background-position:1%_88%] [background-size:100%_0.2em] motion-safe:transition-all motion-safe:duration-700 hover:[background-size:100%_100%] focus:[background-size:100%_100%]">Ketahui lebih lanjut</button>
+          <a href="./article"
+          className="rounded-md group-hover:text-white text-slate-700 p-1 px-1 pr-5 bg-gradient-to-r from-slate-700 to-slate-500 bg-no-repeat [background-position:1%_88%] [background-size:100%_0.2em] motion-safe:transition-all motion-safe:duration-700 group-hover:[background-size:100%_100%] focus:[background-size:100%_100%]">
+            Ketahui lebih lanjut</a>
           </div>
+        </div>
         </div>
         <div className=""></div>
           </div>
@@ -599,9 +608,10 @@ export default function home() {
         <span className="text-white"> Kami peduli! Kebajikan anda adalah keutamaan kami. YEG Academy akan membantu anda memupuk kegembiraan, pertumbuhan dan tujuan dalam persekitaran yang selamat dan sihat.</span>
       </div>
       </div>
-      <div className="h-full lg:py-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 items-center">
+      <div className="h-full lg:py-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center">
           
-        <card1 className="flex h-72 ">
+        <a href="https://www.tiktok.com/@yegacademy/video/7311843960526245121"
+        className="flex hover:scale-150 duration-300">
         <video autoplay="autoplay" 
                   loop="loop" 
                   muted="muted"
@@ -610,8 +620,9 @@ export default function home() {
                   height="890">
               <source src="tiktok1.mp4" type="video/mp4"/>
           </video>
-        </card1>
-          <card2 className=" flex  h-80 ">
+        </a>
+          <a href="https://www.tiktok.com/@yegacademy/video/7314661907741428993"
+          className=" flex hover:scale-150 duration-500">
           <video autoplay="autoplay" 
                   loop="loop" 
                   muted="muted"
@@ -620,8 +631,9 @@ export default function home() {
                   height="890">
               <source src="tiktok2.mp4" type="video/mp4"/>
           </video>
-          </card2>
-          <card3 className="flex h-96">
+          </a>
+          <a href="https://www.tiktok.com/@yegacademy/video/7288580793574640898"
+          className="flex hover:scale-150 duration-500">
           <video autoplay="autoplay" 
                   loop="loop" 
                   muted="muted"
@@ -630,19 +642,20 @@ export default function home() {
                   height="890">
               <source src="tiktok3.mp4" type="video/mp4"/>
           </video>
-          </card3>
-          <card4 className="flex h-80 ">
+          </a>
+          <a href="https://www.tiktok.com/@yegacademy/video/7269969581186321666"
+          className="flex hover:scale-150 duration-500">
           <video autoplay="autoplay" 
                   loop="loop" 
                   muted="muted"
                   className="rounded-md top-0 left-0 w-full h-full object-cover" 
                   width="390" 
                   height="890">
-              <source src="tiktok6.mp4" type="video/mp4"/>
+              <source src="tiktok4.mp4" type="video/mp4"/>
           </video>
-          </card4>
-          <card5 className="flex h-72 ">
-          
+          </a>
+          <a href="https://www.tiktok.com/@yegacademy/video/7251519047508954370"
+          className="flex hover:scale-150 duration-500">
           <video autoplay="autoplay" 
                   loop="loop" 
                   muted="muted"
@@ -651,8 +664,18 @@ export default function home() {
                   height="890">
               <source src="tiktok5.mp4" type="video/mp4"/>
           </video>
-          </card5>
-          
+          </a>
+          <a href="https://www.tiktok.com/@yegacademy/video/7302358255861271810"
+          className="flex hover:scale-150 duration-300">
+          <video autoplay="autoplay" 
+                  loop="loop" 
+                  muted="muted"
+                  className="rounded-md top-0 left-0 w-full h-full object-cover" 
+                  width="390" 
+                  height="890">
+              <source src="tiktok6.mp4" type="video/mp4"/>
+          </video>
+          </a>
         </div>
         <div className=" text-transparent flex justify-end ">
           <div className="bg-yellow-600 w-1/2 rounded-l-md">d</div>
@@ -664,14 +687,14 @@ export default function home() {
       <div className="w-full h-full px-4 lg:px-28 ">
         <div className="w-full h-full grid justify-center space-y-2 py-4">
         <h className="font-semibold text-lg text-center text-yellow-600">WHAT'S ON</h>
-          <h className="font-bold font-sans text-6xl text-slate-700">YEG NEWS & EVENT</h>
+          <h className="font-bold font-sans text-6xl text-slate-700">YEG BERITA & ACARA</h>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-yellow-600 rounded-md">
         <card1 className="w-full h-full flex justify-center items-center rounded-md hover:shadow-xl  group " style={{ backgroundImage: 'url("/newss2.jpg")', backgroundSize: 'cover', backgroundPosition: 'fit' }}>
           <div className="py-44 ">
           </div>
           <div className="h-full grid items-end ">
-            <a href="https://www.tiktok.com/@yegacademy"
+            <a href="https://www.kosmo.com.my/2022/03/25/yeg-academy-anjur-kempen-memilih-kursus-pengajian/"
             className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
             <h className="text-yellow-500 font-semibold grid ">MARCH 25,2022</h>
             <h className="text-slate-800 font-semibold ">YEG ACADEMY ANJUR KAMPEN MEMILIH KURSUS - KOSMO DIGITAL</h>
@@ -682,7 +705,7 @@ export default function home() {
           <div className="py-44 ">
           </div>
           <div className="h-full grid items-end ">
-            <a href="https://www.tiktok.com/@yegacademy"
+            <a href="https://bebasnews.my/2023/02/03/diploma-pengurusan-haji-dan-umrah-yeg-academy-banyak-manfaat/"
             className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
             <h className="text-yellow-500 font-semibold grid ">FEBRUARY 3,2023</h>
             <h className="text-slate-800 font-semibold ">Diploma Pengurusan Haji dan Umrah YEG Academy banyak manfaat</h>
@@ -693,10 +716,11 @@ export default function home() {
           <div className="py-44 ">
           </div>
           <div className="h-full grid items-end ">
-            <a href="https://www.tiktok.com/@yegacademy"
+            <a href="https://www.youtube.com/watch?v=S9urbssojDA"
             className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
             <h className="text-yellow-500 font-semibold grid ">AUGUST 22,2021</h>
-            <h className="text-slate-800 font-semibold ">Diploma Pengurusan Haji dan Umrah YEG Academy banyak manfaat</h>
+            <h className="text-slate-800 font-semibold ">NEW REVOLUTION: GABUNGAN TEORI DAN KEMAHIRAN
+</h>
             </a>
             </div>
         </card3>
@@ -704,7 +728,7 @@ export default function home() {
           <div className="py-44 ">
           </div>
           <div className="h-full grid items-end ">
-            <a href="https://www.tiktok.com/@yegacademy"
+            <a href="https://www.goodnews.com.my/story/yeg-academy-a-career-building-platform-in-the-field-of-aviation/"
             className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
             <h className="text-yellow-500 font-semibold grid ">MARCH 2,2023</h>
             <h className="text-slate-800 font-semibold ">YEG ACADEMY: A CAREER BUILDING PLATFOR IN THE FIELD - GOOD NEWS</h>
@@ -717,7 +741,7 @@ export default function home() {
           <div className="py-44 ">
           </div>
           <div className="h-full grid items-end ">
-            <a href="https://www.tiktok.com/@yegacademy"
+            <a href="https://www.youtube.com/watch?v=8MhV2y4Bkms"
             className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
             <h className="text-yellow-500 font-semibold grid ">DECEMBER 6,2023</h>
             <h className="text-slate-800 font-semibold ">LEPASAN SPM TAK NAK SAMBUNG BELAJAR - EPISOD 1 PODCAST YEG "BORAK KERJAYA"</h>
@@ -728,7 +752,7 @@ export default function home() {
           <div className="py-44 ">
           </div>
           <div className="h-full grid items-end ">
-            <a href="https://www.tiktok.com/@yegacademy"
+            <a href="https://www.instagram.com/p/ChRHVgoL_Av/"
             className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
             <h className="text-yellow-500 font-semibold grid ">AUGUST 15,2022</h>
             <h className="text-slate-800 font-semibold ">TUN MAHATHIR MENYOKONG USAHA NAIK TARAF PENDIDIKAN - YEG ACADEMY</h>
@@ -742,7 +766,7 @@ export default function home() {
             <a href="https://www.tiktok.com/@yegacademy"
             className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
             <h className="text-yellow-500 font-semibold grid ">AUGUST 15,2022</h>
-            <h className="text-slate-800 font-semibold ">TUN MAHATHIR MENYOKONG USAHA NAIK TARAF PENDIDIKAN - YEG ACADEMY</h>
+            <h className="text-slate-800 font-semibold ">YEG ACADEMY, MAHSA UNIVERSITY JALIN KERJASAMA PERKASA KERJAYA JURURAWAT - MALAYSIAGAZETTE</h>
             </a>
             </div>
         </card7>
@@ -750,7 +774,7 @@ export default function home() {
           <div className="py-44 ">
           </div>
           <div className="h-full grid items-end ">
-            <a href="https://www.tiktok.com/@yegacademy"
+            <a href="https://www.utusan.com.my/gaya/2022/04/pu-amin-pu-riz-dilantik-sebagai-pensyarah-yeg-academy/"
             className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
             <h className="text-yellow-500 font-semibold grid ">APRIL 21,2022</h>
             <h className="text-slate-800 font-semibold ">PU AMIN, PU RIZ DILANTIK SEBAGAI PENSYARAH YEG ACADEMY - UTUSAN MALAYSIA</h>

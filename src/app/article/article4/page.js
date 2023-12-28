@@ -176,12 +176,12 @@ sambung belajar dan beralih ke sektor ekonomi gig, e-hailing dan sektor pengilan
                     </div>
                     <div className="pb-10">
         <span>Golongan remaja yang tidak berminat untuk menyambung pengajian sehingga ke peringkat
-profesional dapat memberi impak kepada usaha mencapai 35 peratus tenaga kerja
-berkemahiran tinggi dalam sektor ekonomi menjelang 2030. Sehubungan dengan itu, bidang
-sambung belajar yang mempunyai permintaan pekerjaan terkini dapat memberi peluang
-pekerjaan yang relevan dengan kadar gaji yang memberangsangkan. Dalam konteks ini,
-memahami permintaan pekerjaan terkini bukan hanya suatu keharusan, tetapi juga kunci untuk
-membuka pintu menuju karier yang berjaya.</span>
+            profesional dapat memberi impak kepada usaha mencapai 35 peratus tenaga kerja
+            berkemahiran tinggi dalam sektor ekonomi menjelang 2030. Sehubungan dengan itu, bidang
+            sambung belajar yang mempunyai permintaan pekerjaan terkini dapat memberi peluang
+            pekerjaan yang relevan dengan kadar gaji yang memberangsangkan. Dalam konteks ini,
+            memahami permintaan pekerjaan terkini bukan hanya suatu keharusan, tetapi juga kunci untuk
+            membuka pintu menuju karier yang berjaya.</span>
       </div>
       <div className="px-3 lg:px-8">
         <h className="font-bold underline">6 Contoh Permintaan Pekerjaan Terkini:</h>
@@ -189,11 +189,11 @@ membuka pintu menuju karier yang berjaya.</span>
       <div className="px-3 lg:px-8 grid space-y-6">
         <h className="font-semibold">1. Pengurusan Haji dan Umrah:</h>
         <h className="px-3 lg:px-8 ">Dengan pertumbuhan terus-menerus dalam sektor pelancongan, terutamanya dalam
-pengurusan Haji dan Umrah, permintaan pekerjaan terkini dalam bidang ini semakin
-meningkat. Hal ini dapat dipastikan dengan perancangan masa depan pihak kerajaan
-yang ingin mewujudkan hub Umrah sekaligus penguatkuasaan beberapa syarat tertentu
-dan mengawal selia semula Akta Industri Pelancongan 1992 yang memerlukan
-sejumlah tenaga kerja mahir.</h>
+            pengurusan Haji dan Umrah, permintaan pekerjaan terkini dalam bidang ini semakin
+            meningkat. Hal ini dapat dipastikan dengan perancangan masa depan pihak kerajaan
+            yang ingin mewujudkan hub Umrah sekaligus penguatkuasaan beberapa syarat tertentu
+            dan mengawal selia semula Akta Industri Pelancongan 1992 yang memerlukan
+            sejumlah tenaga kerja mahir.</h>
       </div>
       <div className="w-full flex justify-center py-8">
                 <Image
@@ -211,12 +211,12 @@ sejumlah tenaga kerja mahir.</h>
                     <div className="px-3 lg:px-8 grid space-y-6 pt-6">
         <h className="font-semibold">2. Kejururawatan:</h>
         <h className="px-3 lg:px-8 ">Seiring dengan meningkatnya kesedaran akan kepentingan kesihatan, permintaan
-pekerjaan di bidang kejururawatan terus tumbuh dan diperlukan terutamanya di hospital
-swasta. Menurut sebuah tinjauan yang dibuat oleh Persatuan Hospital Swasta Malaysia
-(APHM) pada November 2022, hasil maklum balas daripada 103 hospital mendapati
-Malaysia memerlukan kira-kira 9,224 jururawat tambahan pada tahun ini hingga 2025.
-Hal ini menjadikan kerjaya jururawat sebagai salah satu permintaan pekerjaan terkini
-yang tinggi.</h>
+            pekerjaan di bidang kejururawatan terus tumbuh dan diperlukan terutamanya di hospital
+            swasta. Menurut sebuah tinjauan yang dibuat oleh Persatuan Hospital Swasta Malaysia
+            (APHM) pada November 2022, hasil maklum balas daripada 103 hospital mendapati
+            Malaysia memerlukan kira-kira 9,224 jururawat tambahan pada tahun ini hingga 2025.
+            Hal ini menjadikan kerjaya jururawat sebagai salah satu permintaan pekerjaan terkini
+            yang tinggi.</h>
       </div>
       <div className="w-full flex justify-center px-3 lg:px-8">
                 <Image
@@ -234,12 +234,12 @@ yang tinggi.</h>
                     <div className="px-3 lg:px-8 grid space-y-6 pt-6">
         <h className="font-semibold">3. Kejuruteraan Penerbangan:</h>
         <h className="px-3 lg:px-8 ">Industri penerbangan dijangka terus berkembang seperti kenyataan yang dikeluarkan
-oleh IATA iaitu hasil penumpang pada 2024 bakal meningkat sebanyak 1.8 peratus
-berbanding 2023. Selain itu, EXCO pelaburan, perdagangan dan mobiliti turut
-menjelaskan bahawa permintaan kerjaya terkini bagi negara memerlukan ramai pekerja
-mahir dalam subsektor penerbangan seperti penyelenggaraan, pembaikan dan baik
-pulih (MRO), pembuatan aero, persepaduan sistem, rekaan dan kejuruteraan serta
-pendidikan.</h>
+            oleh IATA iaitu hasil penumpang pada 2024 bakal meningkat sebanyak 1.8 peratus
+            berbanding 2023. Selain itu, EXCO pelaburan, perdagangan dan mobiliti turut
+            menjelaskan bahawa permintaan kerjaya terkini bagi negara memerlukan ramai pekerja
+            mahir dalam subsektor penerbangan seperti penyelenggaraan, pembaikan dan baik
+            pulih (MRO), pembuatan aero, persepaduan sistem, rekaan dan kejuruteraan serta
+            pendidikan.</h>
       </div>
       <div className="w-full flex justify-center py-8">
                 <Image
@@ -257,11 +257,11 @@ pendidikan.</h>
                     <div className="px-3 lg:px-8 grid space-y-6 pt-6">
         <h className="font-semibold">4. Jurugegas dan Juruelektrik (bidang oil and gas):</h>
         <h className="px-3 lg:px-8 ">Terdapat permintaan yang tinggi untuk jurugegas dan juruelektrik dalam industri minyak
-dan gas untuk menyelenggara dan memperbaiki peralatan serta sistem elektrikal.
-Peningkatan aktiviti eksplorasi dan produksi minyak serta gas menyebabkan
-perusahaan-perusahaan mencari tenaga pakar yang dapat menjalankan tugas-tugas
-teknikal dengan kecekapan semakin meningkat selaras dengan permintaan pekerjaan
-terkini.</h>
+            dan gas untuk menyelenggara dan memperbaiki peralatan serta sistem elektrikal.
+            Peningkatan aktiviti eksplorasi dan produksi minyak serta gas menyebabkan
+            perusahaan-perusahaan mencari tenaga pakar yang dapat menjalankan tugas-tugas
+            teknikal dengan kecekapan semakin meningkat selaras dengan permintaan pekerjaan
+            terkini.</h>
       </div>
       <div className="w-full flex justify-center px-3 lg:px-8">
                 <Image
@@ -279,30 +279,30 @@ terkini.</h>
                     <div className="px-3 lg:px-8 grid space-y-6 pt-6">
         <h className="font-semibold">5. Teknologi Maklumat dan Komunikasi (ICT):</h>
         <h className="px-3 lg:px-8">Permintaan untuk pakar ICT terkini terus meningkat seiring dengan peralihan ke arah
-ekonomi digital. Keperluan untuk mengurus dan melindungi data, pengembangan
-perisian, dan kecekapan dalam teknologi terkini seperti kecerdasan buatan dan
-kejuruteraan data menjadi kriteria utama di sebilangan besar industri. Oleh itu,
-permintaan kerjaya terkini menunjukkan mereka yang bekerjaya dalam bidang ICT
-adalah semakin diperlukan.</h>
+            ekonomi digital. Keperluan untuk mengurus dan melindungi data, pengembangan
+            perisian, dan kecekapan dalam teknologi terkini seperti kecerdasan buatan dan
+            kejuruteraan data menjadi kriteria utama di sebilangan besar industri. Oleh itu,
+            permintaan kerjaya terkini menunjukkan mereka yang bekerjaya dalam bidang ICT
+            adalah semakin diperlukan.</h>
       </div>
       <div className="px-3 lg:px-8 grid space-y-6 pt-6">
         <h className="font-semibold">6. Pemasaran Digital:</h>
         <h className="px-3 lg:px-8">Perkembangan teknologi maklumat dan komunikasi adalah selari dengan keperluan
-aktiviti pemasaran secara digital. Para majikan memerlukan mereka yang bukan sekadar
-peka IT tetapi juga mahir dalam selok belok kemajuannya. Hal ini demikian menjadikan
-kerjaya sebagai pemasar digital sebagai salah satu permintaan kerjaya terkini yang
-semakin dikehendaki..</h>
+            aktiviti pemasaran secara digital. Para majikan memerlukan mereka yang bukan sekadar
+            peka IT tetapi juga mahir dalam selok belok kemajuannya. Hal ini demikian menjadikan
+            kerjaya sebagai pemasar digital sebagai salah satu permintaan kerjaya terkini yang
+            semakin dikehendaki..</h>
       </div>
       <div className="py-8">
         <h className="font-bold underline">Cara untuk Mendapatkan Tempat dalam Permintaan Pekerjaan Terkini</h>
       </div>
       <div className="px-3 lg:px-8 grid space-y-6">
         <h className="px-3 lg:px-8">Untuk mendapatkan peluang dalam pasaran permintaan pekerjaan terkini yang dinamik pada
-hari ini, ‘upskilling’ dan ‘reskilling’ menjadi salah satu elemen penting bagi mereka yang sudah
-bekerja ataupun bercadang untuk memulakan karier. Salah satu langkah yang perlu diambil
-adalah dengan mengikuti kursus-kursus yang relevan, mendapatkan sijil dan kelayakan
-tambahan, dan terlibat dalam sesi pengajaran dan pembelajaran bersama pakar-pakar industri.</h>
-<h>Berikut adalah kursus-kursus dan bidang sambung belajar yang boleh anda ikuti:</h>
+            hari ini, ‘upskilling’ dan ‘reskilling’ menjadi salah satu elemen penting bagi mereka yang sudah
+            bekerja ataupun bercadang untuk memulakan karier. Salah satu langkah yang perlu diambil
+            adalah dengan mengikuti kursus-kursus yang relevan, mendapatkan sijil dan kelayakan
+            tambahan, dan terlibat dalam sesi pengajaran dan pembelajaran bersama pakar-pakar industri.</h>
+            <h>Berikut adalah kursus-kursus dan bidang sambung belajar yang boleh anda ikuti:</h>
       </div>
       <div className="px-3 lg:px-8 grid space-y-6 pt-6">
       <h className="font-bold">Kursus -kursus kerjaya:</h>

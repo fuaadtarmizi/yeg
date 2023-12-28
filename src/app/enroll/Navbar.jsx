@@ -19,7 +19,7 @@ function Navbar() {
   return (
     <nav className="h-full backdrop-blur bg-slate-800 p-2">
         <div className=" container flex h-full items-center w-full">
-        <a href="yegmy.com"
+        <a href="/"
            className="w-ful"
                   >
                     <Image

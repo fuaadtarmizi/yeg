@@ -70,13 +70,41 @@ function career() {
             </section1>
             <div className="py-8 lg:py-10 md:[height:80px]"></div>
             <section2>
-              <div className="px-8 lg:px-28 ">
+              <div className="px-8 lg:px-28 flex justify-center">
                 <div className="border hover:shadow-xl rounded-md duration-300 p-3 py-6 bg-slate">
               <h>Contact Us</h>
                 <div className="grid space-y-4">
+                  <div className="flex items-center">
+                  <Image
+                    id="image1"
+                      className=""
+                      src="/wassap.svg"
+                      alt="wassap"
+                      width="45"
+                      height="10"
+                      style={{
+                        objectFit:"contain",
+                      }}
+                    />
+                    <a href="https://wa.me/+601140085978" className="font-sans text-blue-500 underline px-3">https://wa.me/+601140085978</a>
+                  </div>
+                  <div className="flex items-center">
+                  <Image
+                    id="image1"
+                      className=""
+                      src="/gmail.svg"
+                      alt="gmail"
+                      width="45"
+                      height="10"
+                      style={{
+                        objectFit:"contain",
+                      }}
+                    />
+                  <a href="mailto:hr@youreducationguidance.my/" className="font-sans text-blue-500 underline px-3">hr@youreducationguidance.my/</a>
+                  </div>
                   
-                  <a href="https://wa.me/+601140085978" className="font-sans text-blue-500 underline">https://wa.me/+601140085978</a>
-                  <a href="mailto:hr@youreducationguidance.my/" className="font-sans text-blue-500 underline">hr@youreducationguidance.my/</a>
+                  
+                 
                 </div>
                 </div>
               </div>

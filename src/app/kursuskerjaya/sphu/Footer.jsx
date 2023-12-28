@@ -8,8 +8,8 @@ function footer() {
       <div className="py-8 lg:py-10 md:[height:80px]"></div>
     <section13>
       <div className="w-full h-full">
-        <div className="bg-slate-800 grid grid-cols-1 lg:grid-cols-3">
-        <div className="bg-yellow-600 pt-10">
+        <div className="bg-yellow-600 grid grid-cols-1 lg:grid-cols-3">
+        <div className="bg-slate-800 pt-10">
           <div className="flex justify-center">
           <Image
             className=""
