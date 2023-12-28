@@ -41,7 +41,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="bg-gray-800 p-3">
       <div className="flex items-center justify-between">
         <a href="/"
         className="text-white font-bold text-xl">
@@ -60,8 +60,16 @@ const Navbar = () => {
           className="lg:hidden text-white focus:outline-none"
           onClick={toggleNavbar}
         >
-          <p className="">menu</p>
-         
+            <Image
+                className=""
+                src="/menu.svg"
+                alt="menu"
+                height="25"
+                width="25"
+                style={{
+                  objectFit: "contain",
+                }}
+              />
         </button>
       </div>
     
@@ -157,13 +165,13 @@ const Navbar = () => {
 
 
           <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./article">
-          Article</a>
+          Artikel</a>
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./testimoni">
               Testimoni</a>
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./career">
-              Career</a>
+              Karier</a>
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./enroll">
-              Enroll</a>
+              Enrol</a>
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="https://www.youreducationguidance.my/contactus/">
               Hubungi Kami</a>
         </div>
