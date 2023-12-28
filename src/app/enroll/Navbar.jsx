@@ -66,7 +66,7 @@ function Navbar() {
                         <NavigationMenuItem>
                             <NavigationMenuTrigger className="">Kursus Diploma</NavigationMenuTrigger>
                             <NavigationMenuContent>
-                                <div className="bg-yellow-600 grid gap-3 md:w-[400px] lg:w-[500px] text-white">
+                                <div className="bg-yellow-600 grid gap-3 md:w-[400px] lg:w-[600px] text-white">
                             <NavigationMenuLink >
                                 <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
@@ -91,7 +91,7 @@ function Navbar() {
                                         <a className="text-md font-light ml-2" href="./kursusdiploma/amt">Sijil Kemahiran Malaysia Operasi Penyelenggaraan Pesawat (AMT)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                                        <a className="text-md font-light ml-2" href="./kursusdiploma/dtmmea">DIPLOMA TOURISM MANAGEMENT (DTM-MEA)</a>
+                                        <a className="text-md font-light ml-2" href="./kursusdiploma/dtmmea">Diploma Tourism Management (DTM-MEA)</a>
                                     </div>
                                 </div>
                             </NavigationMenuLink>
@@ -102,7 +102,7 @@ function Navbar() {
                             <NavigationMenuTrigger className="">Kursus Diploma - WBL</NavigationMenuTrigger>
                             
                             <NavigationMenuContent>
-                                <div className="bg-yellow-600 grid gap-3 md:w-[400px] lg:w-[500px] text-white">
+                                <div className="bg-yellow-600 grid gap-3 md:w-[400px] lg:w-[600px] text-white">
                             <NavigationMenuLink >
                                 <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
@@ -162,7 +162,7 @@ function Navbar() {
                 
                 <NavigationMenu>
                 <NavigationMenuList>
-                            <button className=" bg-green-300 hover:bg-green-400 duration-300 text-white group inline-flex h-7 w-max items-center justify-center rounded bg-background px-4 py-2 text-sm font-medium   disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
+                            <button className=" bg-yellow-600 hover:bg-yellow-500 duration-300 text-white group inline-flex h-7 w-max items-center justify-center rounded bg-background px-4 py-2 text-sm font-medium   disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
                                 <a className="" href="https://www.youreducationguidance.my/contactus/">Hubungi Kami</a>
                                 </button>
                     </NavigationMenuList>

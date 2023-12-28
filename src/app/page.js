@@ -27,7 +27,7 @@ export default function home() {
         <div className="">
         <video
         controls
-        autoPlay  // Add this attribute for autoplay
+        utoPlay  // Add this attribute for autoplay
         className=""
       >
         <source src="yegintro.mp4" type="video/mp4" />
@@ -36,8 +36,8 @@ export default function home() {
       </div>
     </section1>
     <div className="sticky">
-    <section2 className="w-full absolute -bottom-12 px-24 hidden md:block lg:block">
-      <div className="w-full h-full bg-white rounded-md flex justify-center shadow-md space-x-8">
+    <section2 className="w-full absolute -bottom-12 px-24 hidden lg:block">
+      <div className="w-full h-full bg-white rounded-md flex justify-center shadow-md space-x-16">
       <div className="flex items-center">
         <Image
             src="/innovativelogo.svg"
@@ -87,17 +87,6 @@ export default function home() {
             src="/meatechlogo.svg"
             alt="meatechlogo"
             width="120"
-            height="200"
-            style={{
-              objectFit: "contain",
-            }}
-          />
-        </div>
-        <div className=" flex items-center p-3">
-        <Image
-            src="/logoranaco.svg"
-            alt="logoranaco"
-            width="80"
             height="200"
             style={{
               objectFit: "contain",
@@ -321,7 +310,6 @@ export default function home() {
       </div>
     </section4>
     <div className="py-8 lg:py-10 md:[height:80px]"></div>
-    <div className="py-8 lg:py-10 md:[height:80px]"></div>
     <section5>
     <div className=" px-4 lg:px-16 ">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 "> 
@@ -364,13 +352,13 @@ export default function home() {
     </div>
     </section5>
     <div className="py-8 lg:py-10 md:[height:80px]"></div>
-    <div className="py-8 lg:py-10 md:[height:80px]"></div>
+    
     <section6>
-      <div className="hidden w-full h-full justify-center">
+      <div className="hidden lg:block bg-slate-200 py-6">
+      <div className=" w-full h-full flex justify-center p-7">
         <div className="group w-3/4 h-full grid justify-center ">
         <p className="text-center font-sans text-3xl font-bold text-yellow-800">TRANSFORMASI MELALUI KEPAKARAN</p>
-        <p className="text-5xl text-slate-700  font-semibold font-sans text-center p-10 leading-snug tracking-wide">
-         
+        <p className="text-5xl text-slate-700  font-semibold font-sans text-center leading-snug tracking-wide">
         <span className="text-slate-700 bg-gradient-to-r from-yellow-500 to-yellow-500 bg-no-repeat [background-position:0_88%] [background-size:1%_100%] motion-safe:transition-all motion-safe:duration-700 group-hover:[background-size:100%_100%] focus:[background-size:100%_100%]">
         YEG ACADEMY</span>MENGUBAH PENDIDIKAN MENJADI PENGALAMAN 
           <span className="text-slate-700 bg-gradient-to-r from-yellow-500 to-yellow-500 bg-no-repeat [background-position:0_88%] [background-size:1%_100%] motion-safe:transition-all motion-safe:duration-700 group-hover:[background-size:100%_100%] focus:[background-size:100%_100%]">
@@ -378,12 +366,12 @@ export default function home() {
         </p>
       </div>
       </div>
+      </div>
     </section6>
     <div className="py-8 lg:py-10 md:[height:80px]"></div>
-    
     <section7>
-    <div className="px-4 lg:px-28 ">
-      <div className="grid grid-cols-1s lg:grid-cols-4 gap-5 "> 
+    <div className=" px-4 lg:px-28 ">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 "> 
       <card className="w-full h-full p-3 text-end cols-span-1 ">
       <div className="flex justify-center ">
         <span className="font-sans text-yellow-800 font-semibold text-center">PILIHAN KERJAYA DAN PENDIDIKAN</span>
@@ -401,7 +389,7 @@ export default function home() {
       </div>
     </div>
     </section7>
-    <div className="py-8 lg:py-10 md:[height:80px]"></div>
+   
     <section8>
     <div className="lg:px-28 px-4">
       <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"> 

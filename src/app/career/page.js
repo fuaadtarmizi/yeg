@@ -28,7 +28,7 @@ function career() {
             <section1>
             <div className="px-4 lg:px-28 flex justify-center">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 ">
-            <div className="relative">
+            <div className="">
                     <Image
                     className="rounded-md hover:shadow-slate-500 hover:shadow-2xl shadow-md hover:scale-150 duration-300"
                         src="/career1.jpg"
@@ -40,7 +40,7 @@ function career() {
                         }}
                     />
             </div>
-            <div className="relative">
+            <div className="">
             <Image
                     className="rounded-md hover:shadow-slate-500 hover:shadow-2xl shadow-md hover:scale-150 duration-300"
                         src="/career2.jpg"
@@ -52,7 +52,7 @@ function career() {
                         }}
                     />
             </div>
-            <div className="relative">
+            <div className="">
             <Image
                     className="rounded-md hover:shadow-slate-500 hover:shadow-2xl shadow-md hover:scale-150 duration-300"
                         src="/career3.jpg"
