@@ -9,7 +9,7 @@ function footer() {
     <section13>
       <div className="w-full h-full">
         <div className=" bg-yellow-600 grid grid-cols-1 lg:grid-cols-3">
-        <div className="bg-slate-800 pt-10 ">
+        <div className="bg-slate-800 pt-10  ">
           <div className="flex justify-center">
           <Image
             className=""

@@ -107,7 +107,7 @@ export default function home() {
         </div>
     </section2>
     </div>
-    <div className="py-8 lg:py-10 md:[height:80px]"></div>
+    <div className="hidden lg:block py-8 lg:py-10 md:[height:80px]"></div>
     <section3>
       <div className=" py-10 flex justify-center ">
         <div className="lg:text-6xl text-3xl text-slate-800 font-semibold text-center"><span className="text-yellow-600">REVOLUSI KARIER ANDA </span>DENGAN PLATFORM PENDIDIKAN TERKINI</div>
@@ -190,7 +190,7 @@ export default function home() {
         </p>
       </div>
       </div>
-      <div className="w-full h-full py-4 "></div>  
+      <div className="w-full h-full "></div>  
     <div className="px-4 lg:px-16 ">
       <div className="w-full h-full bg-slate-100 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 items-center">
         <card className="group w-full h-full bg-slate-800 py-10 rounded-md">
@@ -322,7 +322,7 @@ export default function home() {
         </div>
         <div className=" flex items-end justify-center">
         <div className="group  " href="./kursuskerjaya/sphu">
-        <span className="text-slate-700 font-bold bg-gradient-to-r mt-3 from-yellow-500 to-yellow-500 bg-no-repeat [background-position:0_88%] [background-size:1%_100%] motion-safe:transition-all motion-safe:duration-700 group-hover:[background-size:100%_100%] focus:[background-size:100%_100%]">
+        <span className="text-slate-700 font-bold bg-gradient-to-r from-yellow-500 to-yellow-500 bg-no-repeat [background-position:0_88%] [background-size:1%_100%] motion-safe:transition-all motion-safe:duration-700 group-hover:[background-size:100%_100%] focus:[background-size:100%_100%]">
           Klik pada Navbar di atas.</span>
         <div className=" group-hover:translate-x-full duration-500">
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.14645 11.1464C1.95118 11.3417 1.95118 11.6583 2.14645 11.8536C2.34171 12.0488 2.65829 12.0488 2.85355 11.8536L6.85355 7.85355C7.04882 7.65829 7.04882 7.34171 6.85355 7.14645L2.85355 3.14645C2.65829 2.95118 2.34171 2.95118 2.14645 3.14645C1.95118 3.34171 1.95118 3.65829 2.14645 3.85355L5.79289 7.5L2.14645 11.1464ZM8.14645 11.1464C7.95118 11.3417 7.95118 11.6583 8.14645 11.8536C8.34171 12.0488 8.65829 12.0488 8.85355 11.8536L12.8536 7.85355C13.0488 7.65829 13.0488 7.34171 12.8536 7.14645L8.85355 3.14645C8.65829 2.95118 8.34171 2.95118 8.14645 3.14645C7.95118 3.34171 7.95118 3.65829 8.14645 3.85355L11.7929 7.5L8.14645 11.1464Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
@@ -367,7 +367,7 @@ export default function home() {
       </div>
       </div>
     </section6>
-    <div className="py-8 lg:py-10 md:[height:80px]"></div>
+    <div className="hidden lg:block py-8 lg:py-10 md:[height:80px]"></div>
     <section7>
     <div className=" px-4 lg:px-28 ">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 "> 
@@ -393,7 +393,7 @@ export default function home() {
     <div className="lg:px-28 px-4">
       <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"> 
       <card1 className=" w-full h-full p-8 space-y-8 hover:bg-slate-800 duration-500 border rounded-md  hover:shadow-xl group">
-        <div className="py-4" >
+        <div className="" >
         <Image
           id="image1"
             className=""
@@ -411,6 +411,7 @@ export default function home() {
         </div>
         <div h-full className="">
         <h3 className=" text-base font-bold text-slate-500 group-hover:text-white">Terokai pelbagai bidang kerjaya dengan <span className="italic">'upskill' </span>dan <span className="italic">'reskill'</span> potensi diri sehingga ke tahap profesional.</h3>
+        <h className="text-transparent">dssdf</h>
         </div>
         <div className="flex items-end underline underline-offset-8 decoration-2">
         <a href="/"
@@ -457,7 +458,6 @@ export default function home() {
         </div>
         <div className=" "></div>     
         </card2>
-       
         <card3 className="w-full h-full p-8 space-y-8 hover:bg-slate-800 border duration-500 hover:shadow-xl rounded-md group">
         <div>
         <Image
@@ -477,6 +477,7 @@ export default function home() {
         </div>
         <div h-full className="">
         <h3 className=" text-base font-bold text-slate-500 group-hover:text-white">Selaraskan minat anda dengan peluang pendidikan yang memberi permintaan kerjaya yang tinggi di Malaysia</h3>
+        <h className="text-transparent">dssdf</h>
         </div>
         <div className="flex items-end underline underline-offset-8 decoration-2">
         <a href="/"
@@ -495,7 +496,7 @@ export default function home() {
       </div>
     </div>
     </section8>
-    <div className="py-8 lg:py-10 md:[height:80px]"></div>
+    <div className="hidden lg:block py-8 lg:py-10 md:[height:80px]"></div>
     <section9 >
       <div className="flex justify-center">
       <div className=" w-full  max-w-7xl ">
@@ -552,8 +553,6 @@ export default function home() {
         </div>
         <div className="grid items-center px-10 ">
           <h className="text-8xl grid font-bold font-sans text-slate-700">PROGRESIF</h>
-          
-          
         </div>       
         </div> 
       </div>
@@ -561,7 +560,7 @@ export default function home() {
       </div>
     </section9>  
     <section10>
-    <div className="px-4 lg:px-28 pt-8">
+    <div className="px-4 lg:px-28 lg:pt-8">
       <div className=" grid grid-cols-1 lg:grid-cols-3 gap-5">
         <div className="text-transparent">11111111111111111111111111111</div>
         <div className="group w-full flex justify-center">
@@ -577,7 +576,6 @@ export default function home() {
           </div>
         </div>
         </div>
-        <div className=""></div>
           </div>
           </div>
     </section10>
@@ -589,7 +587,7 @@ export default function home() {
         <div className="grid py-4 ">
       <h className="text-base font-semibold text-yellow-800 ">KENALI YEG ACADEMY:</h>
       <h className="text-4xl font-extrabold text-white ">TEROKAI PROGRAM KAMI DI SOSIAL MEDIA</h>
-      <h className="text-5xl font-extrabold text-white"> </h>
+      
       </div>
       <div className="hidden lg:col-span-2 items-center px-10">
         <span className="text-white"> Kami peduli! Kebajikan anda adalah keutamaan kami. YEG Academy akan membantu anda memupuk kegembiraan, pertumbuhan dan tujuan dalam persekitaran yang selamat dan sihat.</span>
@@ -772,7 +770,7 @@ export default function home() {
       </div>
       
     </section12>
-    <div className="py-8 lg:py-10 md:[height:80px]"></div>    
+    <div className="hidden lg:py-10 md:[height:80px]"></div>    
     <div>
       <Footer/>
     </div>
