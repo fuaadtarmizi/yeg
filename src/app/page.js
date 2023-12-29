@@ -27,7 +27,7 @@ export default function home() {
         <div className="">
         <video
         controls
-        utoPlay  // Add this attribute for autoplay
+        autoPlay  // Add this attribute for autoplay
         className=""
       >
         <source src="yegintro.mp4" type="video/mp4" />
