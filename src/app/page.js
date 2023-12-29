@@ -642,7 +642,7 @@ export default function home() {
               <source src="tiktok4.mp4" type="video/mp4"/>
           </video>
           </a>
-          <a href="https://www.tiktok.com/@yegacademy/video/7251519047508954370"
+          <a href="https://www.tiktok.com/@yegacademy/video/7312712948965756162"
           className="flex hover:scale-150 duration-500">
           <video autoplay="autoplay" 
                   loop="loop" 
