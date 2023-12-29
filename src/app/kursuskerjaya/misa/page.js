@@ -28,7 +28,7 @@ function misa() {
               <h className="font-bold">Malaysia Industry Skills Academy(MISA)</h>
             </div>
             <div className="py-3 grid space-y-5">
-              <h className="font-semibold">PROGRAM KERJAYA</h>
+              <h className="font-semibold">OIL & GAS</h>
               <h>Industri Minyak dan Gas: Mencabar dan Penuh Peluang</h>
             </div>
             <div className="space-y-5">
@@ -69,7 +69,7 @@ function misa() {
               <h className="font-bold">Malaysia Industry Skills Academy(MISA)</h>
             </div>
             <div className="py-3 grid space-y-5">
-              <h className="font-semibold">PROGRAM KERJAYA</h>
+              <h className="font-semibold">INDUSTRI MARITIM</h>
               <h>Melangkah ke Dunia Maritim dengan Pengiktirafan Industri</h>
             </div>
           <div className="space-y-5">
