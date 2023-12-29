@@ -85,7 +85,7 @@ function Navbar() {
                                         <a className="text-md font-light ml-2" href="./kursusdiploma/daom">Diploma Pengurusan Operasi Penerbangan (DAOM)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                                        <a className="text-md font-light ml-2" href="./kursusdiploma/damt">Diploma Penyelenggaraan teknologi Pesawat (DAMT)</a>
+                                        <a className="text-md font-light ml-2" href="./kursusdiploma/damt">Diploma Penyelenggaraan Teknologi Pesawat (DAMT)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
                                         <a className="text-md font-light ml-2" href="./kursusdiploma/amt">Sijil Kemahiran Malaysia Operasi Penyelenggaraan Pesawat (AMT)</a>
@@ -102,7 +102,7 @@ function Navbar() {
                             <NavigationMenuTrigger className="">Kursus Diploma - WBL</NavigationMenuTrigger>
                             
                             <NavigationMenuContent>
-                                <div className="bg-yellow-600 grid gap-3 md:w-[400px] lg:w-[600px] text-white">
+                                <div className="bg-yellow-600 grid gap-3 md:w-[400px] lg:w-[700px] text-white">
                             <NavigationMenuLink >
                                 <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
