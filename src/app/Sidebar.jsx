@@ -121,7 +121,7 @@ const Navbar = () => {
             <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiploma/dle">
             Diploma Penguatkuasa Undang-Undang (DLE)</a>
             <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiploma/dnur">
-            Diploma in Nursing (DNUR)</a>
+            Diploma Kejururawatan (DNUR)</a>
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiploma/dacm">
               Diploma Pengurusan Kargo Udara (DACM)</a>
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiploma/daom">
@@ -131,7 +131,7 @@ const Navbar = () => {
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiploma/amt">
               Sijil Kemahiran Malaysia Operasi Penyelenggaraan Pesawat (AMT)</a>
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiploma/dtmmea">
-              DIPLOMA TOURISM MANAGEMENT (DTM-MEA)</a>
+              Diploma Pengurusan Pelancongan (DTM-MEA)</a>
         </div>
           )}
 
@@ -149,15 +149,15 @@ const Navbar = () => {
             <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiplomawbl/dhmwbl">
             Diploma Pengurusan Perhotelan (DHM-WBL)</a>
             <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiplomawbl/dcawbl">
-            Diploma in Culinary Arts (DCA-WBL)</a>
+            Diploma Seni Kulinari (DCA-WBL)</a>
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiplomawbl/decwbl">
-              Diploma in Early Childhood (DEC-WBL)</a>
+              Diploma Pendidikan Awal Kanak-Kanakl (DEC-WBL)</a>
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiplomawbl/dacmwbl">
               Diploma Pengurusan Kargo Udara (DACM-WBL)</a>
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiplomawbl/daomwbl">
               Diploma Pengurusan Operasi Penerbangan (DAOM-WBL)</a>
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiplomawbl/dasmwbl">
-              Diploma Aircraft Sheet Metal - Structure Repair Technology (DASM-WBL)</a>
+              Diploma Teknologi Pembaikan Struktur Pesawat - Kepingan Logam (DASM-WBL)</a>
         </div>
           )}
 

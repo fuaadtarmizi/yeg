@@ -76,7 +76,7 @@ function Navbar() {
                                         <a className="text-md font-light ml-2" href="./kursusdiploma/dle">Diploma Penguatkuasa Undang-Undang (DLE)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                                        <a className="text-md font-light ml-2" href="./kursusdiploma/dnur">Diploma in Nursing (DNUR)</a>
+                                        <a className="text-md font-light ml-2" href="./kursusdiploma/dnur">Diploma Kejururawatan (DNUR)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
                                         <a className="text-md font-light ml-2" href="./kursusdiploma/dacm">Diploma Pengurusan Kargo Udara (DACM)</a>
@@ -91,7 +91,7 @@ function Navbar() {
                                         <a className="text-md font-light ml-2" href="./kursusdiploma/amt">Sijil Kemahiran Malaysia Operasi Penyelenggaraan Pesawat (AMT)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                                        <a className="text-md font-light ml-2" href="./kursusdiploma/dtmmea">Diploma Tourism Management (DTM-MEA)</a>
+                                        <a className="text-md font-light ml-2" href="./kursusdiploma/dtmmea">Diploma Pengurusan Pelancongan (DTM-MEA)</a>
                                     </div>
                                 </div>
                             </NavigationMenuLink>
@@ -112,10 +112,10 @@ function Navbar() {
                                         <a className="text-md font-light ml-2" href="./kursusdiplomawbl/dhmwbl">Diploma Pengurusan Perhotelan (DHM-WBL)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                                        <a className="text-md font-light ml-2" href="./kursusdiplomawbl/dcawbl">Diploma in Culinary Arts (DCA-WBL)</a>
+                                        <a className="text-md font-light ml-2" href="./kursusdiplomawbl/dcawbl">Diploma in Seni Kulinari (DCA-WBL)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                                        <a className="text-md font-light ml-2" href="./kursusdiplomawbl/decwbl">Diploma in Early Childhood (DEC-WBL)</a>
+                                        <a className="text-md font-light ml-2" href="./kursusdiplomawbl/decwbl">Diploma in Pendidikan Awal Kanak-kanak (DEC-WBL)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
                                         <a className="text-md font-light ml-2" href="./kursusdiplomawbl/dacmwbl">Diploma Pengurusan Kargo Udara (DACM-WBL)</a>
@@ -124,7 +124,7 @@ function Navbar() {
                                         <a className="text-md font-light ml-2" href="./kursusdiplomawbl/daomwbl">Diploma Pengurusan Operasi Penerbangan (DAOM-WBL)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                                        <a className="text-md font-light ml-2" href="./kursusdiplomawbl/dasmwbl">Diploma Aircraft Sheet Metal - Structure Repair Technology (DASM-WBL)</a>
+                                        <a className="text-md font-light ml-2" href="./kursusdiplomawbl/dasmwbl">Diploma Teknologi Pembaikan Struktur Pesawat - Kepingan Logam (DASM-WBL)</a>
                                     </div>
                                 </div>
                             </NavigationMenuLink>

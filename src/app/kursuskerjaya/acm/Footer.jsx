@@ -9,7 +9,7 @@ function footer() {
     <section13>
       <div className="w-full h-full">
         <div className=" bg-yellow-600 grid grid-cols-1 lg:grid-cols-3">
-        <div className="bg-slate-800 pt-10">
+        <div className="bg-slate-800 pt-10 ">
           <div className="flex justify-center">
           <Image
             className=""
@@ -22,12 +22,12 @@ function footer() {
             }}
           />
           </div>
-          <div className="grid p-8 px-28 text-white text-xs">
+          <div className="grid p-8 lg:px-28 px-14 text-white text-xs">
             <h className=""> E-2-2, Block E, Encorp Strand Garden Office, Jalan PJU 5/1, Kota Damansara, 47810 Petaling Jaya, Selangor </h>
             <div className="grid py-6 ">
             <h>Working hours : 8.30am-5.30pm</h>
-            <h>T: +603-6150 8177</h>
-            <h>E: enquiries@must.edu.my</h>
+            <h>T: +603-6143 5073</h>
+            <h>E: Info@youreducationguidance.my</h>
 
 
             <div className="flex space-x-5">
@@ -100,28 +100,28 @@ function footer() {
               <span className="text-xl font-bold py-3">PROGRAM DIPLOMA</span>
               <a className="font-medium" href="./kursusdiploma/dhumy">Diploma Pengurusan Haji & Umrah (DHUMY)</a>
               <a className="font-medium" href="./kursusdiploma/dle">Diploma Penguatkuasa Undang-Undang (DLE)</a>
-              <a className="font-medium" href="./kursusdiploma/dnur">Diploma in Nursing (DNUR)</a>
+              <a className="font-medium" href="./kursusdiploma/dnur">Diploma kejururawatan (DNUR)</a>
               <a className="font-medium" href="./kursusdiploma/dacm">Diploma Pengurusan Kargo Udara (DACM)</a>
               <a className="font-medium" href="./kursusdiploma/daom">Diploma Pengurusan Operasi Penerbangan (DAOM)</a>
               <a className="font-medium" href="./kursusdiploma/damt">Diploma Penyelenggaraan teknologi Pesawat (DAMT)</a>
               <a className="font-medium" href="./kursusdiploma/amt">Sijil Kemahiran Malaysia Operasi Penyelenggaraan Pesawat (AMT)</a>
-              <a className="font-medium" href="./kursusdiploma/dtmmea">DIPLOMA TOURISM MANAGEMENT (DTM-MEA)</a>
+              <a className="font-medium" href="./kursusdiploma/dtmmea">Diploma Pengurusan Pelancongan (DTM-MEA)</a>
             </div>
             <div className="grid space-y-3">
               <span className="text-xl font-bold py-3">DHUMY-WBL</span>
               <a className="font-medium" href="./kursusdiploma/dhumy">Diploma Pengurusan Haji & Umrah (DHUMY-WBL)</a>
               <a className="font-medium" href="./kursusdiplomawbl/dhmwbl">Diploma Pengurusan Perhotelan (DHM-WBL)</a>
-              <a className="font-medium" href="./kursusdiplomawbl/dcawbl">Diploma in Culinary Arts (DCA-WBL)</a>
-              <a className="font-medium" href="./kursusdiplomawbl/decwbl">Diploma in Early Childhood (DEC-WBL)</a>
+              <a className="font-medium" href="./kursusdiplomawbl/dcawbl">Diploma Seni Kulinari (DCA-WBL)</a>
+              <a className="font-medium" href="./kursusdiplomawbl/decwbl">Diploma Pendidikan Awal Kanak-kanak (DEC-WBL)</a>
               <a className="font-medium" href="./kursusdiploma/dacm">Diploma Pengurusan Kargo Udara (DACM-WBL)</a>
               <a className="font-medium" href="./kursusdiploma/daom">Diploma Pengurusan Operasi Penerbangan (DAOM-WBL)</a>
-              <a className="font-medium" href="./kursusdiplomawbl/dasmwbl">Diploma Aircraft Sheet Metal - Structure Repair Technology (DASM-WBL)</a>
-              <a className="font-medium text-transparent" href="./kursusdiploma/dtmmea">DIPLOMA TOURISM MANAGEMENT (DTM-MEA)</a>
+              <a className="font-medium" href="./kursusdiplomawbl/dasmwbl">Diploma Teknologi Pembaikan Struktur Pesawat - Kepingan Logam (DASM-WBL)</a>
+              <a className="font-medium text-transparent" href="./kursusdiploma/dtmmea">Diploma Pengurusan Pelancongan (DTM-MEA)</a>
             </div>
             <div className="grid space-y-3 py-3">
-            <a className="text-xl font-bold" href="./article">Article</a>
+            <a className="text-xl font-bold" href="./article">Artikel</a>
             <a className="text-xl font-bold" href="./testimoni">Testimoni</a>
-            <a className="text-xl font-bold" href="./career">Career</a>
+            <a className="text-xl font-bold" href="./career">Karier</a>
             <a className="text-xl font-bold" href="./enroll">Enroll</a>
             <a className="text-xl font-bold" href="https://www.youreducationguidance.my/contactus/">Hubungi Kami</a>
             </div>

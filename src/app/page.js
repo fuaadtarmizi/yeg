@@ -352,7 +352,6 @@ export default function home() {
     </div>
     </section5>
     <div className="py-8 lg:py-10 md:[height:80px]"></div>
-    
     <section6>
       <div className="hidden lg:block bg-slate-200 py-6">
       <div className=" w-full h-full flex justify-center p-7">

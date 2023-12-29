@@ -76,7 +76,7 @@ function Navbar() {
                                         <a className="text-md font-light ml-2" href="./kursusdiploma/dle">Diploma Penguatkuasa Undang-Undang (DLE)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                                        <a className="text-md font-light ml-2" href="./kursusdiploma/dnur">Diploma in Nursing (DNUR)</a>
+                                        <a className="text-md font-light ml-2" href="./kursusdiploma/dnur">Diploma Kejururawatan (DNUR)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
                                         <a className="text-md font-light ml-2" href="./kursusdiploma/dacm">Diploma Pengurusan Kargo Udara (DACM)</a>
@@ -124,7 +124,7 @@ function Navbar() {
                                         <a className="text-md font-light ml-2" href="./kursusdiplomawbl/daomwbl">Diploma Pengurusan Operasi Penerbangan (DAOM-WBL)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                                        <a className="text-md font-light ml-2" href="./kursusdiplomawbl/dasmwbl">Diploma Aircraft Sheet Metal - Structure Repair Technology (DASM-WBL)</a>
+                                        <a className="text-md font-light ml-2" href="./kursusdiplomawbl/dasmwbl">Diploma Teknologi Pembaikan Struktur Pesawat - Kepingan Logam (DASM-WBL)</a>
                                     </div>
                                 </div>
                             </NavigationMenuLink>

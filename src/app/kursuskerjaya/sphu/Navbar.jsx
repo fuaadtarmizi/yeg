@@ -76,7 +76,7 @@ function Navbar() {
                                         <a className="text-md font-light ml-2" href="./kursusdiploma/dle">Diploma Penguatkuasa Undang-Undang (DLE)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                                        <a className="text-md font-light ml-2" href="./kursusdiploma/dnur">Diploma in Nursing (DNUR)</a>
+                                        <a className="text-md font-light ml-2" href="./kursusdiploma/dnur">Diploma Kejururawatan (DNUR)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
                                         <a className="text-md font-light ml-2" href="./kursusdiploma/dacm">Diploma Pengurusan Kargo Udara (DACM)</a>
@@ -91,7 +91,7 @@ function Navbar() {
                                         <a className="text-md font-light ml-2" href="./kursusdiploma/amt">Sijil Kemahiran Malaysia Operasi Penyelenggaraan Pesawat (AMT)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                                        <a className="text-md font-light ml-2" href="./kursusdiploma/dtmmea">DIPLOMA TOURISM MANAGEMENT (DTM-MEA)</a>
+                                        <a className="text-md font-light ml-2" href="./kursusdiploma/dtmmea">Diploma Pengurusan Pelancongan (DTM-MEA)</a>
                                     </div>
                                 </div>
                             </NavigationMenuLink>
@@ -112,10 +112,10 @@ function Navbar() {
                                         <a className="text-md font-light ml-2" href="./kursusdiplomawbl/dhmwbl">Diploma Pengurusan Perhotelan (DHM-WBL)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                                        <a className="text-md font-light ml-2" href="./kursusdiplomawbl/dcawbl">Diploma in Culinary Arts (DCA-WBL)</a>
+                                        <a className="text-md font-light ml-2" href="./kursusdiplomawbl/dcawbl">Diploma Seni Kulinari (DCA-WBL)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                                        <a className="text-md font-light ml-2" href="./kursusdiplomawbl/decwbl">Diploma in Early Childhood (DEC-WBL)</a>
+                                        <a className="text-md font-light ml-2" href="./kursusdiplomawbl/decwbl">Diploma Pendidikan Awal Kanak-kanak (DEC-WBL)</a>
                                     </div>
                                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
                                         <a className="text-md font-light ml-2" href="./kursusdiplomawbl/dacmwbl">Diploma Pengurusan Kargo Udara (DACM-WBL)</a>
@@ -137,7 +137,7 @@ function Navbar() {
                         
                         <NavigationMenuItem>
                             <button className="lg:flex hidden text-white group h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium   disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
-                            <a className="" href="./article">Article</a>
+                            <a className="" href="./article">Artikel</a>
                                 </button>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
@@ -147,7 +147,7 @@ function Navbar() {
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <button className="lg:flex hidden text-white group h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium   disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
-                            <a className="" href="./career">Career</a>
+                            <a className="" href="./career">Karier</a>
                                 </button>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
