@@ -51,7 +51,7 @@ export default function home() {
         </div>
         <div className=" flex items-center">
         <Image
-            src="/meatech2.png"
+            src="/meatech2logo.svg"
             alt="meatech2"
             width="230"
             height="200"
