@@ -12,12 +12,6 @@ module.exports = {
   //   };
   // },
 
-  // Example: Configure custom image loader
-  images: {
-    loader: 'custom',
-    // Replace 'path/to/my-loader.ts' with the actual path to your custom image loader file
-    loaderFile: path.resolve('./path/to/my-loader.ts'),
-  },
-
+  
   // Add other configuration options as needed
 };
