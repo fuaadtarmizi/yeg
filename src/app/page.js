@@ -127,14 +127,13 @@ export default function home() {
         </div>
         <div className="w-auto h-full grid mx-9 lg:mx-auto md:mx-16 col-span-12 md:col-span-6 gap-6 lg:col-span-5 md:order-3  pl-4">   
           <div className="flex space-x-8 h-full justify-start">
-        <Image
-            className=""
-            src="/awardyeg.png"
-            alt="awardyeg"
-            width="90"
-            height="80"
-            style={{   
-                objectFit: 'contain',           
+          <Image
+            src="/malayfounding.svg"
+            alt="malayfounding"
+            width="180"
+            height="00"
+            style={{
+              objectFit:"contain",
             }}
           />
           <Image
