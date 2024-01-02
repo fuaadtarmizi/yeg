@@ -49,6 +49,17 @@ export default function home() {
             }}
           />
         </div>
+        <div className="flex items-center">
+        <Image
+            src="/innovativelogo.svg"
+            alt="innovativelogo"
+            width="230"
+            height="200"
+            style={{
+              objectFit:"contain",
+            }}
+          />
+        </div>
         <div className=" flex items-center">
         <Image
             src="/meatech2logo.svg"
