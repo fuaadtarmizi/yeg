@@ -4,13 +4,15 @@
 
 const nextConfig = {
 
-    images: {
-        loader: 'default',
-         unoptimized: true,
-      },
+    // images: {
+    //     loader: 'default',
+    //      unoptimized: true,
+    //   },
 
 
 
 
-  }
-  module.exports = nextConfig
+  };
+
+  
+  module.exports = nextConfig;
