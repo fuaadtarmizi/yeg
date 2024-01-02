@@ -51,7 +51,7 @@ export default function home() {
         </div>
         <div className=" flex items-center">
         <Image
-            src="/meatech2.svg"
+            src="/meatech2logo.svg"
             alt="meatech2"
             width="230"
             height="200"
@@ -138,8 +138,8 @@ export default function home() {
             }}
           />
           <Image
+          src={require('../../public/awardyeg2.png')}
             className=""
-            src="/awardyeg2.png"
             alt="awardyeg2"
             width="90"
             height="80"
