@@ -63,7 +63,7 @@ export default function home() {
         <div className=" flex items-center">
         <Image
             src="/meatech2logo.svg"
-            alt="meatech2"
+            alt="meatech2logo"
             width="230"
             height="200"
             style={{
