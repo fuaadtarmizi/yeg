@@ -108,7 +108,7 @@ export default function home() {
     </section2>
     </div>
     <div className="hidden lg:block py-8 lg:py-10 md:[height:80px]"></div>
-    <section3>
+    <section3 className="hidden">
       <div className=" py-10 flex justify-center ">
         <div className="lg:text-6xl text-3xl text-slate-800 font-semibold text-center"><span className="text-yellow-600">REVOLUSI KARIER ANDA </span>DENGAN PLATFORM PENDIDIKAN TERKINI</div>
       </div>
