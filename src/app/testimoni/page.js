@@ -59,7 +59,7 @@ function page() {
                     <div className="flex items-center py-1 border-t-2 space-x-3 ">
                     <div className="">
                     <Image
-                    className="w-10 h-10 rounded-full bg-slate-300 flex justify-center items-center"style={{ backgroundImage: 'url("/alumni1.jpg")', backgroundSize: 'cover', backgroundPosition: 'fit' }}
+                    className="w-20 h-10 rounded-full bg-slate-300 flex justify-center items-center"style={{ backgroundImage: 'url("/alumni1.jpg")', backgroundSize: 'cover', backgroundPosition: 'fit' }}
                        
                     />
                     </div>
