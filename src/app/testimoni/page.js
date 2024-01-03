@@ -59,8 +59,14 @@ function page() {
                     <div className="flex items-center py-1 border-t-2 space-x-3 ">
                     <div className="">
                     <Image
-                    className="w-280 h-10 rounded-full bg-slate-300 flex justify-center items-center"style={{ backgroundImage: 'url("/alumni1.jpg")', backgroundSize: 'cover', backgroundPosition: 'fit' }}
-                       
+                    className="w-10 h-10 rounded-full bg-slate-300 flex justify-center items-center"
+                        src="/alumni1.jpg"
+                        alt="alumni1"
+                        width="200"
+                        height="200"
+                        style={{
+                        objectFit:"cover",
+                        }}
                     />
                     </div>
                     <div className="grid">
@@ -89,7 +95,7 @@ function page() {
                     <Image
                     className="w-10 h-10 rounded-full bg-slate-300 flex justify-center items-center"
                         src="/alumni2.jpg"
-                        alt="alumni1"
+                        alt="alumni2"
                         width="200"
                         height="200"
                         style={{

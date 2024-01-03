@@ -4,10 +4,10 @@
 
 const nextConfig = {
 
-    // images: {
-    //     loader: 'default',
-    //      unoptimized: true,
-    //   },
+    images: {
+        loader: 'default',
+         unoptimized: true,
+      },
 
     output: 'export',
 
