@@ -56,7 +56,7 @@ function career() {
             <Image
                     className="rounded-md hover:shadow-slate-500 hover:shadow-2xl shadow-md hover:scale-150 duration-300"
                         src="/career3.jpg"
-                        alt="career2"
+                        alt="career3"
                         width="300"
                         height="200"
                         style={{
