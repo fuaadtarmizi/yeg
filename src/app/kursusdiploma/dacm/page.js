@@ -1,12 +1,22 @@
 import React from 'react'
 import Image from "next/image"
-import Footer from "./Footer"
+import Navbar from "./Navbar.jsx"
+import Sidebar from "./Sidebar.jsx"
+import Footer from "./Footer.jsx"
 
 
 function dacm() {
   return (
     <main>
       <title>YEG Academy - Program Diploma</title>
+      <nav className="hidden lg:block sticky top-0 ">
+        <Navbar/>
+    </nav>
+      <nav>
+    <div className="lg:hidden">
+        <Sidebar/>
+    </div>
+    </nav>
       
       <section1>
       <div className="flex justify-center">
@@ -47,7 +57,7 @@ function dacm() {
         </div>
       </section1>
       <div className="flex justify-center">
-      <a href="https://www.youreducationguidance.my/contactus/"
+      <a href="../borangyeg"
       className=" border bg-slate-800 text-base font-semibold rounded-md p-2 px-4 hover:shadow-xl text-white shadow-sm duration-300">MOHON SEKARANG</a>
       </div>
       <div className="py-8 lg:py-10 md:[height:80px]"></div>

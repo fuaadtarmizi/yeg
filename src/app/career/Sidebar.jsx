@@ -172,7 +172,7 @@ const Navbar = () => {
               Karier</a>
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./enroll">
               Enrol</a>
-              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="https://www.youreducationguidance.my/contactus/">
+              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./borangyeg">
               Hubungi Kami</a>
         </div>
       )}

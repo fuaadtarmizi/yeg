@@ -1,12 +1,22 @@
 import React from 'react'
 import Image from "next/image"
 import Footer from "./Footer"
+import Navbar from "./Navbar"
+import Sidebar from "./Sidebar"
 
 
 function dtmmea() {
   return (
     <main>
       <title>YEG Academy - Program Diploma</title>
+      <nav className="hidden lg:block sticky top-0 ">
+        <Navbar/>
+    </nav>
+      <nav>
+    <div className="lg:hidden">
+        <Sidebar/>
+    </div>
+    </nav>
       
       <section1>
       <div className="flex justify-center">

@@ -1,11 +1,21 @@
 import React from 'react'
 import Image from "next/image"
 import Footer from "./Footer"
+import Navbar from "./Navbar"
+import Sidebar from "./Sidebar"
 
 function daomwbl() {
   return (
     <main>
       <title>YEG Academy - diploma wbl</title>
+      <nav className="hidden lg:block sticky top-0 ">
+        <Navbar/>
+    </nav>
+      <nav>
+    <div className="lg:hidden">
+        <Sidebar/>
+    </div>
+    </nav>
       
       <section1>
       <div className="flex justify-center">
@@ -50,8 +60,8 @@ function daomwbl() {
         </div>
       </section1>
       <div className="flex justify-center">
-      <a href="https://www.youreducationguidance.my/contactus/"
-      className=" border bg-slate-800 text-base font-semibold rounded-md p-2 px-4 hover:shadow-xl text-white shadow-sm duration-300">MOHON SEKARANG</a>
+      <a href="../borangyeg"
+      className=" border bg-slate-800 text-base font-semibold rounded-xl p-2 px-4 hover:shadow-xl text-white shadow-sm duration-300">MOHON SEKARANG</a>
       </div>
       <div className="py-8 lg:py-10 md:[height:80px]"></div>
       <section2>
@@ -76,7 +86,7 @@ function daomwbl() {
           </card3>
           
         </div>
-        <div className="hidden  md:grid grid-cols-2 lg:grid grid-cols-2 gap-5 p-6">
+        <div className="hidden  md:grid grid-cols-2 lg:grid  gap-5 p-6">
         <card4 className="bg-slate-200 p-4">
             <div className="flex ">
               <h className="text-9xl font-extrabold">4</h>

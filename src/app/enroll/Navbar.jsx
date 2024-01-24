@@ -163,7 +163,7 @@ function Navbar() {
                 <NavigationMenu>
                 <NavigationMenuList>
                             <button className=" bg-yellow-600 hover:bg-yellow-500 duration-300 text-white group inline-flex h-7 w-max items-center justify-center rounded bg-background px-4 py-2 text-sm font-medium   disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
-                                <a className="" href="https://www.youreducationguidance.my/contactus/">Hubungi Kami</a>
+                                <a className="" href="./borangyeg">Hubungi Kami</a>
                                 </button>
                     </NavigationMenuList>
                 </NavigationMenu>       

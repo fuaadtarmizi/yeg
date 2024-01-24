@@ -81,18 +81,18 @@ const Navbar = () => {
           {/* Add your navigation links here */}
             <a 
             onClick={toggleNavbar2}
-            className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursuskerjaya/sphu">
+            className="block text-white py-2 px-4 hover:bg-gray-700" href="../kursuskerjaya/sphu">
               Sijil Profesional Haji & Umrah (SPHU)
             </a>
             <a 
             onClick={toggleNavbar3}
-            className="block text-white py-2 px-4 hover:bg-gray-700"href="./kursuskerjaya/acm">
+            className="block text-white py-2 px-4 hover:bg-gray-700"href="../kursuskerjaya/acm">
               Aviation Career Malaysia (ACM)
             </a>
             
           <a 
             onClick={toggleNavbar4}
-            className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursuskerjaya/misa">
+            className="block text-white py-2 px-4 hover:bg-gray-700" href="../kursuskerjaya/misa">
               Malaysia Industry Skill Academy (MISA)
             </a>
            
@@ -107,21 +107,21 @@ const Navbar = () => {
             {isOpen6 && (
         <div className="lg:hidden mt-4 bg-yellow-700">
           {/* Add your navigation links here */}
-            <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiploma/dhumy">
+            <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../kursusdiploma/dhumy">
             Diploma Pengurusan Haji & Umrah (DHUMY)</a>
-            <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiploma/dle">
+            <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../kursusdiploma/dle">
             Diploma Penguatkuasa Undang-Undang (DLE)</a>
-            <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiploma/dnur">
+            <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../kursusdiploma/dnur">
             Diploma in Nursing (DNUR)</a>
-              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiploma/dacm">
+              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../kursusdiploma/dacm">
               Diploma Pengurusan Kargo Udara (DACM)</a>
-              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiploma/daom">
+              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../kursusdiploma/daom">
               Diploma Pengurusan Operasi Penerbangan (DAOM)</a>
-              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiploma/damt">
+              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../kursusdiploma/damt">
               Diploma Penyelenggaraan teknologi Pesawat (DAMT)</a>
-              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiploma/amt">
+              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../kursusdiploma/amt">
               Sijil Kemahiran Malaysia Operasi Penyelenggaraan Pesawat (AMT)</a>
-              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiploma/dtmmea">
+              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../kursusdiploma/dtmmea">
               DIPLOMA TOURISM MANAGEMENT (DTM-MEA)</a>
         </div>
           )}
@@ -135,19 +135,19 @@ const Navbar = () => {
             {isOpen2 && (
         <div className="lg:hidden mt-4 bg-yellow-700">
           {/* Add your navigation links here */}
-            <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiplomawbl/dhumywbl">
+            <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../kursusdiplomawbl/dhumywbl">
             Diploma Pengurusan Haji & Umrah (DHUMY)</a>
-            <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiplomawbl/dhmwbl">
+            <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../kursusdiplomawbl/dhmwbl">
             Diploma Pengurusan Perhotelan (DHM-WBL)</a>
-            <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiplomawbl/dcawbl">
+            <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../kursusdiplomawbl/dcawbl">
             Diploma in Culinary Arts (DCA-WBL)</a>
-              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiplomawbl/decwbl">
+              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../kursusdiplomawbl/decwbl">
               Diploma in Early Childhood (DEC-WBL)</a>
-              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiplomawbl/dacmwbl">
+              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../kursusdiplomawbl/dacmwbl">
               Diploma Pengurusan Kargo Udara (DACM-WBL)</a>
-              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiplomawbl/daomwbl">
+              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../kursusdiplomawbl/daomwbl">
               Diploma Pengurusan Operasi Penerbangan (DAOM-WBL)</a>
-              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursusdiplomawbl/dasmwbl">
+              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../kursusdiplomawbl/dasmwbl">
               Diploma Aircraft Sheet Metal - Structure Repair Technology (DASM-WBL)</a>
         </div>
           )}
@@ -155,15 +155,15 @@ const Navbar = () => {
 
 
 
-          <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./article">
+          <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../article">
           Article</a>
-              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./testimoni">
+              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../testimoni">
               Testimoni</a>
-              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./career">
+              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../career">
               Career</a>
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./enroll">
               Enroll</a>
-              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="https://www.youreducationguidance.my/contactus/">
+              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../borangyeg">
               Hubungi Kami</a>
         </div>
       )}

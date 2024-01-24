@@ -2,11 +2,21 @@
 import Image from "next/image"
 import React from 'react'
 import Footer from "./Footer"
+import Navbar from "./Navbar"
+import Sidebar from "./Sidebar"
 
 export default function article() {
   return (
     <main>
         <title>YEG Academy - article 3</title>
+        <nav className="hidden lg:block sticky top-0 ">
+        <Navbar/>
+    </nav>
+      <nav>
+    <div className="lg:hidden">
+        <Sidebar/>
+    </div>
+    </nav>
         
  <section1>
         <div className="px-6 lg:px-28">
