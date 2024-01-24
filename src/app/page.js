@@ -114,14 +114,21 @@ export default function home() {
       </div>
       <div className="w-full h-full grid  lg:grid-cols-12 gap-2 md:col-span-1 py-8 p-2 bg-slate-200">
         <div className="flex justify-center w-full h-full mx-auto col-span-12 md:col-span-6 lg:col-span-6 md:order-2">
+            {/* <video
+            controls
+            autoPlay  // Add this attribute for autoplay
+            className=""
+          >
+            <source src="carousel15.mp4" type="video/mp4" />
+          </video> */}
+          
           <Image
-            className="rounded-lg"
             src="/carousel11.jpg"
-            alt="awardyeg"
-            width="1400"
-            height="80"
-            style={{   
-                objectFit: 'contain',           
+            alt="carousel11"
+            width="1800"
+            height="00"
+            style={{
+              objectFit:"contain",
             }}
           />
         </div>
@@ -148,7 +155,7 @@ export default function home() {
           />
           </div>
           <div className="w-full h-full space-y-3  grid justify-center">
-            <p className=" font-normal text-md text-slate-700 "><a className="border-b-2 border-yellow-600 font-bold" href="https://www.youtube.com/watch?v=Lc5s03bj3LI">YEG Academy</a> adalah organisasi pendidikan di Malaysia yang menawarkan bidang pembelajaran dan kerjaya selari dengan permintaaan pasaran kerjaya pada masa kini. Sehubungan dengan itu, YEG Academy bertanggungjawab untuk memahami kekuatan, nilai dan keperluan khas setiap pelajar, sambil berusaha untuk memasukkan semua ahli keluarga dalam proses perancangan pendidikan. </p>
+            <p className=" font-normal text-md text-slate-700 "><a className="border-b-2 border-yellow-600 font-bold" href="/">YEG Academy</a> adalah organisasi pendidikan di Malaysia yang menawarkan bidang pembelajaran dan kerjaya selari dengan permintaaan pasaran kerjaya pada masa kini. Sehubungan dengan itu, YEG Academy bertanggungjawab untuk memahami kekuatan, nilai dan keperluan khas setiap pelajar, sambil berusaha untuk memasukkan semua ahli keluarga dalam proses perancangan pendidikan. </p>
             <p className="text-slate-700">Demi memastikan kualiti pendidikan yang terbaik dapat diberikan kepada para pelajar dan calon, YEG Academy telah meningkatkan tahap kerjasama dengan pelbagai institusi professional seperti Innovative International College (IIC), Akademi Mutawwif Training & Consultation, MEATECH Technical Training Centre, MAHSA Universiti dan Pelita Akademi Sdn Bhd </p>
           </div>
           <div className=" flex justify-between ">
@@ -329,18 +336,24 @@ export default function home() {
         </div>
         </div>
         </card>
-        <card className=" w-full h-full flex justify-center items-center rounded-md group " style={{ backgroundImage: 'url("/mutawif.svg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+
+        {/* tukar gambar ade PU Riz event */}
+        <card className=" w-full h-full flex justify-center items-center rounded-md group " style={{ backgroundImage: 'url("/mutawif.svg")', backgroundSize: 'cover', backgroundPosition: 'center' }}> 
           <div className="flex justify-center">
-            <span className="group-hover:bg-black group-hover:rounded-md p-3 duration-1000 items-center lg:group-hover:text-2xl group-hover:text-lg group-hover:font-bold group-hover:text-white text-transparent">PENGURUSAN HAJI & UMRAH</span>
+            <span className="group-hover:bg-black group-hover:rounded-md p-3 duration-1000 items-center lg:group-hover:text-2xl group-hover:text-lg group-hover:font-bold group-hover:text-white text-transparent">PENGURUSAN HAJI & UMRAH</span> 
           </div>
           <div className="py-52"></div>
         </card>
+
+        {/* tukar gambar ade event aviation */}
         <card className=" w-full h-full flex justify-center items-center rounded-md  group" style={{ backgroundImage: 'url("/oilandgas.svg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="flex justify-center">
             <span className="group-hover:bg-black group-hover:rounded-md p-3 duration-1000 items-center lg:group-hover:text-2xl group-hover:text-lg group-hover:font-bold group-hover:text-white text-transparent">BIDANG MARITIM, MINYAK & GAS</span>
           </div>
           <div className="py-52"></div>
         </card>
+
+        {/* tukar gambar ade event dengan puan siti */}
         <card className=" w-full h-full flex justify-center items-center rounded-md  group" style={{ backgroundImage: 'url("/aviation.svg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="flex justify-center">
             <span className="group-hover:bg-black group-hover:rounded-md p-3 duration-1000 items-center lg:group-hover:text-2xl group-hover:text-lg group-hover:font-bold group-hover:text-white text-transparent">BIDANG PENERBANGAN</span>
@@ -594,7 +607,7 @@ export default function home() {
       </div>
       <div className="h-full lg:py-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center">
           
-        <a href="https://www.tiktok.com/@yegacademy/video/7311843960526245121"
+        <a href="https://www.tiktok.com/@yegacademy/video/7319391659773545730?lang=en"
         className="flex hover:scale-150 duration-300">
         <video autoplay="autoplay" 
                   loop="loop" 
@@ -602,7 +615,7 @@ export default function home() {
                   className="rounded-md  top-0 left-0 w-full h-full object-cover" 
                   width="390" 
                   height="890">
-              <source src="tiktok1.mp4" type="video/mp4"/>
+              <source src="./tiktok01.mp4" type="video/mp4"/>
           </video>
         </a>
           <a href="https://www.tiktok.com/@yegacademy/video/7314661907741428993"
@@ -613,10 +626,10 @@ export default function home() {
                   className="rounded-md  top-0 left-0 w-full h-full object-cover" 
                   width="390" 
                   height="890">
-              <source src="tiktok2.mp4" type="video/mp4"/>
+              <source src="tiktok02.mp4" type="video/mp4"/>
           </video>
           </a>
-          <a href="https://www.tiktok.com/@yegacademy/video/7288580793574640898"
+          <a href="https://www.tiktok.com/@yegacademy/video/7302099228346600705?lang=en"
           className="flex hover:scale-150 duration-500">
           <video autoplay="autoplay" 
                   loop="loop" 
@@ -624,10 +637,10 @@ export default function home() {
                   className="rounded-md top-0 left-0 w-full h-full object-cover" 
                   width="390" 
                   height="890">
-              <source src="tiktok3.mp4" type="video/mp4"/>
+              <source src="tiktok03.mp4" type="video/mp4"/>
           </video>
           </a>
-          <a href="https://www.tiktok.com/@yegacademy/video/7269969581186321666"
+          <a href="https://www.tiktok.com/@yegacademy/video/7321654342048582913?lang=en"
           className="flex hover:scale-150 duration-500">
           <video autoplay="autoplay" 
                   loop="loop" 
@@ -635,10 +648,10 @@ export default function home() {
                   className="rounded-md top-0 left-0 w-full h-full object-cover" 
                   width="390" 
                   height="890">
-              <source src="tiktok4.mp4" type="video/mp4"/>
+              <source src="tiktok04.mp4" type="video/mp4"/>
           </video>
           </a>
-          <a href="https://www.tiktok.com/@yegacademy/video/7312712948965756162"
+          <a href="https://www.tiktok.com/@yegacademy/video/7318007453159935233?lang=en"
           className="flex hover:scale-150 duration-500">
           <video autoplay="autoplay" 
                   loop="loop" 
@@ -646,10 +659,10 @@ export default function home() {
                   className="rounded-md top-0 left-0 w-full h-full object-cover" 
                   width="390" 
                   height="890">
-              <source src="tiktok5.mp4" type="video/mp4"/>
+              <source src="tiktok05.mp4" type="video/mp4"/>
           </video>
           </a>
-          <a href="https://www.tiktok.com/@yegacademy/video/7302358255861271810"
+          <a href="https://www.tiktok.com/@yegacademy/video/7326925324359306498?lang=en"
           className="flex hover:scale-150 duration-300">
           <video autoplay="autoplay" 
                   loop="loop" 
@@ -657,7 +670,7 @@ export default function home() {
                   className="rounded-md top-0 left-0 w-full h-full object-cover" 
                   width="390" 
                   height="890">
-              <source src="tiktok6.mp4" type="video/mp4"/>
+              <source src="tiktok06.mp4" type="video/mp4"/>
           </video>
           </a>
         </div>
@@ -688,22 +701,23 @@ export default function home() {
         <card2 className=" transition w-full h-full flex justify-center  items-center rounded-md hover:shadow-xl group" style={{ backgroundImage: 'url("/newss3.jpeg")', backgroundSize: 'cover', backgroundPosition: 'fit' }}>
           <div className="py-44 ">
           </div>
-          <div className="h-full grid items-end ">
+          <div className="h-full grid items-end">
             <a href="https://bebasnews.my/2023/02/03/diploma-pengurusan-haji-dan-umrah-yeg-academy-banyak-manfaat/"
             className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
             <h className="text-yellow-500 font-semibold grid ">FEBRUARY 3,2023</h>
-            <h className="text-slate-800 font-semibold ">Diploma Pengurusan Haji dan Umrah YEG Academy banyak manfaat</h>
+            <h className="text-slate-800 font-semibold ">DIPLOMA PENGURUSAN HAJI & UMRAH YEG ACADEMY BANYAK MANFAAT - BEBASNEWS</h>
             </a>
             </div>
         </card2>
-        <card3 className=" transition w-full h-full flex justify-center  items-center rounded-md hover:shadow-xl group" style={{ backgroundImage: 'url("/newss4.jpg")', backgroundSize: 'cover', backgroundPosition: 'fit' }}>
+        <card3 className=" transition w-full h-full flex justify-center  items-center rounded-md hover:shadow-xl group" style={{ backgroundImage: 'url("/newss10.jpg")', backgroundSize: 'cover', backgroundPosition: 'fit' }}>
           <div className="py-44 ">
           </div>
           <div className="h-full grid items-end ">
             <a href="https://www.youtube.com/watch?v=S9urbssojDA"
             className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
-            <h className="text-yellow-500 font-semibold grid ">AUGUST 22,2021</h>
-            <h className="text-slate-800 font-semibold ">NEW REVOLUTION: GABUNGAN TEORI DAN KEMAHIRAN
+            <h className="text-yellow-500 font-semibold grid ">MARCH 13,2023</h>
+            <h className="text-slate-800 font-semibold ">MISA, RANACO MARINE JALIN KERJASAMA LAHIR TENAGA MAHIR MISA - UTUSAN MALAYSIA
+
 </h>
             </a>
             </div>
@@ -721,25 +735,25 @@ export default function home() {
         </card4>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-4 py-3 bg-slate-700 rounded-md">
-        <card5 className=" transition w-full h-full flex justify-center  items-center rounded-md hover:shadow-xl group" style={{ backgroundImage: 'url("/newss1.jpg")', backgroundSize: 'cover', backgroundPosition: 'fit' }}>
+        <card5 className=" transition w-full h-full flex justify-center  items-center rounded-md hover:shadow-xl group" style={{ backgroundImage: 'url("/newss9.jpg")', backgroundSize: 'cover', backgroundPosition: 'fit' }}>
           <div className="py-44 ">
           </div>
           <div className="h-full grid items-end ">
-            <a href="https://www.youtube.com/watch?v=8MhV2y4Bkms"
+            <a href="https://www.kosmo.com.my/2023/12/25/peluang-kerjaya-cerah-bidang-tvet-maritim/"
             className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
-            <h className="text-yellow-500 font-semibold grid ">DECEMBER 6,2023</h>
-            <h className="text-slate-800 font-semibold ">LEPASAN SPM TAK NAK SAMBUNG BELAJAR - EPISOD 1 PODCAST YEG "BORAK KERJAYA"</h>
+            <h className="text-yellow-500 font-semibold grid ">JANUARY 8,2024</h>
+            <h className="text-slate-800 font-semibold ">PELUANG KERJAYA CERAH BIDANG TVET MARITIM - KOSMO</h>
             </a>
             </div>
         </card5>
-        <card6 className=" transition w-full h-full flex justify-center items-center rounded-md hover:shadow-xl group" style={{ backgroundImage: 'url("/newss6.jpg")', backgroundSize: 'cover', backgroundPosition: 'fit' }}>
+        <card6 className=" transition w-full h-full flex justify-center items-center rounded-md hover:shadow-xl group" style={{ backgroundImage: 'url("/newss11.jpg")', backgroundSize: 'cover', backgroundPosition: 'fit' }}>
           <div className="py-44 ">
           </div>
           <div className="h-full grid items-end ">
-            <a href="https://www.instagram.com/p/ChRHVgoL_Av/"
+            <a href="https://www.kosmo.com.my/2024/01/19/yeg-academy-sasar-3000-lepasan-spm-sertai-wbl/"
             className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
-            <h className="text-yellow-500 font-semibold grid ">AUGUST 15,2022</h>
-            <h className="text-slate-800 font-semibold ">TUN MAHATHIR MENYOKONG USAHA NAIK TARAF PENDIDIKAN - YEG ACADEMY</h>
+            <h className="text-yellow-500 font-semibold grid ">JANUARI 18,2024</h>
+            <h className="text-slate-800 font-semibold ">YEG ACADEMY SASAR 3,000 LEPASAN SPM SERTAI WBL - KOSMO</h>
             </a>
             </div>
         </card6>
@@ -747,9 +761,9 @@ export default function home() {
           <div className="py-44 ">
           </div>
           <div className="h-full grid items-end ">
-            <a href="https://www.tiktok.com/@yegacademy"
+            <a href="https://malaysiagazette.com/2023/12/05/yeg-academy-mahsa-university-jalin-kerjasama-perkasa-kerjaya-jururawat/"
             className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
-            <h className="text-yellow-500 font-semibold grid ">AUGUST 15,2022</h>
+            <h className="text-yellow-500 font-semibold grid ">AUGUST 18,2022</h>
             <h className="text-slate-800 font-semibold ">YEG ACADEMY, MAHSA UNIVERSITY JALIN KERJASAMA PERKASA KERJAYA JURURAWAT - MALAYSIAGAZETTE</h>
             </a>
             </div>
