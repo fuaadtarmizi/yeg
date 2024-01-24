@@ -108,7 +108,7 @@ function footer() {
               <a className="font-medium" href="./kursusdiploma/dtmmea">Diploma Pengurusan Pelancongan (DTM-MEA)</a>
             </div>
             <div className="grid space-y-3">
-              <span className="text-xl font-bold py-3">DHUMY-WBL</span>
+              <span className="text-xl font-bold py-3">DIPLOMA-WBL</span>
               <a className="font-medium" href="./kursusdiploma/dhumy">Diploma Pengurusan Haji & Umrah (DHUMY-WBL)</a>
               <a className="font-medium" href="./kursusdiplomawbl/dhmwbl">Diploma Pengurusan Perhotelan (DHM-WBL)</a>
               <a className="font-medium" href="./kursusdiplomawbl/dcawbl">Diploma Seni Kulinari (DCA-WBL)</a>
