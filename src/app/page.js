@@ -114,23 +114,23 @@ export default function home() {
       </div>
       <div className="w-full h-full grid  lg:grid-cols-12 gap-2 md:col-span-1 py-8 p-2 bg-slate-200">
         <div className="flex justify-center w-full h-full mx-auto col-span-12 md:col-span-6 lg:col-span-6 md:order-2">
-            {/* <video
+            <video
             controls
             autoPlay  // Add this attribute for autoplay
             className=""
           >
-            <source src="carousel15.mp4" type="video/mp4" />
-          </video> */}
+            <source src="carousel14.mp4" type="video/mp4" />
+          </video>
           
-          <Image
-            src="/carousel11.jpg"
+          {/* <Image
+            src="/carousel1.jpg"
             alt="carousel11"
             width="1800"
             height="00"
             style={{
               objectFit:"contain",
             }}
-          />
+          /> */}
         </div>
         <div className="w-auto h-full grid mx-9 lg:mx-auto md:mx-16 col-span-12 md:col-span-6 gap-6 lg:col-span-5 md:order-3  pl-4">   
           <div className="flex space-x-8 h-full justify-start">

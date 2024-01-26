@@ -40,8 +40,9 @@ export default function App() {
     const formDatab = new FormData(formEle);
 
     formDatab.append("Program", selectedItem);
-    formDatab.append("Program", selectedItem2);
     formDatab.append("Media", selectedItem1);
+    formDatab.append("State", selectedItem2);
+    
 
     fetch(
       "https://script.google.com/macros/s/AKfycbxD_nB5ZZeTl0DunwO02o4UrTTaBHgf5UX9cW2qOmNildekoStoFJihp--yTUhwow-vAA/exec",
@@ -71,34 +72,40 @@ export default function App() {
 
 
     
-  
+  // program yeg
     const toggleDropdown = () => {
       setIsOpen(!isOpen);
     };
 
+  // media
+    const toggleDropdown1 = () => {
+      setIsOpen1(!isOpen1);
+    };
+
+  //state  
+    const toggleDropdown2 = () => {
+      setIsOpen2(!isOpen2);
+    };
+
+    
+
+    // program yeg
     const handleItemClick = (item) => {
         setSelectedItem(item);
         setIsOpen(false);
       };
 
-
-      const toggleDropdown2 = () => {
-        setIsOpen2(!isOpen2);
+    // media 
+      const handleItemClick1 = (item) => {
+        setSelectedItem1(item);
+        setIsOpen1(false);
       };
-  
+    //state
       const handleItemClick2 = (item) => {
           setSelectedItem2(item);
           setIsOpen2(false);
         };
-
-      const toggleDropdown1 = () => {
-        setIsOpen1(!isOpen1);
-      };
-  
-      const handleItemClick1 = (item) => {
-          setSelectedItem1(item);
-          setIsOpen1(false);
-        };
+      
 
         
       
@@ -149,7 +156,7 @@ export default function App() {
 
           <div className="grid space-y-1">
           <h>Umur</h>
-          <input className="px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="Age" name="Age" type="text" />
+          <input className="px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="Umur" name="Age" type="text" />
           </div>
           </div>
           
