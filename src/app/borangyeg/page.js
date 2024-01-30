@@ -65,8 +65,6 @@ export default function App() {
       setAlertMessage('Form submitted successfully!');
       alert('Penghantaran Berjaya!, Pegawai kami akan menghubungi anda secepat mungkin');
 
-      
-  
   }
 
 
