@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from "next/image"
-import Navbar from "./Navbar.jsx"
-import Sidebar from "./Sidebar.jsx"
-import Footer from "./Footer"
+import Navbar from "../Navbar.jsx"
+import Sidebar from "../Sidebar.jsx"
+import Footer from "../Footer"
 
 
 function page() {
@@ -18,7 +18,7 @@ function page() {
     </div>
     </nav>
         <section1 className="">
-        <div className="lg:pt-8 px-4 lg:px-28">
+        <div className="lg:pt-8 px-4 lg:px-28"> 
             <div className="flex justify-center py-8">
         <div className="group w-3/4 h-full grid justify-center ">
           <span className="text-slate-700 font-bold text-4xl bg-gradient-to-r from-yellow-500 to-yellow-500 bg-no-repeat [background-position:0_88%] [background-size:1%_100%] motion-safe:transition-all motion-safe:duration-700 group-hover:[background-size:100%_100%] focus:[background-size:100%_100%]">

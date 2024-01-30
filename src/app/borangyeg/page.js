@@ -1,9 +1,9 @@
 "use client"
 import React, {useState} from 'react';
 import Image from 'next/image'
-import Navbar from "./Navbar.jsx"
-import Sidebar from "./Sidebar.jsx"
-import Footer from "./Footer"
+import Navbar from "../Navbar.jsx"
+import Sidebar from "../Sidebar.jsx"
+import Footer from "../Footer"
 
 
 export default function App() {
