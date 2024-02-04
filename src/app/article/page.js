@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from "next/image"
-import Navbar from "../Navbar.jsx"
-import Sidebar from "../Sidebar.jsx"
-import Footer from "../Footer"
+import Footer from "@/components/Footer.jsx"
+import Navbar from "@/components/Navbar.jsx"
+import Sidebar from "@/components/Sidebar.jsx"
 
 
 function page() {

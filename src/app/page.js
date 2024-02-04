@@ -2,9 +2,9 @@
 import React from 'react'
 import Image from "next/image"
 
-import Navbar from "./Navbar.jsx"
-import Sidebar from "./Sidebar.jsx"
-import Footer from "./Footer.jsx"
+import Footer from "@/components/Footer.jsx"
+import Navbar from "@/components/Navbar.jsx"
+import Sidebar from "@/components/Sidebar.jsx"
 
 
 export default function home() {

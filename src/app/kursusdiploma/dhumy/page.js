@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from "next/image"
-import Footer from "./Footer"
-import Navbar from "./Navbar"
-import Sidebar from "./Sidebar"
+import Footer from "@/components/Footer.jsx"
+import Navbar from "@/components/Navbar.jsx"
+import Sidebar from "@/components/Sidebar.jsx"
 
 function sphu() {
   return (
