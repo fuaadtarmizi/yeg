@@ -85,7 +85,7 @@ function career() {
                         objectFit:"contain",
                       }}
                     />
-                    <a href="https://wa.me/+60163144841" className="font-sans text-blue-500 underline px-3">https://wa.me/+60163144841</a>
+                    <a href="https://wa.me/+60163144841"  className="font-sans text-blue-500 underline px-3">https://wa.me/+60163144841</a>
                   </div>
                   <div className="flex items-center">
                   <Image
