@@ -126,7 +126,7 @@ function footer() {
             <a className="text-xl font-bold" href="../testimoni">Testimoni</a>
             <a className="text-xl font-bold" href="../career">Karier</a>
             <a className="text-xl font-bold" href="../enroll">Enroll</a>
-            <a className="text-xl font-bold" href="../enroll">PTPPD-YEG</a>
+            <a className="text-xl font-bold" href="../">PTPPD-YEG</a>
             <a className="text-xl font-bold" href="../borangyeg">Hubungi Kami</a>
             </div>
             </div>
