@@ -23,13 +23,13 @@ function footer() {
           />
           </a>
           <div className="grid p-8 lg:px-28 px-14 text-white text-xs">
-            <h className=""> E-2-2, Block E, Encorp Strand Garden Office, Jalan PJU 5/1, Kota Damansara, 47810 Petaling Jaya, Selangor </h>
+            <h className="">YEG Academy (M)</h> 
+            <h1>3-2 FLR 2, Block E, Jln PJU 5/20,</h1>
+            <h2>Kota Damansara, 47810 Petaling Jaya,</h2>
+            <h3>Selangor</h3> 
             <div className="grid py-6 ">
-            
             <h>Working hours : 8.30am-5.30pm</h>
             <h>Email: Info@youreducationguidance.my</h>
-            
-            
             <div className="grid py-2">
             <h>Management Office: +603-6144 6558</h>
             <h>Customer Service: +603-6143 5073</h>
