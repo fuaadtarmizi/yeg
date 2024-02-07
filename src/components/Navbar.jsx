@@ -151,11 +151,11 @@ function Navbar() {
                                 </button>
                         </NavigationMenuItem>
                         
-                        <NavigationMenuItem>
+                        {/* <NavigationMenuItem>
                             <button className="lg:flex hidden text-white group h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium   disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
                             <a className="" href="../enroll">Enrole</a>
                                 </button>
-                        </NavigationMenuItem>
+                        </NavigationMenuItem> */}
                         <NavigationMenuItem>
                             <button className="lg:flex hidden text-white group h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium   disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
                             <a className="" href="/">PTPD-YEG</a>

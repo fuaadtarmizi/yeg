@@ -162,8 +162,8 @@ const Navbar = () => {
               Testimony</a>
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../career">
               Carrier</a>
-              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../borangyeg">
-              Enrole</a>
+              {/* <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../borangyeg">
+              Enrole</a> */}
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="/">
               PTPD-YEG</a>
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../borangyeg">

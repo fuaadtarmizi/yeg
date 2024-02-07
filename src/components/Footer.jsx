@@ -125,7 +125,7 @@ function footer() {
             <a className="text-xl font-bold" href="../article">ARTICLE</a>
             <a className="text-xl font-bold" href="../testimoni">TESTIMONY</a>
             <a className="text-xl font-bold" href="../career">CARRIER</a>
-            <a className="text-xl font-bold" href="../enroll">ENROLE</a>
+            {/* <a className="text-xl font-bold" href="../enroll">ENROLE</a> */}
             <a className="text-xl font-bold" href="../">PTPD-YEG</a>
             <a className="text-xl font-bold" href="../borangyeg">CONTACT US</a>
             </div>
