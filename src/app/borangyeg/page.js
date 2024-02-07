@@ -1,9 +1,9 @@
 "use client"
 import React, {useState} from 'react';
 import Image from 'next/image'
-import Navbar from "../Navbar.jsx"
-import Sidebar from "../Sidebar.jsx"
-import Footer from "../Footer"
+import Footer from "@/components/Footer.jsx"
+import Navbar from "@/components/Navbar.jsx"
+import Sidebar from "@/components/Sidebar.jsx"
 
 
 export default function App() {
@@ -121,7 +121,7 @@ export default function App() {
     </div>
     </nav>
     
-    <div className="w-full"  style={{ backgroundImage: 'url("/carousel11.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div className=""  style={{ backgroundImage: 'url("/newss11.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
     <div className="py-24 hidden lg:block">j</div>
         
         <div className="p-4  lg:flex justify-center  ">     
