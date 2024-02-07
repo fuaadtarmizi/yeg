@@ -31,7 +31,7 @@ export default function home() {
         autoPlay  // Add this attribute for autoplay
         className=""
       >
-        <source src="yegintr.mp4" type="video/mp4" />
+        <source src="yegintro.mp4" type="video/mp4" />
       </video>
         </div>
       </div>
