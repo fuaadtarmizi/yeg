@@ -31,7 +31,7 @@ export default function home() {
         autoPlay  // Add this attribute for autoplay
         className=""
       >
-        <source src="yegintro.mp4" type="video/mp4" />
+        <source src="yegintr.mp4" type="video/mp4" />
       </video>
         </div>
       </div>
@@ -106,14 +106,20 @@ export default function home() {
           />
         </div>
         </div>
+
+  
+
+
     </section2>
     </div>
     <div className="hidden lg:block py-8 lg:py-10 md:[height:80px]"></div>
+    <div className="py-8 lg:py-10 md:[height:80px]"></div>
     <section3 className="">
-      <div className=" py-10 flex justify-center ">
-        <div className="lg:text-6xl text-3xl text-slate-800 font-semibold text-center"><span className="text-yellow-600">REVOLUSI KARIER ANDA </span>DENGAN PLATFORM PENDIDIKAN TERKINI</div>
+    <div className="px-8 w-full flex justify-center bg-slate-100">
+        <span className="lg:text-4xl font text-4xl text-blue-950 font-bold text-center">THE <span className="text-yellow-600">YEG ACADEMY</span> DIFFERENCE</span>
       </div>
-      <div className="w-full h-full grid  lg:grid-cols-12 gap-2 md:col-span-1 py-8 p-2 bg-slate-200">
+      <div className="w-full h-full grid  lg:grid-cols-12 gap-2 md:col-span-2 py-10 p-2 bg-slate-100">
+      
         <div className="flex justify-center w-full h-full mx-auto col-span-12 md:col-span-6 lg:col-span-6 md:order-2">
             <video
             controls
@@ -185,8 +191,8 @@ export default function home() {
     </section3>
       <div className="py-8 lg:py-10 md:[height:80px]"></div>
     <section4>
-    <div className="w-full h-full px-4 lg:px-16 grid text-slate-800 ">
-        <span className="lg:text-6xl text-2xl font-semibold py-3 text-center">KENAPA YEG ADALAH PILIHAN YANG TEPAT UNTUK ANDA?</span>
+    <div className="w-full h-full px-4 lg:px-16 grid text-blue-950 ">
+        <span className="lg:text-5xl text-4xl font-bold py-3 text-center">OUR UNIQUE QUALITIES</span>
       </div>
       <div className="hidden lg:block w-full h-full justify-center ">
         <div className="group h-full flex justify-center  ">
@@ -198,7 +204,7 @@ export default function home() {
       </div>
       </div>
       <div className="w-full h-full "></div>  
-    <div className="px-4 lg:px-16 ">
+    <div className="px-4 lg:px-16 py-8 ">
       <div className="w-full h-full bg-slate-100 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 items-center">
         <card className="group w-full h-full bg-slate-800 py-10 rounded-md">
           <div className="w-full flex justify-start px-5 transition-transform  group-hover:-translate-y-3">
@@ -383,20 +389,19 @@ export default function home() {
     <div className="hidden lg:block py-8 lg:py-10 md:[height:80px]"></div>
     <section7>
     <div className=" px-4 lg:px-28 ">
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 "> 
-      <card className="w-full h-full p-3 text-end cols-span-1 ">
-      <div className="flex justify-center ">
-        <span className="font-sans text-yellow-800 font-semibold text-center">PILIHAN KERJAYA DAN PENDIDIKAN</span>
-        </div>
-        <div h-full className="">
-        <h3 className="text-center text-6xl font-bold text-slate-800">MASA KINI</h3>
+      <div className=" "> 
+      <card className="w-full h-full p-3">
+      <div className="grid justify-start ">
+        <span className="font-sans text-yellow-800 text-base font-semibold">ACADEMICS:</span>
+        <h3 className=" text-4xl font-extrabold text-slate-800">CHOOSE YOUR PROGRAM</h3>
         </div>
         </card>  
         <card className="hidden lg:block w-full h-full lg:col-span-3 justify-center " >
-          <div className=" w-4/5 h-full flex items-center px-20 rounded-md hover:shadow-xl duration-300 border-l ">
+          {/* <div className=" w-4/5 h-full flex items-center px-20 rounded-md hover:shadow-xl duration-300 border-l ">
             <span className="text-slate-700 text-md leading-relaxed ">
-            YEG Academy percaya bahawa melalui pendidikan yang mantap, setiap individu memiliki keupayaan untuk mencapai potensi penuh mereka. Teruslah mengikuti cita-cita anda dan jangan ragu untuk menghubungi kami untuk pengetahuan dan panduan yang lebih lanjut. Bersama-sama, mari kita membina masyarakat yang terdidik, terinspirasi, dan berjaya. Terima kasih kerana memilih YEG Academy sebagai rakan pendidikan anda.</span>
-          </div>
+            YEG Academy percaya bahawa melalui pendidikan yang mantap, setiap individu memiliki keupayaan untuk mencapai potensi penuh mereka. Teruslah mengikuti cita-cita anda dan jangan ragu untuk menghubungi kami untuk pengetahuan dan panduan yang lebih lanjut. Bersama-sama, mari kita membina masyarakat yang terdidik, terinspirasi, dan berjaya. Terima kasih kerana memilih YEG Academy sebagai rakan pendidikan anda.
+            </span>
+          </div> */}
         </card>
       </div>
     </div>
@@ -404,8 +409,8 @@ export default function home() {
    
     <section8>
     <div className="lg:px-28 px-4">
-      <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"> 
-      <card1 className=" w-full h-full p-8 space-y-8 hover:bg-slate-800 duration-500 border rounded-md  hover:shadow-xl group">
+      <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"> 
+      <card1 className=" w-full h-full p-8 space-y-8 hover:bg-slate-800 duration-200 border-r-2 hover:shadow-xl group">
         <div className="" >
         <Image
           id="image1"
@@ -438,7 +443,8 @@ export default function home() {
         </a>
         </div>
         </card1>
-        <card2 className="w-full h-full p-8 space-y-8 hover:bg-slate-800 duration-500 border hover:shadow-xl rounded-md group">
+        
+        <card2 className="w-full h-full p-8 space-y-8 hover:bg-slate-800 duration-200 border-r-2 hover:shadow-xl group">
         <div className=""> 
         <Image
           id="image1"
@@ -471,7 +477,7 @@ export default function home() {
         </div>
         <div className=" "></div>     
         </card2>
-        <card3 className="w-full h-full p-8 space-y-8 hover:bg-slate-800 border duration-500 hover:shadow-xl rounded-md group">
+        <card3 className="w-full h-full p-8 space-y-8 hover:bg-slate-800 duration-200 hover:shadow-xl group">
         <div>
         <Image
           id="image1"
@@ -598,8 +604,8 @@ export default function home() {
         <div className="bg-yellow-600 w-1/2 text-transparent rounded-r-md">a</div>
         <div className="w-full h-full grid grid-cols-1 lg:grid-cols-3 lg:py-10">
         <div className="grid py-4 ">
-      <h className="text-base font-semibold text-yellow-800 ">KENALI YEG ACADEMY:</h>
-      <h className="text-4xl font-extrabold text-white ">TEROKAI PROGRAM KAMI DI SOSIAL MEDIA</h>
+      <h className="text-base font-semibold text-yellow-800 ">OUR ENTERTAINMENT:</h>
+      <h className="text-4xl font-extrabold text-white ">EXPLORE OUR PROGRAMME ON MEDIA SOCIAL</h>
       
       </div>
       <div className="hidden lg:col-span-2 items-center px-10">
@@ -685,7 +691,7 @@ export default function home() {
       <div className="w-full h-full px-4 lg:px-28 ">
         <div className="w-full h-full grid justify-center space-y-2 py-4">
         <h className="font-semibold text-lg text-center text-yellow-600">WHAT'S ON</h>
-          <h className="font-bold font-sans text-6xl text-slate-700">YEG BERITA & ACARA</h>
+          <h className="font-bold font-sans text-6xl text-slate-700">YEG NEWS & EVENTS</h>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-yellow-600 rounded-md">
         <card1 className="w-full h-full flex justify-center items-center rounded-md hover:shadow-xl  group " style={{ backgroundImage: 'url("/newss2.jpg")', backgroundSize: 'cover', backgroundPosition: 'fit' }}>
@@ -789,7 +795,10 @@ export default function home() {
       <Footer/>
     </div>
     
+    
+    
     </main>
+    
   )
 }
 

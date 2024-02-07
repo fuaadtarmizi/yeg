@@ -84,7 +84,7 @@ function footer() {
          
           </div>
           <div className="pt-6">
-          <h>Developed by Cempaka.net</h>
+          <h>Developed by Cempaka.io</h>
           </div>
             
             </div>
@@ -93,14 +93,14 @@ function footer() {
           <div className=" col-span-2 p-8">
             <div className=" text-white text-xs grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="grid space-y-3">
-              <span className="text-xl font-bold py-3">PROGRAM KERJAYA</span>
+              <span className="text-xl font-bold py-3">CARRIER PROGRAMME</span>
               <a className="font-medium" href="../kursuskerjaya/sphu">Sijil Program Profesional Haji & Umrah (SPHU)</a>
               <a className="font-medium" href="../kursuskerjaya/acm">Aviation Career Malaysia (ACM)</a>
               <a className="font-medium" href="../kursuskerjaya/misa">Malaysia Industry Skills Academy (MISA)</a>
               
             </div>
             <div className="grid space-y-3">
-              <span className="text-xl font-bold py-3">PROGRAM DIPLOMA</span>
+              <span className="text-xl font-bold py-3">DIPLOMA PROGRAMME</span>
               <a className="font-medium" href="../kursusdiploma/dhumy">Diploma Pengurusan Haji & Umrah (DHUMY)</a>
               <a className="font-medium" href="../kursusdiploma/dle">Diploma Penguatkuasa Undang-Undang (DLE)</a>
               <a className="font-medium" href="../kursusdiploma/dnur">Diploma kejururawatan (DNUR)</a>
@@ -122,12 +122,12 @@ function footer() {
               <a className="font-medium text-transparent" href="../kursusdiploma/dtmmea">Diploma Pengurusan Pelancongan (DTM-MEA)</a>
             </div>
             <div className="grid space-y-3 py-3">
-            <a className="text-xl font-bold" href="../article">Artikel</a>
-            <a className="text-xl font-bold" href="../testimoni">Testimoni</a>
-            <a className="text-xl font-bold" href="../career">Karier</a>
-            <a className="text-xl font-bold" href="../enroll">Enroll</a>
-            <a className="text-xl font-bold" href="../">PTPPD-YEG</a>
-            <a className="text-xl font-bold" href="../borangyeg">Hubungi Kami</a>
+            <a className="text-xl font-bold" href="../article">ARTICLE</a>
+            <a className="text-xl font-bold" href="../testimoni">TESTIMONY</a>
+            <a className="text-xl font-bold" href="../career">CARRIER</a>
+            <a className="text-xl font-bold" href="../enroll">ENROLE</a>
+            <a className="text-xl font-bold" href="../">PTPD-YEG</a>
+            <a className="text-xl font-bold" href="../borangyeg">CONTACT US</a>
             </div>
             </div>
           </div>
