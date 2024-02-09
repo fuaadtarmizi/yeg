@@ -6,14 +6,14 @@ function contactus() {
   return (
     <main>
     
-    <div className="hidden lg:block w-full">
+    <div className="hidden lg:block md:block w-full">
     <div className=" h-full flex w-full lg:grid-cols-2 justify-center">
 
       <div className="px-4 flex justify-end ">
           <Image
             className=" "
             src="/contactuslogo3.svg"
-            alt="malaysia"
+            alt="contactuslogo3"
             width="200"
             height="200"
             style={{
@@ -25,7 +25,7 @@ function contactus() {
     <div className="grid border-l-2 border-black px-6">
     <div className=" grid justify-start ">
         <h1 className="font-normal text-center text-2xl ">
-          pc there, welcome to
+          Hello there, welcome to
         </h1>
         <h2 className="font-normal text-center text-2xl">
            YEG Academy
@@ -35,7 +35,7 @@ function contactus() {
         </h3> 
         </div>
 
-        <div className=" hidden lg:block justify-start py-4 space-y-4 ">
+        <div className=" hidden lg:block md:block justify-start py-4 space-y-4 ">
         <div className=" grid justify-start">
       <div className="flex space-x-8">
             <div className="">
@@ -82,12 +82,12 @@ function contactus() {
 
 
 
-<div className=" lg:hidden h-full w-full grid-cols-1 space-y-4">
+<div className=" lg:hidden md:hidden h-full w-full grid-cols-1 space-y-4">
 <div className="px-4 flex justify-center ">
     <Image
       className=" "
       src="/contactuslogo3.svg"
-      alt="malaysia"
+      alt="contactuslogo3"
       width="200"
       height="200"
       style={{
@@ -99,7 +99,7 @@ function contactus() {
 <div className="grid px-6">
 <div className="grid border-t-2 border-black justify-start py-2">
   <h1 className="font-normal text-center text-2xl ">
-    home there, welcome to
+    Hello there, welcome to
   </h1>
   <h2 className="font-normal text-center text-2xl">
      YEG Academy
