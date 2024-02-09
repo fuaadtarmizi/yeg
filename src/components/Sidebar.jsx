@@ -165,7 +165,7 @@ const Navbar = () => {
               {/* <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../borangyeg">
               Enrole</a> */}
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="/">
-              PTPD-YEG</a>
+              PDPT-YEG</a>
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../borangyeg">
               Contact Us</a>
         </div>
