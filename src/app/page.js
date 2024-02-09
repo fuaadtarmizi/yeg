@@ -33,7 +33,7 @@ export default function home() {
         autoPlay  // Add this attribute for autoplay
         className=""
       >
-        <source src="yegintro11.mp4" type="video/mp4" />
+        <source src="yegintro.mp4" type="video/mp4" />
       </video>
         </div>
       </div>
@@ -128,7 +128,7 @@ export default function home() {
             autoPlay  // Add this attribute for autoplay
             className=""
           >
-            <source src="carousel1411.mp4" type="video/mp4" />
+            <source src="carousel14.mp4" type="video/mp4" />
           </video>
           
           {/* <Image
