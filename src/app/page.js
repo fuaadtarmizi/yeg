@@ -33,7 +33,7 @@ export default function home() {
         autoPlay  // Add this attribute for autoplay
         className=""
       >
-        <source src="yegintro.mp4" type="video/mp4" />
+        <source src="yegintro11.mp4" type="video/mp4" />
       </video>
         </div>
       </div>
@@ -128,7 +128,7 @@ export default function home() {
             autoPlay  // Add this attribute for autoplay
             className=""
           >
-            <source src="carousel14.mp4" type="video/mp4" />
+            <source src="carousel1411.mp4" type="video/mp4" />
           </video>
           
           {/* <Image
@@ -192,12 +192,10 @@ export default function home() {
       </div>
     </section3>
       <div className="py-8 lg:py-10 md:[height:80px]"></div>
-
-
+    
+      <div className="py-8 lg:py-10 md:[height:80px]"></div>
       <Contactus/>
-
-
-
+      <div className="py-8 lg:py-10 md:[height:80px]"></div>
 
       <div className="py-8 lg:py-10 md:[height:80px]"></div>
     <section4>
@@ -333,6 +331,7 @@ export default function home() {
       </div>
     </section4>
     <div className="py-8 lg:py-10 md:[height:80px]"></div>
+    <div className="py-8 lg:py-10 md:[height:80px]"></div>
     <section5>
     <div className=" px-4 lg:px-16 ">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 "> 
@@ -397,6 +396,7 @@ export default function home() {
       </div>
     </section6>
     <div className="hidden lg:block py-8 lg:py-10 md:[height:80px]"></div>
+    <div className="py-8 lg:py-10 md:[height:80px]"></div>
     <section7>
     <div className=" px-4 lg:px-28 ">
       <div className=" "> 
