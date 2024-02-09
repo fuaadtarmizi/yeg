@@ -4,6 +4,8 @@ import Image from "next/image"
 import Footer from "@/components/Footer.jsx"
 import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
+import Contactus from "@/components/Contactus.jsx"
+
 
 
 
@@ -189,6 +191,14 @@ export default function home() {
         </div>  
       </div>
     </section3>
+      <div className="py-8 lg:py-10 md:[height:80px]"></div>
+
+
+      <Contactus/>
+
+
+
+
       <div className="py-8 lg:py-10 md:[height:80px]"></div>
     <section4>
     <div className="w-full h-full px-4 lg:px-16 grid text-blue-950 ">
@@ -720,7 +730,7 @@ export default function home() {
           <div className="py-44 ">
           </div>
           <div className="h-full grid items-end ">
-            <a href="https://www.youtube.com/watch?v=S9urbssojDA"
+            <a href="https://www.utusan.com.my/nasional/2023/03/misa-renaco-marine-jalin-kerjasama-lahir-tenaga-mahir/"
             className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
             <h className="text-yellow-500 font-semibold grid ">MARCH 13,2023</h>
             <h className="text-slate-800 font-semibold ">MISA, RANACO MARINE JALIN KERJASAMA LAHIR TENAGA MAHIR MISA - UTUSAN MALAYSIA
