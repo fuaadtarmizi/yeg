@@ -13,13 +13,9 @@ export default function home() {
 
   return (
     <>
-    {/* <Head>
+    <Head>
     <title>YEG Academy</title>
-      <meta name="YEG ACADEMY merupakan sebuah platform  yang menawarkan pelbagai bidang pendidikan & kerjaya yang mempunyai permintaan di pasaran kerja. Setiap program yang ditawarkan di YEG ACADEMY menggunakan modul pembelajaran yang berasaskan industri. YEG ACADEMY menjalinkan usahasama rapat bersama rakan IPT dalam merevolusikan modul diploma sedia ada supaya selaras dengan kehendak industri."
-       content="YEG Academy | Platform Education"/>
-      <link rel="icon" href="/favicon.ico" />
-
-    </Head> */}
+    </Head>
 
 
 
