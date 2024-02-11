@@ -15,7 +15,7 @@ export default function home() {
     <>
 
   <main>
-  <title>YEG Academy - home</title>
+  <title>YEG Academy | Platform Education</title>
 
       <nav className="hidden lg:block sticky top-0 ">
         <Navbar/>
