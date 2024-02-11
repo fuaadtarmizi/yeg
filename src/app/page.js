@@ -13,13 +13,10 @@ export default function home() {
 
   return (
     <>
-    <Head>
-    <title>YEG Academy</title>
-    </Head>
-
-
 
   <main>
+  <title>YEG Academy - home</title>
+
       <nav className="hidden lg:block sticky top-0 ">
         <Navbar/>
     </nav>
