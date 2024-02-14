@@ -13,7 +13,6 @@ export default function home() {
 
   return (
     <>
-
   <main>
   <title>YEG Academy | Education Platform</title>
 
@@ -25,6 +24,26 @@ export default function home() {
         <Sidebar/>
     </div>
     </nav>
+
+    <div className="fixed bottom-0 w-full flex justify-end p-4">
+      <div className=" hover:slide-in-from-left-1 flex items-center right-2  rounded-full bg-yellow-500">
+        <h className=" p-3 flex items-center rounded-full font-extrabold">Get in Touch</h>
+        <a href="/borangyeg"
+      className="">
+      <Image 
+          className=""
+          src="/fixedcontactus.svg"
+          alt="fixedcontactus"
+          width="60"
+          height="80"
+          style={{
+            objectFit:"contain",
+          }}
+        />
+      </a>
+        </div>
+    </div>
+
     <section1 className="w-full">
       <div className="max-w-full lg:px-3 flex justify-center bg-black">
         <div className="">
@@ -33,7 +52,7 @@ export default function home() {
         autoPlay  // Add this attribute for autoplay
         className=""
       >
-        <source src="yegintro.mp4" type="video/mp4" />
+        <source src="yegintroll.mp4" type="video/mp4" />
       </video>
         </div>
       </div>
@@ -128,7 +147,7 @@ export default function home() {
             autoPlay  // Add this attribute for autoplay
             className=""
           >
-            <source src="carousel14.mp4" type="video/mp4" />
+            <source src="carousel14ll.mp4" type="video/mp4" />
           </video>
           
           {/* <Image

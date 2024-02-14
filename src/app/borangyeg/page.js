@@ -33,8 +33,6 @@ export default function App() {
     }
   
 
-    
-
 
     const formEle = document.querySelector("form");
     const formDatab = new FormData(formEle);
@@ -120,52 +118,67 @@ export default function App() {
         <Sidebar/>
     </div>
     </nav>
+
     
-    <div className=""  style={{ backgroundImage: 'url("/newss11.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-    <div className="py-24 hidden lg:block">j</div>
+    <div className="bg-black"  >
+    <div className=" flex justify-center">
+      <Image
+          className="w-full"
+          src="/bersamatun.svg"
+          alt="aviation"
+          width="1500"
+          height="80"
+          style={{
+            objectFit:"contain",
+          }}
+        />
+      </div>
         
         <div className="p-4  lg:flex justify-center  ">     
       <div className="lg:w-1/3 ">
-      <form className=" backdrop-blur-lg w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
-      <div className="py-3 text-white">
-             <h>BORANG YEG</h>
+      <form className="bg-white w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
+      <div className="py-6 text-black text-3xl font-bold">
+             <h>BORANG PERTANYAAN</h>
          </div>
          
-            <div className=" grid space-y-4">
-      <div className="grid rounded-md space-y-1 ">
-        <h className="text-white">Nama Pelajar</h>
-      <input className="px-3 py-2 hover:shadow-md duration-500 rounded-md " placeholder="Nama Pelajar" name="Name" type="text" />
-      </div>
-          <div className="grid space-y-1">
-          <h>Nombor Telefon Pelajar </h>
-          <input className="px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="Nombor Telefon Pelajar " name="NumberPhone" type="text" />
+          <div className="flex justify-between gap-8">
+          <div className="w-full grid rounded-md space-y-1 ">
+              <h className="text-black">Full Name</h>
+            <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md " placeholder="" name="Name" type="text" />
+          </div>
+          <div className="w-full grid space-y-1">
+              <h>Phone Number</h>
+            <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="NumberPhone" type="text" />
           </div>
           </div>
 
-          <div className="grid space-y-4">
 
-      <div className="grid rounded-md space-y-1 ">
-        <h>Email</h>
-      <input className="px-3 py-2 hover:shadow-md duration-500 rounded-md " 
-        placeholder="Email" 
-        name="Email" 
-        type="text" />
-      </div>
 
-          <div className="grid space-y-1">
-          <h>Umur</h>
-          <input className="px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="Umur" name="Age" type="text" />
+          <div className="flex justify-between gap-8">
+          <div className="w-full grid rounded-md space-y-1 ">
+            <h>Email</h>
+          <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md " 
+            placeholder="" 
+            name="Email" 
+            type="text" />
           </div>
+            <div className="w-full grid space-y-1 ">
+              <h>Age</h>
+              <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="Age" type="text" />
+            </div>
           </div>
           
           <div>
-          <div className="relative inline-block text-left">
-            <div>Pilihan Program Diploma, Kerjaya atau Work Based Learning (WBL)</div>
+          <div className="relative  inline-block text-left w-full py-8">
+            <div className="pb-2">
+            <h>Select your Programs Diploma, Programs Career, or Work-Based Learning (WBL)</h>
+            </div>
+            
       <button
         onClick={toggleDropdown} 
         name="Program"
         type="button"
-        className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
+        className=" bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
       >
         {selectedItem ? selectedItem : "Select Programs"}
       </button>
@@ -263,8 +276,6 @@ export default function App() {
           </p>
           </div>
 
-
-
           <p
             className="px-4 text-md py-2 cursor-pointer bg-gray-400 font-bold"
           >
@@ -328,16 +339,19 @@ export default function App() {
     </div>     
     </div>
 
-
-          <div className="grid space-y-1">
-          <h>Nama Penjaga</h>
-          <input className="px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="Nama Penjaga" name="ParentName" type="text" />
+    <div className="flex justify-between gap-8 ">
+    <div className="w-full grid space-y-1">
+        <h>Parents Name</h>
+        <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentName" type="text" />
+      </div>
+          <div className="w-full grid space-y-1 ">
+            <h>Phone Number Parents</h>
+            <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentNumber"  type="text" />
           </div>
+    </div>
 
-          <div className="grid space-y-1 text-white">
-          <h>Nombor Penjaga</h>
-          <input className="text-black px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="Nombor Penjaga" name="ParentNumber"  type="text" />
-          </div>
+
+          
 
 
           <div className="grid  text-left">
@@ -498,8 +512,8 @@ export default function App() {
       )}
     </div>
 
-    <div className="pt-4">
-    <button className="px-6 py-2 border rounded-md bg-yellow-500 hover:bg-yellow-600 hover:shadow-md duration-300" name="Submit" type="submit" >Submit</button>
+    <div className="py-6 pt-10 flex justify-center">
+    <button className="hover:animate-bounce px-6 py-2 border rounded-md bg-yellow-500 hover:bg-yellow-600 hover:shadow-md duration-300" name="Submit" type="submit" >Submit</button>
     </div>
   
         </form>

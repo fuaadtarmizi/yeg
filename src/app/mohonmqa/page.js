@@ -1,16 +1,17 @@
 import React from 'react'
 import Image from "next/image"
+import Formwbl from "@/components/Formwbl"
 
 
 function page() {
   return (
-    <miain>
-        <div clas>
+    <main>
+        <div >
         <Image
-        className="hidden lg:block"
+        className="hidden lg:block w-full"
             src="/wbl1.png"
             alt="wbl1"
-            width="1600"
+            width="100"
             height="200"
             style={{
               objectFit: "contain",
@@ -27,10 +28,138 @@ function page() {
             }}
           />
         </div>
-        <div>
-            <div></div>
-        </div>
-    </miain>
+        <section2>
+            <div className="bg-slate-700 p-3 flex justify-center py-8">
+              <h className="text-white text-center lg:text-5xl text-3xl font-extrabold">DERMASISWA <span className="text-yellow-600">RM10 JUTA</span> BAGI MEMBANTU <span  className="text-yellow-600">3000</span> PELAJAR</h>
+            </div>
+        </section2>
+        <div className="hidden lg:block py-8 lg:py-10 md:[height:80px]"></div>
+        <section3 className="grid grid-cols-5 gap-4 p-3">
+          <div className="flex justify-center items-center ">
+          <Image
+            className=""
+            src="/logohaji.svg"
+            alt="logohaji"
+            width="350"
+            height="200"
+            style={{
+              objectFit: "contain",
+            }}
+          /> 
+          </div>
+          <div className="flex justify-center items-center">
+          <Image
+            className=""
+            src="/logoacm.svg"
+            alt="logoacm"
+            width="350"
+            height="200"
+            style={{
+              objectFit: "contain",
+            }}
+          />
+          </div>
+          <div className="flex justify-center items-center">
+          <Image
+            className=""
+            src="/logomhmep.svg"
+            alt="logomhmep"
+            width="350"
+            height="200"
+            style={{
+              objectFit: "contain",
+            }}
+          />  
+          </div>
+          <div className="flex justify-center items-center">
+          <Image
+            className=""
+            src="/logoppu.svg"
+            alt="logoppu"
+            width="350"
+            height="200"
+            style={{
+              objectFit: "contain",
+            }}
+          />
+          </div>
+          <div className="flex justify-center items-center">
+          <Image
+            className=""
+            src="/logomahstech.svg"
+            alt="logomahstech"
+            width="350"
+            height="200"
+            style={{
+              objectFit: "contain",
+            }}
+          />
+          </div>
+        </section3>
+        <div className="hidden lg:block py-8 lg:py-10 md:[height:80px]"></div>
+
+        <section4 className="">
+          <div>
+          <Image
+            className="w-full"
+            src="/wbl2.png"
+            alt="wbl2"
+            width="350"
+            height="200"
+            style={{
+              objectFit: "contain",
+            }}
+          />
+          </div>
+        </section4>
+        <section5> 
+          <div className="py-8 w-full h-full flex justify-center items-center  lg:p-10" style={{ backgroundImage: 'url("/wblbackground.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="grid p-10">
+          <div>
+          <Image
+            className=""
+            src="/wbl3.svg"
+            alt="wbl3"
+            width="1500"
+            height="200"
+            style={{
+              objectFit: "contain",
+            }}
+          />
+          </div>
+          <div>
+          <Image
+            className="lg:pt-8 pt-4"
+            src="/wbl3(1).svg"
+            alt="wbl3"
+            width="1500"
+            height="200"
+            style={{
+              objectFit: "contain",
+            }}
+          />
+          </div>
+          </div>
+          </div>
+        </section5>
+        <div className="hidden lg:block py-8 lg:py-10 md:[height:80px]"></div>
+        <section6>
+          <Formwbl/>
+        </section6>
+        <section7>
+        <Image
+            className="w-full"
+            src="/wblfooter.png"
+            alt="wblfooter"
+            width="1500"
+            height="200"
+            style={{
+              objectFit: "contain",
+            }}
+          />
+        </section7>
+
+    </main>
   )
 }
 
