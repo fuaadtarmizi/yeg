@@ -33,14 +33,15 @@ function page() {
               <h className="text-white text-center lg:text-5xl text-3xl font-extrabold">DERMASISWA <span className="text-yellow-600">RM10 JUTA</span> BAGI MEMBANTU <span  className="text-yellow-600">3000</span> PELAJAR</h>
             </div>
         </section2>
-        <div className="hidden lg:block py-8 lg:py-10 md:[height:80px]"></div>
+        <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
+
         <section3 className="grid grid-cols-5 gap-4 p-3">
           <div className="flex justify-center items-center ">
           <Image
             className=""
             src="/logohaji.svg"
             alt="logohaji"
-            width="350"
+            width="400"
             height="200"
             style={{
               objectFit: "contain",
@@ -52,7 +53,7 @@ function page() {
             className=""
             src="/logoacm.svg"
             alt="logoacm"
-            width="350"
+            width="400"
             height="200"
             style={{
               objectFit: "contain",
@@ -64,7 +65,7 @@ function page() {
             className=""
             src="/logomhmep.svg"
             alt="logomhmep"
-            width="350"
+            width="400"
             height="200"
             style={{
               objectFit: "contain",
@@ -76,7 +77,7 @@ function page() {
             className=""
             src="/logoppu.svg"
             alt="logoppu"
-            width="350"
+            width="400"
             height="200"
             style={{
               objectFit: "contain",
@@ -88,7 +89,7 @@ function page() {
             className=""
             src="/logomahstech.svg"
             alt="logomahstech"
-            width="350"
+            width="400"
             height="200"
             style={{
               objectFit: "contain",
@@ -96,7 +97,7 @@ function page() {
           />
           </div>
         </section3>
-        <div className="hidden lg:block py-8 lg:py-10 md:[height:80px]"></div>
+        <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
 
         <section4 className="">
           <div>
@@ -112,6 +113,8 @@ function page() {
           />
           </div>
         </section4>
+        <div className="bg-slate-700 py-2 md:py-3 lg:py-86">.</div>
+
         <section5> 
           <div className="py-8 w-full h-full flex justify-center items-center  lg:p-10" style={{ backgroundImage: 'url("/wblbackground.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className="grid p-10">
@@ -142,10 +145,14 @@ function page() {
           </div>
           </div>
         </section5>
-        <div className="hidden lg:block py-8 lg:py-10 md:[height:80px]"></div>
+        <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
+        <div className="animate-pulse duration-800  bg-slate-600 flex justify-center p-2 py-6">
+              <h className="text-3xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
+            </div>
         <section6>
           <Formwbl/>
         </section6>
+        <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
         <section7>
         <Image
             className="w-full"
