@@ -21,7 +21,7 @@ function page() {
             className="lg:hidden"
             src="/wbl1(phone).png"
             alt="wbl1(phone)"
-            width="500"
+            width="1000"
             height="200"
             style={{
               objectFit: "contain",

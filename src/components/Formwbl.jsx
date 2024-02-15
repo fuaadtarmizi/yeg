@@ -45,7 +45,7 @@ export default function App() {
     
 
     fetch(
-      "https://docs.google.com/spreadsheets/d/1nWR7XYHGrZksyiw8uO4U-y5w15hJfRS1qr-waSxBwLg/edit?pli=1#gid=0",
+      "https://script.google.com/macros/s/AKfycbwMOzqcz9VUo09dgmVkQMsBrdMqb5d7CxRiE-DdXO70oA5CeFeTAwPrRgyQ5fb3YOI/exec",
       {
         method: "POST",
         body: formDatab
@@ -118,8 +118,8 @@ export default function App() {
         <div className="p-4  lg:flex justify-center  ">     
       <div className="lg:w-1/3 ">
       <form className=" backdrop-blur-lg w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
-      <div className="py-3 text-white">
-             <h>BORANG YEG</h>
+      <div className="py-6 text-black text-3xl font-bold">
+             <h>Course Enquiry</h>
          </div>
          
             <div className=" grid space-y-4">

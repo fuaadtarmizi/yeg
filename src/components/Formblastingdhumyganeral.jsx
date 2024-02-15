@@ -1,5 +1,6 @@
 "use client"
 import React, {useState} from 'react';
+import {useEffect} from 'react';
 import Image from 'next/image'
 import Footer from "@/components/Footer.jsx"
 import Navbar from "@/components/Navbar.jsx"
@@ -10,15 +11,17 @@ export default function App() {
     const [isOpen, setIsOpen] = useState(false);
     const [isOpen1, setIsOpen1] = useState(false);
     const [isOpen2, setIsOpen2] = useState(false);
+
     const [selectedItem, setSelectedItem] = useState(null);
     const [selectedItem1, setSelectedItem1] = useState(null);
     const [selectedItem2, setSelectedItem2] = useState(null);
 
 
+
+
+
     const [alertMessage, setAlertMessage] = useState('');
     const [emailError, setEmailError] = useState('');
-
-
 
   function Submit(e) {
 
@@ -34,6 +37,7 @@ export default function App() {
   
 
 
+
     const formEle = document.querySelector("form");
     const formDatab = new FormData(formEle);
 
@@ -43,7 +47,7 @@ export default function App() {
     
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbxD_nB5ZZeTl0DunwO02o4UrTTaBHgf5UX9cW2qOmNildekoStoFJihp--yTUhwow-vAA/exec",
+      "https://script.google.com/macros/s/AKfycbzu4GrLuFC8-7olNMWNQ9lXjMK5u0BoqkkdQYN4QPofSppkLDQOY5eiHy_7ckdjCT6LOQ/exec",
       {
         method: "POST",
         body: formDatab
@@ -83,7 +87,8 @@ export default function App() {
       setIsOpen2(!isOpen2);
     };
 
-    
+
+ 
 
     // program yeg
     const handleItemClick = (item) => {
@@ -96,89 +101,61 @@ export default function App() {
         setSelectedItem1(item);
         setIsOpen1(false);
       };
+    
     //state
       const handleItemClick2 = (item) => {
-          setSelectedItem2(item);
-          setIsOpen2(false);
-        };
-      
-
-        
-      
+        setSelectedItem2(item);
+        setIsOpen2(false);
+      };
     
+
 
   return (
     <main>
-      <title>YEG Academy - Borang YEG</title>
-        <nav className="hidden lg:block sticky top-0">
-        <Navbar/>
-    </nav>
-      <nav>
-    <div className="lg:hidden">
-        <Sidebar/>
-    </div>
-    </nav>
-
-    
-    <div className="bg-black"  >
-    <div className=" flex justify-center">
-      <Image
-          className="w-full"
-          src="/wbl2.png"
-          alt="wbl2"
-          width="1500"
-          height="80"
-          style={{
-            objectFit:"contain",
-          }}
-        />
-      </div>
+    <div className="bg-white">
+    <div className=" hidden lg:block">j</div>
         
         <div className="p-4  lg:flex justify-center  ">     
-      <div className="w-full ">
-      <form className="bg-white w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
+      <div className="lg:w-1/3 ">
+      <form className=" backdrop-blur-lg w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
       <div className="py-6 text-black text-3xl font-bold">
              <h>Course Enquiry</h>
          </div>
          
-          <div className="grid md:flex lg:flex justify-between gap-8">
-          <div className="w-full grid rounded-md space-y-1 ">
-              <h className="text-black">Full Name</h>
-            <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md " placeholder="" name="Name" type="text" />
-          </div>
-          <div className="w-full grid space-y-1">
-              <h>Phone Number</h>
-            <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="NumberPhone" type="text" />
+            <div className=" grid space-y-4">
+      <div className="grid rounded-md space-y-1 ">
+        <h className="">Nama Pelajar</h>
+      <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md " placeholder="" name="Name" type="text" />
+      </div>
+          <div className="grid space-y-1">
+          <h>Nombor Telefon Pelajar </h>
+          <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="NumberPhone" type="text" />
           </div>
           </div>
 
+          <div className="grid space-y-4">
 
+      <div className="grid rounded-md space-y-1 ">
+        <h>Email</h>
+      <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md " 
+        placeholder="" 
+        name="Email" 
+        type="text" />
+      </div>
 
-          <div className="grid md:flex lg:flex justify-between gap-8">
-          <div className="w-full grid rounded-md space-y-1 ">
-            <h>Email</h>
-          <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md " 
-            placeholder="" 
-            name="Email" 
-            type="text" />
+          <div className="grid space-y-1">
+          <h>Umur</h>
+          <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="Age" type="text" />
           </div>
-            <div className="w-full grid space-y-1 ">
-              <h>Age</h>
-              <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="Age" type="text" />
-            </div>
           </div>
           
-          <div>
-          <div className="relative  inline-block text-left w-full py-8">
-            <div className="pb-2">
-            <h>Select your Programs Diploma, Programs Career, or Work-Based Learning (WBL)</h>
-            </div>
-            
+          <div className="relative inline-block text-left">
+            <div>Pilihan Program Diploma, Kerjaya atau Work Based Learning (WBL)</div>
       <button
         onClick={toggleDropdown} 
         name="Program"
         type="button"
-        className=" bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
+        className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
       >
         {selectedItem ? selectedItem : "Select Programs"}
       </button>
@@ -337,22 +314,18 @@ export default function App() {
         </div>
       )}
     </div>     
-    </div>
-
-    <div className="grid md:flex lg:flex justify-between gap-8 ">
-    <div className="w-full grid space-y-1">
-        <h>Parents Name</h>
-        <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentName" type="text" />
-      </div>
-          <div className="w-full grid space-y-1 ">
-            <h>Parents Phone Number </h>
-            <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentNumber"  type="text" />
+          <div className="grid space-y-1">
+          <h>Nama Penjaga</h>
+          <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentName" type="text" />
           </div>
-    </div> 
 
+          <div className="grid space-y-1">
+          <h>Nombor Penjaga</h>
+          <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentNumber"  type="text" />
+          </div>
 
           <div className="grid  text-left">
-        <p className="py-1 ">Negeri</p>
+        <p className="py-1 text-white">Negeri</p>
       <button
         onClick={toggleDropdown2} 
         name="Negeri"
@@ -364,7 +337,6 @@ export default function App() {
 
       {isOpen2 && (
         <div className="w-full right-0 mt-2  origin-top-right bg-white border border-gray-200 divide-y  rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
-          <p></p>
  
           <div className=" text-sm bg-yellow-500">
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
@@ -454,64 +426,8 @@ export default function App() {
 
 
 
-
-          <div className=" inline-block text-left">
-        <p className="py-1 text-white">Where get this info:-</p>
-      <button
-        onClick={toggleDropdown1} 
-        name="Media"
-        type="button"
-        className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full px-8 py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
-      >
-        {selectedItem1 ? selectedItem1 : "Select Media"}
-      </button>
-
-      {isOpen1 && (
-        <div className="w-full right-0 mt-2  origin-top-right bg-white border border-gray-200 divide-y  rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
- 
-          <div className=" text-sm bg-yellow-500">
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick1("Website YEG Academy")}
-          >
-            Website YEG Academy
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick1("Tiktok")}
-          >
-            Tiktok
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick1("Instagram")}
-          >
-            Instagram
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick1("Facebook")}
-          >
-            Facebook
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick1("Event")}
-          >
-            Event
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick1("Youtube")}
-          >
-            Youtube
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick1("News")}
-          >
-            News
-          </p>
-          </div>     
-        </div>
-      )}
-    </div>
-
-    <div className="py-6 pt-10 flex justify-center">
-    <button className="hover:animate-bounce px-6 py-2 border rounded-md bg-yellow-500 hover:bg-yellow-600 hover:shadow-md duration-300" name="Submit" type="submit" >Submit</button>
+    <div className="pt-4">
+    <button className="px-6 py-2 border rounded-md bg-yellow-500 hover:bg-yellow-600 hover:shadow-md duration-300" name="Submit" type="submit" >Submit</button>
     </div>
   
         </form>
@@ -531,9 +447,7 @@ export default function App() {
     </div> 
     </div>
     
-    <div>
-      <Footer/>
-    </div>
+   
     </main>
   );
 }

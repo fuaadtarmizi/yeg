@@ -10,8 +10,12 @@ import Sidebar from "@/components/Sidebar.jsx"
 export default function App() {
     const [isOpen, setIsOpen] = useState(false);
     const [isOpen1, setIsOpen1] = useState(false);
+    const [isOpen2, setIsOpen2] = useState(false);
+
     const [selectedItem, setSelectedItem] = useState(null);
     const [selectedItem1, setSelectedItem1] = useState(null);
+    const [selectedItem2, setSelectedItem2] = useState(null);
+
 
 
 
@@ -38,10 +42,12 @@ export default function App() {
     const formDatab = new FormData(formEle);
 
     formDatab.append("Program", selectedItem);
-    formDatab.append("Media", selectedItem1);    
+    formDatab.append("Media", selectedItem1);
+    formDatab.append("State", selectedItem2);
+    
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbwEzJNW1BNQuxXxVHIU5nDWsICRrdgVwbIXNdV5vljHbuODG4pOMB4T2BP_KlNpdNuGDQ/exec",
+      "https://script.google.com/macros/s/AKfycbww-RqkNBR6KNDdTG8vkBnKr_ubuqwFQmpHpmBVFEU1tGHCNVqYNBrYg44HBEimqKfM/exec",
       {
         method: "POST",
         body: formDatab
@@ -75,6 +81,10 @@ export default function App() {
     const toggleDropdown1 = () => {
       setIsOpen1(!isOpen1);
     };
+  //state  
+  const toggleDropdown2 = () => {
+    setIsOpen2(!isOpen2);
+  };
 
  
 
@@ -89,6 +99,12 @@ export default function App() {
         setSelectedItem1(item);
         setIsOpen1(false);
       };
+    //state
+    const handleItemClick2 = (item) => {
+      setSelectedItem2(item);
+      setIsOpen2(false);
+    };
+    
     
 
         
@@ -99,13 +115,13 @@ export default function App() {
     <main>
         
     <div className="bg-white">
-    <div className="py-24 hidden lg:block">j</div>
+    <div className=" hidden lg:block"></div>
         
         <div className="p-4  lg:flex justify-center  ">     
       <div className="lg:w-1/3 ">
       <form className=" backdrop-blur-lg w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
-      <div className="py-3 ">
-             <h>BORANG PERTANYAAN </h>
+      <div className="py-6 text-black text-3xl font-bold">
+             <h>Course Enquiry</h>
          </div>
          
             <div className=" grid space-y-4">
@@ -311,6 +327,110 @@ export default function App() {
           <h>Nombor Penjaga</h>
           <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentNumber"  type="text" />
           </div>
+
+
+          <div className="grid  text-left">
+        <p className="py-1 text-white">Negeri</p>
+      <button
+        onClick={toggleDropdown2} 
+        name="Negeri"
+        type="button"
+        className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full px-8 py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
+      >
+        {selectedItem2 ? selectedItem2 : "Select State"}
+      </button>
+
+      {isOpen2 && (
+        <div className="w-full right-0 mt-2  origin-top-right bg-white border border-gray-200 divide-y  rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
+ 
+          <div className=" text-sm bg-yellow-500">
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Johor")}
+          >
+            Johor
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Kedah")}
+          >
+            Kedah
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Kelantan")}
+          >
+            Kelantan
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Kuala Lumpur")}
+          >
+            Kuala Lumpur
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Labuan")}
+          >
+            Labuan
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Melaka")}
+          >
+            Melaka
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Negeri Sembilan")}
+          >
+            Negeri Sembilan
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Pahang")}
+          >
+            Pahang
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Perak")}
+          >
+            Perak
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Perlis")}
+          >
+            Perlis
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Pulau Pinang")}
+          >
+            Pulau Pinang
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Putrajaya")}
+          >
+            Putrajaya
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Sabah")}
+          >
+            Sabah
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Serawak")}
+          >
+            Serawak
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Selangor")}
+          >
+            Selangor
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Terengganu")}
+          >
+            Terengganu
+          </p>
+          </div>     
+        </div>
+      )}
+    </div>      
+
+
+
 
 
 
