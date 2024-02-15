@@ -78,6 +78,20 @@ function page() {
         />
       </div>
       <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
+      <div className="bg-white flex justify-center ">
+      <Image
+          className=""
+          src="/kataalumniaviation.svg"
+          alt="kataalumniaviation"
+          width="300"
+          height="80"
+          style={{
+            objectFit:"contain",
+          }}
+        />
+      </div>
+
+
 
 
 
@@ -222,7 +236,7 @@ function page() {
                 </card4>
             </div>
             <div className="animate-pulse duration-800  bg-red-600 flex justify-center p-2 py-6">
-              <h className="text-3xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
+              <h className="text-2xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
             </div>
             <div>
               <Formblastingaviationganeral/>
