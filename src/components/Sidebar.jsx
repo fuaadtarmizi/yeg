@@ -80,7 +80,7 @@ const Navbar = () => {
           <button 
           onClick={toggleNavbar1}
           className="block text-white py-2 px-4 hover:bg-gray-700">
-            Carrier Programme
+            Career Program
           </button>
 
           {isOpen1 && (
@@ -108,7 +108,7 @@ const Navbar = () => {
           <button 
             onClick={toggleNavbar6}
             className="block text-white py-2 px-4 hover:bg-gray-700" href="#about">
-              Course Diploma
+             Diploma Courses 
             </button>
             {isOpen6 && (
         <div className="lg:hidden mt-4 bg-yellow-700">
@@ -134,7 +134,7 @@ const Navbar = () => {
 <button 
             onClick={toggleNavbar2}
             className="block text-white py-2 px-4 hover:bg-gray-700" href="#about">
-              Course Diploma - WBL
+              WBL Diploma Courses  
             </button>
             {isOpen2 && (
         <div className="lg:hidden mt-4 bg-yellow-700">
@@ -161,12 +161,12 @@ const Navbar = () => {
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../testimoni">
               Testimony</a>
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../career">
-              Carrier</a>
+              Job Vacancy</a>
               {/* <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../borangyeg">
               Enrole</a> */}
               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="/">
               PDPT-YEG</a>
-              <a className="block text-white py-2 px-4 hover:bg-gray-700" href="../borangyeg">
+              <a className="rounded-sm bg-yellow-600 hover:bg-yellow-500 duration-300 block text-white py-2 px-4 " href="../borangyeg">
               Contact Us</a>
         </div>
       )}         

@@ -44,6 +44,21 @@ export default function home() {
         </div>
     </div>
 
+
+
+    {/* <div className="fixed bottom-0 right-0 p-4 hidden md:block"> 
+      <div className="group flex items-center space-x-2 rounded-full bg-yellow-500">
+        <h3 className="p-3 font-extrabold">Get in Touch</h3>
+        <a href="/borangyeg">
+          <img src="/fixedcontactus.svg" alt="fixedcontactus" width="60" height="80" style={{ objectFit: 'contain' }} />
+        </a>
+      </div>
+    </div> */}
+
+
+
+
+
     <section1 className="w-full">
       <div className="max-w-full lg:px-3 flex justify-center bg-black">
         <div className="">

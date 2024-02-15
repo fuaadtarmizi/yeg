@@ -42,7 +42,7 @@ function Navbar() {
 
 
                     <NavigationMenuItem>
-                            <NavigationMenuTrigger className="">Carrier Programme</NavigationMenuTrigger>
+                            <NavigationMenuTrigger className="">Career Program</NavigationMenuTrigger>
                             <NavigationMenuContent>
                                 <div className="bg-yellow-600 grid gap-3 md:w-[400px] lg:w-[500px] text-white">
                             <NavigationMenuLink >
@@ -64,7 +64,7 @@ function Navbar() {
 
 
                         <NavigationMenuItem>
-                            <NavigationMenuTrigger className="">Diploma Course</NavigationMenuTrigger>
+                            <NavigationMenuTrigger className="">Diploma Courses</NavigationMenuTrigger>
                             <NavigationMenuContent>
                                 <div className="bg-yellow-600 grid gap-3 md:w-[400px] lg:w-[600px] text-white">
                             <NavigationMenuLink >
@@ -99,7 +99,7 @@ function Navbar() {
                             </NavigationMenuContent>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <NavigationMenuTrigger className=""> Diploma Course- WBL</NavigationMenuTrigger>
+                            <NavigationMenuTrigger className="">WBL Diploma Courses</NavigationMenuTrigger>
                             
                             <NavigationMenuContent>
                                 <div className="bg-yellow-600 grid gap-3 md:w-[400px] lg:w-[700px] text-white">
@@ -147,7 +147,7 @@ function Navbar() {
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <button className="lg:flex hidden text-white group h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium   disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
-                            <a className="" href="../career">Carrier</a>
+                            <a className="" href="../career">Job Vacancy</a>
                                 </button>
                         </NavigationMenuItem>
                         
