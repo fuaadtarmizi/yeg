@@ -5,6 +5,8 @@ import Footer from "@/components/Footer.jsx"
 import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
 import Contactus from "@/components/Contactus.jsx"
+import Head from 'next/head';
+
 
 
 
@@ -13,8 +15,12 @@ export default function home() {
 
   return (
     <>
+    <Head>
+        <title>YEG Academy | Career & Education Platform</title>
+        <meta name="yeg sambung belajar" content="YEG ACADEMY adalah akronim kepada Your Education Guidance yang menyediakan khidmat konsultasi untuk kerjaya dan pendidikan terbaik pada masa kini. Kini, YEG Academy telah berkembang menjadi salah satu platform rujukan pendidikan terkini dan terbesar di Malaysia dengan menawarkan pelbagai bidang sambung belajar dengan penekanan modul pembelajaran berasaskan industri. Oleh itu, YEG Academy menjalinkan usahasama rapat bersama rakan IPT dalam merevolusikan modul diploma sedia ada supaya selaras dengan kehendak industri bagi mencapai 5 kayu ukur utama dalam memastikan graduan memenuhi kriteria seperti kelayakan, pengalaman, pendapatan, pekerjaan dan kebanggaan." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
   <main>
-  <title>YEG Academy | Career & Education Platform</title>
 
       <nav className="hidden lg:block sticky top-0 ">
         <Navbar/>
