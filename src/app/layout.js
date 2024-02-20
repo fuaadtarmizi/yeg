@@ -16,7 +16,6 @@ export default function RootLayout({ children }) {
   return (
 
     <html lang="en">
-      <head>
       <Head>
           {/* Title */}
           <title>{metadata.title}</title>
@@ -25,7 +24,6 @@ export default function RootLayout({ children }) {
           <meta name="yeg" content="yeg, yeg academy, yeg academy reviews, yeg academy swasta atau kerajaan, yeg academy iktiraf mqa, yeg academy courses, yeg sambung belajar, yeg company, yuran yeg academy"/>
           {/* Favicon */}
           <link rel="icon" href={metadata.rel} />
-        </Head>
 
         {/* Google Analytics script */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-0BWVHPJF8V"></script>
@@ -40,7 +38,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         ></script>
-      </head>
+      </Head>
 
 
       <body className={inter.className}>{children}

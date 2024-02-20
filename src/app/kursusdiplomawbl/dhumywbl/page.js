@@ -3,6 +3,7 @@ import Image from "next/image"
 import Footer from "@/components/Footer.jsx"
 import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
+import Contactus from "@/components/Contactus"
 
 function dhumywbl() {
   return (
@@ -62,11 +63,11 @@ function dhumywbl() {
           </div>
         </div>
       </section1>
-      <div className="flex justify-center">
-      <a href="../borangyeg"
-      className=" border bg-slate-800 text-base font-semibold rounded-xl p-2 px-4 hover:shadow-xl text-white shadow-sm duration-300">MOHON SEKARANG</a>
-      </div>
+
       <div className="py-8 lg:py-10 md:[height:80px]"></div>
+      <Contactus/>
+      <div className="py-8 lg:py-10 md:[height:80px]"></div>
+
       <section2>
         <div className="hidden lg:grid-cols-3 md:grid grid-cols-3 gap-6 px-6">
           <card1 className="bg-slate-200 p-4">
