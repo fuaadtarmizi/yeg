@@ -124,7 +124,7 @@ function footer() {
             <div className="grid space-y-3 py-3">
             <a className="text-xl font-bold" href="../article">ARTICLE</a>
             <a className="text-xl font-bold" href="../testimoni">TESTIMONY</a>
-            <a className="text-xl font-bold" href="../career">CARRIER</a>
+            <a className="text-xl font-bold" href="../career">JOB VACANCY</a>
             {/* <a className="text-xl font-bold" href="../enroll">ENROLE</a> */}
             <a className="text-xl font-bold" href="../">PDPT-YEG</a>
             <a className="text-xl font-bold" href="../borangyeg">CONTACT US</a>

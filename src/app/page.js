@@ -709,7 +709,7 @@ export default function home() {
                   className="rounded-md top-0 left-0 w-full h-full object-cover" 
                   width="390" 
                   height="890">
-              <source src="tiktok04.mp4" type="video/mp4"/>
+              <source src="tiktok04.mp4" type="video/mp4"/> 
           </video>
           </a>
           <a href="https://www.tiktok.com/@yegacademy/video/7318007453159935233?lang=en"
