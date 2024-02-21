@@ -9,10 +9,7 @@ import Contactus from "@/components/Contactus.jsx"
 
 
 
-
-
 export default function home() {
-
   return (
     <>
     {/* <Head>
@@ -23,7 +20,6 @@ export default function home() {
       </Head> */}
       
   <main>
-
       <nav className="hidden lg:block sticky top-0 ">
         <Navbar/>
     </nav>
@@ -52,8 +48,6 @@ export default function home() {
         </div>
     </div>
 
-
-
     {/* <div className="fixed bottom-0 right-0 p-4 hidden md:block"> 
       <div className="group flex items-center space-x-2 rounded-full bg-yellow-500">
         <h3 className="p-3 font-extrabold">Get in Touch</h3>
@@ -62,9 +56,6 @@ export default function home() {
         </a>
       </div>
     </div> */}
-
-
-
 
 
     <section1 className="w-full">
@@ -710,7 +701,7 @@ export default function home() {
               <source src="tiktok03.mp4" type="video/mp4"/>
           </video>
           </a>
-          <a href="https://www.tiktok.com/@yegacademy/video/7321654342048582913?lang=en"
+          <a href="https://www.tiktok.com/@yegacademy/video/7327569127793593602?is_from_webapp=1&sender_device=pc&web_id=7329685069341328898"
           className="flex hover:scale-150 duration-500">
           <video autoplay="autoplay" 
                   loop="loop" 

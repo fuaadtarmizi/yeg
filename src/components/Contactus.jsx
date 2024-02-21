@@ -71,7 +71,7 @@ function contactus() {
                 />
             </div>
             <a href="../borangyeg" className="flex items-center justify-center px-4 w-full border rounded-full">
-              <h className="text-lg">Book an apoitment now</h>
+              <h className="text-lg">Book an appoitment now</h>
             </a>
           </div>
         </div> 
