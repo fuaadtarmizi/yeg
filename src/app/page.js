@@ -5,19 +5,17 @@ import Footer from "@/components/Footer.jsx"
 import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
 import Contactus from "@/components/Contactus.jsx"
-// import Head from 'next/head';
+import Head from 'next/head';
+
 
 
 
 export default function home() {
   return (
     <>
-    {/* <Head>
-        <title>YEG Academy | Career & Education Platform</title>
-        <meta name="" content="YEG ACADEMY adalah akronim kepada Your Education Guidance yang menyediakan khidmat konsultasi untuk kerjaya dan pendidikan terbaik pada masa kini. Kini, YEG Academy telah berkembang menjadi salah satu platform rujukan pendidikan terkini dan terbesar di Malaysia dengan menawarkan pelbagai bidang sambung belajar dengan penekanan modul pembelajaran berasaskan industri. Oleh itu, YEG Academy menjalinkan usahasama rapat bersama rakan IPT dalam merevolusikan modul diploma sedia ada supaya selaras dengan kehendak industri bagi mencapai 5 kayu ukur utama dalam memastikan graduan memenuhi kriteria seperti kelayakan, pengalaman, pendapatan, pekerjaan dan kebanggaan." />
-        <meta name="yeg" content="yeg, yeg academy, yeg academy reviews, yeg academy swasta atau kerajaan, yeg academy iktiraf mqa, yeg academy courses, yeg sambung belajar, yeg company, yuran yeg academy"/>
-        <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
-      </Head> */}
+    <Head>
+    <script async defer crossOrigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="your_nonce_here"></script>
+    </Head>
       
   <main>
       <nav className="hidden lg:block sticky top-0 ">
@@ -141,14 +139,11 @@ export default function home() {
           />
         </div>
         </div>
-
-  
-
-
     </section2>
     </div>
     <div className="hidden lg:block py-8 lg:py-10 md:[height:80px]"></div>
     <div className="py-8 lg:py-10 md:[height:80px]"></div>
+
     <section3 className="">
     <div className="px-8 w-full flex justify-center bg-slate-100">
         <span className="lg:text-4xl font text-4xl text-blue-950 font-bold text-center">THE <span className="text-yellow-600">YEG ACADEMY</span> DIFFERENCE</span>
@@ -224,11 +219,56 @@ export default function home() {
         </div>  
       </div>
     </section3>
-      <div className="py-8 lg:py-10 md:[height:80px]"></div>
+
+
+    
     
       <div className="py-8 lg:py-10 md:[height:80px]"></div>
       <Contactus/>
       <div className="py-8 lg:py-10 md:[height:80px]"></div>
+
+
+      <section3 className="">
+    <div className="px-8 w-full flex justify-center bg-slate-100">
+        <span className="lg:text-4xl font text-4xl text-blue-950 font-bold text-center">THE <span className="text-yellow-600">YEG ACADEMY</span> DIFFERENCE</span>
+      </div>
+
+
+      <div className="w-full h-full grid  lg:grid-cols-12 gap-2 md:col-span-2 py-10 p-2 bg-slate-100">
+      
+        <div className="flex justify-center w-full h-full mx-auto col-span-12 md:col-span-6 lg:col-span-6 md:order-2">
+        <div className="fb-video" autoPlay>
+          <iframe
+            src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmhitv3%2Fvideos%2F2148203505527208%2F&show_text=false&width=560&t=2990"
+            width="560"
+            height="314"
+            style={{ border: 'none', overflow: 'hidden' }} // Convert style to an object
+            scrolling="no"
+            frameBorder="0"
+            allowFullScreen={true} // Use boolean value for allowFullScreen
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          >
+          </iframe>
+      </div>
+        </div>
+        <div className="w-auto h-full grid mx-9 lg:mx-auto md:mx-16 col-span-12 md:col-span-6 gap-6 lg:col-span-5 md:order-3  pl-4">
+            <iframe 
+            width="560" 
+            height="314" 
+            src="https://www.youtube.com/embed/irQWgbNtPtk" 
+            title="[FULL] Nasi Lemak Kopi O (2024) | 1 Feb - Aspirasi: Dakwah Korporat" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+            </iframe>   
+          
+        
+           
+        </div>  
+      </div>
+    </section3>
+
+
 
       <div className="py-8 lg:py-10 md:[height:80px]"></div>
     <section4>
