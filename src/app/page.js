@@ -53,7 +53,7 @@ export default function home() {
           <img src="/fixedcontactus.svg" alt="fixedcontactus" width="60" height="80" style={{ objectFit: 'contain' }} />
         </a>
       </div>
-    </div> */}
+    </div> */} 
 
 
     <section1 className="w-full">
