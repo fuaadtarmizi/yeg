@@ -240,8 +240,8 @@ export default function home() {
         <div className="fb-video" autoPlay>
           <iframe
             src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmhitv3%2Fvideos%2F2148203505527208%2F&show_text=false&width=560&t=2990"
-            width="560"
-            height="314"
+            width="290"
+            height="200"
             style={{ border: 'none', overflow: 'hidden' }} // Convert style to an object
             scrolling="no"
             frameBorder="0"
@@ -253,8 +253,8 @@ export default function home() {
         </div>
         <div className="w-auto h-full grid mx-9 lg:mx-auto md:mx-16 col-span-12 md:col-span-6 gap-6 lg:col-span-5 md:order-3  pl-4">
             <iframe 
-            width="560" 
-            height="314" 
+            width="290" 
+            height="200" 
             src="https://www.youtube.com/embed/irQWgbNtPtk" 
             title="[FULL] Nasi Lemak Kopi O (2024) | 1 Feb - Aspirasi: Dakwah Korporat" 
             frameborder="0" 
