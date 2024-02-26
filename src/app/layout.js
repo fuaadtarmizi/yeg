@@ -17,13 +17,11 @@ export default function RootLayout({ children }) {
 
     <html lang="en">
       <Head>
-          {/* Title */}
+          <meta charset="UTF-8"/>
           <title>{metadata.title}</title>
-          {/* Description */}
           <meta name="yeg academy" content={metadata.description} />
           <meta name="yeg" content="yeg, yeg academy, yeg academy reviews, yeg academy swasta atau kerajaan, yeg academy iktiraf mqa, yeg academy courses, yeg sambung belajar, yeg company, yuran yeg academy"/>
-          {/* Favicon */}
-          <link rel="icon" href={metadata.rel} />
+          <link rel="icon" href="./favicon.ico" sizes="16x16" type="image/png" />
 
         {/* Google Analytics script */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-0BWVHPJF8V"></script>
