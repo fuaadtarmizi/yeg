@@ -19,10 +19,17 @@ export default function RootLayout({ children }) {
       <Head>
           <meta charset="UTF-8"/>
           <title>{metadata.title}</title>
-          <meta name="yeg academy" content={metadata.description} />
-          <meta name="yeg" content="yeg, yeg academy, yeg academy reviews, yeg academy swasta atau kerajaan, yeg academy iktiraf mqa, yeg academy courses, yeg sambung belajar, yeg company, yuran yeg academy"/>
+          <meta name="description" content={metadata.description} />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta property="og:title" content={metadata.title} />
+          <meta property="og:description" content={metadata.description} />
+          <meta property="og:image" content="URL_TO_IMAGE" />
+          <meta name="twitter:title" content={metadata.title} />
+          <meta name="twitter:description" content={metadata.description} />
+          <meta name="twitter:image" content="URL_TO_IMAGE" />
           <link rel="icon" href="./favicon.ico" sizes="16x16" type="image/png" />
 
+        
         {/* Google Analytics script */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-0BWVHPJF8V"></script>
         <script

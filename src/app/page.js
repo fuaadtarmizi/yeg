@@ -12,7 +12,8 @@ import Head from 'next/head';
 
 export default function home() {
   return (
-    <>
+
+    <html lang="en">
     <Head>
     <script async defer crossOrigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="your_nonce_here"></script>
     </Head>
@@ -669,17 +670,14 @@ export default function home() {
     <section11>
       <div className=" bg-slate-800 w-full h-full px-4 lg:px-28"> 
         <div className="bg-yellow-600 w-1/2 text-transparent rounded-r-md">a</div>
-        <div className="w-full h-full grid grid-cols-1 lg:grid-cols-3 lg:py-10">
-        <div className="grid py-4 ">
+        <div className="w-full h-full grid grid-cols-1 lg:grid-cols-3 lg:py-6">
+        <div className="grid py-3 ">
       <h className="text-base font-semibold text-yellow-800 ">OUR ENTERTAINMENT:</h>
       <h className="text-4xl font-extrabold text-white ">EXPLORE OUR PROGRAMME ON MEDIA SOCIAL</h>
+      </div>
       
       </div>
-      <div className="hidden lg:col-span-2 items-center px-10">
-        <span className="text-white"> Kami peduli! Kebajikan anda adalah keutamaan kami. YEG Academy akan membantu anda memupuk kegembiraan, pertumbuhan dan tujuan dalam persekitaran yang selamat dan sihat.</span>
-      </div>
-      </div>
-      <div className="h-full lg:py-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center">
+      <div className="h-full lg:py-7 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center">
           
         <a href="https://www.tiktok.com/@yegacademy/video/7319391659773545730?lang=en"
         className="flex hover:scale-150 duration-300">
@@ -865,7 +863,7 @@ export default function home() {
     
     
     </main>
-    </>
+    </html>
     
   )
 }
