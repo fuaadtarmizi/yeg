@@ -666,7 +666,6 @@ export default function home() {
       <Contactus/>
       <div className="py-8 lg:py-10 md:[height:80px]"></div>
       <div className="py-8 lg:py-10 md:[height:80px]"></div>
-
     <section11>
       <div className=" bg-slate-800 w-full h-full px-4 lg:px-28"> 
         <div className="bg-yellow-600 w-1/2 text-transparent rounded-r-md">a</div>

@@ -23,8 +23,8 @@ function footer() {
           />
           </a>
           <div className="grid p-8 lg:px-28 px-14 text-white text-xs">
-            <h className="">YEG Academy (M)</h> 
-            <h1>3-2 FLR 2, Block E, Jln PJU 5/20,</h1>
+            <h className="">YEG Academy (M) Sdn Bhd</h> 
+            <h1>2-2 FLR 2, Block E, Jln PJU 5/20,</h1>
             <h2>Kota Damansara, 47810 Petaling Jaya,</h2>
             <h3>Selangor</h3> 
             <div className="grid py-6 ">
