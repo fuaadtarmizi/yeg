@@ -9,7 +9,7 @@ export const metadata = {
   title: 'YEG Academy | Career & Education Platform',
   description: 'YEG ACADEMY adalah akronim kepada Your Education Guidance yang menyediakan khidmat konsultasi untuk kerjaya dan pendidikan terbaik pada masa kini. Kini, YEG Academy telah berkembang menjadi salah satu platform rujukan pendidikan terkini dan terbesar di Malaysia dengan menawarkan pelbagai bidang sambung belajar dengan penekanan modul pembelajaran berasaskan industri. Oleh itu, YEG Academy menjalinkan usahasama rapat bersama rakan IPT dalam merevolusikan modul diploma sedia ada supaya selaras dengan kehendak industri bagi mencapai 5 kayu ukur utama dalam memastikan graduan memenuhi kriteria seperti kelayakan, pengalaman, pendapatan, pekerjaan dan kebanggaan.',
   rel:"icon",
-  href:"./favicon.ico",
+  href:"./yeglogowebsite.svg",
 }
 
 export default function RootLayout({ children }) {
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
           <meta name="twitter:title" content={metadata.title} />
           <meta name="twitter:description" content={metadata.description} />
           <meta name="twitter:image" content="URL_TO_IMAGE" />
-          <link rel="icon" href="./favicon.ico" sizes="16x16" type="image/png" />
+          <link rel="icon" href="./yeglogowebsite.svg" sizes="16x16" type="image/svg+xml" />
 
         
         {/* Google Analytics script */}
