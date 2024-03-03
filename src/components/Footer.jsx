@@ -84,7 +84,7 @@ function footer() {
          
           </div>
           <div className="pt-6">
-          <h>Developed by FetalCode Labs</h>
+          <h>Developed by PetalCode Labs</h>
           </div>
             
             </div>
