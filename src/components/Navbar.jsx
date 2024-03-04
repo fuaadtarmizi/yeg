@@ -133,8 +133,19 @@ function Navbar() {
                 <a className="" href="../career">Job Vacancy</a></MenubarTrigger>
             </MenubarMenu>
             <MenubarMenu>
-                <MenubarTrigger className="hover:bg-slate-600">
-                <a className="" href="/">PDPT-YEG</a></MenubarTrigger>
+                <MenubarTrigger className="hover:bg-slate-600"><a className="" href="/">PDPT-YEG</a></MenubarTrigger>
+                <MenubarContent>
+                    <MenubarItem className="grid">
+                        <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                        <a className="text-md font-light ml-2" href="/">Haj Umrah Examination</a></div>
+                        <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                        <a className="text-md font-light ml-2" href="/">Health Science Examination</a></div>
+                        <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                        <a className="text-md font-light ml-2" href="/">Aviation Examination</a></div>
+                        <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                        <a className="text-md font-light ml-2" href="/">Penguatkuasa Undang-Undang Examination</a></div>
+                    </MenubarItem>
+                </MenubarContent>
             </MenubarMenu>
             <MenubarMenu>
                 <MenubarTrigger className="bg-yellow-500 hover:bg-yellow-400">

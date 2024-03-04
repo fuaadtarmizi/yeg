@@ -29,7 +29,7 @@ function footer() {
             <h3>Selangor</h3> 
             <div className="grid py-6 ">
             <h>Working hours : 8.30am-5.30pm</h>
-            <h>Email: Info@youreducationguidance.my</h>
+            <h>Email: info@youreducationguidance.my</h>
             <div className="grid py-2">
             <h>Management Office: +603-6144 6558</h>
             <h>Customer Service: +603-6143 5073</h>

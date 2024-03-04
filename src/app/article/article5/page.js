@@ -8,35 +8,26 @@ import Sidebar from "@/components/Sidebar.jsx"
 export default function article() {
   return (
     <main>
-        <title>YEG Academy - article 5</title>
+    <title>YEG Academy - article 5</title>
         <nav className="hidden lg:block sticky top-0 ">
-        <Navbar/>
-    </nav>
-      <nav>
-    <div className="lg:hidden">
-        <Sidebar/>
-    </div>
-    </nav>
+            <Navbar/>
+        <div className="lg:hidden">
+            <Sidebar/>
+        </div>
+        </nav>
+    <body>
         
     <section1 className="hidden">
         <div className="grid grid-cols-3 gap-6">
             <div className=" col-span-2 w-full ">
-                <div className="flex justify-center py-4">
-                <input type="Search" 
-                    placeholder="Search Article"
-                    className="w-1/2 h-8 rounded-md border px-4">
-                </input>
-                </div>
                 <div className=" w-full flex justify-center pl-8 ">
                     <div className="w-full h-full ">
                     <video
-                    height={400}
+                        height={400}
                         controls
-                        aautoPlay  // Add this attribute for autoplay
+                        autoPlay  // Add this attribute for autoplay
                         className="rounded-md"
-                        
-                    >
-                        <source src="yegintro.mp4" type="video/mp4" />
+                    ><source src="yegintro.mp4" type="video/mp4" />
                     </video>
                 </div>
                 </div>
@@ -44,7 +35,6 @@ export default function article() {
                     <div className=" w-3/4 py-3">
                     <span className="text-2xl font-bold">podcast episod-1 | YEG Academy</span>
                     </div>
-                    
                 </div>
             </div>
             <div className="col-span-1 ">
@@ -338,6 +328,7 @@ tambahan, dan terlibat dalam sesi pengajaran dan pembelajaran bersama pakar-paka
       </div>
         </div>
     </section3>
+    </body>
     <div>
       <Footer/>
     </div>

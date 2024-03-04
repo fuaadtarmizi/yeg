@@ -19,13 +19,14 @@ export default function home() {
     </Head>
       
   <main>
-      <nav className="hidden lg:block sticky top-0 ">
+      <nav className="sticky hidden lg:block top-0 z-10">
         <Navbar/>
-    </nav>
-      <nav>
-    <div className="lg:hidden">
+        <div className="lg:hidden">
         <Sidebar/>
     </div>
+    </nav>
+      <nav>
+    
     </nav>
 
     <div className="fixed bottom-0 w-full flex justify-end p-4">
@@ -46,15 +47,7 @@ export default function home() {
       </a>
         </div>
     </div>
-
-    {/* <div className="fixed bottom-0 right-0 p-4 hidden md:block"> 
-      <div className="group flex items-center space-x-2 rounded-full bg-yellow-500">
-        <h3 className="p-3 font-extrabold">Get in Touch</h3>
-        <a href="/borangyeg">
-          <img src="/fixedcontactus.svg" alt="fixedcontactus" width="60" height="80" style={{ objectFit: 'contain' }} />
-        </a>
-      </div>
-    </div> */} 
+ 
 
 
     <section1 className="w-full">
