@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Formblastingdhumy2 from '@/components/Formblastingdhumy2'
+import Formblastingdhumyganeral from '@/components/Formblastingdhumy2'
 
 
 function page() {
@@ -240,7 +240,7 @@ function page() {
               <h className="text-2xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
             </div>
             <div>
-              <Formblastingdhumy2/>
+              <Formblastingdhumyganeral/>
             </div>
             <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
       <div className="bg-white flex justify-center ">

@@ -26,8 +26,7 @@ function Navbar() {
                 width="140"
                 style={{
                 objectFit: "contain",
-                }}
-            /></a></div>
+                }}/></a></div>
             <div className="bg-slate-800 flex w-full justify-end gap-8">
         <MenubarMenu>
                 <MenubarTrigger className="hover:bg-slate-700">Career Programe</MenubarTrigger>
