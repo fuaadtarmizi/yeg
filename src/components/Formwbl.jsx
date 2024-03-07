@@ -112,8 +112,8 @@ export default function App() {
   return (
     <main>
         
-    <div className=""  style={{ backgroundImage: 'url("/newss11.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-    <div className="py-24 hidden lg:block">j</div>
+    <div className=""  style={{ backgroundImage: 'url("")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div className=" hidden lg:block">j</div>
         
         <div className="p-4  lg:flex justify-center  ">     
       <div className="lg:w-1/3 ">
@@ -124,12 +124,12 @@ export default function App() {
          
             <div className=" grid space-y-4">
       <div className="grid rounded-md space-y-1 ">
-        <h className="text-white">Nama Pelajar</h>
-      <input className="px-3 py-2 hover:shadow-md duration-500 rounded-md " placeholder="Nama Pelajar" name="Name" type="text" />
+        <h className="">Nama Pelajar</h>
+      <input className="px-3 bg-slate-200 py-2 hover:shadow-md duration-500 rounded-md " placeholder="" name="Name" type="text" />
       </div>
           <div className="grid space-y-1">
           <h>Nombor Telefon Pelajar </h>
-          <input className="px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="Nombor Telefon Pelajar " name="NumberPhone" type="text" />
+          <input className="bg-slate-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="NumberPhone" type="text" />
           </div>
           </div>
 
@@ -137,15 +137,15 @@ export default function App() {
 
       <div className="grid rounded-md space-y-1 ">
         <h>Email</h>
-      <input className="px-3 py-2 hover:shadow-md duration-500 rounded-md " 
-        placeholder="Email" 
+      <input className="bg-slate-200 px-3 py-2 hover:shadow-md duration-500 rounded-md " 
+        placeholder="" 
         name="Email" 
         type="text" />
       </div>
 
           <div className="grid space-y-1">
           <h>Umur</h>
-          <input className="px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="Umur" name="Age" type="text" />
+          <input className="bg-slate-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="Age" type="text" />
           </div>
           </div>
           
@@ -253,65 +253,6 @@ export default function App() {
             SIJIL KEMAHIRAN MALAYSIA OPERASI PENYELENGGARAAN PESAWAT (AMT)
           </p>
           </div>
-
-          <p
-            className="px-4 text-md py-2 cursor-pointer bg-gray-400 font-bold"
-          >
-            Kerjaya
-          </p>
-          <div className="pl-6 text-sm bg-gray-400">
-          <p className=" py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("SPHU - SIJIL PROFESIONAL PENGURUSAN HAJI & UMRAH")}
-          >
-            SPHU - SIJIL PROFESIONAL PENGURUSAN HAJI & UMRAH 
-          </p>
-          
-          <p className=" py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("AVIATION - CABIN CREW")}
-          >
-            AVIATION - CABIN CREW
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("AVIATION - CUSTOMER SERVICE")}
-          >
-            AVIATION - CUSTOMER SERVICE
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("AVIATION - GROUND HANDLING")}
-          >
-            AVIATION - GROUND HANDLING
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("AVIATION - TICKETING")}
-          >
-            AVIATION - TICKETING
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("OIL & GAS - PIPE GAS INSULATION")}
-          >
-            OIL & GAS - PIPE GAS INSULATION
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("OIL & GAS - RIGGER FITTER")}
-          >
-            OIL & GAS - RIGGER FITTER
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("OIL & GAS - CULINARY")}
-          >
-            OIL & GAS - CULINARY
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("OIL & GAS - PIPE GAS INSULATION")}
-          >
-            OIL & GAS - PIPE GAS INSULATION
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("MARITIME - DECK RATING & ENGINE RATING")}
-          >
-            MARITIME - DECK RATING & ENGINE RATING
-          </p>
-          </div>
         </div>
       )}
     </div>     
@@ -320,16 +261,16 @@ export default function App() {
 
           <div className="grid space-y-1">
           <h>Nama Penjaga</h>
-          <input className="px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="Nama Penjaga" name="ParentName" type="text" />
+          <input className="bg-slate-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentName" type="text" />
           </div>
 
-          <div className="grid space-y-1 text-white">
+          <div className="grid space-y-1">
           <h>Nombor Penjaga</h>
-          <input className="text-black px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="Nombor Penjaga" name="ParentNumber"  type="text" />
+          <input className="bg-slate-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentNumber"  type="text" />
           </div>
 
 
-          <div className="grid  text-left">
+          <div className="grid text-left">
         <p className="py-1 text-white">Negeri</p>
       <button
         onClick={toggleDropdown2} 

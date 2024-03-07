@@ -9,7 +9,7 @@ function page() {
         <div >
         <Image
         className="hidden lg:block w-full"
-            src="/wbl1.png"
+            src="/posterwbl.jpg"
             alt="wbl1"
             width="100"
             height="200"
