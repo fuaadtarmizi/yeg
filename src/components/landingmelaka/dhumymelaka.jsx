@@ -16,10 +16,15 @@ export default function App() {
     const [selectedItem1, setSelectedItem1] = useState(null);
     const [selectedItem2, setSelectedItem2] = useState(null);
 
+
+
+
+
     const [alertMessage, setAlertMessage] = useState('');
     const [emailError, setEmailError] = useState('');
 
   function Submit(e) {
+
     const emailValue = e.target.elements.Email.value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -29,6 +34,9 @@ export default function App() {
       alert('Email is incorrect!');
       return;
     }
+  
+
+
 
     const formEle = document.querySelector("form");
     const formDatab = new FormData(formEle);
@@ -78,6 +86,9 @@ export default function App() {
     const toggleDropdown2 = () => {
       setIsOpen2(!isOpen2);
     };
+
+
+ 
 
     // program yeg
     const handleItemClick = (item) => {
@@ -441,73 +452,3 @@ export default function App() {
   );
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// "use client"
-// import React from 'react'
-
-// export default function page() {
-//     function Submit(e) {
-//         const formEle = document.querySelector("form");
-//         const formDatab = new FormData(formEle);
-//         fetch(
-//           "https://script.google.com/macros/s/AKfycbxGDBvXOji8jirgC_tVHaOTWkKzExfA3KXms1TFcQWLCz1UwkGlvkEtD6BVqzNG0hZfUw/exec",
-//           {
-//             method: "POST",
-//             body: formDatab
-//           }
-//         )
-//           .then((res) => res.json())
-//           .then((data) => {
-//             console.log(data);
-//           })
-//           .catch((error) => {
-//             console.log(error);
-//           });
-//       }
-
-//   return (
-//     <div className=" py-20 flex justify-center">
-        
-//         <form className="bg-slate-100 w-1/4 border grid justify-center p-3 space-y-4 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
-//         <div className="py-4">
-//             <h>FROM YEG</h>
-//         </div>
-//             <div className="border rounded-md hover:shadow-md duration-500">
-//                 <input 
-//                 className="py-2 "
-//                 id="name"
-//                 type="text"
-//                 placeholder="name"
-//                 />
-//             </div>
-//             <div className="border rounded-md hover:shadow-md duration-500">
-//                 <input
-//                 className="py-2"
-//                 id="email"
-//                 type="email"
-//                 placeholder="email"
-//                 />
-//             </div>
-//             <div className="flex justify-center ">
-//             <button className="px-6 py-2 border rounded-md hover:shadow-md duration-500">
-//                 <h>SUBMIT</h>
-//             </button>
-//             </div>
-//         </form>
-//     </div>
-//   )
-// }
