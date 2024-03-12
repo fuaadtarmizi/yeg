@@ -60,9 +60,6 @@ export default function App() {
       alert('Penghantaran Berjaya!, Pegawai kami akan menghubungi anda secepat mungkin');
 
   }
-
-
-
     
   // program yeg
     const toggleDropdown = () => {
