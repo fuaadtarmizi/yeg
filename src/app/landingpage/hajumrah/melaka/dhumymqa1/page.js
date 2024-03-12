@@ -254,6 +254,7 @@ function page() {
             </div>
             <div>
               <Formblastingdhumyganeral/>
+              
             </div>
             <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
       <div className="bg-white flex justify-center ">

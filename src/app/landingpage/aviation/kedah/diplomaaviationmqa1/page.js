@@ -9,12 +9,24 @@ function page() {
       <div className="bg-slate-700">
       
       <div className="py-2 md:py-3 lg:py-6"></div>
+      <div className="hidden lg:block md:block justify-center pb-4">
+      <Image
+          className="w-full"
+          src="/anakkedah.jpg"
+          alt="anakkedah"
+          width="1500"
+          height="80"
+          style={{
+            objectFit:"contain",
+          }}
+        />
+      </div>
 
       <div className="hidden lg:block md:block justify-center">
       <Image
           className="w-full"
-          src="/dipaviation1.jpg"
-          alt="dipaviation"
+          src="/dipaviationsms.png"
+          alt="dipaviationsms"
           width="1500"
           height="80"
           style={{
