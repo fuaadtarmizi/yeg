@@ -1,17 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
 import Formblastingdhumyganeral from '@/components/Formblastingdhumy2'
-import FacebookPixelDhumy from '@/components/FacebookPixelDhumy'
-
 
 function page() {
+
   return (
     <>
-    <FacebookPixelDhumy/>
     <div>
       <div className="bg-slate-700">
       <div className="py-2 md:py-3 lg:py-6"></div>
-      <div className=" flex justify-center">
+      <div className="flex justify-center">
       <Image
           className="w-full"
           src="/anakmelaka.jpg"

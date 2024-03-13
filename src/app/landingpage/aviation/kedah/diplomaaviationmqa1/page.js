@@ -9,7 +9,7 @@ function page() {
       <div className="bg-slate-700">
       
       <div className="py-2 md:py-3 lg:py-6"></div>
-      <div className="hidden lg:block md:block justify-center pb-4">
+      <div className="justify-center pb-4">
       <Image
           className="w-full"
           src="/anakkedah.jpg"
@@ -21,7 +21,6 @@ function page() {
           }}
         />
       </div>
-
       <div className="hidden lg:block md:block justify-center">
       <Image
           className="w-full"
