@@ -2,8 +2,6 @@ import './globals.css'
 import { Analytics } from '@vercel/analytics/react';
 import { Inter } from 'next/font/google'
 import Head from 'next/head';
-import FacebookPixelDhumy from '@/components/FacebookPixelDhumy.jsx'
-
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -30,7 +28,6 @@ export default function RootLayout({ children }) {
           <meta name="twitter:description" content={metadata.description} />
           <meta name="twitter:image" content="URL_TO_IMAGE" />
           <link rel="icon" href="./yeglogowebsite.svg" sizes="16x16" type="image/svg+xml" />
-          <FacebookPixelDhumy/>
 
         
         {/* Google Analytics script */}
