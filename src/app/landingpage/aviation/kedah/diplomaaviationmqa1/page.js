@@ -253,7 +253,7 @@ function page() {
               <Formblastingaviation2/>
             </div>
             <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
-      <div className="bg-white flex justify-center ">
+      <div className="bg-white flex justify-center p-2">
       <Image
           className=""
           src="/dipaviation5.png"
