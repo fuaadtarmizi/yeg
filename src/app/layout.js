@@ -2,6 +2,8 @@ import './globals.css'
 import { Analytics } from '@vercel/analytics/react';
 import { Inter } from 'next/font/google'
 import Head from 'next/head';
+import FacebookPixel from './FacebookPixel';
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -43,7 +45,11 @@ export default function RootLayout({ children }) {
           }}
         ></script>
       </Head>
-
+      <div>
+            <FacebookPixel />
+            {/* Your layout components */}
+            {children}
+        </div>
       <body className={inter.className}>
         {children}
       <Analytics />

@@ -216,7 +216,6 @@ function page() {
                     </div>
                     <div className="flex justify-center py-3">
                         <h className="text-center">Semalam adalah sejarah, hari ini adalah hadiah dan esok adalah misteri. Terima kasih YEG Akademi </h>
-                        
                     </div>
                     <div className="py-6"></div>
                     <div className="flex">
