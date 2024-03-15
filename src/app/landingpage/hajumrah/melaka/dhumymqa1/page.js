@@ -56,7 +56,7 @@ function page() {
           className=""
           src="/dipdhumy3.png"
           alt="dipdhumy3"
-          width="1200"
+          width="800"
           height="80"
           style={{
             objectFit:"contain",
