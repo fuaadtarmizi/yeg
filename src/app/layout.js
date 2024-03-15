@@ -3,8 +3,6 @@ import { Analytics } from '@vercel/analytics/react';
 import { Inter } from 'next/font/google'
 import Head from 'next/head';
 
-
-
 const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'YEG Academy | Career & Education Platform',
@@ -32,8 +30,7 @@ export default function RootLayout({ children }) {
 
           
 
-        {/* Google Analytics script */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0BWVHPJF8V"></script>
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-0BWVHPJF8V"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -44,11 +41,10 @@ export default function RootLayout({ children }) {
               gtag('config', 'G-0BWVHPJF8V');
             `,
           }}
-        ></script>
+        ></script> */}
 
 
-
-          <script
+          {/* <script
               dangerouslySetInnerHTML={{
                 __html: `
                   !function(f,b,e,v,n,t,s)
@@ -63,7 +59,9 @@ export default function RootLayout({ children }) {
                   fbq('track', 'PageView');
                 `,
               }}
-            ></script> 
+            ></script>  */}
+
+
       </Head>
       <div>
             {/* Your layout components */}
@@ -74,5 +72,7 @@ export default function RootLayout({ children }) {
       <Analytics />
       </body>
     </html>
+    
+
   )
 }

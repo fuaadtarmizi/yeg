@@ -14,9 +14,6 @@ export default function home() {
   return (
 
     <html lang="en">
-    <Head>
-    <script async defer crossOrigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="your_nonce_here"></script>
-    </Head>
       
   <main>
       <nav className="sticky hidden lg:block top-0 z-10">
@@ -25,9 +22,7 @@ export default function home() {
         <Sidebar/>
     </div>
     </nav>
-      <nav>
-    
-    </nav>
+      
 
     <div className="fixed bottom-0 w-full flex justify-end p-4">
       <div className=" hover:slide-in-from-left-1 flex items-center right-2  rounded-full bg-yellow-500">
