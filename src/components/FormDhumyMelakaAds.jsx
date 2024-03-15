@@ -1,15 +1,23 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect  } from 'react';
 
 
 export default function App() {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
+    const [selectedItem1, setSelectedItem1] = useState("Ads");
 
     const [alertMessage, setAlertMessage] = useState('');
     const [emailError, setEmailError] = useState('');
 
 
+    useEffect(() => {
+      if (selectedItem1 === 'Whatsup') {
+        Submit();
+      }
+    }, [selectedItem1]);
+
+    
   function Submit(e) {
     const emailValue = e.target.elements.Email.value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -20,16 +28,17 @@ export default function App() {
       alert('Email is incorrect!');
       return;
     }
-  
 
     const formEle = document.querySelector("form");
     const formDatab = new FormData(formEle);
 
     formDatab.append("Program", selectedItem);
-    
+    formDatab.append("Source", selectedItem1);
+
 
     fetch(
-      "",
+
+      "https://script.google.com/macros/s/AKfycbyHdwc9doEGlg7Yun4R1scDMXEzPADFaBuOxD5F1Bq_zpBoXRi8UHFa61RqpHylhTvA/exec",
       {
         method: "POST",
         body: formDatab
@@ -46,34 +55,26 @@ export default function App() {
 
       setAlertMessage('Form submitted successfully!');
       alert('Penghantaran Berjaya!, Pegawai kami akan menghubungi anda secepat mungkin');
-
   }
-
-
-
     
   // program yeg
     const toggleDropdown = () => {
       setIsOpen(!isOpen);
     };
-
-  
+    
     // program yeg
     const handleItemClick = (item) => {
         setSelectedItem(item);
         setIsOpen(false);
       };
 
-    
-   
+    const handleWhatsupClick = () => {
+      setSelectedItem1("Whatsup");
+  };
 
-        
-      
-    
 
   return (
     <main>
-        
     <div className="bg-white">
     <div className=" hidden lg:block"></div>
         <div className="p-4  lg:flex justify-center  ">     
@@ -82,7 +83,6 @@ export default function App() {
       <div className="py-6 text-black text-3xl font-bold">
              <h>Course Enquiry</h>
          </div>
-         
             <div className=" grid space-y-4">
       <div className="grid rounded-md space-y-1 ">
         <h className="">Nama Pelajar</h>
@@ -109,6 +109,7 @@ export default function App() {
           <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="Age" type="text" />
           </div>
           </div>
+
           
           <div>
           <div className="relative inline-block text-left">
@@ -136,10 +137,7 @@ export default function App() {
           >
             DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY-WBL) 
           </p>
-         
           </div>
-
-
           <p className="px-4 text-md font-bold py-2 hover:bg-gray-200 bg-slate-600"  >
             Diploma Kovensional
           </p>
@@ -149,15 +147,12 @@ export default function App() {
           >
             DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY) 
           </p>
-          
           </div>
-
-         
-          
         </div>
       )}
     </div>     
     </div>
+
           <div className="grid space-y-1">
           <h>Nama Penjaga</h>
           <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentName" type="text" />
@@ -168,20 +163,24 @@ export default function App() {
           <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentNumber"  type="text" />
           </div>
 
+          <div className="relative inline-block text-left">
+              <div
+              onClick={handleWhatsupClick}
+                  name="Source"
+                  className="px-4 bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
+              > Ads
+              </div>
+          </div>
                
-
     <div className="pt-4">
     <button className="px-6 py-2 border rounded-md bg-yellow-500 hover:bg-yellow-600 hover:shadow-md duration-300" name="Submit" type="submit" >Submit</button>
     </div>
-  
         </form>
-
         {emailError && (
         <div className="alert">
           {emailError}
         </div>
       )}
-
       {alertMessage && (
         <div className="alert">
           {alertMessage}

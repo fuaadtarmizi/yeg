@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Formblastingdhumyganeral from '@/components/Formblastingdhumy2'
+import FormDhumyNogoriSms from '@/components/FormDhumyNogoriSms'
 
 
 function page() {
@@ -12,7 +12,7 @@ function page() {
       <Image
           className="w-full"
           src="/anaknogori.jpg"
-          alt="anaknogori"
+          alt="dipdhumy1"
           width="1500"
           height="80"
           style={{
@@ -56,7 +56,7 @@ function page() {
           className=""
           src="/dipdhumy3.png"
           alt="dipdhumy3"
-          width="1200"
+          width="800"
           height="80"
           style={{
             objectFit:"contain",
@@ -253,7 +253,8 @@ function page() {
               <h className="text-2xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
             </div>
             <div>
-              <Formblastingdhumyganeral/>
+              <FormDhumyNogoriSms/>
+              
             </div>
             <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
       <div className="bg-white flex justify-center ">

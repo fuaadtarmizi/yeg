@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Formblastingdhumyganeral from '@/components/Formblastingdhumy2'
+import FormCareerMelakaAds from '@/components/FormCareerMelakaAds'
 
 
 function page() {
@@ -8,24 +8,12 @@ function page() {
     <div>
       <div className="bg-slate-700">
       <div className="py-2 md:py-3 lg:py-6"></div>
-      <div className=" flex justify-center">
-      <Image
-          className="w-full"
-          src="/anakselangor.jpg"
-          alt="anakselangor"
-          width="1500"
-          height="80"
-          style={{
-            objectFit:"contain",
-          }}
-        />
-      </div>
       <div className="py-3"></div>
       <div className=" flex justify-center">
       <Image
           className="w-full"
-          src="/dipdhumy1.png"
-          alt="dipdhumy1"
+          src="/sphu1.png"
+          alt="sphu1"
           width="1500"
           height="80"
           style={{
@@ -33,16 +21,12 @@ function page() {
           }}
         />
       </div>
-      <div className="bg-green-800 p-3 flex justify-center py-8">
-          <h className="text-white text-center lg:text-5xl text-3xl font-extrabold">DERMASISWA <span className="text-yellow-600">RM10 JUTA</span> BAGI MEMBANTU <span  className="text-yellow-600">3000</span> PELAJAR</h>
-        </div>
         <div className="bg-white py-2 md:py-3 lg:py-6"></div>
-
         <div className="bg-white flex justify-center">
       <Image
           className=""
-          src="/dipdhumy2.png"
-          alt="dipdhumy2"
+          src="/sphu2.png"
+          alt="sphu2"
           width="1300"
           height="80"
           style={{
@@ -54,9 +38,9 @@ function page() {
       <div className="bg-white flex justify-center ">
       <Image
           className=""
-          src="/dipdhumy3.png"
-          alt="dipdhumy3"
-          width="1200"
+          src="/sphu3.png"
+          alt="sphu3"
+          width="600"
           height="80"
           style={{
             objectFit:"contain",
@@ -64,18 +48,7 @@ function page() {
         />
       </div>
       <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
-      <div className="bg-white flex justify-center ">
-      <Image
-          className=""
-          src="/dipdhumy4.png"
-          alt="dipdhumy4"
-          width="300"
-          height="80"
-          style={{
-            objectFit:"contain",
-          }}
-        />
-      </div>
+      
 
       <div className='bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 px-6'>
                 <card1 className=" p-4 rounded-md shadow-lg border">
@@ -253,15 +226,15 @@ function page() {
               <h className="text-2xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
             </div>
             <div>
-              <Formblastingdhumyganeral/>
+              <FormCareerMelakaAds/>
             </div>
-            <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
-      <div className="bg-white flex justify-center ">
+            <div className="bg-white">.</div>
+      <div className="bg-white flex justify-center">
       <Image
           className=""
-          src="/dipdhumy5.png"
-          alt="dipdhumy5"
-          width="800"
+          src="/sphu4.png"
+          alt="sphu4"
+          width="1400"
           height="80"
           style={{
             objectFit:"contain",

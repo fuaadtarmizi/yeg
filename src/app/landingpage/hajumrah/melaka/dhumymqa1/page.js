@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import FormDhumyMelaka from '@/components/FormDhumyMelaka'
+import FormDhumyMelakaSms from '@/components/FormDhumyMelakaSms'
 
 
 function page() {
@@ -253,7 +253,7 @@ function page() {
               <h className="text-2xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
             </div>
             <div>
-              <FormDhumyMelaka/>
+              <FormDhumyMelakaSms/>
               
             </div>
             <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
