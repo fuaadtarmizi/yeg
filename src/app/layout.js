@@ -1,10 +1,9 @@
-"use client"
 import './globals.css'
-import { useEffect } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import { Inter } from 'next/font/google'
 import Head from 'next/head';
 
+const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'YEG Academy | Career & Education Platform',
   description: 'YEG ACADEMY adalah akronim kepada Your Education Guidance yang menyediakan khidmat konsultasi untuk kerjaya dan pendidikan terbaik pada masa kini. Kini, YEG Academy telah berkembang menjadi salah satu platform rujukan pendidikan terkini dan terbesar di Malaysia dengan menawarkan pelbagai bidang sambung belajar dengan penekanan modul pembelajaran berasaskan industri. Oleh itu, YEG Academy menjalinkan usahasama rapat bersama rakan IPT dalam merevolusikan modul diploma sedia ada supaya selaras dengan kehendak industri bagi mencapai 5 kayu ukur utama dalam memastikan graduan memenuhi kriteria seperti kelayakan, pengalaman, pendapatan, pekerjaan dan kebanggaan.',
@@ -12,14 +11,7 @@ export const metadata = {
   href:"./yeglogowebsite.svg",
 }
 
-const inter = Inter({ subsets: ['latin'] })
-
-
-
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    inter.styleSheet.sync();
-  }, []);
 
   return (
     <html lang="en">
@@ -38,21 +30,7 @@ export default function RootLayout({ children }) {
 
           
 
-       
-
-      </Head>
-      <div>{children}</div>
-      <Analytics />
-    </html>
-    
-
-  )
-}
-
-
-
-
- {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-0BWVHPJF8V"></script>
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-0BWVHPJF8V"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -82,3 +60,19 @@ export default function RootLayout({ children }) {
                 `,
               }}
             ></script>  */}
+
+
+      </Head>
+      <div>
+            {/* Your layout components */}
+            {children}
+        </div>
+      <body className={inter.className}>
+        {children}
+      <Analytics />
+      </body>
+    </html>
+    
+
+  )
+}
