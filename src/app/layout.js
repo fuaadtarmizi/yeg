@@ -68,7 +68,7 @@ export default function RootLayout({ children }) {
             {children}
         </div>
       <body className={inter.className}>
-        {children}
+        {/* {children} */}
       <Analytics />
       </body>
     </html>
