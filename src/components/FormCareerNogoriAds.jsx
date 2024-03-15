@@ -5,7 +5,7 @@ import React, { useState, useEffect  } from 'react';
 export default function App() {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
-    const [selectedItem1, setSelectedItem1] = useState("Whatsup");
+    const [selectedItem1, setSelectedItem1] = useState("CareerAds");
 
     const [alertMessage, setAlertMessage] = useState('');
     const [emailError, setEmailError] = useState('');
@@ -18,9 +18,9 @@ export default function App() {
     }, [selectedItem1]);
 
     
-    function Submit(e) {
-      const emailValue = document.querySelector('input[name="Email"]').value;
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  function Submit(e) {
+    const emailValue = e.target.elements.Email.value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 
     if (!emailRegex.test(emailValue)) {
@@ -43,6 +43,7 @@ export default function App() {
         method: "POST",
         body: formDatab
       }
+      
     )
       .then((res) => res.json())
       .then((data) => {
@@ -68,7 +69,7 @@ export default function App() {
       };
 
     const handleWhatsupClick = () => {
-      setSelectedItem1("Whatsup");
+      setSelectedItem1("CareerAds");
   };
 
 
@@ -167,7 +168,7 @@ export default function App() {
               onClick={handleWhatsupClick}
                   name="Source"
                   className="px-4 bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
-              > Whatsup
+              > CareerAds
               </div>
           </div>
                

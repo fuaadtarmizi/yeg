@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Formblastingdhumyganeral from '@/components/Formblastingdhumy2'
+import FormCareerNogoriTiktok from '@/components/FormCareerNogoriTiktok'
 
 
 function page() {
@@ -8,12 +8,11 @@ function page() {
     <div>
       <div className="bg-slate-700">
       <div className="py-2 md:py-3 lg:py-6"></div>
-      <div className="py-3"></div>
       <div className=" flex justify-center">
       <Image
           className="w-full"
-          src="/sphu1.png"
-          alt="sphu1"
+          src="/anaknogori.jpg"
+          alt="anaknogori"
           width="1500"
           height="80"
           style={{
@@ -21,12 +20,29 @@ function page() {
           }}
         />
       </div>
+      <div className="py-3"></div>
+      <div className=" flex justify-center">
+      <Image
+          className="w-full"
+          src="/dipdhumy1.jpg"
+          alt="dipdhumy1"
+          width="1500"
+          height="80"
+          style={{
+            objectFit:"contain",
+          }}
+        />
+      </div>
+      <div className="bg-green-800 p-3 flex justify-center py-8">
+          <h className="text-white text-center lg:text-5xl text-3xl font-extrabold">DERMASISWA <span className="text-yellow-600">RM10 JUTA</span> BAGI MEMBANTU <span  className="text-yellow-600">3000</span> PELAJAR</h>
+        </div>
         <div className="bg-white py-2 md:py-3 lg:py-6"></div>
+
         <div className="bg-white flex justify-center">
       <Image
           className=""
-          src="/sphu2.png"
-          alt="sphu2"
+          src="/dipdhumy2.png"
+          alt="dipdhumy2"
           width="1300"
           height="80"
           style={{
@@ -38,9 +54,9 @@ function page() {
       <div className="bg-white flex justify-center ">
       <Image
           className=""
-          src="/sphu3.png"
-          alt="sphu3"
-          width="600"
+          src="/dipdhumy3.png"
+          alt="dipdhumy3"
+          width="1200"
           height="80"
           style={{
             objectFit:"contain",
@@ -48,7 +64,18 @@ function page() {
         />
       </div>
       <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
-      
+      <div className="bg-white flex justify-center ">
+      <Image
+          className=""
+          src="/dipdhumy4.png"
+          alt="dipdhumy4"
+          width="300"
+          height="80"
+          style={{
+            objectFit:"contain",
+          }}
+        />
+      </div>
 
       <div className='bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 px-6'>
                 <card1 className=" p-4 rounded-md shadow-lg border">
@@ -226,15 +253,15 @@ function page() {
               <h className="text-2xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
             </div>
             <div>
-              <Formblastingdhumyganeral/>
+              <FormCareerNogoriTiktok/>
             </div>
-            <div className="bg-white">.</div>
-      <div className="bg-white flex justify-center">
+            <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
+      <div className="bg-white flex justify-center ">
       <Image
           className=""
-          src="/sphu4.png"
-          alt="sphu4"
-          width="1400"
+          src="/dipdhumy5.png"
+          alt="dipdhumy5"
+          width="800"
           height="80"
           style={{
             objectFit:"contain",
