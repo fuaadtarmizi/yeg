@@ -45,7 +45,6 @@ export default function App() {
         method: "POST",
         body: formDatab
       }
-      
     )
       .then((res) => res.json())
       .then((data) => {
