@@ -82,7 +82,7 @@ export default function App() {
       <div className="lg:w-1/3 ">
       <form className=" backdrop-blur-lg w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
       <div className="py-6 text-black text-3xl font-bold">
-             <h>Course Enquiry</h>
+             <h>Borang Pertanyaan</h>
          </div>
             <div className=" grid space-y-4">
       <div className="grid rounded-md space-y-1 ">
@@ -114,7 +114,7 @@ export default function App() {
           
           <div>
           <div className="relative inline-block text-left">
-            <div>Pilihan Program Diploma, Kerjaya atau Work Based Learning (WBL)</div>
+            <div>Pilihan Program</div>
       <button
         onClick={toggleDropdown}
         name="Program"
