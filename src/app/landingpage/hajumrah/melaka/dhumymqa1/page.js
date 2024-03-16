@@ -3,6 +3,48 @@ import Image from 'next/image'
 import FormDhumyMelakaSms from '@/components/FormDhumyMelakaSms'
 
 
+const VideoPlayer1 = () => {
+  // YouTube video URL (replace with your actual YouTube video URL)
+  const videoUrl = 'https://www.youtube.com/embed/xlWjyLVgyxo';
+
+  return (
+    <div className="flex justify-center">
+      <iframe
+        className="px-4"
+        width="1000"
+        height="500"
+        src={videoUrl}
+        title="YouTube video player"
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
+};
+
+const VideoPlayer2 = () => {
+  // YouTube video URL (replace with your actual YouTube video URL)
+  const videoUrl = 'https://www.youtube.com/embed/3dsnsSHP9wU';
+
+  return (
+    <div className="flex justify-center">
+      <iframe
+        className="px-4"
+        width="1000"
+        height="500"
+        src={videoUrl}
+        title="YouTube video player"
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
+};
+
+
+
+
+
 function page() {
   return (
     <div>
@@ -37,13 +79,14 @@ function page() {
           <h className="text-white text-center lg:text-5xl text-3xl font-extrabold">DERMASISWA <span className="text-yellow-600">RM10 JUTA</span> BAGI MEMBANTU <span  className="text-yellow-600">3000</span> PELAJAR</h>
         </div>
         <div className="bg-white py-2 md:py-3 lg:py-6"></div>
+        <VideoPlayer1 />
 
         <div className="bg-white flex justify-center">
       <Image
           className=""
           src="/dipdhumy2.png"
           alt="dipdhumy2"
-          width="1300"
+          width="1000"
           height="80"
           style={{
             objectFit:"contain",
@@ -249,6 +292,7 @@ function page() {
                     </div>
                 </card5>
             </div>
+            <VideoPlayer2 />
             <div className="animate-pulse duration-800  bg-green-600 flex justify-center p-2 py-6">
               <h className="text-2xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
             </div>

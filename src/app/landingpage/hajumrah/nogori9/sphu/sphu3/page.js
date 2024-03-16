@@ -3,6 +3,46 @@ import Image from 'next/image'
 import FormCareerNogoriTiktok from '@/components/FormCareerNogoriTiktok'
 
 
+const VideoPlayer1 = () => {
+  // YouTube video embed URL (replace with your actual YouTube video ID)
+  const videoEmbedUrl = 'https://www.youtube.com/embed/heszQsRflIw';
+
+  return (
+    <div className="flex justify-center">
+      <iframe
+        className="px-4"
+        width="1000"
+        height="500"
+        src={videoEmbedUrl}
+        title="YouTube video player"
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
+};
+
+const VideoPlayer2 = () => {
+  // YouTube video embed URL (replace with your actual YouTube video ID)
+  const videoEmbedUrl = 'https://www.youtube.com/embed/bP6MnjxhbTM';
+
+  return (
+    <div className="flex justify-center">
+      <iframe
+        className="px-4"
+        width="1000"
+        height="500"
+        src={videoEmbedUrl}
+        title="YouTube video player"
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
+};
+
+
+
 function page() {
   return (
     <div>
@@ -24,8 +64,8 @@ function page() {
       <div className=" flex justify-center">
       <Image
           className="w-full"
-          src="/dipdhumy1.jpg"
-          alt="dipdhumy1"
+          src="/sphu1.png"
+          alt="sphu1"
           width="1500"
           height="80"
           style={{
@@ -33,16 +73,17 @@ function page() {
           }}
         />
       </div>
-      <div className="bg-green-800 p-3 flex justify-center py-8">
+      {/* <div className="bg-green-800 p-3 flex justify-center py-8">
           <h className="text-white text-center lg:text-5xl text-3xl font-extrabold">DERMASISWA <span className="text-yellow-600">RM10 JUTA</span> BAGI MEMBANTU <span  className="text-yellow-600">3000</span> PELAJAR</h>
-        </div>
+        </div> */}
         <div className="bg-white py-2 md:py-3 lg:py-6"></div>
+        <VideoPlayer1 />
 
         <div className="bg-white flex justify-center">
       <Image
           className=""
-          src="/dipdhumy2.png"
-          alt="dipdhumy2"
+          src="/sphu2.png"
+          alt="sphu2"
           width="1300"
           height="80"
           style={{
@@ -51,25 +92,14 @@ function page() {
         />
       </div>
       <div className="bg-white py-2 md:py-3 lg:py-6"></div>
-      <div className="bg-white flex justify-center ">
-      <Image
-          className=""
-          src="/dipdhumy3.png"
-          alt="dipdhumy3"
-          width="1200"
-          height="80"
-          style={{
-            objectFit:"contain",
-          }}
-        />
-      </div>
+      
       <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
       <div className="bg-white flex justify-center ">
       <Image
           className=""
-          src="/dipdhumy4.png"
-          alt="dipdhumy4"
-          width="300"
+          src="/sphu3.png"
+          alt="sphu3"
+          width="800"
           height="80"
           style={{
             objectFit:"contain",
@@ -249,6 +279,7 @@ function page() {
                     </div>
                 </card5>
             </div>
+            <VideoPlayer2 />
             <div className="animate-pulse duration-800  bg-green-600 flex justify-center p-2 py-6">
               <h className="text-2xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
             </div>

@@ -126,26 +126,11 @@ export default function App() {
       {isOpen && (
         <div className="w-full right-0 mt-2  origin-top-right bg-white border border-gray-200 divide-y  rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
         
-          <p
-            className="px-4 text-md py-2 cursor-pointer bg-yellow-500 font-bold"
-          >
-            Work Based Learning
-          </p>
-          <div className="pl-6 text-sm bg-yellow-500">
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick(" DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY-WBL)")}
-          >
-            DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY-WBL) 
-          </p>
-          </div>
-          <p className="px-4 text-md font-bold py-2 hover:bg-gray-200 bg-slate-600"  >
-            Diploma Kovensional
-          </p>
           <div className="pl-6 text-sm text-white bg-slate-600">
           <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY)")}
+            onClick={() => handleItemClick("SIJIL PENGURUSAN HAJI & UMRAH (SPHU)")}
           >
-            DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY) 
+            SIJIL PENGURUSAN HAJI & UMRAH (SPHU) 
           </p>
           </div>
         </div>
