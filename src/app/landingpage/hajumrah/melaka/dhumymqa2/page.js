@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import FormDhumyMelakaAds from '@/components/FormDhumyMelakaAds'
+import Head from 'next/head';
+
 
 
 
@@ -49,6 +51,20 @@ function page() {
 
   return (
     <>
+    <Head>
+        {/* Clarity analytics script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "YOUR_CLARITY_PROJECT_ID");
+            `,
+          }}
+        />
+      </Head>
     <div>
       <div className="bg-slate-700">
       <div className="py-2 md:py-3 lg:py-6"></div>
