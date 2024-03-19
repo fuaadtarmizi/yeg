@@ -1,6 +1,64 @@
 import React from 'react'
 import Image from 'next/image'
-import Formblastingdhumyganeral from '@/components/Formblastingdhumy2'
+import FormDhumySelangorTiktok from '@/components/FormDhumySelangorTiktok'
+
+const VideoPlayer1 = () => {
+  // YouTube video URL (replace with your actual YouTube video URL)
+  const videoUrl = 'https://www.youtube.com/embed/xlWjyLVgyxo';
+
+  return (
+    <div className="flex justify-center">
+      <iframe
+        className="px-4"
+        width="1000"
+        height="500"
+        src={videoUrl}
+        title="YouTube video player"
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
+};
+const VideoPlayer2 = () => {
+  // YouTube video URL (replace with your actual YouTube video URL)
+  const videoUrl = 'https://www.youtube.com/embed/3dsnsSHP9wU';
+
+  return (
+    <div className="flex justify-center">
+      <iframe
+        className="px-4"
+        width="1000"
+        height="500"
+        src={videoUrl}
+        title="YouTube video player"
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
+};
+
+const VideoPlayer3 = () => {
+    // YouTube video URL (replace with your actual YouTube video URL)
+    const videoUrl = 'https://www.youtube.com/embed/MnHAsIfcW3Y';
+    return (
+      <div className="flex justify-center">
+        <iframe
+          className="px-4"
+          width="1000"
+          height="500"
+          src={videoUrl}
+          title="YouTube video player"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+      </div>
+    );
+  };
+  
+
+
 
 
 function page() {
@@ -12,7 +70,7 @@ function page() {
       <Image
           className="w-full"
           src="/anakselangor.jpg"
-          alt="anakselangor"
+          alt="dipdhumy1"
           width="1500"
           height="80"
           style={{
@@ -24,7 +82,7 @@ function page() {
       <div className=" flex justify-center">
       <Image
           className="w-full"
-          src="/dipdhumy1.jpg"
+          src="/dipdhumy1.png"
           alt="dipdhumy1"
           width="1500"
           height="80"
@@ -33,17 +91,16 @@ function page() {
           }}
         />
       </div>
-      <div className="bg-green-800 p-3 flex justify-center py-8">
-          <h className="text-white text-center lg:text-5xl text-3xl font-extrabold">DERMASISWA <span className="text-yellow-600">RM10 JUTA</span> BAGI MEMBANTU <span  className="text-yellow-600">3000</span> PELAJAR</h>
-        </div>
+      
         <div className="bg-white py-2 md:py-3 lg:py-6"></div>
+        <VideoPlayer1 />
 
-        <div className="bg-white flex justify-center">
+        <div className="bg-white flex justify-center p-3">
       <Image
           className=""
           src="/dipdhumy2.png"
           alt="dipdhumy2"
-          width="1300"
+          width="900"
           height="80"
           style={{
             objectFit:"contain",
@@ -51,12 +108,12 @@ function page() {
         />
       </div>
       <div className="bg-white py-2 md:py-3 lg:py-6"></div>
-      <div className="bg-white flex justify-center ">
+      <div className="bg-white flex justify-center p-3">
       <Image
           className=""
           src="/dipdhumy3.png"
           alt="dipdhumy3"
-          width="1200"
+          width="1000"
           height="80"
           style={{
             objectFit:"contain",
@@ -64,12 +121,12 @@ function page() {
         />
       </div>
       <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
-      <div className="bg-white flex justify-center ">
+      <div className="bg-white flex justify-center pb-4 p-3">
       <Image
           className=""
           src="/dipdhumy4.png"
           alt="dipdhumy4"
-          width="300"
+          width="500"
           height="80"
           style={{
             objectFit:"contain",
@@ -249,11 +306,13 @@ function page() {
                     </div>
                 </card5>
             </div>
+            <VideoPlayer3 />
+            <VideoPlayer2 />
             <div className="animate-pulse duration-800  bg-green-600 flex justify-center p-2 py-6">
               <h className="text-2xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
             </div>
             <div>
-              <Formblastingdhumyganeral/>
+              <FormDhumySelangorTiktok/>   
             </div>
             <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
       <div className="bg-white flex justify-center ">
@@ -268,10 +327,6 @@ function page() {
           }}
         />
       </div>
-
-
-
-
       </div>
     </div>
   )

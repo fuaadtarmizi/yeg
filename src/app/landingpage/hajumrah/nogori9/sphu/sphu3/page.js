@@ -177,13 +177,13 @@ function page() {
             <div>
               <FormCareerNogoriTiktok/>
             </div>
-            <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
+            <div className="bg-white">.</div>
       <div className="bg-white flex justify-center ">
       <Image
           className=""
-          src="/dipdhumy5.png"
-          alt="dipdhumy5"
-          width="800"
+          src="/sphu4.png"
+          alt="sphu4"
+          width="1400"
           height="80"
           style={{
             objectFit:"contain",

@@ -1,6 +1,64 @@
 import React from 'react'
 import Image from 'next/image'
-import Formblastingdhumyganeral from '@/components/Formblastingdhumy2'
+import FormDhumySelangorWhatsup from '@/components/FormDhumySelangorWhatsup'
+
+const VideoPlayer1 = () => {
+  // YouTube video URL (replace with your actual YouTube video URL)
+  const videoUrl = 'https://www.youtube.com/embed/xlWjyLVgyxo';
+
+  return (
+    <div className="flex justify-center">
+      <iframe
+        className="px-4"
+        width="1000"
+        height="500"
+        src={videoUrl}
+        title="YouTube video player"
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
+};
+const VideoPlayer2 = () => {
+  // YouTube video URL (replace with your actual YouTube video URL)
+  const videoUrl = 'https://www.youtube.com/embed/3dsnsSHP9wU';
+
+  return (
+    <div className="flex justify-center">
+      <iframe
+        className="px-4"
+        width="1000"
+        height="500"
+        src={videoUrl}
+        title="YouTube video player"
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
+};
+
+const VideoPlayer3 = () => {
+    // YouTube video URL (replace with your actual YouTube video URL)
+    const videoUrl = 'https://www.youtube.com/embed/MnHAsIfcW3Y';
+    return (
+      <div className="flex justify-center">
+        <iframe
+          className="px-4"
+          width="1000"
+          height="500"
+          src={videoUrl}
+          title="YouTube video player"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+      </div>
+    );
+  };
+  
+
+
 
 
 function page() {
@@ -8,12 +66,11 @@ function page() {
     <div>
       <div className="bg-slate-700">
       <div className="py-2 md:py-3 lg:py-6"></div>
-      <div className="py-3"></div>
       <div className=" flex justify-center">
       <Image
           className="w-full"
-          src="/sphu1.png"
-          alt="sphu1"
+          src="/anakselangor.jpg"
+          alt="dipdhumy1"
           width="1500"
           height="80"
           style={{
@@ -21,13 +78,29 @@ function page() {
           }}
         />
       </div>
+      <div className="py-3"></div>
+      <div className=" flex justify-center">
+      <Image
+          className="w-full"
+          src="/dipdhumy1.png"
+          alt="dipdhumy1"
+          width="1500"
+          height="80"
+          style={{
+            objectFit:"contain",
+          }}
+        />
+      </div>
+      
         <div className="bg-white py-2 md:py-3 lg:py-6"></div>
-        <div className="bg-white flex justify-center">
+        <VideoPlayer1 />
+
+        <div className="bg-white flex justify-center p-3">
       <Image
           className=""
-          src="/sphu2.png"
-          alt="sphu2"
-          width="1300"
+          src="/dipdhumy2.png"
+          alt="dipdhumy2"
+          width="900"
           height="80"
           style={{
             objectFit:"contain",
@@ -35,12 +108,12 @@ function page() {
         />
       </div>
       <div className="bg-white py-2 md:py-3 lg:py-6"></div>
-      <div className="bg-white flex justify-center ">
+      <div className="bg-white flex justify-center p-3">
       <Image
           className=""
-          src="/sphu3.png"
-          alt="sphu3"
-          width="600"
+          src="/dipdhumy3.png"
+          alt="dipdhumy3"
+          width="1000"
           height="80"
           style={{
             objectFit:"contain",
@@ -48,7 +121,18 @@ function page() {
         />
       </div>
       <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
-      
+      <div className="bg-white flex justify-center pb-4 p-3">
+      <Image
+          className=""
+          src="/dipdhumy4.png"
+          alt="dipdhumy4"
+          width="500"
+          height="80"
+          style={{
+            objectFit:"contain",
+          }}
+        />
+      </div>
 
       <div className='bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 px-6'>
                 <card1 className=" p-4 rounded-md shadow-lg border">
@@ -222,29 +306,27 @@ function page() {
                     </div>
                 </card5>
             </div>
+            <VideoPlayer3 />
+            <VideoPlayer2 />
             <div className="animate-pulse duration-800  bg-green-600 flex justify-center p-2 py-6">
               <h className="text-2xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
             </div>
             <div>
-              <Formblastingdhumyganeral/>
+              <FormDhumySelangorWhatsup/>   
             </div>
-            <div className="bg-white">.</div>
-      <div className="bg-white flex justify-center">
+            <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
+      <div className="bg-white flex justify-center ">
       <Image
           className=""
-          src="/sphu4.png"
-          alt="sphu4"
-          width="1400"
+          src="/dipdhumy5.png"
+          alt="dipdhumy5"
+          width="800"
           height="80"
           style={{
             objectFit:"contain",
           }}
         />
       </div>
-
-
-
-
       </div>
     </div>
   )

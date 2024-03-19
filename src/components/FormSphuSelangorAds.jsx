@@ -5,7 +5,7 @@ import React, { useState, useEffect  } from 'react';
 export default function App() {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
-    const [selectedItem1, setSelectedItem1] = useState("Whatsup");
+    const [selectedItem1, setSelectedItem1] = useState("CareerAds");
 
     const [alertMessage, setAlertMessage] = useState('');
     const [emailError, setEmailError] = useState('');
@@ -18,9 +18,9 @@ export default function App() {
     }, [selectedItem1]);
 
     
-    function Submit(e) {
-      const emailValue = document.querySelector('input[name="Email"]').value;
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  function Submit(e) {
+    const emailValue = e.target.elements.Email.value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 
     if (!emailRegex.test(emailValue)) {
@@ -38,11 +38,12 @@ export default function App() {
 
     fetch(
 
-      "https://script.google.com/macros/s/AKfycbzYJXxmbG70qvgsII2I0nBcKTyS_1UIZHScmF4VGHECM3Ku9sTDIGfLD7KVHvV0NiYL/exec",
+      "https://script.google.com/macros/s/AKfycbxhAUyRvdnq_ZShEIK9s-F9EkjWYMDuRKa8a2Ij_7_10CXTl6q3QsSx9Nb437UBOev2/exec",
       {
         method: "POST",
         body: formDatab
       }
+      
     )
       .then((res) => res.json())
       .then((data) => {
@@ -68,7 +69,7 @@ export default function App() {
       };
 
     const handleWhatsupClick = () => {
-      setSelectedItem1("Whatsup");
+      setSelectedItem1("CareerAds");
   };
 
 
@@ -128,25 +129,15 @@ export default function App() {
           <p
             className="px-4 text-md py-2 cursor-pointer bg-yellow-500 font-bold"
           >
-            Work Based Learning
+            Career
           </p>
           <div className="pl-6 text-sm bg-yellow-500">
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick(" DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY-WBL)")}
+            onClick={() => handleItemClick(" SIJIL PENGURUSAN HAJI & UMRAH (SPHU)")}
           >
-            DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY-WBL) 
+            SIJIL PENGURUSAN HAJI & UMRAH (SPHU) 
           </p>
-          </div>
-          <p className="px-4 text-md font-bold py-2 hover:bg-gray-200 bg-slate-600"  >
-            Diploma Kovensional
-          </p>
-          <div className="pl-6 text-sm text-white bg-slate-600">
-          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY)")}
-          >
-            DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY) 
-          </p>
-          </div>
+          </div>       
         </div>
       )}
     </div>     
@@ -167,7 +158,7 @@ export default function App() {
               onClick={handleWhatsupClick}
                   name="Source"
                   className="px-4 bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
-              > Whatsup
+              > CareerAds
               </div>
           </div>
                

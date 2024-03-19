@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import FormDhumySelangorAds from '@/components/FormDhumySelangorAds'
+import FormDhumySelangorSms from '@/components/FormDhumySelangorSms'
 
 const VideoPlayer1 = () => {
   // YouTube video URL (replace with your actual YouTube video URL)
@@ -311,8 +311,11 @@ function page() {
             <div className="animate-pulse duration-800  bg-green-600 flex justify-center p-2 py-6">
               <h className="text-2xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
             </div>
+           
+            
             <div>
-              <FormDhumySelangorAds/>   
+              <FormDhumySelangorSms/>
+              
             </div>
             <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
       <div className="bg-white flex justify-center ">

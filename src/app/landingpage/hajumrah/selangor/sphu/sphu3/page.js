@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import FormCareerNogoriAds from '@/components/FormCareerNogoriAds'
+import FormSphuSelangorTiktok from '@/components/FormSphuSelangorTiktok'
 
 
 const VideoPlayer1 = () => {
@@ -42,8 +42,8 @@ const VideoPlayer2 = () => {
 };
 
 
-function page() {
 
+function page() {
   return (
     <div>
       <div className="bg-slate-700">
@@ -51,8 +51,8 @@ function page() {
       <div className=" flex justify-center">
       <Image
           className="w-full"
-          src="/anaknogori.jpg"
-          alt="anaknogori"
+          src="/anakselangor.jpg"
+          alt="anakselangor"
           width="1500"
           height="80"
           style={{
@@ -78,8 +78,6 @@ function page() {
         </div> */}
         <div className="bg-white py-2 md:py-3 lg:py-6"></div>
         <VideoPlayer1 />
-        
-        
 
         <div className="bg-white flex justify-center">
       <Image
@@ -94,6 +92,8 @@ function page() {
         />
       </div>
       <div className="bg-white py-2 md:py-3 lg:py-6"></div>
+      
+      <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
       <div className="bg-white flex justify-center ">
       <Image
           className=""
@@ -106,8 +106,6 @@ function page() {
           }}
         />
       </div>
-      <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
-
       
       <div className='bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 px-6'>
                 <card1 className=" p-4 rounded-md shadow-lg border">
@@ -171,12 +169,13 @@ function page() {
                 />
                 </card5>
             </div>
-                <VideoPlayer2 />
+
+            <VideoPlayer2 />
             <div className="animate-pulse duration-800  bg-green-600 flex justify-center p-2 py-6">
               <h className="text-2xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
             </div>
             <div>
-              <FormCareerNogoriAds/>
+              <FormSphuSelangorTiktok/>
             </div>
             <div className="bg-white">.</div>
       <div className="bg-white flex justify-center ">

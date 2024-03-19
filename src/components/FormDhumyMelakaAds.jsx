@@ -38,7 +38,7 @@ export default function App() {
 
     fetch(
 
-      "https://script.google.com/macros/s/AKfycbyHdwc9doEGlg7Yun4R1scDMXEzPADFaBuOxD5F1Bq_zpBoXRi8UHFa61RqpHylhTvA/exec",
+      "https://script.google.com/macros/s/AKfycbyQekpY_6eqeNDyKgei05hviRUliST-tevZWcZihOyFDrM-cTICzP2lafF7T4Mb_hA/exec",
       {
         method: "POST",
         body: formDatab
@@ -165,7 +165,6 @@ export default function App() {
 
           <div className="relative inline-block text-left">
               <div
-              onClick={handleWhatsupClick}
                   name="Source"
                   className="px-4 bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
               > Ads
