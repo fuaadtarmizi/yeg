@@ -82,7 +82,7 @@ function page() {
       <div className=" flex justify-center">
       <Image
           className="w-full"
-          src="/dipdhumy1.png"
+          src="/dipdhumy1.jpg"
           alt="dipdhumy1"
           width="1500"
           height="80"
