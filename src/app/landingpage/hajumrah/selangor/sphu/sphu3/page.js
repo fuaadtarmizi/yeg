@@ -163,9 +163,7 @@ function page() {
             </div>
 
             <VideoPlayer2 />
-            <div className="animate-pulse duration-800  bg-green-600 flex justify-center p-2 py-6">
-              <h className="text-2xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
-            </div>
+            
             <div>
               <FormSphuSelangorTiktok/>
             </div>
