@@ -143,15 +143,7 @@ export default function App() {
     </div>     
     </div>
 
-          <div className="grid space-y-1">
-          <h>Nama Penjaga</h>
-          <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentName" type="text" />
-          </div>
-
-          <div className="grid space-y-1">
-          <h>Nombor Penjaga</h>
-          <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentNumber"  type="text" />
-          </div>
+          
 
           <div className="relative inline-block text-left">
               <div
