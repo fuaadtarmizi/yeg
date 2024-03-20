@@ -22,7 +22,7 @@ function page() {
           }}
         />
       </div>
-      <div className="lg:hidden md:hidden flex justify-center">
+      {/* <div className="lg:hidden md:hidden flex justify-center">
       <Image
           className="lg:hidden md:hidden"
           src="/dipaviation(phone).png"
@@ -33,7 +33,7 @@ function page() {
             objectFit:"contain",
           }}
         />
-      </div>
+      </div> */}
       <div className="bg-red-600 p-3 flex justify-center py-8">
           <h className="text-white text-center lg:text-5xl text-3xl font-extrabold">DERMASISWA <span className="text-yellow-500">RM10 JUTA</span> BAGI MEMBANTU <span  className="text-yellow-600">3000</span> PELAJAR</h>
         </div>
