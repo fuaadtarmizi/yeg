@@ -203,6 +203,7 @@ function page() {
                         <button className="border text-base font-semibold rounded-md p-1 px-2 hover:bg-slate-200 hover:shadow-xl shadow-sm duration-300">ADD TO CART</button>
                     </div>
                 </card5>
+                
             </div> 
         </section2>
         <div className="py-8 lg:py-10 md:[height:80px]"></div>    

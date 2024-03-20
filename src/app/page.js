@@ -5,7 +5,8 @@ import Footer from "@/components/Footer.jsx"
 import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
 import Contactus from "@/components/Contactus.jsx"
-import Head from 'next/head';
+import SliderRamadan from '@/components/SliderRamadan';
+
 
 
 
@@ -42,9 +43,6 @@ export default function home() {
       </a>
         </div>
     </div>
- 
-
-
     <section1 className="w-full">
       <div className="max-w-full lg:px-3 flex justify-center bg-black">
         <div className="">
@@ -58,6 +56,7 @@ export default function home() {
         </div>
       </div>
     </section1>
+    
     <div className="sticky">
     <section2 className="w-full absolute -bottom-12 px-24 hidden lg:block">
       <div className="w-full h-full bg-white rounded-md flex justify-center shadow-md space-x-16">
@@ -129,9 +128,13 @@ export default function home() {
         </div>
         </div>
     </section2>
+    
+    
     </div>
-    <div className="hidden lg:block py-8 lg:py-10 md:[height:80px]"></div>
-    <div className="py-8 lg:py-10 md:[height:80px]"></div>
+    <div className="py-4 lg:py-10 md:[height:80px]"></div>
+    <SliderRamadan/>
+    <div className="py-4 lg:py-10 md:[height:80px]"></div>
+
 
     <section3 className="">
     <div className="px-8 w-full flex justify-center bg-slate-100">
