@@ -59,10 +59,8 @@ const VideoPlayer3 = () => {
   
 
 
-
-
 function page() {
-  return (
+  return (  
     <div>
       <div className="bg-slate-700">
       <div className="py-2 md:py-3 lg:py-6"></div>

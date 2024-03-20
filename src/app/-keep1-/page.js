@@ -3,10 +3,13 @@ import Image from "next/image"
 import Footer from "@/components/Footer.jsx"
 import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
+import Clarity from './components/Clarity'
+
 
 
 function page() {
   return (
+    <Clarity>
     <main>
         <section1 className="">
         <title>YEG Academy - Enroll</title>
@@ -16,7 +19,6 @@ function page() {
     <div className="lg:hidden">
         <Sidebar/>
     </div>
-    
             <div className="py-8">
             <div className="flex justify-center">
         <div className="group w-3/4 h-full grid justify-center ">
@@ -208,6 +210,7 @@ function page() {
       <Footer/>
     </div>
     </main>
+    </Clarity>
   )
 }
 
