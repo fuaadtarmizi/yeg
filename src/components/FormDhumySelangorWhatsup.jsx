@@ -10,7 +10,6 @@ export default function App() {
     const [alertMessage, setAlertMessage] = useState('');
     const [emailError, setEmailError] = useState('');
 
-
     useEffect(() => {
       if (selectedItem1 === 'Tiktok') {
         Submit();

@@ -1,13 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
-import Formblastingaviation2 from '@/components/Formblastingaviation2'
+import FormAviationKedahSms from '@/components/FormAviationKedahSms'
 
 
 function page() {
   return (
     <div>
-      <div className="bg-slate-700">
-      
+      <div className="bg-slate-700">     
       <div className="py-2 md:py-3 lg:py-6"></div>
       <div className=" justify-center">
       <Image
@@ -21,7 +20,6 @@ function page() {
           }}
         />
       </div>
-
       <div className="hidden lg:block md:block justify-center">
       <Image
           className="w-full"
@@ -49,7 +47,6 @@ function page() {
       <div className="bg-red-600 p-3 flex justify-center py-8">
           <h className="text-white text-center lg:text-5xl text-3xl font-extrabold">DERMASISWA <span className="text-yellow-500">RM10 JUTA</span> BAGI MEMBANTU <span  className="text-yellow-600">3000</span> PELAJAR</h>
         </div>
-
         <div className="bg-white flex justify-center py-2">
       <Image
           className=""
@@ -101,11 +98,6 @@ function page() {
           }}
         />
       </div>
-
-
-
-
-
       <div className='bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 px-6 py-4'>
                 <card1 className=" p-4 rounded-md shadow-lg border">
                 <div className="flex justify-center pt-2">
@@ -250,7 +242,7 @@ function page() {
               <h className="text-2xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
             </div>
             <div>
-              <Formblastingaviation2/>
+              <FormAviationKedahSms/>
             </div>
             <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
       <div className="bg-white flex justify-center ">
