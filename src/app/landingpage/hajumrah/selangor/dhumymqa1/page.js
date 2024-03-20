@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
+import Clarity from '@/components/Clarity'
 import FormDhumySelangorSms from '@/components/FormDhumySelangorSms'
 
 const VideoPlayer1 = () => {
   // YouTube video URL (replace with your actual YouTube video URL)
   const videoUrl = 'https://www.youtube.com/embed/xlWjyLVgyxo';
-
   return (
     <div className="flex justify-center">
       <iframe
@@ -38,7 +38,6 @@ const VideoPlayer2 = () => {
     </div>
   );
 };
-
 const VideoPlayer3 = () => {
     // YouTube video URL (replace with your actual YouTube video URL)
     const videoUrl = 'https://www.youtube.com/embed/MnHAsIfcW3Y';
@@ -61,6 +60,7 @@ const VideoPlayer3 = () => {
 
 function page() {
   return (  
+    <Clarity>
     <div>
       <div className="bg-slate-700">
       <div className="py-2 md:py-3 lg:py-6"></div>
@@ -329,6 +329,7 @@ function page() {
       </div>
       </div>
     </div>
+    </Clarity>
   )
 }
 
