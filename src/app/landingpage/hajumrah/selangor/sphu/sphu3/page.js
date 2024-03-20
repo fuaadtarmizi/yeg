@@ -45,33 +45,33 @@ const VideoPlayer2 = () => {
 
 function page() {
   return (
-    <div>
-      <div className="bg-slate-700">
-      <div className="py-2 md:py-3 lg:py-6"></div>
+    <div className="">
       
-      <div className="py-3"></div>
+      <div className="">
+        <div className="" style={{ backgroundImage: 'url("/bgsphu.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className=" flex justify-center">
       <Image
-          className="w-full"
-          src="/sphu1.png"
+          className=""
+          src="/sphucareer.jpg"
           alt="sphu1"
-          width="1500"
+          width="700"
           height="80"
           style={{
             objectFit:"contain",
           }}
         />
       </div>
+      </div>
       {/* <div className="bg-green-800 p-3 flex justify-center py-8">
           <h className="text-white text-center lg:text-5xl text-3xl font-extrabold">DERMASISWA <span className="text-yellow-600">RM10 JUTA</span> BAGI MEMBANTU <span  className="text-yellow-600">3000</span> PELAJAR</h>
         </div> */}
-        <div className="animate-pulse duration-800  bg-green-600 flex justify-center p-2">
+        {/* <div className="animate-pulse duration-800  bg-green-600 flex justify-center p-2">
               <h className="text-center text-3xl text-white font-bold font-sans">SESI BERLANGSUNG PADA<span className="text-yellow-500"> 30 MAC 2024 DI KUALA LUMPUR <span className="text-3xl text-white font-bold font-sans">DAFTAR SEGERA UNTUK DAPATKAN SLOT <span>TAKLIMAT</span><span className="text-yellow-500"> PERCUMA</span></span></span></h>
             </div>
         <div className=" py-2"></div>
-        <VideoPlayer1 />
+        <VideoPlayer1 /> */}
 
-        <div className="bg-white flex justify-center">
+        {/* <div className="bg-white flex justify-center">
       <Image
           className=""
           src="/sphu2.png"
@@ -82,8 +82,8 @@ function page() {
             objectFit:"contain",
           }}
         />
-      </div>
-      <div className="bg-white py-2 md:py-3 lg:py-6"></div>
+      </div> */}
+      {/* <div className="bg-white py-2 md:py-3 lg:py-6"></div>
       
       <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
       <div className="bg-white flex justify-center ">
@@ -97,9 +97,9 @@ function page() {
             objectFit:"contain",
           }}
         />
-      </div>
+      </div> */}
       
-      <div className='bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 px-6'>
+      {/* <div className='bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 px-6'>
                 <card1 className=" p-4 rounded-md shadow-lg border">
                 <Image
                   className=""
@@ -160,15 +160,15 @@ function page() {
                   }}
                 />
                 </card5>
-            </div>
+            </div> */}
 
-            <VideoPlayer2 />
+            {/* <VideoPlayer2 /> */}
             
-            <div>
+            <div >
               <FormSphuSelangorTiktok/>
             </div>
-            <div className="bg-white">.</div>
-      <div className="bg-white flex justify-center ">
+            <div className="">.</div>
+      <div className=" flex justify-center ">
       <Image
           className=""
           src="/sphu4.png"
