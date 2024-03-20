@@ -3,7 +3,7 @@ import Image from "next/image"
 import Footer from "@/components/Footer.jsx"
 import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
-import Clarity from './components/Clarity'
+import Clarity from '@/components/Clarity'
 
 
 
