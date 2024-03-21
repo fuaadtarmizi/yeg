@@ -266,8 +266,7 @@ function page() {
                     />
                     <div className="grid">
                         <h className="text-base font-medium">Muhammad Syimir</h>
-                        <h className="text-xs font-light text-slate-500">DIPLOMA AVIATION</h>
-                        
+                        <h className="text-xs font-light text-slate-500">DIPLOMA AVIATION</h>                     
                         </div>
                     </div>
                 </card5>
