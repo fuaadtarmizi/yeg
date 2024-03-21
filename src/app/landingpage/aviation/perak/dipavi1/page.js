@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import FormAviationKedahCareerAds from '@/components/FormAviationKedahCareerAds'
+import FormAviationPerakSms from '@/components/FormAviationPerakSms'
 
 
 function page() {
@@ -11,7 +11,7 @@ function page() {
       <div className=" justify-center">
       <Image
           className="w-full"
-          src="/anakkedah.jpg"
+          src="/anakperak.jpg"
           alt="dipaviation"
           width="1500"
           height="80"
@@ -20,10 +20,11 @@ function page() {
           }}
         />
       </div>
+      <div className="py-3"></div>
       <div className="hidden lg:block md:block justify-center">
       <Image
           className="w-full"
-          src="/dipaviation1.jpg"
+          src="/dipaviationsms.png"
           alt="dipaviation"
           width="1500"
           height="80"
@@ -32,7 +33,7 @@ function page() {
           }}
         />
       </div>
-      {/* <div className="lg:hidden md:hidden flex justify-center">
+      <div className="lg:hidden md:hidden flex justify-center">
       <Image
           className="lg:hidden md:hidden"
           src="/dipaviation(phone).png"
@@ -43,7 +44,7 @@ function page() {
             objectFit:"contain",
           }}
         />
-      </div> */}
+      </div>
       {/* <div className="bg-red-600 p-3 flex justify-center py-8">
           <h className="text-white text-center lg:text-5xl text-3xl font-extrabold">DERMASISWA <span className="text-yellow-500">RM10 JUTA</span> BAGI MEMBANTU <span  className="text-yellow-600">3000</span> PELAJAR</h>
         </div> */}
@@ -276,7 +277,7 @@ function page() {
               <h className="text-2xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
             </div>
             <div>
-              <FormAviationKedahCareerAds/>
+              <FormAviationPerakSms/>
             </div>
             <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
       <div className="bg-white flex justify-center ">

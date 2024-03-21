@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import FormAviationKedahCareerTiktok from '@/components/FormAviationKedahCareerTiktok'
+import FormAviationPerakAds from '@/components/FormAviationPerakAds'
 
 
 function page() {
@@ -11,7 +11,7 @@ function page() {
       <div className=" justify-center">
       <Image
           className="w-full"
-          src="/anakkedah.jpg"
+          src="/anakperak.jpg"
           alt="dipaviation"
           width="1500"
           height="80"
@@ -20,7 +20,7 @@ function page() {
           }}
         />
       </div>
-      <div className="hidden lg:block md:block justify-center">
+      <div className="flex justify-center">
       <Image
           className="w-full"
           src="/dipaviation1.jpg"
@@ -266,7 +266,8 @@ function page() {
                     />
                     <div className="grid">
                         <h className="text-base font-medium">Muhammad Syimir</h>
-                        <h className="text-xs font-light text-slate-500">DIPLOMA AVIATION</h>                     
+                        <h className="text-xs font-light text-slate-500">DIPLOMA AVIATION</h>
+                        
                         </div>
                     </div>
                 </card5>
@@ -275,7 +276,7 @@ function page() {
               <h className="text-2xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
             </div>
             <div>
-              <FormAviationKedahCareerTiktok/>
+              <FormAviationPerakAds/>
             </div>
             <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
       <div className="bg-white flex justify-center ">
