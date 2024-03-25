@@ -12,7 +12,7 @@ export default function App() {
 
 
     useEffect(() => {
-      if (selectedItem1 === 'Whatsup') {
+      if (selectedItem1 === 'tktok') {
         Submit();
       }
     }, [selectedItem1]);
@@ -38,7 +38,7 @@ export default function App() {
 
     fetch(
 
-      "https://script.google.com/macros/s/AKfycby7AR-E1wtxUB8FcuL7wvGwmbCj7v2On5D8fPy7GemsBAILx94GT3rW0TfU5qTg7V6_6A/exec",
+      "https://script.google.com/macros/s/AKfycbz4ot3lPKtrN5-5DmzYBpXrQdtRxsBh2RR1YjELfkmxlsgRSXc1IrhqYWgO9IhWrgrnxg/exec",
       {
         method: "POST",
         body: formDatab
