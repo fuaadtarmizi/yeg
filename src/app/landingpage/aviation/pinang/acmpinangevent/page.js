@@ -89,8 +89,11 @@ function page() {
           }}
         />
       </div>
-      <div className="animate-pulse duration-800  bg-green-600 flex justify-center p-2 py-6">
-              <h className="text-2xl text-white font-bold font-sans">Sila isi borang di bawah dan dapatkan E-book "7-bidang menjadi rebutan industri", secara <span className="text-yellow-500">PERCUMA</span></h>
+      <div className="animate-pulse duration-800  bg-red-600 flex justify-center p-2 py-6">
+              <h className="text-2xl text-white font-bold font-sans">Sila isi borang di bawah dan dapatkan E-book "Tips confirm lulus temuduga aviation", secara <span className="text-yellow-500">PERCUMA</span></h>
+            </div>
+            <div className="animate-pulse duration-800  bg-yellow-400 flex justify-center p-2 py-6">
+              <h className="text-2xl text-slate-200 font-bold font-sans">Sebarang pertanyaan sila hubungi Sir Saiful <span className="text-black">0107894564</span></h>
             </div>
       
         {/* <VideoPlayer1 /> */}
