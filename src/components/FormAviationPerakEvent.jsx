@@ -60,7 +60,7 @@ export default function App() {
       setAlertMessage('Form submitted successfully!');
       alert('Penghantaran Berjaya!, Pegawai kami akan menghubungi anda secepat mungkin. Sila klik untuk download E-book kami');
       setTimeout(() => {
-        window.location.href = 'https://drive.google.com/file/d/18hbfYHT2ufAqnFr4UhJuhLC-j_hZ23DS/view?usp=drive_link';
+        window.location.href = 'https://drive.google.com/file/d/17JZC99hMXGGDURA0iBt21Cz7jIkyNm1j/view?usp=drive_link';
       }, 100);
   }
 
