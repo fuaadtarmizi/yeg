@@ -12,7 +12,7 @@ function page() {
       <Image
           className="w-full"
           src="/anakpinang.jpg"
-          alt="dipaviation"
+          alt="anakpinang"
           width="1500"
           height="80"
           style={{

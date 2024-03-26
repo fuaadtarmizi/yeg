@@ -108,7 +108,7 @@ export default function App() {
 
       
 
-             <h>Borang Pendaftaran</h>
+             <h>Borang Pertanyaan</h>
          </div>
             <div className=" grid space-y-4">
       <div className="grid rounded-md space-y-1 ">
