@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Clarity from '@/components/Clarity'
-import FormDhumyEvent from '@/components/FormDhumyEvent'
+import FormDhumySelangorEvent from '@/components/FormDhumySelangorEvent'
 
 const VideoPlayer1 = () => {
   // YouTube video URL (replace with your actual YouTube video URL)
@@ -310,7 +310,7 @@ function page() {
            
             
             <div>
-              <FormDhumyEvent/>
+              <FormDhumySelangorEvent/>
             </div>
             <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
       <div className="bg-white flex justify-center ">
