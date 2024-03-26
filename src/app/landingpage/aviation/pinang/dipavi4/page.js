@@ -11,7 +11,7 @@ function page() {
       <div className=" justify-center">
       <Image
           className="w-full"
-          src="/anakperak.jpg"
+          src="/anakpinang.jpg"
           alt="dipaviation"
           width="1500"
           height="80"
