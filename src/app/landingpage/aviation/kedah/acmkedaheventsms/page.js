@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Clarity from '@/components/Clarity'
-import FormAviationKedahEvent from '@/components/FormAviationKedahEvent'
+import FormAviationKedahEventSms from '@/components/FormAviationKedahEventSms'
 
 const VideoPlayer1 = () => {
   // YouTube video URL (replace with your actual YouTube video URL)
@@ -80,8 +80,8 @@ function page() {
       <div className=" flex justify-center">
       <Image
           className="w-full"
-          src="/sohu1.jpg"
-          alt="sohu1"
+          src="/aviationevent.jpg"
+          alt="aviationevent"
           width="1500"
           height="80"
           style={{
@@ -313,7 +313,7 @@ function page() {
            
             
             <div>
-              <FormAviationKedahEvent/>
+              <FormAviationKedahEventSms/>
             </div>
             <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
       <div className="bg-white flex justify-center ">

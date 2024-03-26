@@ -42,7 +42,7 @@ export default function App() {
 
     fetch(
 
-      "https://script.google.com/macros/s/AKfycbxhAUyRvdnq_ZShEIK9s-F9EkjWYMDuRKa8a2Ij_7_10CXTl6q3QsSx9Nb437UBOev2/exec",
+      "https://script.google.com/macros/s/AKfycby7AR-E1wtxUB8FcuL7wvGwmbCj7v2On5D8fPy7GemsBAILx94GT3rW0TfU5qTg7V6_6A/exec",
       {
         method: "POST",
         body: formDatab
@@ -60,7 +60,7 @@ export default function App() {
       setAlertMessage('Form submitted successfully!');
       alert('Penghantaran Berjaya!, Pegawai kami akan menghubungi anda secepat mungkin. Sila klik untuk download E-book kami');
       setTimeout(() => {
-        window.location.href = 'https://drive.google.com/file/d/1j7ukasCHauIDItp02WlXpkW35dAwvyae/view?usp=drive_link';
+        window.location.href = 'https://drive.google.com/file/d/17JZC99hMXGGDURA0iBt21Cz7jIkyNm1j/view?usp=drive_link';
       }, 100);
   }
 
@@ -160,9 +160,19 @@ export default function App() {
           </p>
           <div className="pl-6 text-sm bg-yellow-500">
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick(" DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY-WBL)")}
+            onClick={() => handleItemClick("DIPLOMA PENGURUSAN KARGO PENERBANGAN (DACM-WBL) ")}
           >
-            DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY-WBL) 
+            DIPLOMA PENGURUSAN KARGO PENERBANGAN (DACM-WBL) 
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick("DIPLOMA PENGURUSAN OPERASI PENERBANGAN (DAOM-WBL)")}
+          >
+            DIPLOMA PENGURUSAN OPERASI PENERBANGAN (DAOM-WBL) 
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick("DIPLOMA TEKNOLOGI PEMBAIKAN STRUKTUR PESAWAT - KEPINGAN LOGAM (DASM-WBL)")}
+          >
+            DIPLOMA TEKNOLOGI PEMBAIKAN STRUKTUR PESAWAT - KEPINGAN LOGAM (DASM-WBL) 
           </p>
           </div>
 
@@ -171,14 +181,29 @@ export default function App() {
           </p>
           <div className="pl-6 text-sm text-white bg-slate-600">
           <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY)")}
+            onClick={() => handleItemClick("DIPLOMA PENGURUSAN KARGO UDARA (DACM)")}
           >
-            DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY) 
+            DIPLOMA PENGURUSAN KARGO UDARA (DACM) 
           </p>
           <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick(" SIJIL OPERASI HAJI UMRAH (SOHU)")}
+            onClick={() => handleItemClick("DIPLOMA PENGURUSAN OPERASI PENERBANGAN (DAOM)")}
           >
-            SIJIL OPERASI HAJI UMRAH (SOHU) 
+            DIPLOMA PENGURUSAN OPERASI PENERBANGAN (DAOM) 
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
+            onClick={() => handleItemClick("DIPLOMA AIRCRAFT MAINTANANCE TECHNOLOGY (DAMT)")}
+          >
+            DIPLOMA AIRCRAFT MAINTANANCE TECHNOLOGY (DAMT) 
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
+            onClick={() => handleItemClick("SIJIL KEMAHIRAN MALAYSIA OPERASI PENYELENGGARAAN PESAWAT (CAMO) ")}
+          >
+            SIJIL KEMAHIRAN MALAYSIA OPERASI PENYELENGGARAAN PESAWAT (CAMO) 
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
+            onClick={() => handleItemClick("SIJIL KEMAHIRAN MALAYSIA OPERASI PERKHIDMATAN PESAWAT (CAS)")}
+          >
+            SIJIL KEMAHIRAN MALAYSIA OPERASI PERKHIDMATAN PESAWAT (CAS) 
           </p>
           </div>
 
@@ -187,10 +212,26 @@ export default function App() {
           </p>
           <div className="pl-6 text-sm text-white bg-slate-600">
           <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY)")}
+            onClick={() => handleItemClick("AVIATION - CABIN CREW ")}
           >
-            SIJIL PENGURUSAN HAJI UMRAH (SPHU) 
+            AVIATION - CABIN CREW 
           </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
+            onClick={() => handleItemClick("AVIATION - CUSTOMER SERVICE")}
+          >
+            AVIATION - CUSTOMER SERVICE 
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
+            onClick={() => handleItemClick("AVIATION - GROUND HANDLING ")}
+          >
+            AVIATION - GROUND HANDLING 
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
+            onClick={() => handleItemClick("AVIATION - TICKETING ")}
+          >
+            AVIATION - TICKETING 
+          </p>
+          
           </div>
         </div>
       )}
@@ -212,7 +253,7 @@ export default function App() {
               onClick={handleWhatsupClick}
                   name="Source"
                   className="px-4 bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
-              >  Event Sms
+              > EventSms
               </div>
           </div>
                

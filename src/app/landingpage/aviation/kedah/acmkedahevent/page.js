@@ -80,8 +80,8 @@ function page() {
       <div className=" flex justify-center">
       <Image
           className="w-full"
-          src="/sohu1.jpg"
-          alt="sohu1"
+          src="/aviationevent.jpg"
+          alt="aviationevent"
           width="1500"
           height="80"
           style={{
