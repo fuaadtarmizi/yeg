@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
 
 
           
-          <Script
+          <Script 
           strategy="beforeInteractive"
           src="https://connect.facebook.net/en_US/fbevents.js"
         />
@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
            
       </Head>
 
-      
+
       <div>
             {/* Your layout components */}
             {children}
