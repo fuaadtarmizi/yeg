@@ -160,39 +160,7 @@ export default function App() {
           >
             DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY-WBL) 
           </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA PENGURUSAN PERHOTELAN (DHM-WBL)")}
-          >
-            DIPLOMA PENGURUSAN PERHOTELAN (DHM-WBL)
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA SENI KULINARI (DCA-WBL)")}
-          >
-            DIPLOMA SENI KULINARI (DCA-WBL)
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA PENDIDIKAN AWAL KANAK-KANAK (DEC-WBL)")}
-          >
-            DIPLOMA PENDIDIKAN AWAL KANAK-KANAK (DEC-WBL)
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA PENGURUSAN KARGO UDARA (DACM-WBL)")}
-          >
-            DIPLOMA PENGURUSAN KARGO UDARA (DACM-WBL)
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA PENGURUSAN OPERASI PENERBANGAN (DAOM-WBL)")}
-          >
-            DIPLOMA PENGURUSAN OPERASI PENERBANGAN (DAOM-WBL)
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA TEKNOLOGI PEMBAIKAN STRUKTUR PESAWAT - KEPINGAN LOGAM (DASM-WBL)")}
-          >
-            DIPLOMA TEKNOLOGI PEMBAIKAN STRUKTUR PESAWAT - KEPINGAN LOGAM (DASM-WBL)
-          </p>
           </div>
-
-
           <p className="px-4 text-md font-bold py-2 hover:bg-gray-200 bg-slate-600"  >
             Diploma Kovensional
           </p>
@@ -201,41 +169,6 @@ export default function App() {
             onClick={() => handleItemClick("DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY)")}
           >
             DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY) 
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA PENGURUSAN PERHOTELAN (DHM)")}
-          >
-            DIPLOMA PENGURUSAN PERHOTELAN (DHM)
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA KEJURURAWATAN (DNUR)")}
-          >
-            DIPLOMA KEJURURAWATAN (DNUR)
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA PENGUATKUASA UNDANG-UNDANG (DLE)")}
-          >
-            DIPLOMA PENGUATKUASA UNDANG-UNDANG (DLE)
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA PENGURUSAN KARGO UDARA (DACM)")}
-          >
-            DIPLOMA PENGURUSAN KARGO UDARA (DACM)
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA PENGURUSAN OPERASI PENERBANGAN (DAOM)")}
-          >
-            DIPLOMA PENGURUSAN OPERASI PENERBANGAN (DAOM)
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA AIRCRAFT MAINTAINANCE TECHNOLOGY (DAMT")}
-          >
-            DIPLOMA AIRCRAFT MAINTAINANCE TECHNOLOGY (DAMT)
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick("SIJIL KEMAHIRAN MALAYSIA OPERASI PENYELENGGARAAN PESAWAT (AMT)")}
-          >
-            SIJIL KEMAHIRAN MALAYSIA OPERASI PENYELENGGARAAN PESAWAT (AMT)
           </p>
           </div>
 
@@ -249,52 +182,6 @@ export default function App() {
             onClick={() => handleItemClick("SPHU - SIJIL PROFESIONAL PENGURUSAN HAJI & UMRAH")}
           >
             SPHU - SIJIL PROFESIONAL PENGURUSAN HAJI & UMRAH 
-          </p>
-          
-          <p className=" py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("AVIATION - CABIN CREW")}
-          >
-            AVIATION - CABIN CREW
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("AVIATION - CUSTOMER SERVICE")}
-          >
-            AVIATION - CUSTOMER SERVICE
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("AVIATION - GROUND HANDLING")}
-          >
-            AVIATION - GROUND HANDLING
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("AVIATION - TICKETING")}
-          >
-            AVIATION - TICKETING
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("OIL & GAS - PIPE GAS INSULATION")}
-          >
-            OIL & GAS - PIPE GAS INSULATION
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("OIL & GAS - RIGGER FITTER")}
-          >
-            OIL & GAS - RIGGER FITTER
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("OIL & GAS - CULINARY")}
-          >
-            OIL & GAS - CULINARY
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("OIL & GAS - PIPE GAS INSULATION")}
-          >
-            OIL & GAS - PIPE GAS INSULATION
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("MARITIME - DECK RATING & ENGINE RATING")}
-          >
-            MARITIME - DECK RATING & ENGINE RATING
           </p>
           </div>
         </div>
