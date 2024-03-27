@@ -2,8 +2,6 @@ import './globals.css'
 import { Analytics } from '@vercel/analytics/react';
 import { Inter } from 'next/font/google'
 import Head from 'next/head';
-import Script from 'next/script'; // Import dynamic script component
-
 
 const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
@@ -14,12 +12,6 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    // Initialize Facebook Pixel on component mount
-    fbq('init', '646040297652269');
-    fbq('track', 'PageView');
-  }, []);
-
 
   return (
     <html lang="en">
@@ -36,11 +28,22 @@ export default function RootLayout({ children }) {
           <meta name="twitter:image" content="URL_TO_IMAGE" />
           <link rel="icon" href="./yeglogowebsite.svg" sizes="16x16" type="image/svg+xml" />
 
-
           
-          <Script 
-          strategy="beforeInteractive"
-          src="https://connect.facebook.net/en_US/fbevents.js"
+          <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '646040297652269');
+              fbq('track', 'PageView');
+            `,
+          }}
         />
         <noscript>
           <img
@@ -52,8 +55,6 @@ export default function RootLayout({ children }) {
         </noscript>
            
       </Head>
-
-
       <div>
             {/* Your layout components */}
             {children}
