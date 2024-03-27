@@ -2,6 +2,8 @@ import './globals.css'
 import { Analytics } from '@vercel/analytics/react';
 import { Inter } from 'next/font/google'
 import Head from 'next/head';
+import Script from 'next/script'; // Import dynamic script component
+
 
 const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
@@ -12,6 +14,12 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    // Initialize Facebook Pixel on component mount
+    fbq('init', '646040297652269');
+    fbq('track', 'PageView');
+  }, []);
+
 
   return (
     <html lang="en">
@@ -29,38 +37,23 @@ export default function RootLayout({ children }) {
           <link rel="icon" href="./yeglogowebsite.svg" sizes="16x16" type="image/svg+xml" />
 
 
-          <Script
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `
-                  !function(f,b,e,v,n,t,s)
-                  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-                  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-                  n.queue=[];t=b.createElement(e);t.async=!0;
-                  t.src=v;s=b.getElementsByTagName(e)[0];
-                  s.parentNode.insertBefore(t,s)}(window, document,'script',
-                  'https://connect.facebook.net/en_US/fbevents.js');
-                  fbq('init', '646040297652269');
-                  fbq('track', 'PageView');
-                `,
-              }}
-            />
-
-
           
-
-        
-        {/* Add Clarity script here */}
-        <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `
-          (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-          })(window, document, "clarity", "script", "lgb910v0q6");
-        ` }} />
+          <Script
+          strategy="beforeInteractive"
+          src="https://connect.facebook.net/en_US/fbevents.js"
+        />
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: 'none' }}
+            src="https://www.facebook.com/tr?id=646040297652269&ev=PageView&noscript=1"
+          />
+        </noscript>
            
       </Head>
+
+      
       <div>
             {/* Your layout components */}
             {children}
