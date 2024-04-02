@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
           <meta name="twitter:image" content="URL_TO_IMAGE" />
           <link rel="icon" href="./yeglogowebsite.svg" sizes="16x16" type="image/svg+xml" />
 
-          
+
           <script
           dangerouslySetInnerHTML={{
             __html: `
