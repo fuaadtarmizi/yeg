@@ -6,50 +6,24 @@ import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
 import Contactus from "@/components/Contactus.jsx"
 import SliderRamadan from '@/components/SliderRamadan';
-import Head from 'next/head'
-
-
-
 
 
 export default function home() {
+
+
   return (
 
-    <html lang="en">
-      <Head>
-      <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              !function(f,b,e,v,n,t,s)
-              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-              n.queue=[];t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];
-              s.parentNode.insertBefore(t,s)}(window, document,'script',
-              'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '646040297652269');
-              fbq('track', 'PageView');
-            `,
-          }}
-        />
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: 'none' }}
-            src="https://www.facebook.com/tr?id=646040297652269&ev=PageView&noscript=1"
-          />
-        </noscript>
-      </Head>
-      
+    <html lang="en">  
   <main>
-      <nav className="sticky hidden lg:block top-0 z-10">
-        <Navbar/>
-        <div className="lg:hidden">
+    <head>
+    <div className="sticky hidden lg:block top-0 z-10">
+        <Navbar/>   
+    </div>
+    <div className="lg:hidden">
         <Sidebar/>
     </div>
-    </nav>
+    </head>
+    
       
 
     <div className="fixed bottom-0 w-full flex justify-end p-4">
@@ -155,14 +129,13 @@ export default function home() {
         </div>
         </div>
     </section2>
-    
-    
     </div>
     <div className="py-4 lg:py-10 md:[height:80px]"></div>
-    <SliderRamadan/>
+    <div className="">
+      <SliderRamadan />
+    </div>
+    
     <div className="py-4 lg:py-10 md:[height:80px]"></div>
-
-
     <section3 className="">
     <div className="px-8 w-full flex justify-center bg-slate-100">
         <span className="lg:text-4xl font text-4xl text-blue-950 font-bold text-center">THE <span className="text-yellow-600">YEG ACADEMY</span> DIFFERENCE</span>
@@ -178,15 +151,7 @@ export default function home() {
             <source src="carousel14.mp4" type="video/mp4" />
           </video>
           
-          {/* <Image
-            src="/carousel1.jpg"
-            alt="carousel11"
-            width="1800"
-            height="00"
-            style={{
-              objectFit:"contain",
-            }}
-          /> */}
+          
         </div>
         <div className="w-auto h-full grid mx-9 lg:mx-auto md:mx-16 col-span-12 md:col-span-6 gap-6 lg:col-span-5 md:order-3  pl-4">   
           <div className="flex space-x-8 h-full justify-start">
@@ -240,8 +205,6 @@ export default function home() {
     </section3>
 
 
-    
-    
       <div className="py-8 lg:py-10 md:[height:80px]"></div>
       <Contactus/>
       <div className="py-8 lg:py-10 md:[height:80px]"></div>
@@ -466,6 +429,10 @@ export default function home() {
       </div>
       </div>
     </section6>
+    <div className="hidden lg:block py-8 lg:py-10 md:[height:80px]"></div>
+
+    
+
     <div className="hidden lg:block py-8 lg:py-10 md:[height:80px]"></div>
     <div className="py-8 lg:py-10 md:[height:80px]"></div>
     <section7>
@@ -805,9 +772,7 @@ export default function home() {
             <a href="https://www.utusan.com.my/nasional/2023/03/misa-renaco-marine-jalin-kerjasama-lahir-tenaga-mahir/"
             className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
             <h className="text-yellow-500 font-semibold grid ">MARCH 13,2023</h>
-            <h className="text-slate-800 font-semibold ">MISA, RANACO MARINE JALIN KERJASAMA LAHIR TENAGA MAHIR MISA - UTUSAN MALAYSIA
-
-</h>
+            <h className="text-slate-800 font-semibold ">MISA, RANACO MARINE JALIN KERJASAMA LAHIR TENAGA MAHIR MISA - UTUSAN MALAYSIA</h>
             </a>
             </div>
         </card3>

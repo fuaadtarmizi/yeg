@@ -22,7 +22,7 @@ const AutoSlider = () => {
         <div className=" flex justify-center">
       <Image
           className="w-full"
-          src="/ramadan.jpg"
+          src="/posterpanjang.jpg"
           alt="ramadan"
           width="1500"
           height="80"
@@ -49,22 +49,7 @@ const AutoSlider = () => {
       </div>
         </h3>
       </div>
-      <div>
-        <h3>
-        <div className=" flex justify-center">
-      <Image
-          className="w-full"
-          src="/ramadan.jpg"
-          alt="ramadan"
-          width="1500"
-          height="80"
-          style={{
-            objectFit:"contain",
-          }}
-        />
-      </div>
-        </h3>
-      </div>
+      
     </Slider>
   );
 };
