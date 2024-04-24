@@ -11,10 +11,17 @@ export default function App() {
     const [isOpen, setIsOpen] = useState(false);
     const [isOpen1, setIsOpen1] = useState(false);
     const [isOpen2, setIsOpen2] = useState(false);
+    const [isOpen3, setIsOpen3] = useState(false);
+    const [isOpen4, setIsOpen4] = useState(false);
+
 
     const [selectedItem, setSelectedItem] = useState(null);
     const [selectedItem1, setSelectedItem1] = useState(null);
     const [selectedItem2, setSelectedItem2] = useState(null);
+    const [selectedItem3, setSelectedItem3] = useState(null);
+    const [selectedItem4, setSelectedItem4] = useState(null);
+
+
 
     const [alertMessage, setAlertMessage] = useState('');
     const [emailError, setEmailError] = useState('');
@@ -33,13 +40,15 @@ export default function App() {
     const formEle = document.querySelector("form");
     const formDatab = new FormData(formEle);
 
-    formDatab.append("Program", selectedItem);
+    formDatab.append("Program1", selectedItem);
+    formDatab.append("Program2", selectedItem3);
+    formDatab.append("Program3", selectedItem4);
     formDatab.append("Media", selectedItem1);
     formDatab.append("State", selectedItem2);
     
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbz3MD3p8IbrMHbi9uYVzI5uLVZRVVHwy2w3d9orALZrwGv-l4Hly2yamGFMvCosVdmWPw/exec",
+      "https://script.google.com/macros/s/AKfycbz89sRBlxXL1jmGzztzbo_NAOw5eiWCFiFbanv1i9RCYtiqZOFoOKE1GW_muXbnNOobJw/exec",
       {
         method: "POST",
         body: formDatab
@@ -61,9 +70,19 @@ export default function App() {
 
   }
     
-  // program yeg
+  // program yeg 1
     const toggleDropdown = () => {
       setIsOpen(!isOpen);
+    };
+
+    // program yeg 2
+    const toggleDropdown3 = () => {
+      setIsOpen3(!isOpen3);
+    };
+
+    // program yeg 3
+    const toggleDropdown4 = () => {
+      setIsOpen4(!isOpen4);
     };
 
   // media
@@ -76,11 +95,25 @@ export default function App() {
       setIsOpen2(!isOpen2);
     };
 
-    // program yeg
+
+
+    // program yeg 1
     const handleItemClick = (item) => {
         setSelectedItem(item);
         setIsOpen(false);
       };
+
+      // program yeg 2
+    const handleItemClick3 = (item) => {
+      setSelectedItem3(item);
+      setIsOpen3(false);
+    };
+
+    // program yeg 3
+    const handleItemClick4 = (item) => {
+      setSelectedItem4(item);
+      setIsOpen4(false);
+    };
 
     // media 
       const handleItemClick1 = (item) => {
@@ -134,16 +167,19 @@ export default function App() {
           <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="Age" type="text" />
           </div>
           </div>
+
+
+
           
           <div className="relative inline-block text-left">
             <div>Pilihan Program Diploma, Kerjaya atau Work Based Learning (WBL)</div>
       <button
         onClick={toggleDropdown} 
-        name="Program"
+        name="Program1"
         type="button"
         className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
       >
-        {selectedItem ? selectedItem : "Select Programs"}
+        {selectedItem ? selectedItem : "Select Programs 1"}
       </button>
 
       {isOpen && (
@@ -186,7 +222,123 @@ export default function App() {
           </div>
         </div>
       )}
-    </div>     
+    </div>
+
+
+
+    <div className="relative inline-block text-left">
+            <div>Pilihan Program Diploma, Kerjaya atau Work Based Learning (WBL)</div>
+      <button
+        onClick={toggleDropdown3} 
+        name="Program2"
+        type="button"
+        className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
+      >
+        {selectedItem3 ? selectedItem3 : "Select Programs 2"}
+      </button>
+
+      {isOpen3 && (
+        <div className="w-full right-0 mt-2  origin-top-right bg-white border border-gray-200 divide-y  rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
+        
+          <p
+            className="px-4 text-md py-2 cursor-pointer bg-yellow-500 font-bold"
+          >
+            Work Based Learning
+          </p>
+          <div className="pl-6 text-sm bg-yellow-500">
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick3(" DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY-WBL)")}
+          >
+            DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY-WBL) 
+          </p>
+          </div>
+          <p className="px-4 text-md font-bold py-2 hover:bg-gray-200 bg-slate-600"  >
+            Diploma Kovensional
+          </p>
+          <div className="pl-6 text-sm text-white bg-slate-600">
+          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
+            onClick={() => handleItemClick3("DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY)")}
+          >
+            DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY) 
+          </p>
+          </div>
+
+          <p
+            className="px-4 text-md py-2 cursor-pointer bg-gray-400 font-bold"
+          >
+            Kerjaya
+          </p>
+          <div className="pl-6 text-sm bg-gray-400">
+          <p className=" py-2 cursor-pointer hover:bg-gray-500 rounded-md"
+            onClick={() => handleItemClick3("SPHU - SIJIL PROFESIONAL PENGURUSAN HAJI & UMRAH")}
+          >
+            SPHU - SIJIL PROFESIONAL PENGURUSAN HAJI & UMRAH 
+          </p>
+          </div>
+        </div>
+      )}
+    </div>
+
+
+    <div className="relative inline-block text-left">
+            <div>Pilihan Program Diploma, Kerjaya atau Work Based Learning (WBL)</div>
+      <button
+        onClick={toggleDropdown4} 
+        name="Program3"
+        type="button"
+        className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
+      >
+        {selectedItem4 ? selectedItem4 : "Select Programs 3"}
+      </button>
+
+      {isOpen4 && (
+        <div className="w-full right-0 mt-2  origin-top-right bg-white border border-gray-200 divide-y  rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
+        
+          <p
+            className="px-4 text-md py-2 cursor-pointer bg-yellow-500 font-bold"
+          >
+            Work Based Learning
+          </p>
+          <div className="pl-6 text-sm bg-yellow-500">
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick4(" DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY-WBL)")}
+          >
+            DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY-WBL) 
+          </p>
+          </div>
+          <p className="px-4 text-md font-bold py-2 hover:bg-gray-200 bg-slate-600"  >
+            Diploma Kovensional
+          </p>
+          <div className="pl-6 text-sm text-white bg-slate-600">
+          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
+            onClick={() => handleItemClick4("DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY)")}
+          >
+            DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY) 
+          </p>
+          </div>
+
+          <p
+            className="px-4 text-md py-2 cursor-pointer bg-gray-400 font-bold"
+          >
+            Kerjaya
+          </p>
+          <div className="pl-6 text-sm bg-gray-400">
+          <p className=" py-2 cursor-pointer hover:bg-gray-500 rounded-md"
+            onClick={() => handleItemClick4("SPHU - SIJIL PROFESIONAL PENGURUSAN HAJI & UMRAH")}
+          >
+            SPHU - SIJIL PROFESIONAL PENGURUSAN HAJI & UMRAH 
+          </p>
+          </div>
+        </div>
+      )}
+    </div> 
+ 
+
+
+
+
+
+
           <div className="grid space-y-1">
           <h>Nama Penjaga</h>
           <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentName" type="text" />
