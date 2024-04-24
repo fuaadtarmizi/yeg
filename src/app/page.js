@@ -15,14 +15,14 @@ export default function home() {
 
     <html lang="en">  
   <main>
-    <head>
+    <div>
     <div className="sticky hidden lg:block top-0 z-10">
         <Navbar/>   
     </div>
     <div className="lg:hidden">
         <Sidebar/>
     </div>
-    </head>
+    </div>
     
       
 

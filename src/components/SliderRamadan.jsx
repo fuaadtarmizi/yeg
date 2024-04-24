@@ -1,72 +1,110 @@
-import React from 'react';
-import Slider from 'react-slick';
-import Image from 'next/image'
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
-const AutoSlider = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 1000,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image" 
+import { Autoplay } from 'swiper/modules';
 
+
+import "swiper/css";
+import "swiper/css/autoplay";
+
+
+
+
+export default function App() {
   return (
-    <Slider {...settings}>
-      <div>
-        <h3>
-        <div className=" flex justify-center">
-      <Image
-          className="w-full"
-          src="/posterpanjang.jpg"
-          alt="ramadan"
-          width="1500"
-          height="80"
-          style={{
-            objectFit:"contain",
-          }}
-        />
-      </div>
-        </h3>
-      </div>
-      <div>
-        <h3>
-        <div className=" flex justify-center">
-      <Image
-          className="w-full"
-          src="/aviationposter.jpg"
-          alt="aviationposter"
-          width="1500"
-          height="80"
-          style={{
-            objectFit:"contain",
-          }}
-        />
-      </div>
-        </h3>
-      </div>
-      <div>
-        <h3>
-        <div className=" flex justify-center">
-      <Image
-          className="w-full"
-          src="/dhumyposter.jpg"
-          alt="dhumyposter"
-          width="1500"
-          height="80"
-          style={{
-            objectFit:"contain",
-          }}
-        />
-      </div>
-        </h3>
-      </div>    
-    </Slider>
+    <>
+     <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+        <Image 
+         className="w-full"
+         src="/posterpanjang.jpg"
+         alt="posterpanjang"
+         width="100"
+         height="80"
+         style={{
+           objectFit:"contain",
+         }}
+       />
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image 
+         className="w-full"
+         src="/aviationposter.jpg"
+         alt="aviationposter"
+         width="100"
+         height="80"
+         style={{
+           objectFit:"contain",
+         }}
+       />
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image 
+         className="w-full"
+         src="/dhumyposter.jpg"
+         alt="dhumyposter"
+         width="100"
+         height="80"
+         style={{
+           objectFit:"contain",
+         }}
+       />
+        </SwiperSlide>
+      </Swiper>
+      
+    </>
   );
-};
+}
 
-export default AutoSlider;
+
+
+
+
+
+{/* <Swiper className="mySwiper" autoplay={{ delay: 500 }}>
+       
+       <SwiperSlide>
+       
+       </SwiperSlide>
+       <SwiperSlide>
+       
+       </SwiperSlide>
+       <SwiperSlide>
+       <Image 
+         className="w-full"
+         src="/dhumyposter.jpg"
+         alt="dhumyposter"
+         width="100"
+         height="80"
+         style={{
+           objectFit:"contain",
+         }}
+       />
+       </SwiperSlide>
+     </Swiper>
+
+ */}
+
+
+
+
+
+
+
+
+
+      
