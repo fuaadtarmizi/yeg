@@ -38,7 +38,6 @@ function page() {
           <h className="text-white text-center lg:text-5xl text-3xl font-extrabold">DERMASISWA <span className="text-yellow-500">RM10 JUTA</span> BAGI MEMBANTU <span  className="text-yellow-600">3000</span> PELAJAR</h>
         </div>
         <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
-
         <div className="bg-white flex justify-center py-4">
       <Image
           className=""
