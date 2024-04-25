@@ -175,13 +175,8 @@ export default function App() {
           >
             DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY) 
           </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick(" SIJIL OPERASI HAJI UMRAH (SOHU)")}
-          >
-            SIJIL OPERASI HAJI UMRAH (SOHU) 
-          </p>
           </div>
-
+          
           <p className="px-4 text-md font-bold py-2 hover:bg-gray-200 bg-slate-600"  >
             Kerjaya
           </p>

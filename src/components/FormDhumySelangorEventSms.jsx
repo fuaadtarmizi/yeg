@@ -106,8 +106,6 @@ export default function App() {
       <form className=" backdrop-blur-lg w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
       <div className="py-6 text-black text-3xl font-bold">
 
-      
-
              <h>Borang Pertanyaan</h>
          </div>
             <div className=" grid space-y-4">
@@ -174,11 +172,6 @@ export default function App() {
             onClick={() => handleItemClick("DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY)")}
           >
             DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY) 
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick(" SIJIL OPERASI HAJI UMRAH (SOHU)")}
-          >
-            SIJIL OPERASI HAJI UMRAH (SOHU) 
           </p>
           </div>
 

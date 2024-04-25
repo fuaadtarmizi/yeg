@@ -23,9 +23,6 @@ export default function home() {
         <Sidebar/>
     </div>
     </div>
-    
-      
-
     <div className="fixed bottom-0 w-full flex justify-end p-4">
       <div className=" hover:slide-in-from-left-1 flex items-center right-2  rounded-full bg-yellow-500">
         <h className=" p-3 flex items-center rounded-full font-extrabold">Get in Touch</h>
