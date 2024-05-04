@@ -39,9 +39,6 @@ export default function App() {
       alert('Email is incorrect!');
       return;
     }
-  
-
-
 
     const formEle = document.querySelector("form");
     const formDatab = new FormData(formEle);

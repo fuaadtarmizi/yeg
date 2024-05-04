@@ -127,12 +127,48 @@ export default function home() {
         </div>
     </section2>
     </div>
-    <div className="py-4 lg:py-10 md:[height:80px]"></div>
-    <div className="">
-      <SliderRamadan />
-    </div>
-    
-    <div className="py-4 lg:py-10 md:[height:80px]"></div>
+    <div className="bg-black py-4 lg:py-10 md:[height:80px]"></div>
+    <div className="bg-black">
+      <SliderRamadan /></div>
+    <div className="bg-black py-4 lg:py-10 md:[height:80px]"></div>
+    {/* <section>
+      <div className="bg-black px-14">
+      <div className="bg-green-300 grid grid-cols-3 gap-4">
+        <div className=" w-full">
+          <div className="hover:bg-yellow-400 duration-300 w-full border-2 border-yellow-400 rounded-lg p-2">
+            <div className="">
+            <h className="text-white">Pengurusan Haji & Umrah</h>
+            </div>
+            </div>
+        </div>
+        <div className=" w-full">
+          <div className="w-full border-2 border-yellow-500 rounded-lg p-2">Pengurusan Operasi Penerbangan</div>
+        </div>
+        <div className=" w-full">
+          <div className="w-full border-2 border-yellow-300 rounded-lg p-2">Penyelenggaraan Teknologi Pesawat</div>
+        </div>
+        <div className=" w-full">
+          <div className="w-full border-2 border-yellow-300 rounded-lg p-2">Pengurusan Perhotelan</div>
+        </div>
+        <div className=" w-full">
+          <div className="w-full border-2 border-yellow-300 rounded-lg p-2">Seni Kulinari</div>
+        </div>
+        <div className=" w-full">
+          <div className="w-full border-2 border-yellow-300 rounded-lg p-2">Pendidikan Awal Kanak-Kanak</div>
+        </div>
+        <div className=" w-full">
+          <div className="w-full border-2 border-yellow-300 rounded-lg p-2">Pengurusan Kargo Udara</div>
+        </div>
+        <div className=" w-full">
+          <div className="w-full border-2 border-yellow-300 rounded-lg p-2">Pengurusan Operasi Penerbangan</div>
+        </div>
+        <div className=" w-full">
+          <div className="w-full border-2 border-yellow-300 rounded-lg p-2">View more courses...</div>
+        </div>
+      </div>
+      </div>
+    </section> */}
+
     <section3 className="">
     <div className="px-8 w-full flex justify-center bg-slate-100">
         <span className="lg:text-4xl font text-4xl text-blue-950 font-bold text-center">THE <span className="text-yellow-600">YEG ACADEMY</span> DIFFERENCE</span>
@@ -145,7 +181,7 @@ export default function home() {
             autoPlay  // Add this attribute for autoplay
             className=""
           >
-            <source src="carousel14.mp4" type="video/mp4" />
+            <source src="arousel14.mp4" type="video/mp4" />
           </video>
           
           
@@ -358,9 +394,9 @@ export default function home() {
     <div className="py-8 lg:py-10 md:[height:80px]"></div>
     <div className="py-8 lg:py-10 md:[height:80px]"></div>
     <section5>
-    <div className=" px-4 lg:px-16 ">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 "> 
-      <card className="w-full h-full p-3 ">
+    <div className=" px-4 lg:px-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"> 
+      <card className="w-full h-full p-3">
       <div className="w-full flex justify-center">
         <span className="font-sans font-semibold text-yellow-800 ">EKSPLORASI KEPAKARAN YEG ACADEMY:</span>
         </div>
