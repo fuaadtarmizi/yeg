@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image" 
 import { Autoplay } from 'swiper/modules';
 
-
 import "swiper/css";
 import "swiper/css/autoplay";
 
@@ -30,40 +29,40 @@ export default function App() {
         className="mySwiper"
       >
         <SwiperSlide>
-        <Image
-            className="w-full"
-            src="/jelajahacm1.jpg"
-            alt="jelajahacm1"
-            width="90"
-            height="200"
-            style={{
-              objectFit: "contain",
-            }}
-          />
+        <Image 
+         className="w-full"
+         src="/posterpanjang.jpg"
+         alt="posterpanjang"
+         width="100"
+         height="80"
+         style={{
+           objectFit:"contain",
+         }}
+       />
         </SwiperSlide>
         <SwiperSlide>
-        <Image
-            className="w-full"
-            src="/jelajahacm3.jpg"
-            alt="jelajahacm3"
-            width="90"
-            height="200"
-            style={{
-              objectFit: "contain",
-            }}
-          />
+        <Image 
+         className="w-full"
+         src="/aviationposter.jpg"
+         alt="aviationposter"
+         width="100"
+         height="80"
+         style={{
+           objectFit:"contain",
+         }}
+       />
         </SwiperSlide>
         <SwiperSlide>
-        <Image
-            className="w-full"
-            src="/jelajahacm1.jpg"
-            alt="logopelita"
-            width="90"
-            height="200"
-            style={{
-              objectFit: "contain",
-            }}
-          />
+        <Image 
+         className="w-full"
+         src="/dhumyposter.jpg"
+         alt="dhumyposter"
+         width="100"
+         height="80"
+         style={{
+           objectFit:"contain",
+         }}
+       />
         </SwiperSlide>
       </Swiper>
       </div>

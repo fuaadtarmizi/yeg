@@ -856,7 +856,7 @@ export default function home() {
             </div>
         </card7>
         <card8 className=" transition w-full h-full flex justify-center  items-center rounded-md hover:shadow-xl group" style={{ backgroundImage: 'url("/newss8.jpeg")', backgroundSize: 'cover', backgroundPosition: 'fit' }}>
-          <div className="py-44 ">
+          <div className="py-44">
           </div>
           <div className="h-full grid items-end ">
             <a href="https://www.utusan.com.my/gaya/2022/04/pu-amin-pu-riz-dilantik-sebagai-pensyarah-yeg-academy/"
