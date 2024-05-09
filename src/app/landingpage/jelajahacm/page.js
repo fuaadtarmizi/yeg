@@ -47,19 +47,17 @@ function page() {
         </div>
       </section>
       <div className="py-4 lg:py-10 md:[height:80px]"></div>
-        
       <section>
       <div className="animate-pulse duration-800  bg-red-600 flex justify-center p-2 py-6">
         <h className="text-2xl text-slate-200 font-bold font-sans">Sebarang pertanyaan sila hubungi En.Saiful <span className="text-black">0107894564</span></h>
         </div>
       </section>   
-      <div className="py-4 lg:py-10 md:[height:80px]"></div>
       <section>
-        <Moto/>
+        <Formjelajahacm/>
       </section>
       <div className="py-4 lg:py-10 md:[height:80px]"></div>
       <section>
-        <Formjelajahacm/>
+        <Moto/>
       </section>
       <section>
         <Footer/>

@@ -20,14 +20,14 @@ function VideoMqa() {
                       </iframe>
                     </div>
                 </div>
-                <div className="bg-green-600 rounded-md border transition duration-300 ease-out hover:shadow-2xl">
+                <div className="bg-green-600 rounded-md transition duration-300 ease-out hover:shadow-2xl">
                   <div className="w-full h-full flex justify-center items-center bg-gren-600">
                     <span className="text-white font-sans font-bold text-3xl">PENGIKTIRAFAN MQA</span>
                   </div>
                 </div>
                 <div className="bg-green-300">
-                <iframe width="500" 
-                  height="530" 
+                <iframe width="200" 
+                  height="200" 
                   src="https://www.youtube.com/embed/3dsnsSHP9wU" 
                   title="HIGHLIGHT EVENT MAPAN 2023" 
                   frameborder="0" 

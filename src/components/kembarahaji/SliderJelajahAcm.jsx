@@ -31,7 +31,7 @@ export default function App() {
         <SwiperSlide>
         <Image 
          className="w-full"
-         src="/posterpanjang.jpg"
+         src="/kembarahaji1.jpg"
          alt="posterpanjang"
          width="100"
          height="80"
@@ -43,7 +43,7 @@ export default function App() {
         <SwiperSlide>
         <Image 
          className="w-full"
-         src="/aviationposter.jpg"
+         src="/kembarahaji1.jpg"
          alt="aviationposter"
          width="100"
          height="80"
@@ -55,7 +55,7 @@ export default function App() {
         <SwiperSlide>
         <Image 
          className="w-full"
-         src="/dhumyposter.jpg"
+         src="/kembarahaji1.jpg"
          alt="dhumyposter"
          width="100"
          height="80"

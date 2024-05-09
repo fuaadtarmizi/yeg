@@ -16,7 +16,12 @@ function page() {
           <SliderJelajahAcm/>
         </div>
       </section>
-      <div className="py-4 lg:py-10 md:[height:80px]"></div>
+      <div className="bg-green-600 py-4 lg:py-10 md:[height:80px]"></div>
+      <section>
+        <div>
+          <VideoMqa/>
+        </div>
+      </section>
       <section>
         <div className="bg-green-600 py-4 flex justify-center">
           <span className="p-4 font-semibold text-4xl font-sans text-white">Alumni Program</span>
@@ -26,11 +31,7 @@ function page() {
         </div>
       </section>
       <div className="py-4 lg:py-10 md:[height:80px]"></div>
-        <section>
-        <div>
-          <VideoMqa/>
-        </div>
-      </section>
+        
       <div className="py-4 lg:py-10 md:[height:80px]"></div>
       <section>
         <Moto/>
