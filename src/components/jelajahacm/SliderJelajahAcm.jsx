@@ -32,7 +32,7 @@ export default function App() {
         <SwiperSlide>
         <Image
             className="w-full"
-            src="/jelajahacm1.jpg"
+            src="/jelajahacm3.jpg"
             alt="jelajahacm1"
             width="90"
             height="200"
@@ -56,7 +56,7 @@ export default function App() {
         <SwiperSlide>
         <Image
             className="w-full"
-            src="/jelajahacm1.jpg"
+            src="/jelajahacm3.jpg"
             alt="logopelita"
             width="90"
             height="200"

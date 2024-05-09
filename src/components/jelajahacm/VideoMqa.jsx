@@ -26,15 +26,15 @@ function VideoMqa() {
                   </div>
                 </div>
                 <div className="bg-green-300">
-                  <iframe className="w-full"
-                          width="200"
-                          height="200" 
-                          src="https://www.youtube.com/embed/3dsnsSHP9wU" 
-                          title="ZARUL UMBRELLA JADI FELO MEATECH DENGAN KERJASAMA AVIATION CAREER MALAYSIA" 
-                          frameborder="0" 
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                          referrerpolicy="strict-origin-when-cross-origin" 
-                          allowfullscreen>
+                          <iframe className="w-full"
+                            width="200" 
+                            height="200" 
+                            src="https://www.youtube.com/embed/aJLBouZawOA" 
+                            title="ZARUL UMBRELLA JADI FELO MEATECH DENGAN KERJASAMA AVIATION CAREER MALAYSIA" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
                           </iframe>
                 </div>
             </div>
