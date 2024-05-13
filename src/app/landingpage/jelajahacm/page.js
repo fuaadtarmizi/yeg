@@ -8,7 +8,6 @@ import Moto from '@/components/jelajahacm/Moto'
 import Footer from '@/components/Footer'
 import FormJelajahAcm from '@/components/FormJelajahAcm'
 
-
 function page() {
   return (
     <>
