@@ -6,7 +6,7 @@ import Testimoni from '@/components/jelajahacm/Testimoni'
 import VideoMqa from '@/components/jelajahacm/VideoMqa'
 import Moto from '@/components/jelajahacm/Moto'
 import Footer from '@/components/Footer'
-import FormJelajahAcm from '@/components/FormJelajahAcm'
+import Formjelajahacm from '@/components/Formjelajahacm'
 
 function page() {
   return (
@@ -53,7 +53,7 @@ function page() {
         </div>
       </section>   
       <section>
-        <FormJelajahAcm/>
+        <Formjelajahacm/>
       </section>
       <div className="py-4 lg:py-10 md:[height:80px]"></div>
       <section>
