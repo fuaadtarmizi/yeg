@@ -10,7 +10,7 @@ function VideoMqa() {
                     <div className="hover:ease-out duration:300">
                     <iframe className="w-full" 
                             width="200"
-                            height="200" 
+                            height="400" 
                             src="https://www.youtube.com/embed/XmOfTJd2mM8" 
                             title="DIPLOMA IN AVIATION" 
                             frameborder="0" 
@@ -20,15 +20,15 @@ function VideoMqa() {
                             </iframe>
                     </div>
                 </div>
-                <div className="bg-red-600 rounded-md  transition duration-300 ease-out hover:shadow-2xl py-8">
+                <div className="bg-red-600 rounded-md transition duration-300 ease-out hover:shadow-2xl py-8">
                   <div className="w-full h-full flex justify-center items-center bg-red-600">
                     <span className="text-white font-sans font-bold text-3xl">PENGIKTIRAFAN MQA</span>
                   </div>
                 </div>
                 <div className="bg-green-300">
                           <iframe className="w-full"
-                            width="200" 
-                            height="200" 
+                            width="400" 
+                            height="400" 
                             src="https://www.youtube.com/embed/aJLBouZawOA" 
                             title="ZARUL UMBRELLA JADI FELO MEATECH DENGAN KERJASAMA AVIATION CAREER MALAYSIA" 
                             frameborder="0" 
