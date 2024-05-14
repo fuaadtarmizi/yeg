@@ -29,40 +29,32 @@ export default function App() {
         className="mySwiper"
       >
         <SwiperSlide>
-        <Image 
-         className="w-full"
-         src="/posterpanjang.jpg"
-         alt="posterpanjang"
-         width="100"
-         height="80"
-         style={{
-           objectFit:"contain",
-         }}
-       />
+          <div className="w-full flex justify-center">
+            <Image 
+            className="rounded-md"
+            src="/kembarahaji1.jpg"
+            alt="kembarahaji1"
+            width="1000"
+            height="50"
+            style={{
+            objectFit:"contain",
+          }}
+        />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-        <Image 
-         className="w-full"
-         src="/aviationposter.jpg"
-         alt="aviationposter"
-         width="100"
-         height="80"
-         style={{
-           objectFit:"contain",
-         }}
-       />
-        </SwiperSlide>
-        <SwiperSlide>
-        <Image 
-         className="w-full"
-         src="/dhumyposter.jpg"
-         alt="dhumyposter"
-         width="100"
-         height="80"
-         style={{
-           objectFit:"contain",
-         }}
-       />
+          <div className="w-full flex justify-center">
+            <Image 
+            className="rounded-md"
+            src="/kembarahaji1.jpg"
+            alt="kembarahaji1"
+            width="1000"
+            height="50"
+            style={{
+            objectFit:"contain",
+          }}
+        />
+          </div>
         </SwiperSlide>
       </Swiper>
       

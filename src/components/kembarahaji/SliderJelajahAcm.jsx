@@ -29,40 +29,32 @@ export default function App() {
         className="mySwiper"
       >
         <SwiperSlide>
+          <div className="w-full flex justify-center " style={{ backgroundImage: 'url("/article3(4).png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundOpacity:4 }}>
         <Image 
-         className="w-full"
-         src="/kembarahaji1.jpg"
-         alt="posterpanjang"
-         width="100"
+         className=""
+         src="/kembarahaji2.jpg"
+         alt="kembarahaji2"
+         width="700"
          height="80"
          style={{
            objectFit:"contain",
          }}
        />
+       </div>
         </SwiperSlide>
         <SwiperSlide>
+          <div className="w-full flex justify-center " style={{ backgroundImage: 'url("/article3(4).png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundOpacity:4 }}>
         <Image 
-         className="w-full"
-         src="/kembarahaji1.jpg"
-         alt="aviationposter"
-         width="100"
+         className=""
+         src="/kembarahaji2.jpg"
+         alt="kembarahaji2"
+         width="700"
          height="80"
          style={{
            objectFit:"contain",
          }}
        />
-        </SwiperSlide>
-        <SwiperSlide>
-        <Image 
-         className="w-full"
-         src="/kembarahaji1.jpg"
-         alt="dhumyposter"
-         width="100"
-         height="80"
-         style={{
-           objectFit:"contain",
-         }}
-       />
+       </div>
         </SwiperSlide>
       </Swiper>
       </div>

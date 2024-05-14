@@ -181,7 +181,7 @@ export default function home() {
             autoPlay  // Add this attribute for autoplay
             className=""
           >
-            <source src="arousel14.mp4" type="video/mp4" />
+            <source src="carousel14.mp4" type="video/mp4" />
           </video>
           
           
@@ -599,7 +599,7 @@ export default function home() {
     <div className="hidden lg:block py-8 lg:py-10 md:[height:80px]"></div>
     <section9 >
       <div className="flex justify-center">
-      <div className=" w-full  max-w-7xl ">
+      <div className="w-full max-w-7xl ">
       <div className="hidden lg:block w-full h-full lg:grid-cols-3 gap-4 space-y-10">
         <div className="flex col-span-3 justify-end ">
         <div className="flex items-center px-10">
