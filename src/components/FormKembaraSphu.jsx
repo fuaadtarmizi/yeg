@@ -294,6 +294,10 @@ export default function App() {
           >
             Terengganu
           </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Singapore")}>Singapore</p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Brunei")}>Brunei</p>
           </div>     
         </div>
       )}
