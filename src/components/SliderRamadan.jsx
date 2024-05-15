@@ -31,7 +31,7 @@ export default function App() {
         <SwiperSlide>
           <div className="w-full flex justify-center">
             <Image 
-            className="rounded-md"
+            className="w-full rounded-md"
             src="/kembarahaji1.jpg"
             alt="kembarahaji1"
             width="1000"
@@ -45,7 +45,7 @@ export default function App() {
         <SwiperSlide>
           <div className="w-full flex justify-center">
             <Image 
-            className="rounded-md"
+            className="w-full rounded-md"
             src="/kembarahaji1.jpg"
             alt="kembarahaji1"
             width="1000"
@@ -56,47 +56,10 @@ export default function App() {
         />
           </div>
         </SwiperSlide>
+        
+
       </Swiper>
       
     </>
   );
 }
-
-
-
-
-
-
-{/* <Swiper className="mySwiper" autoplay={{ delay: 500 }}>
-       
-       <SwiperSlide>
-       
-       </SwiperSlide>
-       <SwiperSlide>
-       
-       </SwiperSlide>
-       <SwiperSlide>
-       <Image 
-         className="w-full"
-         src="/dhumyposter.jpg"
-         alt="dhumyposter"
-         width="100"
-         height="80"
-         style={{
-           objectFit:"contain",
-         }}
-       />
-       </SwiperSlide>
-     </Swiper>
-
- */}
-
-
-
-
-
-
-
-
-
-      

@@ -29,8 +29,8 @@ function page() {
       <div className="flex items-center">
         <Image
             className="w-full"
-            src="/jelajahacm2.jpg"
-            alt="logopelita"
+            src="/kembarahaji1.jpg"
+            alt="kembarahaji1"
             width="90"
             height="200"
             style={{

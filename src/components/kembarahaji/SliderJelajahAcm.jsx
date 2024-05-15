@@ -29,7 +29,7 @@ export default function App() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="w-full flex justify-center " style={{ backgroundImage: 'url("/article3(4).png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundOpacity:4 }}>
+          <div className="w-full flex justify-center " style={{ backgroundImage: 'url("/bgkembarahaji.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundOpacity:4 }}>
         <Image 
          className=""
          src="/kembarahaji2.jpg"
@@ -43,7 +43,7 @@ export default function App() {
        </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full flex justify-center " style={{ backgroundImage: 'url("/article3(4).png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundOpacity:4 }}>
+          <div className="w-full flex justify-center " style={{ backgroundImage: 'url("/bgkembarahaji.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundOpacity:4 }}>
         <Image 
          className=""
          src="/kembarahaji2.jpg"
