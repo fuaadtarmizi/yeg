@@ -12,7 +12,7 @@ import Countdown from '@/components/Countdown'
 
 function page() {
 
-  const targetDate = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000); // Set your target date
+  const initialtargetDate = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000); // Set your target date
 
   return (
     <>
@@ -44,7 +44,7 @@ function page() {
         </div>
       </section>
       <section>
-        <Countdown targetDate={targetDate}/>
+        <Countdown initialTargetDate={initialTargetDate}/>
       </section>
       <section>
         <div className="bg-green-600 py-4 flex justify-center">

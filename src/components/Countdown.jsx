@@ -1,6 +1,17 @@
 import React, { useEffect, useState } from 'react';
 
-const CountdownTimer = ({ targetDate }) => {
+const CountdownTimer = ({ initialTargetDate }) => {
+  const [targetDate, setTargetDate] = useState(() => {
+    // Retrieve target date from localStorage if it exists
+    const savedDate = localStorage.getItem('targetDate');
+    return savedDate ? new Date(savedDate) : new Date(initialTargetDate);
+  });
+
+  useEffect(() => {
+    // Store the target date in localStorage
+    localStorage.setItem('targetDate', targetDate);
+  }, [targetDate]);
+
   const calculateTimeLeft = () => {
     const difference = +new Date(targetDate) - +new Date();
     let timeLeft = {};
