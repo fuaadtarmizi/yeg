@@ -1,39 +1,41 @@
 import React, { useEffect, useState } from 'react';
 
+const calculateTimeLeft = (targetDate) => {
+  const difference = +targetDate - +new Date();
+  let timeLeft = {};
+
+  if (difference > 0) {
+    timeLeft = {
+      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+      minutes: Math.floor((difference / 1000 / 60) % 60),
+      seconds: Math.floor((difference / 1000) % 60),
+    };
+  } else {
+    timeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 };
+  }
+  return timeLeft;
+};
+
 const CountdownTimer = ({ initialTargetDate }) => {
-  const [targetDate, setTargetDate] = useState(() => {
-    // Retrieve target date from localStorage if it exists
-    const savedDate = localStorage.getItem('targetDate');
-    return savedDate ? new Date(savedDate) : new Date(initialTargetDate);
-  });
+  const [targetDate, setTargetDate] = useState(new Date(initialTargetDate));
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(new Date(initialTargetDate)));
 
   useEffect(() => {
-    // Store the target date in localStorage
-    localStorage.setItem('targetDate', targetDate);
-  }, [targetDate]);
-
-  const calculateTimeLeft = () => {
-    const difference = +new Date(targetDate) - +new Date();
-    let timeLeft = {};
-
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
-      };
-    } else {
-      timeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 };
+    // Check if localStorage is available and retrieve the target date if it exists
+    if (typeof window !== 'undefined' && localStorage) {
+      const savedDate = localStorage.getItem('targetDate');
+      if (savedDate) {
+        setTargetDate(new Date(savedDate));
+      } else {
+        localStorage.setItem('targetDate', new Date(initialTargetDate));
+      }
     }
-    return timeLeft;
-  };
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  }, [initialTargetDate]);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
+      setTimeLeft(calculateTimeLeft(targetDate));
     }, 1000);
 
     return () => clearInterval(timer);
