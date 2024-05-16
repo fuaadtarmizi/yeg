@@ -12,7 +12,7 @@ import Countdown from '@/components/Countdown'
 
 function page() {
 
-  const initialtargetDate = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000); // Set your target date
+  const initialTargetDate = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000); // Set your target date
 
   return (
     <>
