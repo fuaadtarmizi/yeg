@@ -7,9 +7,13 @@ import VideoMqa from '@/components/kembarahaji/VideoMqa'
 import Moto from '@/components/kembarahaji/Moto'
 import Footer from '@/components/Footer'
 import FormMmp from '@/components/FormMmp'
+import Countdown from '@/components/Countdown'
 
 
 function page() {
+
+  const targetDate = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000); // Set your target date
+
   return (
     <>
     <main>
@@ -40,6 +44,9 @@ function page() {
         </div>
       </section>
       <section>
+        <Countdown targetDate={targetDate}/>
+      </section>
+      <section>
         <div className="bg-green-600 py-4 flex justify-center">
           <span className="p-4 font-semibold text-4xl font-sans text-white">Alumni Program</span>
         </div>
@@ -64,6 +71,10 @@ function page() {
       <section>
         <Footer/>
       </section>
+      
+              <section>
+
+              </section>
     </main>
     </>  
   )
