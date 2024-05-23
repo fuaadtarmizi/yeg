@@ -92,7 +92,7 @@ function page() {
       </section>
       <div className="bg-white py-4 lg:py-10 md:[height:80px]"></div>
       <section>
-        <Faqticketmmp />
+        <Faqticketmmp /> 
       </section>
       <section>
         <Footer/>        
