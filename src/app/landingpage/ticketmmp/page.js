@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import VerticalCountdownTimer from '@/components/VerticalCountdownTimer'
-import Footer from '@/components/Footer'
 import Faqticketmmp from '@/components/Faqticketmmp'
 import Testimonimmp from '@/components/Testimonimmp'
 
@@ -280,10 +279,8 @@ function page() {
               Book Ticket
             </a>
           </div>
-      <section>
-        <Footer/>        
-      </section>
-      
+          <div className="py-4 lg:py-10 md:[height:80px]"></div>
+          <div className="py-4 lg:py-10 md:[height:80px]"></div>
     </main>
     </>  
   )
