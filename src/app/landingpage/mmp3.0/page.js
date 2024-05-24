@@ -7,11 +7,11 @@ import VideoMqa from '@/components/kembarahaji/VideoMqa'
 import Moto from '@/components/kembarahaji/Moto'
 import Footer from '@/components/Footer'
 import FormMmp from '@/components/FormMmp'
-import Countdown from '@/components/Countdown'
+import VerticalCountdownTimer from '@/components/VerticalCountdownTimer'
 
 
 function page() {
-  const initialTargetDate = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000); // Set your target date
+  const targetDate = new Date('2024-06-09T23:59:59');
   
   return (
     <>
@@ -43,7 +43,7 @@ function page() {
         </div>
       </section>
       <section>
-        <Countdown initialTargetDate={initialTargetDate}/>
+        <VerticalCountdownTimer targetDate={targetDate}/>
       </section>
       <section>
         <div className="bg-green-600 py-4 flex justify-center">
