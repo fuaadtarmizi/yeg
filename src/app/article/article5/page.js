@@ -16,158 +16,24 @@ export default function article() {
         </div>
         </nav>
     <body>
-        
-    <section1 className="hidden">
-        <div className="grid grid-cols-3 gap-6">
-            <div className=" col-span-2 w-full ">
-                <div className=" w-full flex justify-center pl-8 ">
-                    <div className="w-full h-full ">
-                    <video
-                        height={400}
-                        controls
-                        autoPlay  // Add this attribute for autoplay
-                        className="rounded-md"
-                    ><source src="yegintro.mp4" type="video/mp4" />
-                    </video>
-                </div>
-                </div>
-                <div className=" w-full flex justify-center">
-                    <div className=" w-3/4 py-3">
-                    <span className="text-2xl font-bold">podcast episod-1 | YEG Academy</span>
-                    </div>
-                </div>
-            </div>
-            <div className="col-span-1 ">
-                <div className=" grid justify-center w-full space-y-6 py-16">
-                <card1 className="w-full  flex">
-                    <div className="">
-                <Image
-                    id="image1"
-                        className="rounded-md"
-                        src="/carousel1.jpg"
-                        alt="carousel1"
-                        width="200"
-                        height="250"
-                        style={{
-                        objectFit:"fill",
-                        }}
-                    />
-                    </div>
-                    <div className="grid px-4 ">
-                    <span className="font-semibold">perasmian SPHU YEG Academy</span>
-                    <span className="text-gray-300 font-normal text-xs">March 23</span>
-                    </div>
-                </card1>
-                <card2 className=" w-full flex">
-                    <div className="">
-                <Image
-                    id="image1"
-                        className="rounded-md"
-                        src="/carousel2.jpg"
-                        alt="carousel2"
-                        width="200"
-                        height="250"
-                        style={{
-                        objectFit:"fill",
-                        }}
-                    />
-                    </div>
-                    <div className="grid px-4 ">
-                    <span className="font-semibold">perasmian SPHU YEG Academy</span>
-                    <span className="text-gray-300 font-normal text-xs">March 23</span>
-                    </div>
-                </card2>
-                <card3 className=" w-full flex">
-                    <div className="">
-                <Image
-                    id="image1"
-                        className="rounded-md"
-                        src="/carousel3.jpg"
-                        alt="carousel3"
-                        width="200"
-                        height="250"
-                        style={{
-                        objectFit:"fill",
-                        }}
-                    />
-                    </div>
-                    <div className="grid px-4 ">
-                    <span className="font-semibold">perasmian SPHU YEG Academy</span>
-                    <span className="text-gray-300 font-normal text-xs">March 23</span>
-                    </div>
-                </card3>
-                <card4 className="w-full flex">
-                    <div className="">
-                <Image
-                    id="image1"
-                        className="rounded-md"
-                        src="/carousel4.jpg"
-                        alt="carousel4"
-                        width="200"
-                        height="250"
-                        style={{
-                        objectFit:"fill",
-                        }}
-                    />
-                    </div>
-                    <div className="grid px-4 ">
-                    <span className="font-semibold">perasmian SPHU YEG Academy</span>
-                    <span className="text-gray-300 font-normal text-xs">March 23</span>
-                    </div>
-                </card4>
-                <card5 className=" w-full flex">
-                    <div className="w-">
-                <Image
-                    id="image1"
-                        className="rounded-md"
-                        src="/carousel5.jpg"
-                        alt="carousel5"
-                        width="200"
-                        height="250"
-                        style={{
-                        objectFit:"fill",
-                        }}
-                    />
-                    </div>
-                    <div className="grid px-4 ">
-                    <span className="font-semibold">perasmian SPHU YEG Academy</span>
-                    <span className="text-gray-300 font-normal text-xs">March 23</span>
-                    </div>
-                </card5>
-               
-                </div>
-                
-            </div>
-            
-        </div>
-    </section1>
    
     <section3>
         <div className="px-4 lg:px-28">
             <div className="flex justify-center">
         <div className="group w-full h-full grid justify-center ">
         <p className="text-2xl text-slate-700  font-semibold font-sans text-center p-10 leading-snug tracking-wide">
-        BIDANG SAMBUNG BELAJAR DENGAN
-          <span className="text-slate-700 bg-gradient-to-r from-yellow-500 to-yellow-500 bg-no-repeat [background-position:0_88%] [background-size:1%_100%] motion-safe:transition-all motion-safe:duration-700 group-hover:[background-size:100%_100%] focus:[background-size:100%_100%]">
-          PERMINTAAN PEKERJAAN TERKINI</span>
-        </p>
+        APA YANG PELAJAR PERLU TAHU TENTANG DIPLOMA WBL?</p>
       </div>
       </div>
       <div className="">
-        <span>Ramai dikalangan anak-anak muda mahupun mereka yang sudah berpengalaman dalam dunia
-pekerjaan mencari-cari maklumat berkenaan permintaan pekerjaan terkini. Dengan
-perkembangan teknologi pada hari ini, pelbagai pekerjaan semakin hilang dan turut diganti
-dengan kemudahan teknologi kecerdasan buatan (AI). Berikutan dengan permasalahan
-ekonomi yang semakin membimbangkan, orang ramai turut cenderung untuk memilih pekerjaan
-yang membuahkan hasil serta merta. Oleh itu, ramai golongan muda yang tidak berminat untuk
-sambung belajar dan beralih ke sektor ekonomi gig, e-hailing dan sektor pengilangan.</span>
+        <span>Sejak kebelakangan ni, isu tentang pendidikan cukup hangat diperkatakan di kalangan netizen. Tapi, apa kaitannya dengan diploma WBL? Mesti korang pun tertanya-tanya kan? </span>
       </div>
       <div className="w-full flex justify-center py-8">
                 <Image
                     id="image1"
                         className="rounded-md"
-                        src="/article1(1).svg"
-                        alt="article1"
+                        src="/article5(1).jpg"
+                        alt="article5"
                         width="1200"
                         height="250"
                         style={{
@@ -175,33 +41,32 @@ sambung belajar dan beralih ke sektor ekonomi gig, e-hailing dan sektor pengilan
                         }}
                     />
                     </div>
-                    <div className="pb-10">
-        <span>Golongan remaja yang tidak berminat untuk menyambung pengajian sehingga ke peringkat
-profesional dapat memberi impak kepada usaha mencapai 35 peratus tenaga kerja
-berkemahiran tinggi dalam sektor ekonomi menjelang 2030. Sehubungan dengan itu, bidang
-sambung belajar yang mempunyai permintaan pekerjaan terkini dapat memberi peluang
-pekerjaan yang relevan dengan kadar gaji yang memberangsangkan. Dalam konteks ini,
-memahami permintaan pekerjaan terkini bukan hanya suatu keharusan, tetapi juga kunci untuk
-membuka pintu menuju karier yang berjaya.</span>
+                    <div className="px-3 lg:px-8 grid space-y-6">
+        <h className="px-3 lg:px-8">Semenjak tahun 2022, kajian mendapati 72% lepasan SPM tidak berminat untuk sambung belajar. Perkara ini adalah sangat membimbangkan untuk pertumbuhan negara secara holistik dan perkembangan cara berfikir anak-anak muda. Untuk mengetahui mengapa diploma WBL adalah penyelesaiannya, jom baca penerangan ini sehingga akhir.</h>
       </div>
+      <div className="py-8"></div>
+      <div className="px-3 lg:px-8 grid space-y-6">
+        <h className="px-3 lg:px-8">Korang kena faham kenapa golongan muda memilih untuk bekerja. Kebanyakkan daripada mereka menginginkan pendapatan yang segera. Walau bagaimanapun, penglibatan para pelajar dalam institusi pendidikan dapat melahirkan tenaga mahir yang diperlukan untuk kemajuan negara. Oleh itu, diploma WBL dapat membantu dalam memastikan kedua-dua keperluan industri dan anak muda dapat diselesaikan.</h>
+      </div>
+      <div className="py-8"></div>
+
       <div className="py-8">
-        <h className="font-bold underline">6 Contoh Permintaan Pekerjaan Terkini:</h>
+        <h className="font-bold underline">Apa beza Diploma dan Diploma WBL?</h>
       </div>
       <div className="px-3 lg:px-8 grid space-y-6">
-        <h className="font-semibold">1. Pengurusan Haji dan Umrah:</h>
-        <h className="px-3 lg:px-8">Dengan pertumbuhan terus-menerus dalam sektor pelancongan, terutamanya dalam
-pengurusan Haji dan Umrah, permintaan pekerjaan terkini dalam bidang ini semakin
-meningkat. Hal ini dapat dipastikan dengan perancangan masa depan pihak kerajaan
-yang ingin mewujudkan hub Umrah sekaligus penguatkuasaan beberapa syarat tertentu
-dan mengawal selia semula Akta Industri Pelancongan 1992 yang memerlukan
-sejumlah tenaga kerja mahir.</h>
+        <h className="px-3 lg:px-8">1. Konsep Pembelajaran dalam Diploma WBL</h>
+      </div>
+      <div className="py-8"></div>
+
+      <div className="px-3 lg:px-8 grid space-y-6">
+        <h className="px-3 lg:px-8">Mestilah ada beza antara program diploma konvensional dan diploma WBL. Program-program diploma yang berada di pasaran merupakan program diploma biasa iaitu menekankan pembelajaran teori dalam jangka masa yang lebih lama daripada sesi praktikal. </h>
       </div>
       <div className="w-full flex justify-center px-3 lg:px-8">
                 <Image
                     id="image1"
                         className="rounded-md"
-                        src="/article1(2).svg"
-                        alt="article2"
+                        src="/article5(2).jpg"
+                        alt="article5"
                         width="1200"
                         height="250"
                         style={{
@@ -209,16 +74,37 @@ sejumlah tenaga kerja mahir.</h>
                         }}
                     />
                     </div>
+                    <div className="py-8"></div>
+                    <div className="px-3 lg:px-8 grid space-y-6">
+                        <h className="px-3 lg:px-8">Diploma WBL direka bentuk melalui inovasi modul-modul diploma sedia ada yang berasaskan industri supaya menepati pasaran kerjaya masa kini. </h>
+                    </div>
+                    <div className="py-8"></div>
+                    <div className="px-3 lg:px-8 grid space-y-6">
+                        <h className="px-3 lg:px-8">Perbezaan utama dalam program-program yang dikategorikan dibawah diploma WBL adalah dengan penawaran tempoh praktikal yang lebih panjang (sekitar 18 bulan) dan diberikan bayaran gaji. </h>
+                    </div>
+                    <div className="py-8"></div>
+                    <div className="px-3 lg:px-8 grid space-y-6">
+                        <h className="px-3 lg:px-8">2. Contoh-Contoh Kursus yang Ditawarkan dalam Diploma WBL</h>
+                    </div>
+                    <div className="py-8"></div>
+                    <div className="px-3 lg:px-8 grid space-y-6">
+                        <h className="px-3 lg:px-8">Antara contoh-contoh kursus yang ditawarkan di bawah program diploma WBL adalah seperti berikut:</h>
+                    </div>
                     <div className="px-3 lg:px-8 grid space-y-6 pt-6">
-        <h className="font-semibold">2. Kejururawatan:</h>
-        <h className="px-3 lg:px-8">Seiring dengan meningkatnya kesedaran akan kepentingan kesihatan, permintaan
-pekerjaan di bidang kejururawatan terus tumbuh dan diperlukan terutamanya di hospital
-swasta. Menurut sebuah tinjauan yang dibuat oleh Persatuan Hospital Swasta Malaysia
-(APHM) pada November 2022, hasil maklum balas daripada 103 hospital mendapati
-Malaysia memerlukan kira-kira 9,224 jururawat tambahan pada tahun ini hingga 2025.
-Hal ini menjadikan kerjaya jururawat sebagai salah satu permintaan pekerjaan terkini
-yang tinggi.</h>
-      </div>
+                    <h className="font-bold">Program-program diploma sambung belajar:</h>
+                        <div className="grid space-y-2 underline font-serif">
+                        <a href="/" className="px-4 font-bold">Diploma Pengurusan Haji dan Umrah (WBL)</a>
+                        <a href="/" className="px-4 font-bold">Diploma Teknologi Pembaikan Struktur Pesawat - Kepingan Logam (WBL)</a>
+                        <a href="/" className="px-4 font-bold">Diploma Pengurusan Syarikat Penerbangan (WBL)</a>
+                        <a href="/" className="px-4 font-bold">Diploma Pengurusan Kargo Penerbangan (WBL)</a>
+                        <a href="/" className="px-4 font-bold">Diploma Pengurusan Pelancongan + Sijil Kompetensi Penerbangan (WBL)</a>
+                        <a href="/" className="px-4 font-bold">Diploma Pengurusan Hotel (WBL)</a>
+                        <a href="/" className="px-4 font-bold">Diploma Seni Kulinari (WBL)</a>
+                        <a href="/" className="px-4 font-bold">Diploma Pendidikan Awal Kanak-Kanak (WBL)</a>
+                        </div>
+                    </div>
+                    
+                    
       <div className="w-full flex justify-center px-3 lg:px-8">
                 <Image
                     id="image1"
