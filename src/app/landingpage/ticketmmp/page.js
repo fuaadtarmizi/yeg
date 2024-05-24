@@ -61,7 +61,7 @@ function page() {
       <section>
         <div className="w-full flex justify-center bg-black">
           <div className="p-4">
-            <p className="text-center text-base font-bold text-white ">Jom sertai kempen selama satu hari ini adalah langkah pertama untuk sertai <a className="underline" href="/landingpage/mmp3.0"> Sijil Profesional Haji dan Umrah (SPHU)</a> dan <a className="underline" href="/landingpage/mmp3.0">Diploma Pengurusan Haji dan Umrah (DHUMY)</a> yang diajar oleh tenaga kerja profesional dalam industri ini.</p>
+            <p className="text-center text-base font-bold text-white ">Jom sertai kempen satu hari ini sebagai langkah pertama untuk mendaftar <a className="underline" href="/landingpage/mmp3.0"> Sijil Profesional Haji dan Umrah (SPHU)</a> dan <a className="underline" href="/landingpage/mmp3.0">Diploma Pengurusan Haji dan Umrah (DHUMY)</a> yang diajar oleh tenaga kerja profesional dalam industri.</p>
           </div>
         </div>
       </section>
