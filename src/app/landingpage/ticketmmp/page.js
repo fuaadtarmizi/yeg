@@ -92,10 +92,10 @@ function page() {
               <li className="text-lg list-disc "><span className="font-bold">Tiada masa untuk reskill ilmu baru.</span> Kekangan masa menyebabkan anda ingin mencari kelas dengan jadual yang fleksibel disamping dapat meneruskan kerjaya sedia ada.</li>
             </ul>
             <ul className="px-8 list-outside">
-              <li className="text-lg list-disc"><span className="font-bold">Tiada ilmu pengurusan haji dan umrah.</span> Jarang ada kelas khusus untuk mengurusakan jemaah haji atau umrah dari A ke Z</li>
+              <li className="text-lg list-disc"><span className="font-bold">Tiada ilmu pengurusan haji dan umrah.</span> Jarang ada kelas khusus untuk mengurusakan jemaah haji atau umrah dari A ke Z.</li>
             </ul>
             <ul className="px-8 list-outside">
-              <li className="text-lg list-disc"><span className="font-bold">Ingin mendalami ilmi menasik haji dan umrah</span> Nak pergi kursus umrah kene tunggu hujung minggu tetapi kadang terlepas sesetengah topik kerana komitmen lain</li>
+              <li className="text-lg list-disc"><span className="font-bold">Ingin mendalami ilmu menasik haji dan umrah</span> Nak pergi kursus umrah perlu tunggu hujung minggu tetapi kadang terlepas sesetengah topik kerana komitmen lain.</li>
             </ul>
             <ul className="px-8 list-outside">
               <li className="text-lg list-disc"><span className="font-bold">Susah nak cari tenaga pengajar terbaik.</span> Kebanyakkan tenaga pengajar tidak mempunyai teknik mengajar yang berkesan dan membosankan.</li>
@@ -232,7 +232,7 @@ function page() {
       <section>
         <div className="px-4">
           <div className="p-2 bg-black">
-            <h className="text-lg text-white">Betul tak, rasa berbaloi untuk invest pada perkara bermanfaat?</h>
+            <h className="text-lg text-white">Betul ke, rasa berbaloi untuk invest pada perkara bermanfaat?</h>
           </div>
         <Testimonimmp/>
         </div>
