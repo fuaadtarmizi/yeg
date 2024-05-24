@@ -34,33 +34,33 @@ import {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">
-          <AccordionTrigger>Apa yang peserta akan dapat dengan menyertai kempen ini?</AccordionTrigger>
+          <AccordionTrigger>Siapa yang layak sertai kempen ini?</AccordionTrigger>
           <AccordionContent>
-          Peserta yang menghadiri kempen MMP 3.0 secara fizikal akan diberikan lanyard, kad peserta, kad doa’ dan sedikit makanan ringan.
+          Sesiapa sahaja layak untuk menyertai kempen Melahirkan Mutawwif Profesional 3.0. Namun, digalakkan bagi mereka yang berminat untuk menjadi mutawwif, mutawwifah dan bekerjaya dalam industri haji dan umrah sama ada golongan bekerjaya, lepasan SPM atau mereka yang sudah pencen. Kempen ini juga sesuai untuk mereka yang nak mendalami ilmu berkaitan ibadah haji dan umrah secara mendalam.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-5">
-          <AccordionTrigger>Apa yang peserta akan dapat dengan menyertai kempen ini?</AccordionTrigger>
+          <AccordionTrigger>Adakah saya boleh dapat rakaman sesi kempen berikut jika terlepas penyertaan?</AccordionTrigger>
           <AccordionContent>
-          Peserta yang menghadiri kempen MMP 3.0 secara fizikal akan diberikan lanyard, kad peserta, kad doa’ dan sedikit makanan ringan.
+          Tidak, kerana kempen Melahirkan Mutawwif Profesional 3.0 adalah sesi ekslusif.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-6">
-          <AccordionTrigger>Apa yang peserta akan dapat dengan menyertai kempen ini?</AccordionTrigger>
+          <AccordionTrigger>Saya bukan warga Malaysia, adakah saya boleh sertai kempen ini?</AccordionTrigger>
           <AccordionContent>
-          Peserta yang menghadiri kempen MMP 3.0 secara fizikal akan diberikan lanyard, kad peserta, kad doa’ dan sedikit makanan ringan.
+          Ya, Melahirkan Mutawwif Profesional 3.0 terbuka kepada warga Malaysia, Brunei dan Singapura. Sekiranya terdapat peserta selain dari negara berikut, anda juga dialu-alukan untuk sertai bersama. Peserta yang tidak dapat hadir secara fizikal boleh menghadiri kempen secara atas talian.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-7">
-          <AccordionTrigger>Apa yang peserta akan dapat dengan menyertai kempen ini?</AccordionTrigger>
+          <AccordionTrigger>Adakah saya boleh jadi Mutawwif dengan hanya sertai kempen ini?</AccordionTrigger>
           <AccordionContent>
-          Peserta yang menghadiri kempen MMP 3.0 secara fizikal akan diberikan lanyard, kad peserta, kad doa’ dan sedikit makanan ringan.
+          Kempen ini hanyalah sebahagian daripada perjalanan untuk menjadi mutawwif. Namun, ia adalah langkah pertama yang terbaik untuk memulakan kerjaya dalam bidang ini kerana peserta akan didedahkan dengan kursus jangka pendek seperti Sijil Profesional Haji dan Umrah (SPHU) atau kursus 3 tahun setengah seperti Diploma Pengurusan Haji dan Umrah (DHUMY). 
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-8">
-          <AccordionTrigger>Apa yang peserta akan dapat dengan menyertai kempen ini?</AccordionTrigger>
+          <AccordionTrigger>Adakah terdapat pembayaran untuk penyertaan?</AccordionTrigger>
           <AccordionContent>
-          Peserta yang menghadiri kempen MMP 3.0 secara fizikal akan diberikan lanyard, kad peserta, kad doa’ dan sedikit makanan ringan.
+          Ya, satu penyertaan secara fizikal perlu membayar RM 10. Walau bagaimanapun, terdapat promosi beli 2 tiket dan percuma 1 tiket dengan harga RM 20.
           </AccordionContent>
         </AccordionItem>
       </Accordion>

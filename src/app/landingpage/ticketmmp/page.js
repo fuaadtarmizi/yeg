@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Countdown from '@/components/Countdown'
+import VerticalCountdownTimer from '@/components/VerticalCountdownTimer'
 import Footer from '@/components/Footer'
 import Faqticketmmp from '@/components/Faqticketmmp'
 import Testimonimmp from '@/components/Testimonimmp'
@@ -9,7 +9,7 @@ import Testimonimmp from '@/components/Testimonimmp'
 
 function page() {
 
-  const initialTargetDate = new Date(Date.now() + 15 * 24 * 60 * 60 * 1000); 
+  const targetDate = new Date('2024-06-09T23:59:59');
                                             
   return (
     <>
@@ -65,10 +65,10 @@ function page() {
           </div>
         </div>
       </section>
-      <div className="py-4 lg:py-10 md:[height:80px]"></div>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#f0f0f0' }}></div>
       <section>
         <div>
-          <Countdown initialTargetDate={initialTargetDate} />
+        <VerticalCountdownTimer targetDate={targetDate} />
         </div>
       </section>
       <div className="py-4 lg:py-10 md:[height:80px]"></div>
