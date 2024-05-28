@@ -24,15 +24,16 @@ function page() {
       <div className="">
       <iframe
       className="w-full" 
-      width="914" 
-      height="514" 
-      src="https://www.youtube.com/embed/lJPjEMXT3eM" 
-      title="NANTIKAN MMP3.0" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      referrerpolicy="strict-origin-when-cross-origin" 
-      allowfullscreen>
-      </iframe>
+        width="779"
+        height="428"
+        autoplay 
+        src="https://www.youtube.com/embed/YUCnJftsR74" 
+        title="MELAHIRKAN MUTAWWIF PROFESSIONAL 3.0" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+       </iframe>
         </div>
       </section>
       <section>
@@ -42,7 +43,6 @@ function page() {
           </div>
         </div>
       </section>
-      
       <section>
       <div className="w-full flex items-center">
         <Image 
@@ -64,19 +64,15 @@ function page() {
           </div>
         </div>
       </section>
-      <section>
-        <div>
-        <VerticalCountdownTimer targetDate={targetDate} />
-        </div>
-      </section>
       <div className="py-4 lg:py-10 md:[height:80px]"></div>
-      <section>
-        <div>
-          <div className="w-full flex justify-center">
-            <a href="https://yeg.onpay.my/order/form/onticketmmp3" className="bg-green-600 animate-pulse p-2 px-8 rounded-md">
-              Book Ticket
-            </a>
-          </div>
+
+      <section className="px-4">
+        <div className="border rounded-md shadow-md">
+        <VerticalCountdownTimer targetDate={targetDate} />
+        <div className="w-full flex justify-center py-2">
+          <a href="https://yeg.onpay.my/order/form/onticketmmp3" className="bg-green-600 animate-pulse p-2 px-8 rounded-md">
+            Book Ticket</a>
+        </div>
         </div>
       </section>
       <div className="py-4 lg:py-10 md:[height:80px]"></div>
@@ -107,7 +103,7 @@ function page() {
       <div className="py-4 lg:py-10 md:[height:80px]"></div>
       <section>
         <div className="grid grid-cols-1 px-4 space-y-4">
-          <div className="bg-red-100 p-2">
+          <div className="p-2">
             <div className="w-full">
             <iframe
             className="w-full" 
@@ -212,8 +208,8 @@ function page() {
       <div className="flex items-center">
         <Image
             className="w-full"
-            src="/kembarahaji1.jpg"
-            alt="kembarahaji1"
+            src="/mmpposter.jpg"
+            alt="mmpposter"
             width="90"
             height="200"
             style={{
@@ -221,6 +217,14 @@ function page() {
             }}
           />
         </div>
+      </section>
+      <div className="bg-white py-4 lg:py-10 md:[height:80px]"></div>
+      <section>
+      <div className="w-full flex justify-center">
+        <a href="https://yeg.onpay.my/order/form/onticketmmp3" className="bg-green-600 animate-pulse p-1 px-8 rounded-md">
+          Book Ticket
+        </a>
+      </div>
       </section>
       <div className="bg-white py-4 lg:py-10 md:[height:80px]"></div>
       <section>
