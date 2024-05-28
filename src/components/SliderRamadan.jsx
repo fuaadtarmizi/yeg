@@ -32,8 +32,8 @@ export default function App() {
           <div className="w-full flex justify-center">
             <Image 
             className="w-full rounded-md"
-            src="/kembarahaji1.jpg"
-            alt="kembarahaji1"
+            src="/mmpposter.jpg"
+            alt="mmpposter"
             width="1000"
             height="50"
             style={{
@@ -46,8 +46,8 @@ export default function App() {
           <div className="w-full flex justify-center">
             <Image 
             className="w-full rounded-md"
-            src="/kembarahaji1.jpg"
-            alt="kembarahaji1"
+            src="/mmpposter.jpg"
+            alt="mmpposter"
             width="1000"
             height="50"
             style={{
