@@ -25,9 +25,8 @@ function page() {
       <iframe
       className="w-full" 
         width="779"
-        height="428"
-        autoplay 
-        src="https://www.youtube.com/embed/YUCnJftsR74" 
+        height="428" 
+        src="https://www.youtube.com/embed/YUCnJftsR74?autoplay=1" 
         title="MELAHIRKAN MUTAWWIF PROFESSIONAL 3.0" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
