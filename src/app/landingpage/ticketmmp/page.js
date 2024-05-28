@@ -220,10 +220,48 @@ function page() {
       </section>
       <div className="bg-white py-4 lg:py-10 md:[height:80px]"></div>
       <section>
-      <div className="w-full flex justify-center">
+      
+      </section>
+      <div className="bg-white py-4 lg:py-10 md:[height:80px]"></div>
+      <section>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div className="flex items-center">
+        <Image
+            className="w-full"
+            src="/mmpperson1.jpg"
+            alt="mmpperson1"
+            width="90"
+            height="200"
+            style={{
+              objectFit: "contain",
+            }}/>
+        </div>
+        <div className="flex items-center">
+        <Image
+            className="w-full"
+            src="/mmpperson2.jpg"
+            alt="mmpperson2"
+            width="90"
+            height="200"
+            style={{
+              objectFit: "contain",
+            }}/>
+        </div>
+        <div className="flex items-center">
+        <Image
+            className="w-full"
+            src="/mmpperson3.jpg"
+            alt="mmpperson3"
+            width="90"
+            height="200"
+            style={{
+              objectFit: "contain",
+            }}/>
+        </div>
+        </div>
+        <div className="w-full flex justify-center py-4">
         <a href="https://yeg.onpay.my/order/form/onticketmmp3" className="bg-green-600 animate-pulse p-1 px-8 rounded-md">
-          Book Ticket
-        </a>
+          Book Ticket</a>
       </div>
       </section>
       <div className="bg-white py-4 lg:py-10 md:[height:80px]"></div>
