@@ -22,7 +22,7 @@ export default function article() {
             <div className="flex justify-center">
         <div className="group w-full h-full grid justify-center ">
         <p className="text-2xl text-slate-700  font-semibold font-sans text-center p-10 leading-snug tracking-wide">
-        APA YANG PELAJAR PERLU TAHU TENTANG DIPLOMA WBL?</p>
+        APA YANG PELAJAR PERLU TAHU TENTANG DIPLOMA WBL?.</p>
       </div>
       </div>
       <div className="">
