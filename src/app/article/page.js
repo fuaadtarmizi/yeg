@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from "next/image"
 import Footer from "@/components/Footer.jsx"
 import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
@@ -65,7 +64,7 @@ function page() {
                     className="group p-3 flex justify-center rounded-md hover:shadow-slate-500 hover:shadow-xl shadow-md duration-300" style={{ backgroundImage: 'url("/article3(6).png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     <div className="py-20">
                     <div className="w-full flex items-center">
-                        <h className="font-bold p-3 group-hover:rounded-md group-hover:bg-black duration-500 text-xl px-8 text-white">" SKILL FOR RESKILL "</h>
+                        <h className="font-bold p-3 group-hover:rounded-md group-hover:bg-black duration-500 text-xl px-8 text-white">"DIPLOMA WBL?"</h>
                     </div>
                     </div>
                     </a>
@@ -76,15 +75,15 @@ function page() {
         </section1>
         <div className="py-8 lg:py-10 md:[height:80px]"></div>
         <section2 className="">
-            <div className="hidden">
+            <div className="">
             <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 px-6'>
-                <card1 className="p-3 flex justify-center rounded-md border hover:shadow-slate-500 hover:shadow-xl shadow-md duration-300" style={{ backgroundImage: '', backgroundSize: 'cover', backgroundPosition: 'center',  }}>
+            <a href="./article/article6">
+                <card className="p-3 flex group justify-center rounded-md border hover:shadow-slate-500 hover:shadow-xl shadow-md duration-300" style={{ backgroundImage: 'url("/article6(1).jpg")', backgroundSize: 'cover', backgroundPosition: 'center',  }}>
                 <div className="py-20">
                     <div className="w-full flex items-center">
-                        <h className="font-bold text-base px-8 text-black">soon</h>
-                    </div>
-                    </div>
-                </card1>
+                        <h className="font-bold p-3 group-hover:rounded-md group-hover:bg-black duration-500 text-xl text-white">DIPLOMA PILIHAN TERBAIK?</h>
+                    </div></div></card></a>
+
                 <card2 className="p-3 flex justify-center rounded-md border hover:shadow-slate-500 hover:shadow-xl shadow-md duration-300" style={{ backgroundImage: '', backgroundSize: 'cover', backgroundPosition: 'center',  }}>
                 <div className="py-20">
                     <div className="w-full flex items-center">
