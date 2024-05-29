@@ -29,19 +29,19 @@ export default function article() {
         <span>Sejak kebelakangan ni, isu tentang pendidikan cukup hangat diperkatakan di kalangan netizen. Tapi, apa kaitannya dengan diploma WBL? Mesti korang pun tertanya-tanya kan? </span>
       </div>
       <div className="w-full flex justify-center py-8">
-                <Image
-                    id="image1"
-                        className="rounded-md"
-                        src="/article5(1).jpg"
-                        alt="article5"
-                        width="1200"
-                        height="250"
-                        style={{
-                        objectFit:"fill",
-                        }}
-                    />
-                    </div>
-                    <div className="px-3 lg:px-8 grid space-y-6">
+        <Image
+            id="image1"
+                className="rounded-md"
+                src="/article5(1).jpg"
+                alt="article5"
+                width="1200"
+                height="250"
+                style={{
+                objectFit:"fill",
+                }}
+            />
+        </div>
+      <div className="px-3 lg:px-8 grid space-y-6">
         <h className="px-3 lg:px-8">Semenjak tahun 2022, kajian mendapati 72% lepasan SPM tidak berminat untuk sambung belajar. Perkara ini adalah sangat membimbangkan untuk pertumbuhan negara secara holistik dan perkembangan cara berfikir anak-anak muda. Untuk mengetahui mengapa diploma WBL adalah penyelesaiannya, jom baca penerangan ini sehingga akhir.</h>
       </div>
       <div className="py-8"></div>
@@ -105,112 +105,104 @@ export default function article() {
                     </div>
                     
                     
-      <div className="w-full flex justify-center px-3 lg:px-8">
-                <Image
-                    id="image1"
-                        className="rounded-md"
-                        src="/article1(3).svg"
-                        alt="article3"
-                        width="1200"
-                        height="250"
-                        style={{
-                        objectFit:"fill",
-                        }}
-                    />
-                    </div>
+      
                     <div className="px-3 lg:px-8 grid space-y-6 pt-6">
-        <h className="font-semibold">3. Kejuruteraan Penerbangan:</h>
-        <h className="px-3 lg:px-8">Industri penerbangan dijangka terus berkembang seperti kenyataan yang dikeluarkan
-                oleh IATA iaitu hasil penumpang pada 2024 bakal meningkat sebanyak 1.8 peratus
-                berbanding 2023. Selain itu, EXCO pelaburan, perdagangan dan mobiliti turut
-                menjelaskan bahawa permintaan kerjaya terkini bagi negara memerlukan ramai pekerja
-                mahir dalam subsektor penerbangan seperti penyelenggaraan, pembaikan dan baik
-                pulih (MRO), pembuatan aero, persepaduan sistem, rekaan dan kejuruteraan serta
-                pendidikan.</h>
+        <h className="font-semibold">Kenapa perlu pilih Diploma WBL? </h>
+        <h className="px-3 lg:px-7">Sebelum diploma WBL dilancarkan, 5 kayu ukur utama telah ditetapkan demi memastikan program ini mempunyai kualiti dan kriteria terbaik. Hal ini kerana diploma WBL merupakan sebuah program pendidikan alaf baharu yang menepati keperluan industri dan anak muda terutamanya lepasan SPM.</h>
       </div>
-      <div className="w-full flex justify-center px-3 lg:px-8">
-                <Image
-                    id="image1"
-                        className="rounded-md"
-                        src="/article1(4).svg"
-                        alt="article4"
-                        width="1200"
-                        height="250"
-                        style={{
-                        objectFit:"fill",
-                        }}
-                    />
-                    </div>
-                    <div className="px-3 lg:px-8 grid space-y-6 pt-6">
-        <h className="font-semibold">4. Jurugegas dan Juruelektrik (bidang oil and gas):</h>
-        <h className="px-3 lg:px-8">Terdapat permintaan yang tinggi untuk jurugegas dan juruelektrik dalam industri minyak
-dan gas untuk menyelenggara dan memperbaiki peralatan serta sistem elektrikal.
-Peningkatan aktiviti eksplorasi dan produksi minyak serta gas menyebabkan
-perusahaan-perusahaan mencari tenaga pakar yang dapat menjalankan tugas-tugas
-teknikal dengan kecekapan semakin meningkat selaras dengan permintaan pekerjaan
-terkini.</h>
-      </div>
-      <div className="w-full flex justify-center px-3 lg:px-8">
-                <Image
-                    id="image1"
-                        className="rounded-md"
-                        src="/article1(5).svg"
-                        alt="article5"
-                        width="1200"
-                        height="250"
-                        style={{
-                        objectFit:"fill",
-                        }}
-                    />
-                    </div>
-                    <div className="px-3 lg:px-8 grid space-y-6 pt-6">
-        <h className="font-semibold">5. Teknologi Maklumat dan Komunikasi (ICT):</h>
-        <h className="px-3 lg:px-8">Permintaan untuk pakar ICT terkini terus meningkat seiring dengan peralihan ke arah
-ekonomi digital. Keperluan untuk mengurus dan melindungi data, pengembangan
-perisian, dan kecekapan dalam teknologi terkini seperti kecerdasan buatan dan
-kejuruteraan data menjadi kriteria utama di sebilangan besar industri. Oleh itu,
-permintaan kerjaya terkini menunjukkan mereka yang bekerjaya dalam bidang ICT
-adalah semakin diperlukan.</h>
+      
+        <div className="px-3 lg:px-8 grid space-y-6 pt-6">
+        <h className="px-3 lg:px-8">5 kayu ukur terpenting yang menjadikan diploma WBL perlu dipilih oleh golongan muda adalah keranan ia menepati 5 kriteria iaitu pendapatan, kelayakan, pengalaman, pekerjaan dan kebanggaan.</h>
       </div>
       <div className="px-3 lg:px-8 grid space-y-6 pt-6">
-        <h className="font-semibold">6. Pemasaran Digital:</h>
-        <h className="px-3 lg:px-8">Perkembangan teknologi maklumat dan komunikasi adalah selari dengan keperluan
-aktiviti pemasaran secara digital. Para majikan memerlukan mereka yang bukan sekadar
-peka IT tetapi juga mahir dalam selok belok kemajuannya. Hal ini demikian menjadikan
-kerjaya sebagai pemasar digital sebagai salah satu permintaan kerjaya terkini yang
-semakin dikehendaki..</h>
+        <h className="px-3 lg:px-8">i. Pendapatan.</h>
       </div>
-      <div className="px-3 lg:px-8">
-        <h className="font-bold underline">Cara untuk Mendapatkan Tempat dalam Permintaan Pekerjaan Terkini</h>
+      
+      <div className="w-full flex justify-center px-3 lg:px-8">
+        <Image
+            id="image1"
+                className="rounded-md"
+                src="/article5(3).jpg"
+                alt="article5"
+                width="1200"
+                height="250"
+                style={{
+                objectFit:"fill",
+                }}/>
+            </div>
+      <div className="px-3 lg:px-8 grid space-y-6 pt-6">
+        <h className="px-3 lg:px-8">Di dalam program diploma WBL, tempoh praktikal bagi para pelajar adalah lebih lama iaitu sehingga 18 bulan. Para pelajar akan dibayar gaji dan ia dapat menjadi sumber pendapatan para pelajar.</h>
       </div>
+      <div className="px-3 lg:px-8 grid space-y-6 pt-6">
+        <h className="">ii. Kelayakan</h>
+        
+      </div>
+      <div className="w-full flex justify-center px-3 lg:px-8 py-6">
+        <Image
+            id="image1"
+                className="rounded-md"
+                src="/article5(4).jpg"
+                alt="article5"
+                width="1200"
+                height="250"
+                style={{
+                objectFit:"fill",
+                }}
+            />
+            </div>
+            <h className="px-3 lg:px-8"></h>
+      <div className="px-3 lg:px-8 grid space-y-6 py-3">
+        <h className="">Di samping memberi penekanan kepada aspek kemahiran dalam sesuatu bidang yang dipilih oleh para pelajar, diploma WBL juga memberikan kelayakan bertaraf diploma kepada para graduan yang berjaya menyelesaikan pengajian. </h>
+      </div>
+      <div className="px-3 lg:px-8 py-4">
+        <h className="">iii. Pengalaman</h>
+      </div>
+      <div className="w-full flex justify-center px-3 lg:px-8 py-6">
+        <Image
+          id="image1"
+            className="rounded-md"
+            src="/article5(5).jpg"
+            alt="article5"
+            width="1200"
+            height="250"
+            style={{
+            objectFit:"fill",
+            }}/></div>
       <div className="px-3 lg:px-8 grid space-y-6">
-        <h className="px-3 lg:px-8">Untuk mendapatkan peluang dalam pasaran permintaan pekerjaan terkini yang dinamik pada
-hari ini, ‘upskilling’ dan ‘reskilling’ menjadi salah satu elemen penting bagi mereka yang sudah
-bekerja ataupun bercadang untuk memulakan karier. Salah satu langkah yang perlu diambil
-adalah dengan mengikuti kursus-kursus yang relevan, mendapatkan sijil dan kelayakan
-tambahan, dan terlibat dalam sesi pengajaran dan pembelajaran bersama pakar-pakar industri.</h>
-<h>Berikut adalah kursus-kursus dan bidang sambung belajar yang boleh anda ikuti:</h>
+        <h className="px-3 lg:px-8">Mengikut perjalanan program di bawah diploma WBL, tempoh praktikal bagi seseorang pelajar adalah lebih lama berbanding di diploma konvensional. Oleh itu, para pelajar akan didedahkan dengan pelbagai kemahiran yang mempersiapkan graduan untuk dapat terus berkhidmat dalam industri setelah bergraduasi.</h>
+          <h>iv. Pekerjaan</h>
       </div>
-      <div className="px-3 lg:px-8 grid space-y-6 pt-6">
-      <h className="font-bold">Kursus -kursus kerjaya:</h>
-        <div className="grid space-y-2 underline font-serif">
-        <a href="/" className="px-4 ">Sijil Profesional Haji dan Umrah</a>
-        <a href="/" className="px-4 ">Sijil Persediaan Khidmat Pelanggan</a>
-        <a href="/" className="px-4 ">Sijil Persediaan Krew Kabin</a>
-        <a href="/" className="px-4 ">Sijil Persediaan Pengendalian Darat</a>
-        <a href="/" className="px-4 ">Sijil Profesional Pemasangan Paip Gas</a>
-        <a href="/" className="px-4 ">Sijil Profesional Paip dan Jurugegas</a>
-        </div>
+      <div className="w-full flex justify-center px-3 lg:px-8 py-6">
+        <Image
+          id="image1"
+            className="rounded-md"
+            src="/article5(6).jpg"
+            alt="article5"
+            width="1200"
+            height="250"
+            style={{
+            objectFit:"fill",
+            }}/></div>
+            <div className="px-3 lg:px-8 grid space-y-6">
+        <h className="px-3 lg:px-8">Dengan ilmu teori yang cukup dan pengalaman praktikal yang yang memenuhi aspek kemahiran yang diperlukan oleh industri, adalah lebih mudah untuk para pelajar diterima kerja atau diserap masuk ke sesebuah syarikat yang memberi akses praktikal kepada pelajar. </h>
+          <h>v. Kebanggaan</h>
       </div>
-      <div className="px-3 lg:px-8 grid space-y-6 pt-6">
-      <h className="font-bold">Program-program diploma sambung belajar:</h>
-        <div className="grid space-y-2 underline font-serif">
-        <a href="/" className="px-4 ">Diploma Pengurusan Haji dan Umrah</a>
-        <a href="/" className="px-4 ">Diploma Kejururawatan</a>
-        <a href="/" className="px-4 ">Diploma Pengurusan Kargo Udara</a>
-        <a href="/" className="px-4 ">Diploma Pengurusan Operasi Penerbangan</a>
-        <a href="/" className="px-4 ">Diploma Penyelenggaraan Pesawat Teknologi</a>
-        </div>
+      <div className="w-full flex justify-center px-3 lg:px-8 py-6">
+        <Image
+          id="image1"
+            className="rounded-md"
+            src="/article5(7).jpg"
+            alt="article5"
+            width="1200"
+            height="250"
+            style={{
+            objectFit:"fill",
+            }}/></div>
+      <div className="px-3 lg:px-8 grid space-y-6">
+        <h className="px-3 lg:px-8">Berdasarkan keempat-empat kriteria berikut, ia menjadikan para pelajar bergraduasi dengan lebih terjamin dari segi masa depan. Hal ini menjadikan diploma WBL sebagai pilihan yang tepat bagi anak muda dan kebanggaan buat keluarga dan perkembangan negara dalam sesebuah industri tertentu. </h>
+      </div>
+      <div className="px-3 lg:px-8 grid space-y-6 pt-10">
+        <h className="px-3 lg:px-8">(written by Nani)</h>
       </div>
         </div>
     </section3>

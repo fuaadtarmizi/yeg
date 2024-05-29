@@ -271,7 +271,7 @@ function page() {
       <section>
         <div className="px-4">
           <div className="p-2 bg-black">
-            <h className="text-lg text-white">Betul ke, rasa berbaloi untuk invest pada perkara bermanfaat?</h>
+            <h className="text-2xl text-white">Betul ke, rasa berbaloi untuk invest pada perkara bermanfaat?</h>
           </div>
         <Testimonimmp/>
         </div>

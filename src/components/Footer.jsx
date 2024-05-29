@@ -19,24 +19,20 @@ function footer() {
             height="10"
             style={{
               objectFit:"contain",
-            }}
-          />
+            }}/>
           </a>
           <div className="grid p-8 lg:px-28 px-14 text-white text-xs">
-            <h className="">YEG Academy (M) Sdn Bhd</h> 
-            <h1>2-2 FLR 2, Block E, Jln PJU 5/20,</h1>
-            <h2>Kota Damansara, 47810 Petaling Jaya,</h2>
-            <h3>Selangor</h3> 
+            <h className="">YEG Academy M Sdn Bhd</h> 
+            <h1>BLOK E-2-2 , The Strand Garden Office,</h1>
+            <h2>Pusat Perdagangan Kota Damansara, Jalan PJU 5 Kota Damandsara</h2>
+            <h3>47810,Petaling, Selangor</h3> 
             <div className="grid py-6 ">
             <h>Working hours : 8.30am-5.30pm</h>
             <h>Email: info@yegmy.com</h>
             <div className="grid py-2">
             <h>Management Office: +603-6144 6558</h>
             <h>Customer Service: +603-6143 5073</h>
-            
             </div>
-
-
             <div className="flex space-x-5">
             <a className="grid py-6 " href="https://www.facebook.com/youreducationguidance/">
               <svg
