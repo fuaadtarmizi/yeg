@@ -110,16 +110,16 @@ export default function App() {
       <div className="lg:w-1/3 ">
       <form className=" backdrop-blur-lg w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
       <div className="py-6 text-black text-3xl font-bold">
-             <h>Course Enquiry</h>
+             <h>Brang Pertanyaan</h>
          </div>
          
             <div className=" grid space-y-4">
       <div className="grid rounded-md space-y-1 ">
-        <h className="">Nama Pelajar</h>
+        <h className="">Nama</h>
       <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md " placeholder="" name="Name" type="text" />
       </div>
           <div className="grid space-y-1">
-          <h>Nombor Telefon Pelajar </h>
+          <h>Nombor Telefon</h>
           <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="NumberPhone" type="text" />
           </div>
           </div>
@@ -141,7 +141,7 @@ export default function App() {
           </div>
   
       <div className="relative inline-block text-left">
-        <div>Pilihan Program Diploma, Kerjaya atau Work Based Learning (WBL)</div>
+        <div>Pilihan Program </div>
       <button
         onClick={toggleDropdown} 
         name="Program1"
@@ -169,7 +169,7 @@ export default function App() {
       )}
     </div>
 
-          <div className="grid space-y-1">
+          {/* <div className="grid space-y-1">
           <h>Nama Penjaga</h>
           <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentName" type="text" />
           </div>
@@ -177,7 +177,7 @@ export default function App() {
           <div className="grid space-y-1">
           <h>Nombor Penjaga</h>
           <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentNumber"  type="text" />
-          </div>
+          </div> */}
 
           <div className="grid  text-left">
         <p className="py-1 text-white">Negeri</p>

@@ -77,26 +77,24 @@ function page() {
         <section2 className="">
             <div className="">
             <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 px-6'>
-            <a href="./article/article6">
+                <a href="./article/article6">
                 <card className="p-3 flex group justify-center rounded-md border hover:shadow-slate-500 hover:shadow-xl shadow-md duration-300" style={{ backgroundImage: 'url("/article6(1).jpg")', backgroundSize: 'cover', backgroundPosition: 'center',  }}>
                 <div className="py-20">
-                    <div className="w-full flex items-center">
-                        <h className="font-bold p-3 group-hover:rounded-md group-hover:bg-black duration-500 text-xl text-white">DIPLOMA PILIHAN TERBAIK?</h>
-                    </div></div></card></a>
-
-                <card2 className="p-3 flex justify-center rounded-md border hover:shadow-slate-500 hover:shadow-xl shadow-md duration-300" style={{ backgroundImage: '', backgroundSize: 'cover', backgroundPosition: 'center',  }}>
+                <div className="w-full flex items-center">
+                    <h className="font-bold p-3 group-hover:rounded-md group-hover:bg-black duration-500 text-xl text-white">DIPLOMA PILIHAN TERBAIK?</h>
+                </div></div></card></a>
+                <a href="./article/article7">
+                <card className="p-3 flex group justify-center rounded-md border hover:shadow-slate-500 hover:shadow-xl shadow-md duration-300" style={{ backgroundImage: 'url("/article7(5).jpg")', backgroundSize: 'cover', backgroundPosition: 'center',  }}>
                 <div className="py-20">
-                    <div className="w-full flex items-center">
-                        <h className="font-bold text-base px-8 text-black">soon</h>
-                    </div>
-                    </div>
-                </card2>
+                <div className="w-full flex items-center">
+                    <h className="font-bold p-3 group-hover:rounded-md group-hover:bg-black duration-500 text-xl text-white">DIPLOMA PILIHAN TERBAIK?</h>
+                </div></div></card></a>
                 <card3 className="p-3 flex justify-center rounded-md border hover:shadow-slate-500 hover:shadow-xl shadow-md duration-300" style={{ backgroundImage: '', backgroundSize: 'cover', backgroundPosition: 'center',  }}>
                 <div className="py-20">
-                    <div className="w-full flex items-center">
-                        <h className="font-bold text-base px-8 text-black ">soon</h>
-                    </div>
-                    </div>
+                <div className="w-full flex items-center">
+                    <h className="font-bold text-base px-8 text-black ">soon</h>
+                </div>
+                </div>
                 </card3>
                 </div>
             </div>

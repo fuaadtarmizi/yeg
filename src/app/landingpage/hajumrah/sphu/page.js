@@ -65,9 +65,7 @@ function page() {
       {/* <div className="bg-green-800 p-3 flex justify-center py-8">
           <h className="text-white text-center lg:text-5xl text-3xl font-extrabold">DERMASISWA <span className="text-yellow-600">RM10 JUTA</span> BAGI MEMBANTU <span  className="text-yellow-600">3000</span> PELAJAR</h>
         </div> */}
-        <div className="animate-pulse duration-800  bg-green-600 flex justify-center p-2">
-              <h className="text-center text-3xl text-white font-bold font-sans">SESI BERLANGSUNG PADA<span className="text-yellow-500"> 30 MAC 2024 DI KUALA LUMPUR <span className="text-3xl text-white font-bold font-sans">DAFTAR SEGERA UNTUK DAPATKAN SLOT <span>TAKLIMAT</span><span className="text-yellow-500"> PERCUMA</span></span></span></h>
-            </div>
+        
         <div className=" py-2"></div>
         <VideoPlayer1 />
 
