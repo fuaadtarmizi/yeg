@@ -27,7 +27,7 @@ function Navbar() {
                 style={{
                 objectFit: "contain",
                 }}/></a></div>
-            <div className="bg-slate-800 flex w-full justify-end gap-8">
+            <div className="bg-slate-800 flex w-full justify-end">
         <MenubarMenu>
                 <MenubarTrigger className="hover:bg-slate-700">Career Programe</MenubarTrigger>
                 <MenubarContent>
@@ -43,6 +43,43 @@ function Navbar() {
                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
                         <a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Malaysia Industry Skills Academy (MISA)</a></div>
                     </MenubarItem>
+                </MenubarContent>
+            </MenubarMenu>
+            <MenubarMenu>
+                <MenubarTrigger className="hover:bg-slate-600">Online Distance Learning</MenubarTrigger>
+                <MenubarContent>
+                    <MenubarItem>
+                    <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                        <a className="text-md font-light ml-2" href="../odl/diploma1">Diploma in Business & Administration</a></div>
+                    </MenubarItem>
+                    {/* <MenubarItem>
+                    <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                        <a className="text-md font-light ml-2" href="../kursusdiplomawbl/dhmwbl">Diploma Pengurusan Perhotelan (DHM-WBL)</a></div>
+                    </MenubarItem>
+                    <MenubarItem>
+                    <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                        <a className="text-md font-light ml-2" href="../kursusdiplomawbl/dcawbl">Diploma Seni Kulinari (DCA-WBL)</a></div>
+                    </MenubarItem>
+                    <MenubarItem>
+                    <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                        <a className="text-md font-light ml-2" href="../kursusdiplomawbl/decwbl">Diploma Pendidikan Awal Kanak-kanak (DEC-WBL)</a></div>
+                    </MenubarItem>
+                    <MenubarItem>
+                    <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                        <a className="text-md font-light ml-2" href="../kursusdiplomawbl/dacmwbl">Diploma Pengurusan Kargo Udara (DACM-WBL)</a></div>
+                    </MenubarItem>
+                    <MenubarItem>
+                    <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                        <a className="text-md font-light ml-2" href="../kursusdiplomawbl/daomwbl">Diploma Pengurusan Operasi Penerbangan (DAOM-WBL)</a></div>
+                    </MenubarItem>
+                    <MenubarItem>
+                    <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                        <a className="text-md font-light ml-2" href="../kursusdiplomawbl/dasmwbl">Diploma Teknologi Pembaikan Struktur Pesawat - Kepingan Logam (DASM-WBL)</a></div>
+                    </MenubarItem>
+                    <MenubarItem>
+                    <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                        <a className="text-md font-light ml-2" href="../kursusdiploma/dtmmea">Diploma Pengurusan Pelancongan (DTM-MEA)</a></div>
+                    </MenubarItem>      */}
                 </MenubarContent>
             </MenubarMenu>
             <MenubarMenu>
@@ -119,6 +156,9 @@ function Navbar() {
                     </MenubarItem>     
                 </MenubarContent>
             </MenubarMenu>
+
+            
+
             <MenubarMenu>
                 <MenubarTrigger className="hover:bg-slate-600">
                     <a className="" href="../article">Article</a></MenubarTrigger>
