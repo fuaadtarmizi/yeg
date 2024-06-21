@@ -110,7 +110,7 @@ export default function App() {
       <div className="lg:w-1/3 ">
       <form className=" backdrop-blur-lg w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
       <div className="py-6 text-black text-3xl font-bold">
-             <h>Brang Pertanyaan</h>
+             <h>Borang Pertanyaan</h>
          </div>
          
             <div className=" grid space-y-4">

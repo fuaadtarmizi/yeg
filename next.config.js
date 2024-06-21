@@ -22,5 +22,6 @@ module.exports = {
     // Remove or comment out the invalid property
     // images: {},
   },
+  output: 'export',
   // other configurations
 };
