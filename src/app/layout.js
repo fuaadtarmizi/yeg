@@ -3,6 +3,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { Inter } from 'next/font/google'
 import Head from 'next/head';
 
+
 const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'YEG Academy | Career & Education Platform',

@@ -267,7 +267,7 @@ export default function home() {
         <div className="group h-full flex justify-center  ">
         <p className="text-md text-slate-700  grid font-semibold font-sans text-center p-10 leading-snug tracking-wide">
         YEG Academy telah berjaya memberi peluang kepada lebih 5000 orang golongan muda untuk meneruskan pelajaran dan latihan kerjaya di dalam bidang yang relevan dengan kerjaya pada masa kini. Jangan biarkan impian anda terkubur begitu sahaja
-          <span className="text-slate-700 font-bold bg-gradient-to-r mt-3 from-yellow-500 to-yellow-500 bg-no-repeat [background-position:0_88%] [background-size:1%_100%] motion-safe:transition-all motion-safe:duration-700 group-hover:[background-size:100%_100%] focus:[background-size:100%_100%]">
+          <span className="text-slate-700 font-bold bg-gradient-to-r mt-3 from-yellow-500 to-yellow-400 bg-no-repeat [background-position:0_88%] [background-size:1%_100%] motion-safe:transition-all motion-safe:duration-700 group-hover:[background-size:100%_100%] focus:[background-size:100%_100%]">
           Ambil peluang ini dan mulakan langkah pertama anda bersama YEG Academy.</span>
         </p>
       </div>
