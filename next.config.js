@@ -17,7 +17,10 @@
 
 // next.config.js
 
-export const experimental = {
-  // remove or comment out the invalid property
-  // images: {},
+module.exports = {
+  experimental: {
+    // Remove or comment out the invalid property
+    // images: {},
+  },
+  // other configurations
 };
