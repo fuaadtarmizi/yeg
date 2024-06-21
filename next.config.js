@@ -19,9 +19,12 @@
 
 module.exports = {
   experimental: {
-    // Remove or comment out the invalid property
+    // Remove or comment out the invalid property if present
     // images: {},
   },
   output: 'export',
+  images: {
+    unoptimized: true,
+  },
   // other configurations
 };

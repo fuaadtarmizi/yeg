@@ -37,47 +37,32 @@ function diploma1() {
           
           <div className=" p-4">
             <div className="py-3 grid space-y-5">
-              <h className="font-semibold">PROGRAM DILOMA UNTUK NAIK PANGKAT</h>
-              <h> Sekilas Tentang DUNIA PENERBANGAN</h>
+              <h className="font-semibold">DIPLOMA PENTADBIRAN PERNIAGAAN</h>
+              <h>PROGRAM DILOMA UNTUK NAIK PANGKAT</h>
             </div>
           <div className="space-y-5">
             <div className="flex justify-center">
-              <h className="text-justify">Penerbangan adalah dunia yang menakjubkan, Ia adalah dunia yang penuh dengan keajaiban, kemajuan teknologi, dan peluang tak terbatas. Di sini, kita tidak hanya mengejar impian, kita akan merealisasikan impian anda hingga menjadi nyata.</h>
+              <h className="text-justify">Pendidikan di peringkat pengajian tinggi memberi sebuah pengalaman yang berbeza kepada seseorang sekaligus membantu untuk perkembangan pelbagai kemahiran tertentu seperti komunikasi dan kepimpinan. Selain mengetengahkan kelebihan program ini untuk seseorang penjawat awam atau swasta naik pangkat dalam kerjaya masing-masing dan meningkatkan pendapatan bulanan, YEG Academy dengan kerjasama Kolej Universiti Innovatif turut memberi kemudahan kepada para pencarum KWSP. Hal ini kerana, mereka tidak perlu membiayai bayaran yuran secara tunai tetapi 100% melalui pengeluaran KWSP</h>
             </div>
             <div className="grid justify-center space-y-2">
-              <h className="text-justify"> Jika anda juga merasa tertarik dengan daya tarikan 
-                  dunia penerbangan, dan anda mempunyai hasrat 
-                  untuk menjelajahi dunia dari ketinggian, maka selamat 
-                  datang ke dalam industri kami. Di sini, kami akan
-                  membantu anda merealisasikan impian anda,
-                  membentuk anda menjadi seorang pakar industri 
-                  dalam bidang penerbangan, dan membawa anda ke 
-                  puncak kejayaan di langit biru</h>
+              <h className="text-justify"> Dengan teknologi masa kini, inovasi dalam sistem pendidikan telah membantu kepada kemudahan untuk mengakses kelas dan kandungan pembelajaran tersedia pada bila-bila masa melalui aplikasi mudah alih. Oleh sebab itu, struktur yuran pengajian yang lebih rendah jika dibandingkan dengan tawaran daripada pelbagai pusat-pusat pendidikan lain dapat ditawarkan kepada para penjawat awam dan swasta yang berminat untuk meningkatkan kebolehan sedia ada. </h>
             </div>
+            
             <div className="grid space-y-2">
-              <h className="">Program persediaan ini bertujuan untuk membentuk 
-                  dan memupuk kemahiran yang diperlukan oleh
-                  individu yang ingin menyertai industri penerbangan.</h>
-            </div>
-            <div className="grid space-y-2">
-              <h className="">Dengan Kursus Ini, Anda Akan Peroleh:</h>
-              <li className="px-4">Sijil Profesional Pramugara, Pramugari & Pegawai Perkhidmatan Pelanggan Selama 3 bulan</li>
-              <li className="px-4">Sijil Profesional Pramugara, Pramugari & Pegawai Perkhidmatan Pelanggan Selama 1 bulan</li>
+              <h className="">Jadi, kami menawarkan program yang dapat meningkatkan kemahiran diri secara holistik::</h>
+              <li className="px-4">Diploma Pentadbiran Perniagaan</li>
             </div>
             <div className="grid space-y-2">
               <h className="">Dengan Kursus Ini, Anda Akan Peroleh</h>
-              <li className="px-4">Pemajuan Kerjaya yang Jelas</li>
-              <li className="px-4">Laluan Pantas untuk Mencapai Pendapatan yang Tinggi</li>
-              <li className="px-4">Peluang Bekerja dalam Syarikat Multinasional</li>
-              <li className="px-4">Pembelajaran daripada Pakar Industri dengan Pengalaman Lebih dari 20 Tahun</li>
-              <li className="px-4"> Sokongan Penempatan Pekerjaan</li>
-              <li className="px-4">Perkhidmatan Perundingan Percuma daripada Pakar Industri</li>
-              <li className="px-4"> Makanan & Minuman Disediakan Semasa Latihan</li>
+              <li className="px-4">Percuma buku rujukan (E-Book) bernilai RM 4,500 (RM 150 x 30 subjek)</li>
+              <li className="px-4">Masa pembelajaran yang fleksibel</li>
+              <li className="px-4">Jaminan lulus (Tiada yuran tambahan sekiranya mengulangi mana-mana subjek yang gagal dalam tempoh 3 tahun)</li>
+              
             </div>
             <div className="grid space-y-2">
               <h className="">Syarat-Syarat Kelayakan</h>
-              <li className="px-4">Berumur 18 hingga 35 Tahun</li>
-              <li className="px-4">Lulus Sijil Pelajaran Malaysia dengan sekurang-kurangnya lulus Sejarah dan Bahasa Melayu</li>
+              <li className="px-4">SPM lulus dengan minimum 3 kredit</li>
+              <li className="px-4">Sedang bekerja dalam sektor swasta atau kerajaan</li>
             </div>
             </div>
           </div>
@@ -110,7 +95,7 @@ function diploma1() {
           </card3>
           
         </div>
-        <div className="hidden  md:grid grid-cols-2 lg:grid grid-cols-2 gap-5 p-6">
+        <div className="hidden  md:grid grid-cols-2 lg:grid gap-5 p-6">
         <card4 className="bg-slate-200 p-4">
             <div className="flex items-center">
               <h className="text-9xl font-extrabold">4</h>
