@@ -83,11 +83,11 @@ export default function App() {
          </div>
             <div className=" grid space-y-4">
       <div className="grid rounded-md space-y-1 ">
-        <h className="">Nama Pelajar</h>
+        <h className="">Nama</h>
       <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md " placeholder="" name="Name" type="text" />
       </div>
           <div className="grid space-y-1">
-          <h>Nombor Telefon Pelajar </h>
+          <h>Nombor Telefon </h>
           <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="NumberPhone" type="text" />
           </div>
           </div>
