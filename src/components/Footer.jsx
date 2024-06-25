@@ -79,8 +79,9 @@ function footer() {
           <h>@ 2023 YEG Academy (M) Sdn Bhd 1334979-W | Hak Cipta Terpelihara</h>
          
           </div>
-          <div className="pt-6">
+          <div className="pt-6 grid space-y-2">
           <h>Developed by PetalCode Labs</h>
+          <h>Content Prepered by Hanani Azhar</h>
           </div>
             
             </div>

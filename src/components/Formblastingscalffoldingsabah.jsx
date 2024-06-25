@@ -3,31 +3,10 @@ import React, { useState, useEffect  } from 'react';
 
 
 export default function App() {
-  const [age, setAge] = useState('');
-
-    const [selectedItem, setSelectedItem] = useState(null);
-    const [selectedItem1, setSelectedItem1] = useState("Ads");
 
     const [alertMessage, setAlertMessage] = useState('');
     const [emailError, setEmailError] = useState('');
 
-
-    useEffect(() => {
-      if (selectedItem1 === 'Whatsup') {
-        Submit();
-      }
-    }, [selectedItem1]);
-
-
-    const handleChange = (e) => {
-      const value = e.target.value;
-      if (value === '' || (value >= 18 && value <= 35)) {
-        setAge(value);
-      }
-    };
-  
-
-    
 
 
   function Submit(e) {
@@ -102,19 +81,10 @@ export default function App() {
         type="text" />
       </div>
 
-          <div className="grid space-y-1">
-          <h>Umur</h>
-          <input
-                    className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md"
-                    placeholder=""
-                    name="Age"
-                    type="number"
-                    value={age}
-                    onChange={handleChange}
-                    min="18"
-                    max="35"
-                  />
-          </div>
+      <div className="grid space-y-1">
+        <h>Umur</h>
+        <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="Age" type="text" />
+        </div>
           </div>
 
          
