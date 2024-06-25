@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import Formblastingscalffolding from '@/components/Formblastingscalffolding'
+import Formblastingscalffoldingsabah from '@/components/Formblastingscalffoldingsabah'
 
 
 function page() {
@@ -47,7 +47,7 @@ function page() {
       
       <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
       <div>
-        <Formblastingscalffolding/>
+        <Formblastingscalffoldingsabah/>
       </div>
       <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
       </div>
