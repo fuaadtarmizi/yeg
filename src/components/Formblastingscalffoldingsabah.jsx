@@ -50,7 +50,7 @@ export default function App() {
 
     fetch(
 
-      "https://script.google.com/macros/s/AKfycbwJpoVoP3w0qrCX111QUwNbrbDUFZeNFYuFKEzayfHssaEy4sUpvb_PN0I4brKlWXvT/exec",
+      "https://script.google.com/macros/s/AKfycbxTpE6RTvyxIt6DWLoiJXY6lBGuC4OGlaArmWvjOw23tNsvlslVu3utNQWql_heb2kj/exec",
       {
         method: "POST",
         body: formDatab
