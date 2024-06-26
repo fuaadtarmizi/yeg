@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import Formblastingscalffoldingsabah from '@/components/Formblastingscalffoldingsabah'
+import Formblastingscalffoldingsabah from '@/components/scafollding/Formblastingscalffoldingsabah'
 
 
 function page() {
