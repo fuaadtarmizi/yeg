@@ -6,6 +6,12 @@ import Navbar from "@/components/Navbar.jsx";
 import Sidebar from "@/components/Sidebar.jsx";
 
 export default function App() {
+
+  const [isOpen2, setIsOpen2] = useState(false);
+
+
+  const [selectedItem2, setSelectedItem2] = useState(null);
+
   const [alertMessage, setAlertMessage] = useState('');
   const [emailError, setEmailError] = useState('');
   const [formError, setFormError] = useState('');
@@ -33,8 +39,11 @@ export default function App() {
     const formEle = document.querySelector("form");
     const formData = new FormData(formEle);
 
+    formData.append("State", selectedItem2);
+
+
     fetch(
-      "https://script.google.com/macros/s/AKfycbwz3mHg9xs3kkLtOo05jhRx1NeD-iaO3vRrDQRb65gkYihV1S02XQnnt8oCxA2dA9MJ/exec",
+      "https://script.google.com/macros/s/AKfycbwNG-58NXdvuUPPRFpI0wyXlbD27i_7Q2mgZtiVHOWv70h-3PTzg4mzhh_eJnhSobFu/exec",
       {
         method: "POST",
         body: formData
@@ -53,6 +62,19 @@ export default function App() {
     setFormError(''); // Clear form error message
     setEmailError(''); // Clear email error message
   }
+
+  //state  
+  const toggleDropdown2 = () => {
+    setIsOpen2(!isOpen2);
+  };
+
+
+  //state
+  const handleItemClick2 = (item) => {
+    setSelectedItem2(item);
+    setIsOpen2(false);
+  };
+
 
   return (
     <main>
@@ -84,6 +106,109 @@ export default function App() {
                   <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="Age" type="text" />
                 </div>
               </div>
+
+
+              <div className="grid  text-left">
+        <p className="py-1 text-white">Negeri</p>
+      <button
+        onClick={toggleDropdown2} 
+        name="Negeri"
+        type="button"
+        className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full px-8 py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
+      >
+        {selectedItem2 ? selectedItem2 : "Select State"}
+      </button>
+
+      {isOpen2 && (
+        <div className="w-full right-0 mt-2  origin-top-right bg-white border border-gray-200 divide-y  rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
+ 
+          <div className=" text-sm bg-yellow-500">
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Johor")}
+          >
+            Johor
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Kedah")}
+          >
+            Kedah
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Kelantan")}
+          >
+            Kelantan
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Kuala Lumpur")}
+          >
+            Kuala Lumpur
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Labuan")}
+          >
+            Labuan
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Melaka")}
+          >
+            Melaka
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Negeri Sembilan")}
+          >
+            Negeri Sembilan
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Pahang")}
+          >
+            Pahang
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Perak")}
+          >
+            Perak
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Perlis")}
+          >
+            Perlis
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Pulau Pinang")}
+          >
+            Pulau Pinang
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Putrajaya")}
+          >
+            Putrajaya
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Sabah")}
+          >
+            Sabah
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Serawak")}
+          >
+            Serawak
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Selangor")}
+          >
+            Selangor
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Terengganu")}
+          >
+            Terengganu
+          </p>
+          </div>     
+        </div>
+      )}
+    </div>
+
+
 
               <div className="pt-4">
                 <button className="px-6 py-2 border rounded-md bg-yellow-500 hover:bg-yellow-600 hover:shadow-md duration-300" name="Submit" type="submit">Submit</button>
