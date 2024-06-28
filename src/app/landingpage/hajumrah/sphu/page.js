@@ -48,6 +48,9 @@ function page() {
     <div>
       <div className="bg-slate-700">
       <div className="py-2 md:py-3 lg:py-6"></div>
+      <div>
+        <Formblastingsphu/>
+      </div>
       <div className="py-3"></div>
       <div className=" flex justify-center">
       <Image
@@ -140,9 +143,7 @@ function page() {
                 />
                 </card5>
             </div>
-            <div>
-              <Formblastingsphu/>
-            </div>
+            
         
         <div className=" py-2"></div>
         <VideoPlayer1 />
