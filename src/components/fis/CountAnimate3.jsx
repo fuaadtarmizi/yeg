@@ -49,18 +49,15 @@ const CountAnimate3 = () => {
   }, [isVisible]);
 
   return (
-    <div className="flex items-center justify-center">
       <div className="flex grid-cols-2 space-x-4">
-      <div className="flex justify-center">
-          <span ref={countElementRef} className="text-6xl">0</span>
+      <div className="flex justify-end w-full">
+          <span ref={countElementRef} className="text-5xl flex items-center font-bold">0</span>
         </div>
-        <div className=" grid justify-start">
-        <h1 className="text-2xl font-normal ">Tenaga</h1>
+        <div className="grid justify-start w-full">
+        <h1 className="text-2xl font-semibold ">Tenaga</h1>
         <h1 className="text-2xl font-normal text-slate-500">Pengajar</h1>
-        </div>
-        
+        </div> 
       </div>
-    </div>
   );
 };
 export default CountAnimate3;
