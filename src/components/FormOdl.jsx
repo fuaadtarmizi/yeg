@@ -80,26 +80,23 @@ export default function App() {
     setIsOpen2(!isOpen2);
   };
 
- 
-
-    // program yeg
-    const handleItemClick = (item) => {
-        setSelectedItem(item);
-        setIsOpen(false);
-      };
-
-    // media 
-      const handleItemClick1 = (item) => {
-        setSelectedItem1(item);
-        setIsOpen1(false);
-      };
-    //state
-    const handleItemClick2 = (item) => {
-      setSelectedItem2(item);
-      setIsOpen2(false);
+  // program yeg
+  const handleItemClick = (item) => {
+      setSelectedItem(item);
+      setIsOpen(false);
     };
-         
 
+  // media 
+    const handleItemClick1 = (item) => {
+      setSelectedItem1(item);
+      setIsOpen1(false);
+    };
+  //state
+  const handleItemClick2 = (item) => {
+    setSelectedItem2(item);
+    setIsOpen2(false);
+  };
+        
   return (
     <main>      
     <div className="bg-white">
@@ -108,7 +105,7 @@ export default function App() {
       <div className="lg:w-1/3 ">
       <form className=" backdrop-blur-lg w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
       <div className="py-6 text-black text-3xl font-bold">
-             <h>Course Enquiry</h>
+             <h>Borang Pernyataan</h>
          </div>
             <div className=" grid space-y-4">
       <div className="grid rounded-md space-y-1 ">
