@@ -71,9 +71,7 @@ function page() {
           width="500"
           height="80"
           style={{
-            objectFit:"contain",
-          }}
-        />
+            objectFit:"contain"}}/>
       </div>
       <div className='bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 px-6'>
                 <card1 className=" p-4 rounded-md shadow-lg border">
