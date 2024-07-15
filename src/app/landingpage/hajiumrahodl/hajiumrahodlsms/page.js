@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import FormHajiumrahOdl from '@/components/FormHajiumrahOdl'
+import FormHajiumrahOdlSms from '@/components/FormHajiumrahOdlSms'
 
 
 function page() {
@@ -39,7 +39,7 @@ function page() {
       </section>
       <div className="bg-white py-2 md:py-3 lg:py-6"></div>
       <div>
-        <FormHajiumrahOdl/>
+        <FormHajiumrahOdlSms/>
       </div>     
       <div className="bg-white py-2 md:py-3 lg:py-6"></div>
       {/* <div className="bg-white flex justify-center ">
