@@ -36,7 +36,6 @@ export default function App() {
     const formDatab = new FormData(formEle);
 
     formDatab.append("Program1", selectedItem);
-
     formDatab.append("Media", selectedItem1);
     formDatab.append("State", selectedItem2);
     
@@ -146,13 +145,13 @@ export default function App() {
         <div className="w-full right-0 mt-2  origin-top-right bg-white border border-gray-200 divide-y  rounded-md shadow-lg ring-1 ring-black ring-opacity-5">        
           <div className="pl-6 text-sm bg-yellow-500">
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY-WBL)")}>
+            onClick={() => handleItemClick("Diploma Pengurusan Haji Umrah (DHUMY-ODL)")}>
             Diploma Pengurusan Haji Umrah (DHUMY-ODL)
           </p>
           </div>      
           <div className="pl-6 text-sm text-white bg-slate-600">
           <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY-WBL)")}
+            onClick={() => handleItemClick("Ijazah Sarjana Muda Pengurusan Haji & Umrah (BHUMY-ODL)")}
           >
             Ijazah Sarjana Muda Pengurusan Haji & Umrah (BHUMY-ODL)
           </p> 
