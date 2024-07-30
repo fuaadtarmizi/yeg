@@ -98,6 +98,8 @@ function page() {
           style={{objectFit:"contain"}}/>
         </div>
     </section>
+    <div className=" py-2 md:py-4 lg:py-8"></div>
+
     <section>
       <div className="space-y-4">
       <div className="container bg-red-600 flex justify-center p-4 ">
@@ -133,7 +135,7 @@ function page() {
           <h className="font-semibold text-center text-3xl">Kasut Keselamatan dan google keselamatan</h>
           </div>
           <div className="py-6 pt-8">
-            <div className="border-b border-black"></div>
+            <div className="border-b border-black border-1"></div>
           </div>
           <div className="space-y-4">
             <p className="font-extrabold text-2xl text-center">PEKERJAAN TERSEDIA</p>
@@ -141,7 +143,7 @@ function page() {
           </div>
           
           <div className="py-6 pt-8">
-            <div className="border-b border-black border-2"></div>
+            <div className="border-b border-black border-1"></div>
           </div>
           
          
