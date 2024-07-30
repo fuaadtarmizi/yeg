@@ -198,99 +198,62 @@ export default function App() {
  
           <div className=" text-sm bg-yellow-500">
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Johor")}
-          >
-            Johor
-          </p>
+            onClick={() => handleItemClick2("Johor")}>Johor</p>
+
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Kedah")}
-          >
-            Kedah
-          </p>
+            onClick={() => handleItemClick2("Kedah")}>Kedah</p>
+
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Kelantan")}
-          >
-            Kelantan
-          </p>
+            onClick={() => handleItemClick2("Kelantan")}>Kelantan</p>
+
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Kuala Lumpur")}
-          >
-            Kuala Lumpur
-          </p>
+            onClick={() => handleItemClick2("Kuala Lumpur")}>Kuala Lumpur</p>
+
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Labuan")}
-          >
-            Labuan
-          </p>
+            onClick={() => handleItemClick2("Labuan")}>Labuan</p>
+
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Melaka")}
-          >
-            Melaka
-          </p>
+            onClick={() => handleItemClick2("Melaka")}>Melaka</p>
+
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Negeri Sembilan")}
-          >
-            Negeri Sembilan
-          </p>
+            onClick={() => handleItemClick2("Negeri Sembilan")}>Negeri Sembilan</p>
+
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Pahang")}
-          >
-            Pahang
-          </p>
+            onClick={() => handleItemClick2("Pahang")}>Pahang</p>
+
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Perak")}
-          >
-            Perak
-          </p>
+            onClick={() => handleItemClick2("Perak")}>Perak</p>
+
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Perlis")}
-          >
-            Perlis
-          </p>
+            onClick={() => handleItemClick2("Perlis")}>Perlis</p>
+
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Pulau Pinang")}
-          >
-            Pulau Pinang
-          </p>
+            onClick={() => handleItemClick2("Pulau Pinang")}>Pulau Pinang</p>
+
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Putrajaya")}
-          >
-            Putrajaya
-          </p>
+            onClick={() => handleItemClick2("Putrajaya")}>Putrajaya</p>
+
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Sabah")}
-          >
-            Sabah
-          </p>
+            onClick={() => handleItemClick2("Sabah")}>Sabah</p>
+
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Serawak")}
-          >
-            Serawak
-          </p>
+            onClick={() => handleItemClick2("Serawak")}>Serawak</p>
+
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Selangor")}
-          >
-            Selangor
-          </p>
+            onClick={() => handleItemClick2("Selangor")}>Selangor</p>
+
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Terengganu")}
-          >
-            Terengganu
-          </p>
+            onClick={() => handleItemClick2("Terengganu")}>Terengganu</p>
+
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
             onClick={() => handleItemClick2("Singapore")}>Singapore</p>
+            
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
             onClick={() => handleItemClick2("Brunei")}>Brunei</p>
           </div>     
         </div>
       )}
     </div>      
-
-
-
-
-
-
     <div className="pt-4">
     <button className="px-6 py-2 border rounded-md bg-yellow-500 hover:bg-yellow-600 hover:shadow-md duration-300" name="Submit" type="submit" >Submit</button>
     </div>

@@ -133,13 +133,12 @@ export default function App() {
           }}
         />
       </div>
-        
-        <div className="p-4  lg:flex justify-center  ">     
-      <div className="w-full ">
-      <form className="bg-white w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
-      <div className="py-6 text-black text-3xl font-bold">
-             <h>Course Enquiry</h>
-         </div>
+          <div className="p-4  lg:flex justify-center  ">     
+            <div className="w-2/3">
+            <form className="bg-white w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
+            <div className="py-6 text-black text-3xl font-bold">
+                <h>Course Enquiry</h>
+          </div>
          
           <div className="grid md:flex lg:flex justify-between gap-8">
           <div className="w-full grid rounded-md space-y-1 ">
@@ -172,7 +171,7 @@ export default function App() {
           <div className="relative  inline-block text-left w-full py-8">
             <div className="pb-2">
             <h>Select your Programs Diploma, Programs Career, or Work-Based Learning (WBL)</h>
-            </div>
+          </div>
             
       <button
         onClick={toggleDropdown} 
@@ -537,74 +536,3 @@ export default function App() {
     </main>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// "use client"
-// import React from 'react'
-
-// export default function page() {
-//     function Submit(e) {
-//         const formEle = document.querySelector("form");
-//         const formDatab = new FormData(formEle);
-//         fetch(
-//           "https://script.google.com/macros/s/AKfycbxGDBvXOji8jirgC_tVHaOTWkKzExfA3KXms1TFcQWLCz1UwkGlvkEtD6BVqzNG0hZfUw/exec",
-//           {
-//             method: "POST",
-//             body: formDatab
-//           }
-//         )
-//           .then((res) => res.json())
-//           .then((data) => {
-//             console.log(data);
-//           })
-//           .catch((error) => {
-//             console.log(error);
-//           });
-//       }
-
-//   return (
-//     <div className=" py-20 flex justify-center">
-        
-//         <form className="bg-slate-100 w-1/4 border grid justify-center p-3 space-y-4 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
-//         <div className="py-4">
-//             <h>FROM YEG</h>
-//         </div>
-//             <div className="border rounded-md hover:shadow-md duration-500">
-//                 <input 
-//                 className="py-2 "
-//                 id="name"
-//                 type="text"
-//                 placeholder="name"
-//                 />
-//             </div>
-//             <div className="border rounded-md hover:shadow-md duration-500">
-//                 <input
-//                 className="py-2"
-//                 id="email"
-//                 type="email"
-//                 placeholder="email"
-//                 />
-//             </div>
-//             <div className="flex justify-center ">
-//             <button className="px-6 py-2 border rounded-md hover:shadow-md duration-500">
-//                 <h>SUBMIT</h>
-//             </button>
-//             </div>
-//         </form>
-//     </div>
-//   )
-// }
