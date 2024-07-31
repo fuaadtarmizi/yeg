@@ -8,9 +8,9 @@ function page() {
   return (
     <div>
       <div className="">
-        <div className="" style={{ backgroundImage: 'url("/misabg.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className="mx-auto max-w-screen-xl min-h-screen px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">  
-      <div className=" flex justify-center">
+        <div className="" style={{ backgroundImage: 'url("/misabg.jpg")', backgroundSize: 'contain', backgroundPosition: 'center' }}>
+      <div className="mx-auto max-w-screen-xl min-h-screen px-6 py-8 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">  
+      <div className="flex justify-center">
       <Image
           className=""
           src="/misaheader.png"
@@ -22,7 +22,7 @@ function page() {
           }}/>
       </div>
       <div className=" py-2 md:py-3 lg:py-6"></div>
-      <div className=" flex justify-center">
+      <div className=" flex justify-center py-2">
         <Image
             className=""
             src="/misalogo.png"
@@ -48,17 +48,17 @@ function page() {
     </section> */}
     <section>
       <div className="w-full p-2 ">
-        <div className="flex justify-center p-2 py-3">
-          <h className="text-black font-extrabold text-5xl text-center">TEMUDUGA PEKERJAAN</h>
+        <div className="flex justify-center  ">
+          <h className="text-black font-extrabold text-2xl lg:text-5xl text-center">TEMUDUGA PEKERJAAN</h>
         </div>
       </div>
     </section>
     <section>
-      <div className=" container">
-        <div className=" justify-center grid py-3">
-          <p className="text-blue-800 text-5xl font-extrabold text-center lg:text-7xl">SCALFFOLDING</p>
-          <p className="text-blue-800 text-5xl font-extrabold text-center lg:text-7xl">BASIC ERECTOR</p>
-          <h className="text-red-600 text-4xl font-extrabold text-center py-4">INDUSTRI OIL AND GAS</h>
+      <div className=" ">
+        <div className="justify-center grid ">
+          <p className="py-2 text-blue-800 text-4xl font-extrabold text-center lg:text-7xl font-times transform scale-y-150">SCALFFOLDING</p>
+          <p className="text-blue-800 text-4xl font-extrabold text-center lg:text-7xl font-times transform scale-y-150">BASIC ERECTOR</p>
+          <h className="text-red-600 text-2xl lg:text-4xl font-extrabold text-center py-4">INDUSTRI OIL AND GAS</h>
         </div>
       </div>
     </section>
@@ -85,10 +85,8 @@ function page() {
     </div>
     </div>
     <div className="bg-slate-200 py-2 md:py-4 lg:py-8"></div>
-    <div className="bg-slate-200">
-    <div className="mx-auto max-w-screen-xl min-h-screen px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">  
     <section>
-      <div className=" flex justify-center">
+      <div className="bg-slate-200 flex justify-center">
       <Image
           className=""
           src="/misalogo.png"
@@ -98,18 +96,21 @@ function page() {
           style={{objectFit:"contain"}}/>
         </div>
     </section>
-    <div className=" py-2 md:py-4 lg:py-8"></div>
+    <div className="bg-slate-200 py-4 md:py-4 lg:py-8"></div>
 
+    <div className=" bg-red-600 flex justify-center p-4 ">
+      <h className="text-lg lg:text-4xl font-bold text-white">KAMI PERLUKAN ANDA SEKARANG</h>
+    </div>
     <section>
-      <div className="space-y-4">
-      <div className="container bg-red-600 flex justify-center p-4 ">
-        <h className="text-2xl font-bold text-white">KAMI PERLUKAN ANDA SEKARANG</h>
-      </div>
-      <div className="container flex justify-center">
-        <p className="text-3xl font-extrabold text-center">SEBAGAI SCALFFOLDING ERECTOR DI SEKTOR MINYAK & GAS SELURUH MALAYSIA</p>
+      <div className="space-y-4 py-3">
+      <div className="container flex justify-stretch">
+        <p className="text-base lg:text-5xl font-bold text-center">SEBAGAI SCALFFOLDING ERECTOR DI SEKTOR MINYAK & GAS SELURUH MALAYSIA</p>
       </div>
       </div>
     </section>
+    <div className="bg-slate-200">
+    <div className="mx-auto max-w-screen-xl min-h-screen px-6 py-4 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">  
+    
     <div className=" py-2 md:py-4 lg:py-8"></div>
     <section>
     <div className=" flex justify-center">
@@ -122,100 +123,76 @@ function page() {
           style={{objectFit:"contain",}}/>
       </div>
     </section>
-    <div className=" py-2 md:py-4 lg:py-8"></div>
+    <div className=" lg:py-4"></div>
     <section>
       <div>
         <div className="w-full">
         <div className=" grid justify-center">
-          <h className="font-extrabold text-2xl text-center">LATIHAN PROFESIONAL</h>
-          <h className="font-extrabold text-3xl text-center text-blue-700">15HARI BESERTA SIJIL CIDB / OGSP / BSE</h>
-          <h className="font-normal text-center text-3xl">Makan (3x sehari) & Penginapan disediakan</h>
-          <div className="py-4 grid">
-          <h className="font-semibold text-center text-3xl">PERCUMA basic uniform PPE, Helmet keselamatan</h>
-          <h className="font-semibold text-center text-3xl">Kasut Keselamatan dan google keselamatan</h>
-          </div>
-          <div className="py-6 pt-8">
+          <h className="font-extrabold text-xl lg:text-4xl text-center">LATIHAN PROFESIONAL</h>
+          <h className="font-bold text-2xl lg:text-3xl text-center text-blue-700 py-2">15HARI BESERTA SIJIL CIDB / OGSP / BSE</h>
+          <h className="font-semibold text-center text-lg lg:text-3xl">Makan (3x sehari) & Penginapan disediakan</h>
+          <h className="font-semibold text-center text-lg lg:text-3xl">PERCUMA basic uniform PPE, Helmet keselamatan Kasut Keselamatan dan google keselamatan</h>
+          <div className="py-4 pt-8">
             <div className="border-b border-black border-1"></div>
           </div>
           <div className="space-y-4">
-            <p className="font-extrabold text-2xl text-center">PEKERJAAN TERSEDIA</p>
-            <p className="font-extrabold text-3xl text-center text-blue-700">SEKTOR MINYAK DAN GAS MALAYSIA</p>
+            <p className="font-bold text-xl lg:text-2xl text-center">PEKERJAAN TERSEDIA</p>
+            <p className="font-bold text-2xl lg:text-3xl text-center text-blue-700">SEKTOR MINYAK DAN GAS MALAYSIA</p>
           </div>
-          
-          <div className="py-6 pt-8">
+          <div className="py-4 pt-8">
             <div className="border-b border-black border-1"></div>
           </div>
-          
          
-          <div className="space-y-4">
-            <p className="font-extrabold text-2xl text-center">SYARAT KELAYAKAN</p>
-
-            <div className="flex justify-center">
-            <svg width="30" 
-              height="30" 
-              viewBox="0 0 15 15" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 3H12V12H3L3 3ZM2 3C2 2.44771 2.44772 2 3 2H12C12.5523 2 13 2.44772 13 3V12C13 12.5523 12.5523 13 12 13H3C2.44771 13 2 12.5523 2 12V3ZM10.3498 5.51105C10.506 5.28337 10.4481 4.97212 10.2204 4.81587C9.99275 4.65961 9.6815 4.71751 9.52525 4.94519L6.64048 9.14857L5.19733 7.40889C5.02102 7.19635 4.7058 7.16699 4.49327 7.34329C4.28073 7.5196 4.25137 7.83482 4.42767 8.04735L6.2934 10.2964C6.39348 10.4171 6.54437 10.4838 6.70097 10.4767C6.85757 10.4695 7.00177 10.3894 7.09047 10.2601L10.3498 5.51105Z" 
-                fill="currentColor" 
-                fill-rule="evenodd" 
-                clip-rule="evenodd"></path></svg>
-            <h className=" text-2xl text-center ">Berumur 18-35 tahun</h>
-            </div>
-            <div className="flex justify-center">
-            <svg width="30" 
-              height="30" 
-              viewBox="0 0 15 15" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 3H12V12H3L3 3ZM2 3C2 2.44771 2.44772 2 3 2H12C12.5523 2 13 2.44772 13 3V12C13 12.5523 12.5523 13 12 13H3C2.44771 13 2 12.5523 2 12V3ZM10.3498 5.51105C10.506 5.28337 10.4481 4.97212 10.2204 4.81587C9.99275 4.65961 9.6815 4.71751 9.52525 4.94519L6.64048 9.14857L5.19733 7.40889C5.02102 7.19635 4.7058 7.16699 4.49327 7.34329C4.28073 7.5196 4.25137 7.83482 4.42767 8.04735L6.2934 10.2964C6.39348 10.4171 6.54437 10.4838 6.70097 10.4767C6.85757 10.4695 7.00177 10.3894 7.09047 10.2601L10.3498 5.51105Z" 
-                fill="currentColor" 
-                fill-rule="evenodd" 
-                clip-rule="evenodd"></path></svg>
-            <h className=" text-2xl text-center ">Sihat tubuh badan</h>
-            </div>
-            <div className="flex justify-center">
-            <svg width="30" 
-              height="30" 
-              viewBox="0 0 15 15" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 3H12V12H3L3 3ZM2 3C2 2.44771 2.44772 2 3 2H12C12.5523 2 13 2.44772 13 3V12C13 12.5523 12.5523 13 12 13H3C2.44771 13 2 12.5523 2 12V3ZM10.3498 5.51105C10.506 5.28337 10.4481 4.97212 10.2204 4.81587C9.99275 4.65961 9.6815 4.71751 9.52525 4.94519L6.64048 9.14857L5.19733 7.40889C5.02102 7.19635 4.7058 7.16699 4.49327 7.34329C4.28073 7.5196 4.25137 7.83482 4.42767 8.04735L6.2934 10.2964C6.39348 10.4171 6.54437 10.4838 6.70097 10.4767C6.85757 10.4695 7.00177 10.3894 7.09047 10.2601L10.3498 5.51105Z" 
-                fill="currentColor" 
-                fill-rule="evenodd" 
-                clip-rule="evenodd"></path></svg>
-            <h className=" text-2xl text-center ">Tiada penyalahgunaan dadah</h>
-            </div>
-            <div className="flex justify-center">
-            <svg width="30" 
-              height="30" 
-              viewBox="0 0 15 15" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 3H12V12H3L3 3ZM2 3C2 2.44771 2.44772 2 3 2H12C12.5523 2 13 2.44772 13 3V12C13 12.5523 12.5523 13 12 13H3C2.44771 13 2 12.5523 2 12V3ZM10.3498 5.51105C10.506 5.28337 10.4481 4.97212 10.2204 4.81587C9.99275 4.65961 9.6815 4.71751 9.52525 4.94519L6.64048 9.14857L5.19733 7.40889C5.02102 7.19635 4.7058 7.16699 4.49327 7.34329C4.28073 7.5196 4.25137 7.83482 4.42767 8.04735L6.2934 10.2964C6.39348 10.4171 6.54437 10.4838 6.70097 10.4767C6.85757 10.4695 7.00177 10.3894 7.09047 10.2601L10.3498 5.51105Z" 
-                fill="currentColor" 
-                fill-rule="evenodd" 
-                clip-rule="evenodd"></path></svg>
-            <h className=" text-2xl text-center ">TLelaki - Pandai membaca, mengira, menulis, minat & mampu</h>
-            </div>
-            <div className="flex justify-center">
-            <svg width="30" 
-              height="30" 
-              viewBox="0 0 15 15" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 3H12V12H3L3 3ZM2 3C2 2.44771 2.44772 2 3 2H12C12.5523 2 13 2.44772 13 3V12C13 12.5523 12.5523 13 12 13H3C2.44771 13 2 12.5523 2 12V3ZM10.3498 5.51105C10.506 5.28337 10.4481 4.97212 10.2204 4.81587C9.99275 4.65961 9.6815 4.71751 9.52525 4.94519L6.64048 9.14857L5.19733 7.40889C5.02102 7.19635 4.7058 7.16699 4.49327 7.34329C4.28073 7.5196 4.25137 7.83482 4.42767 8.04735L6.2934 10.2964C6.39348 10.4171 6.54437 10.4838 6.70097 10.4767C6.85757 10.4695 7.00177 10.3894 7.09047 10.2601L10.3498 5.51105Z" 
-                fill="currentColor" 
-                fill-rule="evenodd" 
-                clip-rule="evenodd"></path></svg>
-            <h className=" text-2xl text-center ">Perempuan - Minimal miliki Sijil Peajaran Malaysia (SPM) dan keatas *Bagi jawatan QC</h>
-            </div>
+          <div className="grid justify-center">
+            <p className="font-extrabold text-xl lg:text-2xl text-center py-4">SYARAT KELAYAKAN</p>
           </div>
+          <div className="space-y-1">
+          <div className=" flex items-start">
+              <div className="">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="25" height="25" rx="4" fill="green" /><path d="M7 13L11 17L18 10" stroke="white" stroke-width="2" /></svg>
+              </div>
+              <div>
+              <h className="text-xl font-medium leading-6">Berumur 18-35 tahun</h>
+              </div>
+            </div>
+          <div className=" flex items-start">
+              <div className="">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="25" height="25" rx="4" fill="green" /><path d="M7 13L11 17L18 10" stroke="white" stroke-width="2" /></svg>
+              </div>
+              <div>
+              <h className="text-xl font-medium leading-6">Sihat tubuh badan</h>
+              </div>
+            </div>
+          <div className=" flex items-start">
+              <div className="">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="25" height="25" rx="4" fill="green" /><path d="M7 13L11 17L18 10" stroke="white" stroke-width="2" /></svg>
+              </div>
+              <div>
+              <h className="text-xl font-medium leading-6">Tiada penyalahgunaan dadah</h>
+              </div>
+            </div>
+          <div className=" flex items-start">
+              <div className="">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="25" height="25" rx="4" fill="green" /><path d="M7 13L11 17L18 10" stroke="white" stroke-width="2" /></svg>
+              </div>
+              <div>
+              <h className="text-xl font-medium leading-6">Lelaki - Pandai membaca, mengira, menulis, minat & mampu</h>
+              </div>
+            </div>
+          <div className=" flex items-start">
+              <div className="">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="25" height="25" rx="4" fill="green" /><path d="M7 13L11 17L18 10" stroke="white" stroke-width="2" /></svg>
+              </div>
+              <div>
+              <h className="text-xl font-medium leading-6">Perempuan - Minimal miliki Sijil Peajaran Malaysia (SPM) dan keatas *Bagi jawatan QC</h>
+              </div>
+            </div>
+            </div>
         </div>
         </div>      
       </div>
     </section>
-    <div className=" py-2 md:py-4 lg:py-8"></div>
+    <div className="py-4 md:py-4 lg:py-8"></div>
     <section>
       <div className="flex justify-center py-6">
       <button className=" z-0 bg-orange-600 rounded-full transition duration-150 ease-out hover:bg-orange-400">
@@ -238,19 +215,17 @@ function page() {
       </a>
     </button>
       </div>
-      <div className="space-y-4">
-        <p className="font-extrabold text-4xl text-center text-red-700">TERHAD KEPADA 30 KEKOSONGAN</p>
+      <div className="space-y-4 container">
+        <p className="font-extrabold text-3xl lg:text-4xl text-center text-red-700">TERHAD KEPADA 30 KEKOSONGAN</p>
       </div>
     </section>
     <div className=" py-2 md:py-3 lg:py-6"></div>
     <section>
-      <div className="bg-black p-3">
-        <p className="font-extrabold text-4xl text-white text-center">BORANG PERMOHONAN</p>
-        <p className=" text-4xl text-white text-center">PANGGILAN TEMUDUGA & PEKERJAAN</p>
+      <div className="bg-black p-3 space-y-2">
+        <p className="font-extrabold text-2xl lg:text-4xl text-white text-center">BORANG PERMOHONAN</p>
+        <p className="text-lg lg:text-4xl text-white text-center">PANGGILAN TEMUDUGA & PEKERJAAN</p>
       </div>
     </section>
-
-
       <section>
       <div className="">
         <Formblastingmisa/>

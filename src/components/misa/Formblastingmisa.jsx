@@ -99,15 +99,12 @@ export default function App() {
     setIsOpen4(false);
   };
 
-
-
-
   return (
     <main>
       <div className="">
         <div className="hidden lg:block"></div>
-        <div className="p-4 lg:flex justify-center">
-          <div className="w-2/3 ">
+        <div className=" lg:flex justify-center">
+          <div className="w-full lg:w-2/3 ">
             <form className="backdrop-blur-lg w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
               <div className="py-6 text-black text-3xl font-bold">
                 <h>Borang Pertanyaan</h>
@@ -179,41 +176,35 @@ export default function App() {
                     <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
                       onClick={() => handleItemClick3("Single")}>Single</p>
                     <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-                      onClick={() => handleItemClick3("Janda")}>Janda</p>
+                      onClick={() => handleItemClick3("Berkahwin")}>Berkahwin</p>
                     </div>     
                   </div>
                 )}
               </div>
-
-              
-
-          <div className="grid  text-left">
-            <p className="text-black">Negeri</p>
-          <button
-            onClick={toggleDropdown2} 
-            name="Region"
-            type="button"
-            className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full px-8 py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800">
-            {selectedItem2 ? selectedItem2 : "Select Region"}
-          </button>
-          {isOpen2 && (
-            <div className="w-full right-0 mt-2  origin-top-right bg-white border border-gray-200 divide-y  rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
-              <div className=" text-sm bg-yellow-500">
-              <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-                onClick={() => handleItemClick2("Johru Bahru")}>Johru Bahru</p>
-              <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-                onClick={() => handleItemClick2("Batu Pahat")}>Batu Pahat</p>
-              <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-                onClick={() => handleItemClick2("Kulai")}>Kulai</p>
-              <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-                onClick={() => handleItemClick2("Muar")}>Muar</p>
-              </div>     
-            </div>
-          )}
-          </div>
-
-
-
+              <div className="grid  text-left">
+                <p className="text-black">Negeri</p>
+              <button
+                onClick={toggleDropdown2} 
+                name="Region"
+                type="button"
+                className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full px-8 py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800">
+                {selectedItem2 ? selectedItem2 : "Select Region"}
+              </button>
+              {isOpen2 && (
+                <div className="w-full right-0 mt-2  origin-top-right bg-white border border-gray-200 divide-y  rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
+                  <div className=" text-sm bg-yellow-500">
+                  <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+                    onClick={() => handleItemClick2("Johru Bahru")}>Johru Bahru</p>
+                  <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+                    onClick={() => handleItemClick2("Batu Pahat")}>Batu Pahat</p>
+                  <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+                    onClick={() => handleItemClick2("Kulai")}>Kulai</p>
+                  <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+                    onClick={() => handleItemClick2("Muar")}>Muar</p>
+                  </div>     
+                </div>
+              )}
+              </div>
               <div className="pt-4 flex justify-center">
                 <button className="px-6 py-2 border rounded-md bg-red-700 hover:bg-red-600 hover:shadow-md duration-300 text-white" name="Submit" type="submit">APPLY NOW</button>
               </div>

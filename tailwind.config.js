@@ -22,6 +22,8 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+
+
     extend: {
       keyframes: {
         "accordion-down": {
@@ -36,6 +38,9 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      fontFamily: {
+        times: ['"Arial"', 'serif'],
       },
     },
   },
