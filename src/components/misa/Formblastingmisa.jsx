@@ -106,9 +106,9 @@ export default function App() {
         <div className=" lg:flex justify-center">
           <div className="w-full lg:w-2/3 ">
             <form className="backdrop-blur-lg w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
-              <div className="py-6 text-black text-3xl font-bold">
-                <h>Borang Pertanyaan</h>
-              </div>
+              {/* <div className="py-6 text-black text-3xl font-bold">
+                <h>Borang Permohonan</h>
+              </div> */}
               <div className="grid space-y-4">
                 <div className="grid rounded-md space-y-1">
                   <h className="">Nama</h>
@@ -131,13 +131,13 @@ export default function App() {
               </div>
 
             <div className="grid  text-left">
-              <p className="text-black">Akademi Tertinggi</p>
+              <p className="text-black"></p>
             <button
               onClick={toggleDropdown4} 
               name="Cert"
               type="button"
               className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full px-8 py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800">
-              {selectedItem4 ? selectedItem4 : "Akademi Tertinggi"}
+              {selectedItem4 ? selectedItem4 : "Akademik Tertinggi"}
             </button>
             {isOpen4 && (
               <div className="w-full right-0 mt-2  origin-top-right bg-white border border-gray-200 divide-y  rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
@@ -153,7 +153,7 @@ export default function App() {
                   <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
                   onClick={() => handleItemClick4("DIPLOMA")}>DIPLOMA</p>
                   <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-                  onClick={() => handleItemClick4("DEGREE")}>DEGREE</p>
+                  onClick={() => handleItemClick4("IJAZAH")}>IJAZAH</p>
                   <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
                   onClick={() => handleItemClick4("LAIN-LAIN")}>LAIN-LAIN</p>
                 </div>     
@@ -161,7 +161,7 @@ export default function App() {
 
 
               <div className="grid text-left">
-                  <p className=" text-black">Status Perkahwinan</p>
+                  <p className=" text-black"></p>
                 <button
                   onClick={toggleDropdown3} 
                   name="Status"
@@ -174,7 +174,7 @@ export default function App() {
                   <div className="w-full right-0 mt-2  origin-top-right bg-white border border-gray-200 divide-y  rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
                     <div className=" text-sm bg-yellow-500 rounded-md">
                     <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-                      onClick={() => handleItemClick3("Single")}>Single</p>
+                      onClick={() => handleItemClick3("Bujang")}>Bujang</p>
                     <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
                       onClick={() => handleItemClick3("Berkahwin")}>Berkahwin</p>
                     </div>     
@@ -182,19 +182,19 @@ export default function App() {
                 )}
               </div>
               <div className="grid  text-left">
-                <p className="text-black">Negeri</p>
+                <p className="text-black"></p>
               <button
                 onClick={toggleDropdown2} 
                 name="Region"
                 type="button"
                 className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full px-8 py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800">
-                {selectedItem2 ? selectedItem2 : "Select Region"}
+                {selectedItem2 ? selectedItem2 : "Pilih Daerah"}
               </button>
               {isOpen2 && (
                 <div className="w-full right-0 mt-2  origin-top-right bg-white border border-gray-200 divide-y  rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
                   <div className=" text-sm bg-yellow-500">
                   <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-                    onClick={() => handleItemClick2("Johru Bahru")}>Johru Bahru</p>
+                    onClick={() => handleItemClick2("Johor Bahru")}>Johor Bahru</p>
                   <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
                     onClick={() => handleItemClick2("Batu Pahat")}>Batu Pahat</p>
                   <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
