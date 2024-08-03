@@ -56,7 +56,7 @@ function page() {
     <section>
       <div className=" ">
         <div className="justify-center grid ">
-          <p className="py-2 text-blue-800 text-4xl font-extrabold text-center lg:text-7xl font-times transform scale-y-150">SCAFFOLDING</p>
+          <p className="py-2 text-blue-800 text-4xl font-extrabold text-center lg:text-7xl font-times transform scale-y-150">SCAFFOLDING</p> 
           <p className="text-blue-800 text-4xl font-extrabold text-center lg:text-7xl font-times transform scale-y-150">BASIC ERECTOR</p>
           <h className="text-red-600 text-2xl lg:text-4xl font-extrabold text-center py-4">INDUSTRI OIL AND GAS</h>
         </div>
