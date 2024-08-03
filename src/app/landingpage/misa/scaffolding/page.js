@@ -42,7 +42,7 @@ function page() {
         className=""
       >
         <source src="/scalffoldingvideo.mp4" type="video/mp4" />
-      </video>
+      </video> 
         </div>
       </div>
     </section> */}
