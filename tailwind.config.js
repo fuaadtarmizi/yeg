@@ -41,7 +41,9 @@ module.exports = {
       },
       fontFamily: {
         times: ['"Arial"', 'serif'],
+        anton: ['Anton', 'sans-serif'],
       },
+      
     },
   },
   plugins: [tailwindcssAnimate, flowbitePlugin, nextui()],
