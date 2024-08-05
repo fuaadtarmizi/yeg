@@ -124,7 +124,7 @@ function page() {
           height="80"
           style={{objectFit:"contain",}}/>
       </div>
-    </section>
+    </section> 
     <div className=" lg:py-4"></div>
     <section>
       <div>
