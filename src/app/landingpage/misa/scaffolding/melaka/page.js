@@ -67,7 +67,7 @@ function page() {
     <section>
       <div className="container p-2 py-6">
         <div className="flex justify-center p-2">
-          <p>Scalfolding eroctor adalah penting untuk pembinaan dan penyelenggaraan loji minyak, gas dan kimia. Mereka menyediakan akses selamat ke kawasan yang sukar dicapai seperti platform minyak luar pesisir atau tiang pembetulan di kilang penapisan, di mana tugas seperti mengecat, penebat atau kerja pemasangan dijalankan.</p>
+          <p>Scaffolding eroctor adalah penting untuk pembinaan dan penyelenggaraan loji minyak, gas dan kimia. Mereka menyediakan akses selamat ke kawasan yang sukar dicapai seperti platform minyak luar pesisir atau tiang pembetulan di kilang penapisan, di mana tugas seperti mengecat, penebat atau kerja pemasangan dijalankan.</p>
         </div>
       </div>
     </section>
@@ -106,7 +106,7 @@ function page() {
     <section>
       <div className="space-y-4 py-3">
       <div className="container flex justify-stretch">
-        <p className="text-base lg:text-5xl font-bold text-center">SEBAGAI SCALFFOLDING ERECTOR DI SEKTOR MINYAK & GAS SELURUH MALAYSIA</p>
+        <p className="text-base lg:text-5xl font-bold text-center">SEBAGAI SCAFFOLDING ERECTOR DI SEKTOR MINYAK & GAS SELURUH MALAYSIA</p>
       </div>
       </div>
     </section>
