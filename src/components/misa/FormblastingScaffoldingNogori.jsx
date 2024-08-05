@@ -47,7 +47,7 @@ export default function App() {
     const formEle = document.querySelector("form");
     const formData = new FormData(formEle);
 
-    formData.append("Cert", selectedItem2);
+    formData.append("Cert", selectedItem4);
     formData.append("Status", selectedItem3);
     formData.append("Region", selectedItem4);
 
