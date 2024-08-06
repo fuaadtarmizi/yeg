@@ -156,19 +156,19 @@ export default function App() {
               name="Ivlocation"
               type="button"
               className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full px-8 py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800">
-              {selectedItem1 ? selectedItem1 : "Interview Location"}
+              {selectedItem1 ? selectedItem1 : "Lokasi Temuduga"}
             </button>
             {isOpen1 && (
               <div className="w-full right-0 mt-2  origin-top-right bg-white border border-gray-200 divide-y  rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
                 <div className=" text-sm bg-yellow-500">
                 <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-                  onClick={() => handleItemClick1("MUAR (AUGUST 15,2024)")}>MUAR (AUGUST 15,2024)</p>
+                  onClick={() => handleItemClick1("MUAR (OGOS 15,2024)")}>MUAR (OGOS 15,2024)</p>
                 <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-                  onClick={() => handleItemClick1("BATU PAHAT (AUGUST 16,2024")}>BATU PAHAT (AUGUST 16,2024)</p>
+                  onClick={() => handleItemClick1("BATU PAHAT (OGOS 16,2024")}>BATU PAHAT (OGOS 16,2024)</p>
                 <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-                  onClick={() => handleItemClick1("JOHOR BAHRU (AUGUST 17,2024)")}>JOHOR BAHRU (AUGUST 17,2024)</p>
+                  onClick={() => handleItemClick1("JOHOR BAHRU (OGOS 17,2024)")}>JOHOR BAHRU (OGOS 17,2024)</p>
                 <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-                  onClick={() => handleItemClick1("KULAI (AUGUST 18,2024)")}>KULAI (AUGUST 18,2024)</p>
+                  onClick={() => handleItemClick1("KULAI (OGOS 18,2024)")}>KULAI (OGOS 18,2024)</p>
                 </div>     
               </div>)}</div>
 

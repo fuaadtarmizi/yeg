@@ -73,7 +73,7 @@ function page() {
     <section>
       <div className="bg:container pt-6 bg:py-6">
         <div className="flex justify-items-stretch">
-          <p style={{ fontWeight: '400', '--widgets-spacing': '20px 20px', fontFamily: '"Poppins", Sans-serif',  textAlign: 'center', fontSize: '16px', }}>Scafolding eroctor adalah penting untuk pembinaan dan penyelenggaraan loji minyak, gas dan kimia. Mereka menyediakan akses selamat ke kawasan yang sukar dicapai seperti platform minyak luar pesisir atau tiang pembetulan di kilang penapisan, di mana tugas seperti mengecat, penebat atau kerja pemasangan dijalankan.</p>
+          <p style={{ fontWeight: '400', '--widgets-spacing': '20px 20px', fontFamily: '"Poppins", Sans-serif',  textAlign: 'center', fontSize: '16px', }}>Scaffolding Basic Erector adalah penting untuk pembinaan dan penyelenggaraan loji minyak, gas dan kimia. Mereka menyediakan akses selamat ke kawasan yang sukar dicapai seperti platform minyak luar pesisir atau tiang pembetulan di kilang penapisan, di mana tugas seperti mengecat, penebat atau kerja pemasangan dijalankan.</p>
         </div>
       </div>
     </section>
@@ -139,7 +139,7 @@ function page() {
           <h className="font-extrabold text-xl lg:text-4xl text-center">LATIHAN PROFESIONAL</h>
           <h className="font-bold text-2xl lg:text-3xl text-center text-blue-700 py-2">15HARI BESERTA SIJIL CIDB / OGSP / BSE</h>
           <h className="font-semibold text-center text-lg lg:text-3xl">Makan (3x sehari) & Penginapan disediakan</h>
-          <h className="font-semibold text-center text-lg lg:text-3xl">PERCUMA basic uniform PPE, Helmet keselamatan Kasut Keselamatan dan google keselamatan</h>
+          <h className="font-semibold text-center text-lg lg:text-3xl">PERCUMA Basic Uniform PPE, Helmet Keselamatan, Kasut Keselamatan dan Google Keselamatan</h>
           <div className="py-4 pt-8">
             <div className="border-b border-black border-1"></div>
           </div>
@@ -184,7 +184,7 @@ function page() {
               <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="25" height="25" rx="4" fill="green" /><path d="M7 13L11 17L18 10" stroke="white" stroke-width="2" /></svg>
               </div>
               <div>
-              <h className="text-xl font-medium leading-6">Lelaki - Pandai membaca, mengira, menulis, minat & mampu</h>
+              <h className="text-xl font-medium leading-6">Lelaki - Pandai membaca, mengira, menulis, minat & mampu (5M)</h>
               </div>
             </div>
           <div className=" flex items-start">
@@ -192,7 +192,7 @@ function page() {
               <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="25" height="25" rx="4" fill="green" /><path d="M7 13L11 17L18 10" stroke="white" stroke-width="2" /></svg>
               </div>
               <div>
-              <h className="text-xl font-medium leading-6">Perempuan - Minimal miliki Sijil Pelajaran Malaysia (SPM) dan keatas *Bagi jawatan QC</h>
+              <h className="text-xl font-medium leading-6">Perempuan - Minima miliki Sijil Pelajaran Malaysia (SPM) dan keatas *Bagi jawatan QC</h>
               </div>
             </div>
             </div>
@@ -227,7 +227,7 @@ function page() {
     </button>
       </div>
       <div className="space-y-4 container">
-        <p className="font-extrabold text-3xl lg:text-4xl text-center text-red-700">TERHAD KEPADA 30 KEKOSONGAN</p>
+        <p className="font-extrabold text-3xl lg:text-4xl text-center text-red-700">TERHAD KEPADA 32 KEKOSONGAN</p>
       </div>
     </section>
     <div className=" py-3 md:py-3 lg:py-6"></div>
@@ -280,7 +280,7 @@ function page() {
             <svg width="35" height="35" viewBox="0 0 15 15" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M4 2.5C4 2.22386 4.22386 2 4.5 2H10.5C10.7761 2 11 2.22386 11 2.5V12.5C11 12.7761 10.7761 13 10.5 13H4.5C4.22386 13 4 12.7761 4 12.5V2.5ZM4.5 1C3.67157 1 3 1.67157 3 2.5V12.5C3 13.3284 3.67157 14 4.5 14H10.5C11.3284 14 12 13.3284 12 12.5V2.5C12 1.67157 11.3284 1 10.5 1H4.5ZM6 11.65C5.8067 11.65 5.65 11.8067 5.65 12C5.65 12.1933 5.8067 12.35 6 12.35H9C9.1933 12.35 9.35 12.1933 9.35 12C9.35 11.8067 9.1933 11.65 9 11.65H6Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
           </div>
           <a href="https://wa.me/+601115403660" className="bg-green-600 hover:bg-green-400 motion-safe:transition-all motion-safe:duration-700 ease-in-out flex items-center justify-center px-4 w-full border-2  rounded-md">
-            <h className="text-lg font-normal text-white">Whatsapp (En.Sayyid)</h>
+            <h className="text-lg font-normal text-white">WhatsApp (En.Sayyid)</h>
           </a>
         </div>
         <div className="flex space-x-1 pt-1">
@@ -302,7 +302,7 @@ function page() {
             <svg width="35" height="35" viewBox="0 0 15 15" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M4 2.5C4 2.22386 4.22386 2 4.5 2H10.5C10.7761 2 11 2.22386 11 2.5V12.5C11 12.7761 10.7761 13 10.5 13H4.5C4.22386 13 4 12.7761 4 12.5V2.5ZM4.5 1C3.67157 1 3 1.67157 3 2.5V12.5C3 13.3284 3.67157 14 4.5 14H10.5C11.3284 14 12 13.3284 12 12.5V2.5C12 1.67157 11.3284 1 10.5 1H4.5ZM6 11.65C5.8067 11.65 5.65 11.8067 5.65 12C5.65 12.1933 5.8067 12.35 6 12.35H9C9.1933 12.35 9.35 12.1933 9.35 12C9.35 11.8067 9.1933 11.65 9 11.65H6Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
           </div>
           <a href="https://wa.me/+60107894564" className="bg-green-600 hover:bg-green-400 motion-safe:transition-all motion-safe:duration-700 ease-in-out flex items-center justify-center px-4 w-full border-2  rounded-md">
-            <h className="text-lg font-normal text-white">Whatsapp (En.Saiful)</h>
+            <h className="text-lg font-normal text-white">WhatsApp (En.Saiful)</h>
           </a>
         </div>
         <div className="flex space-x-1 pt-1">
@@ -324,7 +324,7 @@ function page() {
             <svg width="35" height="35" viewBox="0 0 15 15" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M4 2.5C4 2.22386 4.22386 2 4.5 2H10.5C10.7761 2 11 2.22386 11 2.5V12.5C11 12.7761 10.7761 13 10.5 13H4.5C4.22386 13 4 12.7761 4 12.5V2.5ZM4.5 1C3.67157 1 3 1.67157 3 2.5V12.5C3 13.3284 3.67157 14 4.5 14H10.5C11.3284 14 12 13.3284 12 12.5V2.5C12 1.67157 11.3284 1 10.5 1H4.5ZM6 11.65C5.8067 11.65 5.65 11.8067 5.65 12C5.65 12.1933 5.8067 12.35 6 12.35H9C9.1933 12.35 9.35 12.1933 9.35 12C9.35 11.8067 9.1933 11.65 9 11.65H6Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
           </div>
           <a href="https://wa.me/+60149956889" className="bg-green-600 hover:bg-green-400 motion-safe:transition-all motion-safe:duration-700 ease-in-out flex items-center justify-center px-4 w-full border-2  rounded-md">
-            <h className="text-lg font-normal text-white">Whatsapp (Pn.Adyla)</h>
+            <h className="text-lg font-normal text-white">WhatsApp (Pn.Adyla)</h>
           </a>
         </div>
         <div className="flex space-x-1 pt-1">
