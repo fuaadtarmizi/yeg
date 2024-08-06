@@ -42,6 +42,9 @@ module.exports = {
       fontFamily: {
         times: ['"Arial"', 'serif'],
         anton: ['Anton', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+
       },
       
     },

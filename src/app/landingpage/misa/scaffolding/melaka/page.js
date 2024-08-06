@@ -31,13 +31,14 @@ function page() {
             style={{
               objectFit:"contain",}}/>
         </div>
+        
 
       
     <div className=" py-2 md:py-3 lg:py-6"></div>
     <section>
       <div className="w-full p-2 ">
         <div className="flex justify-center  ">
-          <h className="text-black font-extrabold text-2xl lg:text-5xl text-center">TEMUDUGA PEKERJAAN</h>
+          <h className="text-black font-extrabold text-2xl lg:text-5xl text-center" style={{color: '#0046A', letterSpacing:'3.5px', fontFamily: '"Inter", Sans-serif', fontSize: '24px', textAlign: 'center', lineHeight:'1'}}>TEMUDUGA PEKERJAAN</h>
         </div>
       </div>
     </section>
