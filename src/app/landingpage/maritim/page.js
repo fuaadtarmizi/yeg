@@ -12,8 +12,8 @@ function page() {
       <div className=" flex justify-center">
       <Image
           className="w-full"
-          src="/scalffolding1.jpg"
-          alt="scalffolding1"
+          src="/maritim1.jpg"
+          alt="maritim1"
           width="1500"
           height="80"
           style={{
@@ -21,7 +21,7 @@ function page() {
           }}/>
       </div>
         <div className="bg-white py-2 md:py-3 lg:py-6"></div>
-        <div className=" flex justify-center">
+        {/* <div className=" flex justify-center">
       <Image
           className="w-full"
           src="/scalffolding2.jpg"
@@ -30,8 +30,8 @@ function page() {
           height="80"
           style={{
             objectFit:"contain",}}/>
-      </div>
-      <section1 className="">
+      </div> */}
+      {/* <section1 className="">
       <div className="m lg:px-10 p-6 flex justify-center bg-black">
         <div className="">
         <video
@@ -43,7 +43,7 @@ function page() {
       </video>
         </div>
       </div>
-    </section1>
+    </section1> */}
       
       <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
       <div>
