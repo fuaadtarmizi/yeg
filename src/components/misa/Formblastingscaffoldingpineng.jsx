@@ -7,10 +7,9 @@ import Sidebar from "@/components/Sidebar.jsx";
 
 export default function App() {
 
-  const [isOpen2, setIsOpen2] = useState(false);
+  // const [isOpen2, setIsOpen2] = useState(false);
 
-
-  const [selectedItem2, setSelectedItem2] = useState(null);
+  // const [selectedItem2, setSelectedItem2] = useState(null);
 
   const [alertMessage, setAlertMessage] = useState('');
   const [emailError, setEmailError] = useState('');
@@ -39,11 +38,11 @@ export default function App() {
     const formEle = document.querySelector("form");
     const formData = new FormData(formEle);
 
-    formData.append("State", selectedItem2);
+    // formData.append("State", selectedItem2);
 
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbwfL8ED54kYchW5GlkY5GuUgzVYvlMkdAETflZjIlvLfP4PNtIXTFjvfq0gBZfBz3xq/exec",
+      "https://script.google.com/macros/s/AKfycbxIY2Y95WRCpgU3DS0i7CTe2j7ZxSFArEyoqZinmY2ZZbq-Xn4JoPzaT4qritbSy1UE/exec",
       {
         method: "POST",
         body: formData
@@ -63,17 +62,16 @@ export default function App() {
     setEmailError(''); // Clear email error message
   }
 
-  //state  
-  const toggleDropdown2 = () => {
-    setIsOpen2(!isOpen2);
-  };
+  // //state  
+  // const toggleDropdown2 = () => {
+  //   setIsOpen2(!isOpen2);
+  // };
 
-
-  //state
-  const handleItemClick2 = (item) => {
-    setSelectedItem2(item);
-    setIsOpen2(false);
-  };
+  // //state
+  // const handleItemClick2 = (item) => {
+  //   setSelectedItem2(item);
+  //   setIsOpen2(false);
+  // };
 
 
   return (
@@ -108,7 +106,7 @@ export default function App() {
               </div>
 
 
-          <div className="grid  text-left">
+          {/* <div className="grid  text-left">
         <p className="py-1 text-white">Negeri</p>
       <button
         onClick={toggleDropdown2} 
@@ -206,7 +204,7 @@ export default function App() {
           </div>     
         </div>
       )}
-    </div>
+    </div> */}
 
 
 
