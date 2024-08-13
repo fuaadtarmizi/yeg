@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import FormblastingScaffoldingNogori from '@/components/misa/FormblastingScaffoldingNogori'
+import Formblastingscaffoldingpineng from '@/components/misa/Formblastingscaffoldingpineng'
 
 function page() {
   return (
@@ -232,7 +232,7 @@ function page() {
     </section>
       <section>
       <div className="">
-        <FormblastingScaffoldingNogori/>
+      <Formblastingscaffoldingpineng/>
       </div>
     </section>
     <div className=" py-2 md:py-4 lg:py-8"></div>
@@ -293,3 +293,8 @@ function page() {
 }
 
 export default page
+
+
+
+
+
