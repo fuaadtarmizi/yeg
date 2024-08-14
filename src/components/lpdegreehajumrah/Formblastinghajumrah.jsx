@@ -167,7 +167,7 @@ export default function App() {
 
 
               <div className="pt-4 flex justify-center">
-                <button className="px-6 py-2 border rounded-md bg-red-700 hover:bg-red-600 hover:shadow-md duration-300 text-white" name="Submit" type="submit">APPLY NOW</button>
+                <button className="px-6 py-2 border rounded-md bg-red-700 hover:bg-red-600 hover:shadow-md duration-300 text-white" name="Submit" type="submit">SETUJU</button>
               </div>
             </form>
             {formError && (

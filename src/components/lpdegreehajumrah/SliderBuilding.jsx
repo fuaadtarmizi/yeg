@@ -32,7 +32,7 @@ export default function App() {
           <div className="w-full flex justify-center">
             <Image 
             className="w-full rounded-md"
-            src="/sportt1.jpg"
+            src="/bangunan1.png"
             alt="sport1"
             width="1000"
             height="50"
@@ -46,7 +46,7 @@ export default function App() {
           <div className="w-full flex justify-center">
             <Image 
             className="w-full rounded-md"
-            src="/sportt2.jpg"
+            src="/bangunan2.png"
             alt="sport2"
             width="1000"
             height="50"
@@ -60,7 +60,7 @@ export default function App() {
           <div className="w-full flex justify-center">
             <Image 
             className="w-full rounded-md"
-            src="/sportt3.jpg"
+            src="/bangunan3.png"
             alt="sport3"
             width="1000"
             height="50"
@@ -74,7 +74,7 @@ export default function App() {
           <div className="w-full flex justify-center">
             <Image 
             className="w-full rounded-md"
-            src="/sportt4.jpg"
+            src="/bangunan4.png"
             alt="sport4"
             width="1000"
             height="50"
@@ -88,7 +88,7 @@ export default function App() {
           <div className="w-full flex justify-center">
             <Image 
             className="w-full rounded-md"
-            src="/sportt5.jpg"
+            src="/bangunan5.png"
             alt="sport5"
             width="1000"
             height="50"

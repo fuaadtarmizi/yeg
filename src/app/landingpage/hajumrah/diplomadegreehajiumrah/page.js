@@ -263,6 +263,7 @@ import CountAnimate2 from '@/components/lpdegreehajumrah/CountAnimate2'
 import CountAnimate3 from '@/components/lpdegreehajumrah/CountAnimate3'
 import Kataalumni from '@/components/lpdegreehajumrah/Kataalumni'
 import Slider from '@/components/lpdegreehajumrah/Slider'
+import SliderBuilding from '@/components/lpdegreehajumrah/SliderBuilding'
 import Formblastinghajumrah from '@/components/lpdegreehajumrah/Formblastinghajumrah'
 
 
@@ -474,6 +475,9 @@ function page() {
                 <h className="px-2 text-slate-400 text-sm">Faciliti Fakulti</h>
               <div className="flex-grow border-b border-gray-300"></div>
             </div>
+            </section>
+            <section>
+              <SliderBuilding/>
             </section>
           <section>
             <div className="space-y-4"> 
