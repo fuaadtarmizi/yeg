@@ -283,6 +283,18 @@ function page() {
           }}
         />
       </div>
+      <div className=" flex justify-center">
+      <Image
+          className="w-full"
+          src="/logo1.png"
+          alt="dipdhumy1"
+          width="1500"
+          height="80"
+          style={{
+            objectFit:"contain",
+          }}
+        />
+      </div>
         <section>
           <div className="font-bold text-2xl w-full flex justify-center text-center">Peneraju Inovatif dan Berwibawa di Innovative University College</div>
           <div className="bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 px-6 py-2">
@@ -363,7 +375,7 @@ function page() {
                   <h className="text-center">Pensyarah Kanan DHUMY</h>    
               </div>
               <div className="py-6 w-full flex justify-center pb-8">
-              <h className="text-center text-sm"></h>
+              <h className="text-center text-sm">Merupakan graduan Ijazah Sarjana Muda Syariah Islamiah Al Azhar Kaherah Mesir Universiti Al Azhar Kaherah Republik Arab Mesir. Pengacara Lensa 106, panel tazkirah di Sinar FM dan THR Gegar, felo Muda Dakwah Yadim 2014-2015, felo agama di Kementerian Belia dan Sukan 2015, ikon Pembanggunan Ummah Bank Islam, ikon Jelajah Muamalah Ummah Yadim dan duta jenama Simply Umrah Travel & Tours.</h>
               </div>
             </card>
 
@@ -381,26 +393,9 @@ function page() {
                     <h className="text-center">Pensyarah Kanan DHUMY</h>    
                 </div>
                 <div className="py-6 w-full flex justify-center pb-8">
-                <h className="text-center text-sm"></h>
+                <h className="text-center text-sm">Ustaz Haris merupakan seorang pelakon dan pendakwah bebas. Beliau telah memulakan kariernya pada tahun 2016 selepas menyertai program realiti Pencetus Ummah Musim Ke-4. Ustaz Haris berkesempatan menyambung pelajaran ke Markaz Lughah, Universiti al-Azhar Mesir selama 1 tahun namun terpaksa pulang ke Malaysia akibat pergolakan yang berlaku swaktu berada di sana.                </h>
                 </div>
             </card>
-            <card className="p-4  rounded-md shadow-lg border">
-                <div className="flex justify-center py-2">
-                <Image
-                className="w-20 h-20 rounded-full bg-slate-300 flex justify-center items-center"
-                    src="/sphuperson3.png"
-                    alt="sphuperson3"
-                    width="400"
-                    height="400"
-                    style={{objectFit:"cover",}}/></div>
-                <div className="grid justify-center space-y-3">
-                    <h className="text-center font-bold">Al-Habib Syaikh Dr.Omar Muhammad Kalash</h>
-                    <h className="text-center">Penasihat Akidah & Sahsiah DHUMY</h>    
-                </div>
-                <div className="py-6 w-full flex justify-center pb-8">
-                <h className="text-center text-sm"></h>
-                </div>
-              </card>
               <card className="p-4  rounded-md shadow-lg border">
                 <div className="flex justify-center py-2">
                 <Image
@@ -415,7 +410,24 @@ function page() {
                     <h className="text-center">Pensyarah Kanan DHUMY</h>    
                 </div>
                 <div className="py-6 w-full flex justify-center pb-8">
-                <h className="text-center text-sm"></h>
+                <h className="text-center text-sm">Merupakan graduan dalam ijazah sarjana muda undang-undang (kepujian), Universiti Islam Antarabangsa Malaysia. Dilantik sebagai Murabbi dan Juri oleh JAKIM -2012. Dipilih sebagai Successful People in Malaysia 2022 dari British Publishing House</h>
+                </div>
+              </card>
+              <card className="p-4  rounded-md shadow-lg border">
+                <div className="flex justify-center py-2">
+                <Image
+                className="w-20 h-20 rounded-full bg-slate-300 flex justify-center items-center"
+                    src="/sphuperson3.png"
+                    alt="sphuperson3"
+                    width="400"
+                    height="400"
+                    style={{objectFit:"cover",}}/></div>
+                <div className="grid justify-center space-y-3">
+                    <h className="text-center font-bold">Al-Habib Syaikh Dr.Omar Muhammad Kalash</h>
+                    <h className="text-center">Penasihat Akidah & Sahsiah DHUMY</h>    
+                </div>
+                <div className="py-6 w-full flex justify-center pb-8">
+                <h className="text-center text-sm">Master dalam Usul Al- Fiqh, Intenational Islamic University Malaysia (iium),  major in Fiqh and Usul al fiqh. Pensyarah dalam Islamic Education, IIUM University 2010-2011. Mengajar subjek : Arabic Grammar, Tafseer Al-Quraan, Islamic Aqeedah. Pensyarah Fiqh & Usul al-Fiqh di Kulliyah of Economics and Management Services, IIUM, 2012-2015</h>
                 </div>
               </card>
           </div>
@@ -458,7 +470,7 @@ function page() {
             <section>
             <div className="flex items-center  lg:px-2">
               <div className="flex-grow border-b border-gray-300"></div>
-                <h className="px-2 text-slate-400 text-sm">Facilities Fakulti</h>
+                <h className="px-2 text-slate-400 text-sm">Faciliti Fakulti</h>
               <div className="flex-grow border-b border-gray-300"></div>
             </div>
             </section>
@@ -466,7 +478,7 @@ function page() {
             <div className="space-y-4"> 
             <div className="flex justify-center py-2">
             <Image
-              className=" flex justify-center items-center"
+              className="w-full flex justify-center items-center"
                 src="/facility1.png"
                 alt="sphuperson4"
                 width="400"
@@ -475,7 +487,7 @@ function page() {
             </div>
             <div className="flex justify-center py-2">
             <Image
-              className=" flex justify-center items-center"
+              className="w-full flex justify-center items-center"
                 src="/facility2.png"
                 alt="sphuperson4"
                 width="400"
@@ -484,7 +496,7 @@ function page() {
             </div>
             <div className="flex justify-center py-2">
             <Image
-              className=" flex justify-center items-center"
+              className="w-full flex justify-center items-center"
                 src="/facility3.png"
                 alt="sphuperson4"
                 width="400"
@@ -496,7 +508,7 @@ function page() {
           <section>
             <div className="flex items-center  lg:px-2">
               <div className="flex-grow border-b border-gray-300"></div>
-                <h className="px-2 text-slate-400 text-sm">Activity Pengurusan HajUmrah</h>
+                <h className="px-2 text-slate-400 text-sm">Aktiviti Pengurusan HajUmrah</h>
               <div className="flex-grow border-b border-gray-300"></div>
             </div>
             </section>
@@ -525,9 +537,6 @@ function page() {
               <Kataalumni/>
             </section>
             <section>
-            <div className="py-6 w-full justify-center">
-                <h className="text-center text-2xl font-bold text-black">SETUJU TERIMA TAWARAN</h>
-              </div>
               <Formblastinghajumrah/>
             </section>
           
