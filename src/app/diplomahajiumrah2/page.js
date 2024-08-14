@@ -51,7 +51,7 @@ function page() {
         />
       </div>
       <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
-      <div className="bg-white flex justify-center ">
+      <div className="bg-white flex justify-center">
       <Image
           className=""
           src="/dipdhumy4.png"
@@ -63,6 +63,7 @@ function page() {
           }}
         />
       </div>
+
 
       <div className='bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 px-6'>
                 <card1 className=" p-4 rounded-md shadow-lg border">
@@ -236,6 +237,8 @@ function page() {
                     </div>
                 </card5>
             </div>
+
+
             <div className="animate-pulse duration-800  bg-green-600 flex justify-center p-2 py-6">
               <h className="text-2xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h>
             </div>
