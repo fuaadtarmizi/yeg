@@ -298,25 +298,7 @@ function page() {
         <section>
           <div className="font-bold text-2xl w-full flex justify-center text-center">Peneraju Inovatif dan Berwibawa di Innovative University College</div>
           <div className="bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 px-6 py-2">
-          <card className="p-4  rounded-md shadow-lg border">
-            <div className="flex justify-center py-2">
-                <Image 
-                  className="w-20 h-20 rounded-full bg-slate-300 flex justify-center items-center"
-                  src="/prof1.png"
-                  alt="prof1"
-                  width="400"
-                  height="400"
-                  style={{
-                  objectFit:"cover",
-                  }}/></div>
-              <div className="grid justify-center space-y-3">
-                  <h className="text-center font-bold">Prof. Madya Dr. Azri Usman</h>
-                  <h className="text-center">Timbalan Naib Canselor Akademik dan Antarabangsa</h>    
-              </div>
-              <div className="py-6 w-full flex justify-center pb-8">
-              <h className="text-center text-sm">Turut berkhidmat sebagai Pengerusi Eksekutif RichWorks International Sdn Bhd dan juga merupadakan salah seorang Ahli Lembaga Pengarah ManagePay Sustems Berhad, sebuah syarikat yang tersenarai di Bursa Malaysia.</h>
-              </div>
-            </card>
+          
 
             <card className="p-4  rounded-md shadow-lg border">
                 <div className="flex justify-center py-2">
@@ -352,6 +334,25 @@ function page() {
                 <h className="text-center text-sm">Mantan Ketua Pengarah Jabatan Pendidikan Tinggi Malaysia dan Naib Canselor Universiti Utara Malaysia. Selain daripada menerajui Innovative University College, beliau turut dilantik oleh Kerajaan Malaysia sebagai Ahli Majlis Agensi Kelayakan Malaysia (MQA), Ahli Lembaga Peperiksaan Malaysia dan Timbalan Presiden Majlis Profesor Negara.</h>
                 </div>
               </card>
+              <card className="p-4  rounded-md shadow-lg border">
+            <div className="flex justify-center py-2">
+                <Image 
+                  className="w-20 h-20 rounded-full bg-slate-300 flex justify-center items-center"
+                  src="/prof1.png"
+                  alt="prof1"
+                  width="400"
+                  height="400"
+                  style={{
+                  objectFit:"cover",
+                  }}/></div>
+              <div className="grid justify-center space-y-3">
+                  <h className="text-center font-bold">Prof. Madya Dr. Azri Usman</h>
+                  <h className="text-center">Timbalan Naib Canselor Akademik dan Antarabangsa</h>    
+              </div>
+              <div className="py-6 w-full flex justify-center pb-8">
+              <h className="text-center text-sm">Turut berkhidmat sebagai Pengerusi Eksekutif RichWorks International Sdn Bhd dan juga merupadakan salah seorang Ahli Lembaga Pengarah ManagePay Sustems Berhad, sebuah syarikat yang tersenarai di Bursa Malaysia.</h>
+              </div>
+            </card>
           </div>
           <div className="bg-white py-4 md:py-3 lg:py-6"></div>
 
