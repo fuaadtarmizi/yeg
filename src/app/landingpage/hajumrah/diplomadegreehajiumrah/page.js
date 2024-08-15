@@ -402,7 +402,7 @@ function page() {
             <section>
             <div className="flex items-center  lg:px-2">
               <div className="flex-grow border-b border-gray-300"></div>
-                <h className="px-2 font-semibold text-2xl md:text-3xl">Aktiviti Graduasi</h>
+                <h className="px-2 font-semibold text-2xl md:text-3xl">Graduasi Mahasiswa</h>
               <div className="flex-grow border-b border-gray-300"></div>
             </div>
             </section>
