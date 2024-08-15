@@ -31,7 +31,7 @@ const CountAnimate3 = () => {
     let timer;
     if (isVisible) {
       const updateCount = () => {
-        if (countRef.current < 170) {
+        if (countRef.current < 567) {
           countRef.current += 1;
           if (countElementRef.current) {
             countElementRef.current.innerText = countRef.current;

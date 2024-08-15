@@ -270,12 +270,12 @@ import Formblastinghajumrah from '@/components/lpdegreehajumrah/Formblastinghaju
 function page() {
   return (
     <main>
-      <div className="p-6">
+      <div className="px-6">
       <div className="lg:p-4 space-y-6">
         <div className=" flex justify-center">
       <Image
           className="w-full"
-          src="/poster1.png"
+          src="/poster.jpg"
           alt="dipdhumy1"
           width="1500"
           height="80"
@@ -284,18 +284,7 @@ function page() {
           }}
         />
       </div>
-      <div className=" flex justify-center">
-      <Image
-          className="w-full"
-          src="/logo1.png"
-          alt="dipdhumy1"
-          width="1500"
-          height="80"
-          style={{
-            objectFit:"contain",
-          }}
-        />
-      </div>
+     
         <section>
           <div className="font-bold text-2xl w-full flex justify-center text-center">Peneraju Inovatif dan Berwibawa di Innovative University College</div>
           <div className="bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 px-6 py-2">
@@ -351,7 +340,7 @@ function page() {
                   <h className="text-center">Timbalan Naib Canselor Akademik dan Antarabangsa</h>    
               </div>
               <div className="py-6 w-full flex justify-center pb-8">
-              <h className="text-center text-sm">Turut berkhidmat sebagai Pengerusi Eksekutif RichWorks International Sdn Bhd dan juga merupadakan salah seorang Ahli Lembaga Pengarah ManagePay Sustems Berhad, sebuah syarikat yang tersenarai di Bursa Malaysia.</h>
+              <h className="text-center text-sm">Timbalan Naib Canselor Akademik dan Pengantarabangsan(memangku), dan Dekan Faculty of Business, Economics and Finance</h>
               </div>
             </card>
           </div>
@@ -360,7 +349,7 @@ function page() {
 
 
           <div className="font-bold text-2xl w-full flex justify-center ">Tenaga Pengajar Fakulti</div>
-          <div className="bg-white grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6 px-6 py-2">
+          <div className="bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-2">
           <card className="p-4  rounded-md shadow-lg border">
             <div className="flex justify-center py-2">
                 <Image 
@@ -448,31 +437,31 @@ function page() {
           <section>
             <div className="flex items-center  lg:px-2">
               <div className="flex-grow border-b border-gray-300"></div>
-                <h className="px-2 text-slate-400 text-sm">Pencapaian YEG Academy</h>
+                <h className="px-2 text-slate-400 text-lg md:text-3xl ">Pencapaian Pengajian Haji & Umrah</h>
               <div className="flex-grow border-b border-gray-300"></div>
             </div>
             </section>
-            <section>
-              <div className="w-full bg-gray-100 py-4 z-50 absolute left-0">
+            <section className="">
+              <div className="w-full bg-gray-100 py-6 z-50 absolute left-0">
               <div className="grid justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full ">
                 <div><CountAnimate1/></div>
                 <div><CountAnimate2/></div>
                 <div><CountAnimate3/></div>
                 <div>
-                  <p className="text-xl font-bold text-center">Ijazah Sarjana Muda pengurusan haji Umrah</p>
+                  <p className="text-xl font-bold text-center">Ijazah Sarjana Muda pengurusan haji & Umrah</p>
                   <p className="text-lg text-gray-400 text-center">MQA/PA 17040</p>
                   <h className="py-1 text-transparent">-</h>
-                  <p className="text-xl font-bold text-center">Diploma Pengurusan Haji Umrah</p>
-                  <p className="text-lg text-gray-400 text-center">MQA/PA 17040</p>
+                  <p className="text-xl font-bold text-center">Diploma Pengurusan Haji & Umrah</p>
+                  <p className="text-lg text-gray-400 text-center">MQA FA/1377</p>
                 </div>
               </div>
               </div>
             </section>
-            <div className="bg-white py-56 md:py-3 lg:py-6"></div>
+            <div className="bg-white py-56 md:py-36 lg:py-32"></div>
             <section>
-            <div className="flex items-center  lg:px-2">
+            <div className="flex items-center lg:px-2">
               <div className="flex-grow border-b border-gray-300"></div>
-                <h className="px-2 text-slate-400 text-sm">Faciliti Fakulti</h>
+                <h className="px-2 text-slate-400 text-lg md:text-3xl ">Kemudahan Fakulti</h>
               <div className="flex-grow border-b border-gray-300"></div>
             </div>
             </section>
@@ -513,7 +502,7 @@ function page() {
           <section>
             <div className="flex items-center  lg:px-2">
               <div className="flex-grow border-b border-gray-300"></div>
-                <h className="px-2 text-slate-400 text-sm">Aktiviti Pengurusan HajUmrah</h>
+                <h className="px-2 text-slate-400 text-lg md:text-3xl">Aktiviti Mahsiswa</h>
               <div className="flex-grow border-b border-gray-300"></div>
             </div>
             </section>
@@ -525,7 +514,7 @@ function page() {
           <section>
             <div className="flex items-center  lg:px-2">
               <div className="flex-grow border-b border-gray-300"></div>
-                <h className="px-2 text-slate-400 text-sm">Perjalanan Pengurusan HajUmrah</h>
+                <h className="px-2 text-slate-400 text-lg md:text-3xl">Perjalanan Mahasiswa</h>
               <div className="flex-grow border-b border-gray-300"></div>
             </div>
             </section>
@@ -536,26 +525,29 @@ function page() {
                 alt="sphuperson4"
                 width="700"
                 height="400"
-                style={{objectFit:"cover",}}/>
+                style={{objectFit:"cover"}}/>
             </div>
             <section>
+            <div className="flex justify-center pb-4 pt-6">
+              <Image
+                  className=""
+                  src="/dipdhumy4.png"
+                  alt="dipdhumy4"
+                  width="300"
+                  height="80"
+                  style={{objectFit:"contain"}}/>
+              </div>
+              <div className="w-full flex justify-center ">
               <Kataalumni/>
+              </div>
             </section>
-            <section>
+            <section className="lg:container ">
+              <div className="lg:container ">
               <Formblastinghajumrah/>
+              </div>
             </section>
           
-
-
-
-
-          
-
-
-
-        </div>
-        
-        
+        </div>   
       </div>
     </main>
     
