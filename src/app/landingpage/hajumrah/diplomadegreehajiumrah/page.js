@@ -256,7 +256,7 @@
 // export default page
 
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import CountAnimate1 from '@/components/lpdegreehajumrah/CountAnimate1'
 import CountAnimate2 from '@/components/lpdegreehajumrah/CountAnimate2'
@@ -268,8 +268,14 @@ import Formblastinghajumrah from '@/components/lpdegreehajumrah/Formblastinghaju
 import SliderKonvo from '@/components/lpdegreehajumrah/SliderKonvo'
 
 
-
 function page() {
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "https://paperform.co/__embed.min.js";
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <main>
       <div className="px-6">
@@ -475,14 +481,14 @@ function page() {
               <Kataalumni/>
               </div>
             </section>
-            <section className="lg:container ">
+            {/* <section className="lg:container ">
               <div className="lg:container ">
               <Formblastinghajumrah/>
               </div>
-            </section>
+            </section> */}
             <section className="lg:container ">
               <div className="lg:container ">
-             
+              <div data-paperform-id="akuan-setuju-terima-hu"></div>
               </div>
             </section>
           
