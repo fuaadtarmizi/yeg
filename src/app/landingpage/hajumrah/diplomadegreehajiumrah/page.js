@@ -431,7 +431,7 @@ function page() {
                 <div className="py-2"><p className="font-bold text-xl">DEGREE</p></div>
                 <ul className="space-y-4 px-6 list-disc list-outside">
                   <li>Dermasiswa Yuran Pengajian sebanyak RM4,650</li>
-                  <li>Pembelian secara fizikal</li>
+                  <li>Pembelajaran secara fizikal</li>
                   <li>Tajaan penuh Latihan Industri di Mekah & Madinah selama 1-3 bulan</li>
                 </ul>
               </div>
