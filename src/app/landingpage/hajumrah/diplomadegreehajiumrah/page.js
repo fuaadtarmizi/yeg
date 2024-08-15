@@ -327,7 +327,7 @@ function page() {
           <section>
             <div className="flex items-center  lg:px-2">
               <div className="flex-grow border-b border-gray-300"></div>
-                <h className="px-2 font-semibold text-2xl md:text-3xl text-center">Pencapaian Pengajian Haji & Umrah</h>
+                <h className="px-2 font-semibold text-2xl md:text-3xl text-center">Pencapaian Program Pengurusan Haji & Umrah</h>
               <div className="flex-grow border-b border-gray-300"></div>
             </div>
             </section>
@@ -392,7 +392,7 @@ function page() {
           <section>
             <div className="flex items-center  lg:px-2">
               <div className="flex-grow border-b border-gray-300"></div>
-                <h className="px-2 font-semibold text-2xl md:text-3xl">Aktiviti Mahsiswa</h>
+                <h className="px-2 font-semibold text-2xl md:text-3xl">Aktiviti Mahasiswa</h>
               <div className="flex-grow border-b border-gray-300"></div>
             </div>
             </section>
@@ -428,10 +428,9 @@ function page() {
           <section>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
               <div className="border rounded-lg p-4 shadow-md">
-                <div className="py-2"><p className="font-bold text-xl">DEGREE</p></div>
+                <div className="py-2"><p className="font-bold text-xl">Ijazah Sarjana Muda</p></div>
                 <ul className="space-y-4 px-6 list-disc list-outside">
                   <li>Dermasiswa Yuran Pengajian sebanyak RM4,650</li>
-                  <li>Pembelajaran secara fizikal</li>
                   <li>Tajaan penuh Latihan Industri di Mekah & Madinah selama 1-3 bulan</li>
                 </ul>
               </div>
@@ -440,7 +439,7 @@ function page() {
                 <ul className="space-y-4 px-6 list-disc list-outside">
                   <li>Dermasiswa Yuran Pengajian sebanyak RM2,500</li>
                   <li>Penginapan disediakan</li>
-                  <li>Percuma Sijil Kemahiran Industri(Skin) Certified Madinah Selama 1-3</li>
+                  <li>Percuma Sijil Kemahiran Industri(SKiN)</li>
                   <li>Bantuan penempatan kerjaya selepas tamat pengajian</li>
                 </ul>
               </div>
@@ -479,6 +478,11 @@ function page() {
             <section className="lg:container ">
               <div className="lg:container ">
               <Formblastinghajumrah/>
+              </div>
+            </section>
+            <section className="lg:container ">
+              <div className="lg:container ">
+             
               </div>
             </section>
           
