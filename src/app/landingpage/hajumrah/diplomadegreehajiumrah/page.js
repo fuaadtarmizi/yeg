@@ -265,6 +265,8 @@ import Kataalumni from '@/components/lpdegreehajumrah/Kataalumni'
 import Slider from '@/components/lpdegreehajumrah/Slider'
 import SliderBuilding from '@/components/lpdegreehajumrah/SliderBuilding'
 import Formblastinghajumrah from '@/components/lpdegreehajumrah/Formblastinghajumrah'
+import SliderKonvo from '@/components/lpdegreehajumrah/SliderKonvo'
+
 
 
 function page() {
@@ -286,142 +288,30 @@ function page() {
       </div>
      
         <section>
-          <div className="font-bold text-2xl w-full flex justify-center text-center">Peneraju Inovatif dan Berwibawa di Innovative University College</div>
-          <div className="bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 px-6 py-2">
-          
-
-            <card className="p-4  rounded-md shadow-lg border">
-                <div className="flex justify-center py-2">
-                <Image
-                className="w-20 h-20 rounded-full bg-slate-300 flex justify-center items-center"
-                    src="/prof2.png"
-                    alt="prof2"
-                    width="400"
-                    height="400"
-                    style={{objectFit:"cover",}}/></div>
-                <div className="grid justify-center space-y-3">
-                    <h className="text-center font-bold">Dato' Prof. Emeritus Dr. Hashim Yaacob</h>
-                    <h className="text-center">Pengerusi Lembaga Pengelola</h>    
-                </div>
-                <div className="py-6 w-full flex justify-center pb-8">
-                <h className="text-center text-sm">Mantain Naib Canselor Universiti Malaya.Selain menerajui Lembaga Pengelola Innovative Universiti College, beliau turut berkhidmat sebagai Pakar Pergigian di UM Specialist Centre.</h>
-                </div>
-            </card>
-            <card className="p-4  rounded-md shadow-lg border">
-                <div className="flex justify-center py-2">
-                <Image
-                className="w-20 h-20 rounded-full bg-slate-300 flex justify-center items-center"
-                    src="/prof3.png"
-                    alt="prof3"
-                    width="400"
-                    height="400"
-                    style={{objectFit:"cover",}}/></div>
-                <div className="grid justify-center space-y-3">
-                    <h className="text-center font-bold">Dato' Seri Prof. Emeritus Dr. Mohamed Mustafa Ishak</h>
-                    <h className="text-center">Naib Canselor / Ketua Eksekutif</h>    
-                </div>
-                <div className="py-6 w-full flex justify-center pb-8">
-                <h className="text-center text-sm">Mantan Ketua Pengarah Jabatan Pendidikan Tinggi Malaysia dan Naib Canselor Universiti Utara Malaysia. Selain daripada menerajui Innovative University College, beliau turut dilantik oleh Kerajaan Malaysia sebagai Ahli Majlis Agensi Kelayakan Malaysia (MQA), Ahli Lembaga Peperiksaan Malaysia dan Timbalan Presiden Majlis Profesor Negara.</h>
-                </div>
-              </card>
-              <card className="p-4  rounded-md shadow-lg border">
-            <div className="flex justify-center py-2">
-                <Image 
-                  className="w-20 h-20 rounded-full bg-slate-300 flex justify-center items-center"
-                  src="/prof1.png"
-                  alt="prof1"
-                  width="400"
-                  height="400"
-                  style={{
-                  objectFit:"cover",
-                  }}/></div>
-              <div className="grid justify-center space-y-3">
-                  <h className="text-center font-bold">Prof. Madya Dr. Azri Usman</h>
-                  <h className="text-center">Timbalan Naib Canselor Akademik dan Antarabangsa</h>    
-              </div>
-              <div className="py-6 w-full flex justify-center pb-8">
-              <h className="text-center text-sm">Timbalan Naib Canselor Akademik dan Pengantarabangsan(memangku), dan Dekan Faculty of Business, Economics and Finance</h>
-              </div>
-            </card>
-          </div>
+          <div className="font-bold text-2xl w-full flex justify-center text-center py-2">Peneraju Inovatif dan Berwibawa di Innovative University College</div>
+          <div className=" flex justify-center">
+            <Image
+                className="w-full"
+                src="/prof.jpg"
+                alt="prof"
+                width="1500"
+                height="80"
+                style={{
+                  objectFit:"contain"}}/>
+            </div>
           <div className="bg-white py-4 md:py-3 lg:py-6"></div>
-
-
-
-          <div className="font-bold text-2xl w-full flex justify-center ">Tenaga Pengajar Fakulti</div>
-          <div className="bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-2">
-          <card className="p-4  rounded-md shadow-lg border">
-            <div className="flex justify-center py-2">
-                <Image 
-                  className="w-20 h-20 rounded-full bg-slate-300 flex justify-center items-center"
-                  src="/sphuperson1.png"
-                  alt="sphuperson1"
-                  width="400"
-                  height="400"
-                  style={{
-                  objectFit:"cover",
-                  }}/></div>
-              <div className="grid justify-center space-y-3">
-                  <h className="text-center font-bold">PU Amin</h>
-                  <h className="text-center">Pensyarah Kanan DHUMY</h>    
-              </div>
-              <div className="py-6 w-full flex justify-center pb-8">
-              <h className="text-center text-sm">Merupakan graduan Ijazah Sarjana Muda Syariah Islamiah Al Azhar Kaherah Mesir Universiti Al Azhar Kaherah Republik Arab Mesir. Pengacara Lensa 106, panel tazkirah di Sinar FM dan THR Gegar, felo Muda Dakwah Yadim 2014-2015, felo agama di Kementerian Belia dan Sukan 2015, ikon Pembanggunan Ummah Bank Islam, ikon Jelajah Muamalah Ummah Yadim dan duta jenama Simply Umrah Travel & Tours.</h>
-              </div>
-            </card>
-
-            <card className="p-4  rounded-md shadow-lg border">
-                <div className="flex justify-center py-2">
-                <Image
-                className="w-20 h-20 rounded-full bg-slate-300 flex justify-center items-center"
-                    src="/sphuperson2.png"
-                    alt="sphuperson2"
-                    width="400"
-                    height="400"
-                    style={{objectFit:"cover",}}/></div>
-                <div className="grid justify-center space-y-3">
-                    <h className="text-center font-bold">PU Riz</h>
-                    <h className="text-center">Pensyarah Kanan DHUMY</h>    
-                </div>
-                <div className="py-6 w-full flex justify-center pb-8">
-                <h className="text-center text-sm">Ustaz Haris merupakan seorang pelakon dan pendakwah bebas. Beliau telah memulakan kariernya pada tahun 2016 selepas menyertai program realiti Pencetus Ummah Musim Ke-4. Ustaz Haris berkesempatan menyambung pelajaran ke Markaz Lughah, Universiti al-Azhar Mesir selama 1 tahun namun terpaksa pulang ke Malaysia akibat pergolakan yang berlaku swaktu berada di sana.                </h>
-                </div>
-            </card>
-              <card className="p-4  rounded-md shadow-lg border">
-                <div className="flex justify-center py-2">
-                <Image
-                className="w-20 h-20 rounded-full bg-slate-300 flex justify-center items-center"
-                    src="/sphuperson4.png"
-                    alt="sphuperson4"
-                    width="400"
-                    height="400"
-                    style={{objectFit:"cover",}}/></div>
-                <div className="grid justify-center space-y-3">
-                    <h className="text-center font-bold">Badrul Sani</h>
-                    <h className="text-center">Pensyarah Kanan DHUMY</h>    
-                </div>
-                <div className="py-6 w-full flex justify-center pb-8">
-                <h className="text-center text-sm">Merupakan graduan dalam ijazah sarjana muda undang-undang (kepujian), Universiti Islam Antarabangsa Malaysia. Dilantik sebagai Murabbi dan Juri oleh JAKIM -2012. Dipilih sebagai Successful People in Malaysia 2022 dari British Publishing House</h>
-                </div>
-              </card>
-              <card className="p-4  rounded-md shadow-lg border">
-                <div className="flex justify-center py-2">
-                <Image
-                className="w-20 h-20 rounded-full bg-slate-300 flex justify-center items-center"
-                    src="/sphuperson3.png"
-                    alt="sphuperson3"
-                    width="400"
-                    height="400"
-                    style={{objectFit:"cover",}}/></div>
-                <div className="grid justify-center space-y-3">
-                    <h className="text-center font-bold">Al-Habib Syaikh Dr.Omar Muhammad Kalash</h>
-                    <h className="text-center">Penasihat Akidah & Sahsiah DHUMY</h>    
-                </div>
-                <div className="py-6 w-full flex justify-center pb-8">
-                <h className="text-center text-sm">Master dalam Usul Al- Fiqh, Intenational Islamic University Malaysia (iium),  major in Fiqh and Usul al fiqh. Pensyarah dalam Islamic Education, IIUM University 2010-2011. Mengajar subjek : Arabic Grammar, Tafseer Al-Quraan, Islamic Aqeedah. Pensyarah Fiqh & Usul al-Fiqh di Kulliyah of Economics and Management Services, IIUM, 2012-2015</h>
-                </div>
-              </card>
-          </div>
+          <div className="font-bold text-2xl w-full flex justify-center py-2">Tenaga Pengajar Fakulti</div>
+          <div className=" flex justify-center">
+            <Image
+                className="w-full"
+                src="/sphuperson.jpg"
+                alt="sphuperson"
+                width="1500"
+                height="80"
+                style={{
+                  objectFit:"contain"}}/>
+            </div>
+          
           </section>
           <div className="bg-white py-2 md:py-3 lg:py-6"></div>
           <div className="bg-white flex justify-center ">
@@ -437,7 +327,7 @@ function page() {
           <section>
             <div className="flex items-center  lg:px-2">
               <div className="flex-grow border-b border-gray-300"></div>
-                <h className="px-2 text-slate-400 text-lg md:text-3xl ">Pencapaian Pengajian Haji & Umrah</h>
+                <h className="px-2 font-semibold text-2xl md:text-3xl text-center">Pencapaian Pengajian Haji & Umrah</h>
               <div className="flex-grow border-b border-gray-300"></div>
             </div>
             </section>
@@ -461,7 +351,7 @@ function page() {
             <section>
             <div className="flex items-center lg:px-2">
               <div className="flex-grow border-b border-gray-300"></div>
-                <h className="px-2 text-slate-400 text-lg md:text-3xl ">Kemudahan Fakulti</h>
+                <h className="px-2 font-semibold text-2xl md:text-3xl ">Kemudahan Fakulti</h>
               <div className="flex-grow border-b border-gray-300"></div>
             </div>
             </section>
@@ -477,7 +367,7 @@ function page() {
                 alt="sphuperson4"
                 width="400"
                 height="400"
-                style={{objectFit:"cover",}}/>
+                style={{objectFit:"cover"}}/>
             </div>
             <div className="flex justify-center py-2">
             <Image
@@ -502,22 +392,67 @@ function page() {
           <section>
             <div className="flex items-center  lg:px-2">
               <div className="flex-grow border-b border-gray-300"></div>
-                <h className="px-2 text-slate-400 text-lg md:text-3xl">Aktiviti Mahsiswa</h>
+                <h className="px-2 font-semibold text-2xl md:text-3xl">Aktiviti Mahsiswa</h>
               <div className="flex-grow border-b border-gray-300"></div>
             </div>
             </section>
-          <section>
+            <section>
               <Slider/>
+            </section>
+            <section>
+            <div className="flex items-center  lg:px-2">
+              <div className="flex-grow border-b border-gray-300"></div>
+                <h className="px-2 font-semibold text-2xl md:text-3xl">Aktiviti Graduasi</h>
+              <div className="flex-grow border-b border-gray-300"></div>
+            </div>
+            </section>
+            <section>
+              <SliderKonvo/>
+            </section>
+            <section>
+            <div className="flex items-center  lg:px-2">
+              <div className="flex-grow border-b border-gray-300"></div>
+                <h className="px-2 font-semibold text-2xl md:text-3xl"></h>
+              <div className="flex-grow border-b border-gray-300"></div>
+            </div>
             </section>
           <div className="bg-white py-2 md:py-3 lg:py-6"></div>
 
           <section>
             <div className="flex items-center  lg:px-2">
               <div className="flex-grow border-b border-gray-300"></div>
-                <h className="px-2 text-slate-400 text-lg md:text-3xl">Perjalanan Mahasiswa</h>
+                <h className="px-2 font-semibold text-2xl md:text-3xl">Keistimewaan Program</h>
               <div className="flex-grow border-b border-gray-300"></div>
             </div>
-            </section>
+          </section>
+          <section>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+              <div className="border rounded-lg p-4 shadow-md">
+                <div className="py-2"><p className="font-bold text-xl">DEGREE</p></div>
+                <ul className="space-y-4 px-6 list-disc list-outside">
+                  <li>Dermasiswa Yuran Pengajian sebanyak RM4,650</li>
+                  <li>Pembelian secara fizikal</li>
+                  <li>Tajaan penuh Latihan Industri di Mekah & Madinah selama 1-3 bulan</li>
+                </ul>
+              </div>
+              <div className="border rounded-lg p-4 shadow-md">
+              <div className="py-2"><p className="font-bold text-xl">DIPLOMA</p></div>
+                <ul className="space-y-4 px-6 list-disc list-outside">
+                  <li>Dermasiswa Yuran Pengajian sebanyak RM2,500</li>
+                  <li>Penginapan disediakan</li>
+                  <li>Percuma Sijil Kemahiran Industri(Skin) Certified Madinah Selama 1-3</li>
+                  <li>Bantuan penempatan kerjaya selepas tamat pengajian</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div className="flex items-center  lg:px-2">
+              <div className="flex-grow border-b border-gray-300"></div>
+                <h className="px-2 font-semibold text-2xl md:text-3xl">Perjalanan Program</h>
+              <div className="flex-grow border-b border-gray-300"></div>
+            </div>
+          </section>
             <div className="flex justify-center py-2">
             <Image
               className="w-full flex justify-center items-center"
