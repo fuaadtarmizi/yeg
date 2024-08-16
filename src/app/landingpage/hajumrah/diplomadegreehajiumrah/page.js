@@ -434,19 +434,20 @@ function page() {
           <section>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
               <div className="border rounded-lg p-4 shadow-md">
-                <div className="py-2"><p className="font-bold text-xl">Ijazah Sarjana Muda</p></div>
+                <div className="py-2"><p className="font-bold text-xl">Ijazah Sarjana Muda Pengurusan Haji & Umrah</p></div>
                 <ul className="space-y-4 px-6 list-disc list-outside">
                   <li>Dermasiswa Yuran Pengajian sebanyak RM4,650</li>
                   <li>Tajaan penuh Latihan Industri di Mekah & Madinah selama 1-3 bulan</li>
                 </ul>
               </div>
               <div className="border rounded-lg p-4 shadow-md">
-              <div className="py-2"><p className="font-bold text-xl">DIPLOMA</p></div>
+              <div className="py-2"><p className="font-bold text-xl">Diploma Pengurusan Haji & Umrah</p></div>
                 <ul className="space-y-4 px-6 list-disc list-outside">
                   <li>Dermasiswa Yuran Pengajian sebanyak RM2,500</li>
-                  <li>Penginapan disediakan</li>
                   <li>Percuma Sijil Kemahiran Industri(SKiN)</li>
+                  <li>Latihan Industri di Mekah & Madinah selama 1 - 3 bulan</li>
                   <li>Bantuan penempatan kerjaya selepas tamat pengajian</li>
+                  
                 </ul>
               </div>
             </div>

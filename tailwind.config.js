@@ -22,8 +22,7 @@ module.exports = {
         "2xl": "1400px",
       },
     },
-
-
+ 
     extend: {
       keyframes: {
         "accordion-down": {
@@ -44,7 +43,6 @@ module.exports = {
         anton: ['Anton', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
-
       },
       
     },

@@ -16,21 +16,19 @@ function page() {
           alt="maritim1"
           width="1500"
           height="80"
-          style={{
-            objectFit:"contain",
-          }}/>
+          style={{objectFit:"contain"}}/>
       </div>
         <div className="bg-white py-2 md:py-3 lg:py-6"></div>
-        {/* <div className=" flex justify-center">
+        <div className=" flex justify-center">
       <Image
           className="w-full"
-          src="/scalffolding2.jpg"
-          alt="scalffolding1"
+          src="/maritim2.jpg"
+          alt="maritim2"
           width="1100"
           height="80"
           style={{
-            objectFit:"contain",}}/>
-      </div> */}
+            objectFit:"contain"}}/> 
+      </div>
       {/* <section1 className="">
       <div className="m lg:px-10 p-6 flex justify-center bg-black">
         <div className="">
@@ -39,7 +37,7 @@ function page() {
         autoPlay  // Add this attribute for autoplay
         className=""
       >
-        <source src="/scalffoldingvideo.mp4" type="video/mp4" />
+        <source src="/scalffoldingvideo.mp4" type="video/mp4" /> 
       </video>
         </div>
       </div>
