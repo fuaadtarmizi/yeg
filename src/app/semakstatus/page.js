@@ -266,6 +266,9 @@ import Slider from '@/components/lpdegreehajumrah/Slider'
 import SliderBuilding from '@/components/lpdegreehajumrah/SliderBuilding'
 import Formblastinghajumrah from '@/components/lpdegreehajumrah/Formblastinghajumrah'
 import SliderKonvo from '@/components/lpdegreehajumrah/SliderKonvo'
+import IjazahDownloadButtonPDF from '@/components/IjazahDownloadButtonPDF'
+import DiplomaDownloadButtonPDF from '@/components/DiplomaDownloadButtonPDF'
+
 
 
 function page() {
@@ -321,13 +324,23 @@ function page() {
           </section>
           <section>
           <div className="flex justify-center w-full h-full mx-auto col-span-12 md:col-span-6 lg:col-span-6 md:order-2">
-                    <video
-                    controls
-                    autoPlay  // Add this attribute for autoplay
-                    className=""
-                  ><source src="videosemakstatus.mp4" type="video/mp4"/>
-                  </video>
-                </div>
+              <video
+              controls
+              autoPlay  // Add this attribute for autoplay
+              className="w-full">
+              <source src="videosemakstatus2.mp4" type="video/mp4"/>
+            </video>
+          </div>
+          </section>
+          <div className="bg-white py-2 md:py-3 lg:py-6"></div>
+          <section>
+          <div className="flex justify-center w-full h-full mx-auto col-span-12 md:col-span-6 lg:col-span-6 md:order-2">
+              <video
+              controls
+              autoPlay  // Add this attribute for autoplay
+              className=""><source src="videosemakstatus.mp4" type="video/mp4"/>
+            </video>
+          </div>
           </section>
           <div className="bg-white py-2 md:py-3 lg:py-6"></div>
           <div className="bg-white flex justify-center ">
@@ -433,7 +446,6 @@ function page() {
             </div>
             </section>
           <div className="bg-white py-2 md:py-3 lg:py-6"></div>
-
           <section>
             <div className="flex items-center  lg:px-2">
               <div className="flex-grow border-b border-gray-300"></div>
@@ -497,11 +509,35 @@ function page() {
               <Formblastinghajumrah/>
               </div>
             </section> */}
-            <section className="lg:container ">
-              <div className="lg:container ">
-              <div data-paperform-id="akuan-setuju-terima-hu"></div>
+            <div className="bg-white py-2 md:py-3 lg:py-6"></div>
+
+            <section>
+            <div className="flex items-center  lg:px-2">
+              <div className="flex-grow border-b border-gray-300"></div>
+                <h className="px-2 font-semibold text-2xl md:text-3xl text-center">Muat Turun Surat Tawaran Bersyarat</h>
+              <div className="flex-grow border-b border-gray-300"></div>
+            </div>
+          </section>
+          <section>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+              <div className="border rounded-lg p-4 shadow-md">
+                <div className="py-2"><p className="font-bold text-xl">Ijazah Sarjana Muda Pengurusan Haji & Umrah</p></div>
+                <IjazahDownloadButtonPDF />
               </div>
-            </section>
+              <div className="border rounded-lg p-4 shadow-md">
+              <div className="py-2"><p className="font-bold text-xl">Diploma Pengurusan Haji & Umrah</p></div>
+              <DiplomaDownloadButtonPDF />
+              </div>
+            </div>
+          </section>
+          <div className="bg-white py-2 md:py-3 lg:py-6"></div>
+
+          <section className="lg:container ">
+            <div className="lg:container ">
+            <div data-paperform-id="akuan-setuju-terima-hu"></div>
+            </div>
+          </section>
+            
           
         </div>   
       </div>
