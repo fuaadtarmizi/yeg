@@ -56,17 +56,9 @@ export default function RootLayout({ children }) {
         </noscript>
            
       </Head>
-      <div>
-            {/* Your layout components */}
-            {children}
-        </div>
-      <body className={inter.className}>
-        {/* {children} */}
+      <body className={inter.className}>{children}</body>
       <Analytics />
-      </body>
     </html>
-    
-
   )
 }
 

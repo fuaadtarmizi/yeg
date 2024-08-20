@@ -119,10 +119,7 @@ export default function home() {
             alt="logopelita"
             width="90"
             height="200"
-            style={{
-              objectFit: "contain",
-            }}
-          />
+            style={{objectFit: "contain"}}/>
         </div>
         </div>
     </section2>
