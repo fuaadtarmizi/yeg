@@ -8,7 +8,7 @@ const DownloadButtonPDF = () => {
     // );
 
     window.open(
-        'https://drive.google.com/uc?export=download&id=1qT41PNRrqJUpC03QBL7HmpIJTStNIKwD',
+        'https://drive.google.com/uc?export=download&id=1qV3YEPlyeFsxrvZfrRyeqy3DO5MuKj0v',
         '_blank'
       );
   };

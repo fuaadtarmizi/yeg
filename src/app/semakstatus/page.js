@@ -510,7 +510,6 @@ function page() {
               </div>
             </section> */}
             <div className="bg-white py-2 md:py-3 lg:py-6"></div>
-
             <section>
             <div className="flex items-center  lg:px-2">
               <div className="flex-grow border-b border-gray-300"></div>
@@ -531,7 +530,6 @@ function page() {
             </div>
           </section>
           <div className="bg-white py-2 md:py-3 lg:py-6"></div>
-
           <section className="lg:container ">
             <div className="lg:container ">
             <div data-paperform-id="akuan-setuju-terima-hu"></div>
