@@ -199,6 +199,10 @@ export default function App() {
           <h>Nombor Penjaga</h>
           <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentNumber"  type="text" />
           </div>
+
+
+
+          
           <div className="grid  text-left">
         <p className="py-1 text-white">Negeri</p>
       <button
