@@ -46,8 +46,8 @@ export default function App() {
           <div className="w-full flex justify-center">
             <Image 
             className="w-full rounded-md"
-            src="/mmpposter.jpg"
-            alt="mmpposter"
+            src="/postermerdeka.jpg"
+            alt="postermerdeka"
             width="1000"
             height="50"
             style={{
