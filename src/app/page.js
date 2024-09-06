@@ -12,8 +12,16 @@ export default function home() {
 
 
   return (
+    <html lang="en">
+      <ins
+        className="adsbygoogle"
+        style={{ display: 'block' }}
+        data-ad-client="ca-pub-6199758154363864"
+        data-ad-slot="1234567890" // Replace with your ad slot ID
+        data-ad-format="auto"
+      ></ins> 
 
-    <html lang="en">  
+
   <main>
     <div>
     <div className="sticky hidden lg:block top-0 z-10">

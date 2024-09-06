@@ -56,6 +56,20 @@ export default function App() {
         />
           </div>
         </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-full flex justify-center">
+            <Image 
+            className="w-full rounded-md"
+            src="/postermerdeka.jpg"
+            alt="postermerdeka"
+            width="1000"
+            height="50"
+            style={{
+            objectFit:"contain",
+          }}
+        />
+          </div>
+        </SwiperSlide>
         
 
       </Swiper>
