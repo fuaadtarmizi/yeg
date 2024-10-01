@@ -39,26 +39,6 @@ function Navbar() {
                 objectFit: "contain",
                 }}/></a></div>
             <div className="bg-slate-800 flex w-full justify-end">
-
-            {/* <MenubarMenu>
-                <MenubarTrigger className="hover:bg-slate-600">Career Programe</MenubarTrigger>
-                <MenubarContent>
-                    <MenubarItem>
-                    <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                      <a className="text-md font-light ml-2" href="../kursuskerjaya/sphu">Sijil Program Profesional Haji & Umrah (SPHU)</a> </div>
-                    </MenubarItem>
-                    <MenubarItem>
-                    <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                      <a className="text-md font-light ml-2" href="../kursuskerjaya/acm">Aviation Career Malaysia (ACM)</a></div>
-                    </MenubarItem>
-                    <MenubarItem>
-                    <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                      <a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Malaysia Industry Skills Academy(MISA)</a></div>
-                    </MenubarItem>
-                </MenubarContent>
-            </MenubarMenu> */}
-
-
             <MenubarMenu>
               <MenubarTrigger>Career Program</MenubarTrigger>
               <MenubarContent>
@@ -76,9 +56,9 @@ function Navbar() {
                   <a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Malaysia Industry Skills Academy(MISA)</a></div>
                   </MenubarSubTrigger>
                   <MenubarSubContent>
-                    <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Oil & Gas</a></MenubarItem>
-                    <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Maritim</a></MenubarItem>
-                    <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Telcomunication</a></MenubarItem>
+                    <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa/oilandgas">Oil & Gas</a></MenubarItem>
+                    <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa/maritim">Maritim</a></MenubarItem>
+                    <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa/telco">Telcomunication</a></MenubarItem>
                     <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Renewble Energy</a></MenubarItem>
                     <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Aviation</a></MenubarItem>
                   </MenubarSubContent>

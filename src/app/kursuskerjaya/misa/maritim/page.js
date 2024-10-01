@@ -1,0 +1,9 @@
+import React from 'react'
+
+function page() {
+  return (
+    <div>hello i page maritim</div>
+  )
+}
+
+export default page
