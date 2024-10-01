@@ -28,8 +28,8 @@ function Navbar() {
                 }}/></a></div>
             <div className="bg-slate-800 flex w-full justify-end">
 
-            <MenubarMenu>
-                <MenubarTrigger className="hover:bg-slate-600">Online Distance Learning</MenubarTrigger>
+            {/* <MenubarMenu>
+                <MenubarTrigger className="hover:bg-slate-600">Career Programe</MenubarTrigger>
                 <MenubarContent>
                     <MenubarItem>
                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
@@ -43,7 +43,33 @@ function Navbar() {
                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
                       <a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Malaysia Industry Skills Academy(MISA)</a></div>
                     </MenubarItem>
+                </MenubarContent>
+            </MenubarMenu> */}
+
+            <MenubarMenu>
+                <MenubarTrigger className="hover:bg-slate-600">Career Programe</MenubarTrigger>
+                <MenubarContent>
+                    <MenubarItem>
+                    <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                      <a className="text-md font-light ml-2" href="../kursuskerjaya/sphu">Sijil Program Profesional Haji & Umrah (SPHU)</a> </div>
+                    </MenubarItem>
+                    <MenubarItem>
+                    <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                      <a className="text-md font-light ml-2" href="../kursuskerjaya/acm">Aviation Career Malaysia (ACM)</a></div>
+                    </MenubarItem>
+                    <MenubarMenu>
+                      <MenubarTrigger>Malaysia Industry Skills Academy(MISA)</MenubarTrigger>
+                      <MenubarContent>
+                        <MenubarItem>
+                        <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                        <a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Malaysia Industry Skills Academy(MISA)</a></div>
+                        </MenubarItem>
+                      </MenubarContent>
+
+                    </MenubarMenu>
+                    <MenubarItem>
                     
+                    </MenubarItem>
                 </MenubarContent>
             </MenubarMenu>
 
