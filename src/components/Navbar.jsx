@@ -60,7 +60,7 @@ function Navbar() {
 
 
             <MenubarMenu>
-              <MenubarTrigger>career Program</MenubarTrigger>
+              <MenubarTrigger>Career Program</MenubarTrigger>
               <MenubarContent>
                 <MenubarItem>
                 <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
