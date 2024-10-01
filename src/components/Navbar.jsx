@@ -63,25 +63,26 @@ function Navbar() {
               <MenubarTrigger>File</MenubarTrigger>
               <MenubarContent>
                 <MenubarItem>
-                  New Tab <MenubarShortcut>⌘T</MenubarShortcut>
-                </MenubarItem>
+                <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                <a className="text-md font-light ml-2" href="../kursuskerjaya/sphu">Sijil Program Profesional Haji & Umrah (SPHU)</a> </div>
+                </MenubarItem>  
                 <MenubarItem>
-                  New Window <MenubarShortcut>⌘N</MenubarShortcut>
+                <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                <a className="text-md font-light ml-2" href="../kursuskerjaya/acm">Aviation Career Malaysia (ACM)</a></div>
                 </MenubarItem>
-                <MenubarItem disabled>New Incognito Window</MenubarItem>
-                <MenubarSeparator />
                 <MenubarSub>
-                  <MenubarSubTrigger>Share</MenubarSubTrigger>
+                  <MenubarSubTrigger>
+                  <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                  <a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Malaysia Industry Skills Academy(MISA)</a></div>
+                  </MenubarSubTrigger>
                   <MenubarSubContent>
-                    <MenubarItem>Email link</MenubarItem>
-                    <MenubarItem>Messages</MenubarItem>
-                    <MenubarItem>Notes</MenubarItem>
+                    <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Oil & Gas</a></MenubarItem>
+                    <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Maritim</a></MenubarItem>
+                    <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Telcomunication</a></MenubarItem>
+                    <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Renewble Energy</a></MenubarItem>
+                    <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Aviation</a></MenubarItem>
                   </MenubarSubContent>
                 </MenubarSub>
-                <MenubarSeparator />
-                <MenubarItem>
-                  Print... <MenubarShortcut>⌘P</MenubarShortcut>
-                </MenubarItem>
               </MenubarContent>
             </MenubarMenu>
 
