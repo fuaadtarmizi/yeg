@@ -9,6 +9,9 @@ import {
     MenubarTrigger,
     MenubarSubTrigger,
     MenubarSubContent,
+    MenubarShortcut,
+    MenubarSeparator,
+    MenubarSub
   } from "@/components/ui/menubar"
   
 
@@ -57,32 +60,33 @@ function Navbar() {
 
 
             <MenubarMenu>
-                <MenubarTrigger className="hover:bg-slate-600">Career Programe</MenubarTrigger>
-                <MenubarContent>
-                    <MenubarItem>
-                    <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                      <a className="text-md font-light ml-2" href="../kursuskerjaya/sphu">Sijil Program Profesional Haji & Umrah (SPHU)</a> </div>
-                    </MenubarItem>
-                    <MenubarItem>
-                    <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                      <a className="text-md font-light ml-2" href="../kursuskerjaya/acm">Aviation Career Malaysia (ACM)</a></div>
-                    </MenubarItem>
-
-                    <MenubarSubTrigger>Malaysia Industry Skills Academy(MISA)</MenubarSubTrigger>
-                    <MenubarSubContent>
+              <MenubarTrigger>File</MenubarTrigger>
+              <MenubarContent>
+                <MenubarItem>
+                  New Tab <MenubarShortcut>⌘T</MenubarShortcut>
+                </MenubarItem>
+                <MenubarItem>
+                  New Window <MenubarShortcut>⌘N</MenubarShortcut>
+                </MenubarItem>
+                <MenubarItem disabled>New Incognito Window</MenubarItem>
+                <MenubarSeparator />
+                <MenubarSub>
+                  <MenubarSubTrigger>Share</MenubarSubTrigger>
+                  <MenubarSubContent>
                     <MenubarItem>Email link</MenubarItem>
-                    </MenubarSubContent>
-
-
-
-                    <MenubarItem>
-                    <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                      <a className="text-md font-light ml-2" href="../kursuskerjaya/misa"></a></div>
-                    </MenubarItem>
-
-                    
-                </MenubarContent>
+                    <MenubarItem>Messages</MenubarItem>
+                    <MenubarItem>Notes</MenubarItem>
+                  </MenubarSubContent>
+                </MenubarSub>
+                <MenubarSeparator />
+                <MenubarItem>
+                  Print... <MenubarShortcut>⌘P</MenubarShortcut>
+                </MenubarItem>
+              </MenubarContent>
             </MenubarMenu>
+
+
+
 
            
    
