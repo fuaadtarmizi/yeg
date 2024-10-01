@@ -59,8 +59,8 @@ function Navbar() {
                     <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa/oilandgas">Oil & Gas</a></MenubarItem>
                     <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa/maritim">Maritim</a></MenubarItem>
                     <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa/telco">Telcomunication</a></MenubarItem>
-                    <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Renewble Energy</a></MenubarItem>
-                    <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Aviation</a></MenubarItem>
+                    <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa/renewbleenergy">Renewble Energy</a></MenubarItem>
+                    <MenubarItem><a className="text-md font-light ml-2" href="../kursuskerjaya/misa/aviation">Aviation</a></MenubarItem>
                   </MenubarSubContent>
                 </MenubarSub>
               </MenubarContent>
