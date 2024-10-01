@@ -21,7 +21,6 @@ export default function home() {
         data-ad-format="auto"
       ></ins> 
 
-
   <main>
     <div>
     <div className="sticky hidden lg:block top-0 z-10">
