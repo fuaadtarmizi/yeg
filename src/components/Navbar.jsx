@@ -1,16 +1,25 @@
 "use client"
-import React from 'react'
+import React, {useState}from 'react'
 import Image from "next/image"
 import {
     Menubar,
     MenubarContent,
     MenubarItem,
     MenubarMenu,
-    MenubarTrigger
+    MenubarTrigger,
+    MenubarSubTrigger,
+    MenubarSubContent,
   } from "@/components/ui/menubar"
   
 
 function Navbar() {
+  const [isOpen,setIsOpen] = useState(true)
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  }
+
+
   return (
     <nav className="bg-slate-800">
         <div className="w-full "> 
@@ -46,6 +55,7 @@ function Navbar() {
                 </MenubarContent>
             </MenubarMenu> */}
 
+
             <MenubarMenu>
                 <MenubarTrigger className="hover:bg-slate-600">Career Programe</MenubarTrigger>
                 <MenubarContent>
@@ -57,22 +67,24 @@ function Navbar() {
                     <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
                       <a className="text-md font-light ml-2" href="../kursuskerjaya/acm">Aviation Career Malaysia (ACM)</a></div>
                     </MenubarItem>
-                    <MenubarMenu>
-                      <MenubarTrigger>Malaysia Industry Skills Academy(MISA)</MenubarTrigger>
-                      <MenubarContent>
-                        <MenubarItem>
-                        <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                        <a className="text-md font-light ml-2" href="../kursuskerjaya/misa">Malaysia Industry Skills Academy(MISA)</a></div>
-                        </MenubarItem>
-                      </MenubarContent>
 
-                    </MenubarMenu>
+                    <MenubarSubTrigger>Malaysia Industry Skills Academy(MISA)</MenubarSubTrigger>
+                    <MenubarSubContent>
+                    <MenubarItem>Email link</MenubarItem>
+                    </MenubarSubContent>
+
+
+
                     <MenubarItem>
-                    
+                    <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+                      <a className="text-md font-light ml-2" href="../kursuskerjaya/misa"></a></div>
                     </MenubarItem>
+
+                    
                 </MenubarContent>
             </MenubarMenu>
 
+           
    
 
             <MenubarMenu>
