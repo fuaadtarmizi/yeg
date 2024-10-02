@@ -1,8 +1,17 @@
 import React from 'react'
+import Navbar from '@/components/Navbar'
+import Sidebar from '@/components/Sidebar'
 
 function page() {
   return (
-    <div>hello i page renewble energy</div>
+    <>
+    <nav className="hidden lg:block sticky top-0 ">
+      <Navbar />
+    </nav>
+    <nav className="lg:hidden">
+      <Sidebar />
+    </nav>
+    </>
   )
 }
 
