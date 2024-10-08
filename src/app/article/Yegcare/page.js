@@ -34,7 +34,7 @@ export default function article() {
               <div className="">
               <Image 
               className=""
-              src="/suaphomeless.jpg"
+              src="/suap.jpg"
               alt="suaphomeless"
               width="850"
               height="10"
