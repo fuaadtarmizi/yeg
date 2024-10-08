@@ -22,11 +22,11 @@ export default function article() {
                 <h className="text-base text-red-500 font-bold">Conferences·Brainstorm Health</h>
               </div>
               <div>
-                <h className="font-serif font-bold text-2xl lg:text-5xl">Top CVS medical officer ties shocking lack of ‘health literacy’ for 90 million Americans to crisis of ‘mistrust’</h>
+                <h className="font-serif font-bold text-2xl lg:text-5xl">YEG Academy, bergerak memberi makanan kepada gelandangan tanpa rasa kekangan oleh pihak kerajaan</h>
               </div>
               <div className="grid">
-                <h className="text-sm">BY Alena Botros</h>
-                <h className="text-sm">May 21, 2024 at 7:24 AM GMT+8</h>
+                <h className="text-sm">BY Fuaad Tarmizi</h>
+                <h className="text-sm">Oct 2, 2024 at 7:24 AM GMT+8</h>
               </div>
             </div>
             <div className="">
