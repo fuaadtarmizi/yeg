@@ -25,7 +25,7 @@ export default function article() {
                 <h className="font-serif font-bold text-2xl lg:text-5xl">YEG Academy, bergerak memberi makanan kepada gelandangan tanpa rasa kekangan oleh pihak kerajaan</h>
               </div>
               <div className="grid">
-                <h className="text-sm">BY Fuaad Tarmizi</h>
+                <h className="text-sm">by Fuaad Tarmizi</h>
                 <h className="text-sm">Oct 2, 2024 at 7:24 AM GMT+8</h>
               </div>
             </div>
