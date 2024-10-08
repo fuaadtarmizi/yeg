@@ -35,7 +35,7 @@ export default function article() {
               <Image 
               className=""
               src="/suaphomeless.jpg"
-              alt="fixedcontactus"
+              alt="suaphomeless"
               width="850"
               height="10"
               style={{
