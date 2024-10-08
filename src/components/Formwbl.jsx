@@ -14,7 +14,6 @@ export default function App() {
     const [selectedItem1, setSelectedItem1] = useState(null);
     const [selectedItem2, setSelectedItem2] = useState(null);
 
-
     const [alertMessage, setAlertMessage] = useState('');
     const [emailError, setEmailError] = useState('');
 
@@ -32,9 +31,6 @@ export default function App() {
       return;
     }
   
-
-    
-
 
     const formEle = document.querySelector("form");
     const formDatab = new FormData(formEle);
@@ -84,8 +80,7 @@ export default function App() {
     const toggleDropdown2 = () => {
       setIsOpen2(!isOpen2);
     };
-
-    
+ 
 
     // program yeg
     const handleItemClick = (item) => {

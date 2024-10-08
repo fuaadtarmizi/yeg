@@ -89,13 +89,15 @@ function page() {
                 <div className="w-full flex items-center">
                     <h className="font-bold p-3 group-hover:rounded-md group-hover:bg-black duration-500 text-xl text-white">DIPLOMA PILIHAN TERBAIK?</h>
                 </div></div></card></a>
-                <card3 className="p-3 flex justify-center rounded-md border hover:shadow-slate-500 hover:shadow-xl shadow-md duration-300" style={{ backgroundImage: '', backgroundSize: 'cover', backgroundPosition: 'center',  }}>
+
+                <a href="./article/Yegcare">
+                <card className="p-3 flex justify-center rounded-md border hover:shadow-slate-500 hover:shadow-xl shadow-md duration-300" style={{ backgroundImage: 'linear-gradient(to top, rgba(50, 50, 50, 2), rgba(200, 200, 200, 0.1)), url(https://asset-2.tstatic.net/palembang/foto/bank/images/simon-lee.jpg)', backgroundSize: 'cover', backgroundPosition: 'center',  }}>
                 <div className="py-20">
                 <div className="w-full flex items-center">
-                    <h className="font-bold text-base px-8 text-black ">soon</h>
+                    <h className="font-bold p-3 group-hover:rounded-md group-hover:bg-black duration-500 text-xl text-white">YEG CARE</h>
                 </div>
                 </div>
-                </card3>
+                </card></a>
                 </div>
             </div>
         </section2>

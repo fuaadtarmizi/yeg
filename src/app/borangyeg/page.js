@@ -43,7 +43,7 @@ export default function App() {
     
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbwhoir_AB6-P1BL2kUcI-mebvwC8WoIdoKGKbYohjUKzd4TU3PcokzvIzL63gUYvZUV/exec",
+      "https://script.google.com/macros/s/AKfycbw8m7r6p8zv8-9yjiWiN6iNDaYq0JyDtTsuMVnZD5oE__NC1483gX0MxWH76z00zMscYg/exec",
       {
         method: "POST",
         body: formDatab
@@ -52,17 +52,16 @@ export default function App() {
     )
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+       if(data.success) {
+        setAlertMessage('Form submitted successfully!');
+        alert('Penghantaran Berjaya!, Pegawai kami akan menghubungi anda secepat mungkin');
+       }else{
+        alert('dokleh send..cuba lagi')
+       }
       })
       .catch((error) => {
         console.log(error);
-      });
-
-      
-
-      setAlertMessage('Form submitted successfully!');
-      alert('Penghantaran Berjaya!, Pegawai kami akan menghubungi anda secepat mungkin');
-
+      });  
   }
 
 
@@ -83,7 +82,6 @@ export default function App() {
       setIsOpen2(!isOpen2);
     };
 
-    
 
     // program yeg
     const handleItemClick = (item) => {
@@ -103,9 +101,6 @@ export default function App() {
         };
       
 
-        
-      
-    
 
   return (
     <main>
@@ -150,8 +145,6 @@ export default function App() {
             <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="NumberPhone" type="text" />
           </div>
           </div>
-
-
 
           <div className="grid md:flex lg:flex justify-between gap-8">
           <div className="w-full grid rounded-md space-y-1 ">
@@ -512,7 +505,6 @@ export default function App() {
     <div className="py-6 pt-10 flex justify-center">
     <button className="hover:animate-bounce px-6 py-2 border rounded-md bg-yellow-500 hover:bg-yellow-600 hover:shadow-md duration-300" name="Submit" type="submit" >Submit</button>
     </div>
-  
         </form>
 
         {emailError && (

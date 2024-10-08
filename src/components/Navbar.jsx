@@ -152,8 +152,6 @@ function Navbar() {
                 </MenubarContent>
             </MenubarMenu>
 
-            
-
             <MenubarMenu>
                 <MenubarTrigger className="hover:bg-slate-600">
                     <a className="" href="../article">Article</a></MenubarTrigger>

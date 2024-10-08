@@ -5,6 +5,7 @@ import flowbitePlugin from 'flowbite/plugin';
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: 'jit',
   darkMode: ["class"],
   content: [
     "./pages/**/*.{js,jsx,ts,tsx}",

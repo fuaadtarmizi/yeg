@@ -50,15 +50,13 @@ export default function home() {
     </div>
     <section1 className="w-full">
       <div className="max-w-full lg:px-3 flex justify-center bg-black">
-        <div className="">
         <video
-        controls
-        autoPlay  // Add this attribute for autoplay
-        className=""
-      >
-        <source src="yegintro.mp4" type="video/mp4" />
+          controls
+          autoPlay  // Add this attribute for autoplay
+          className=""
+        >
+          <source src="yegintro.mp4" type="video/mp4" />
       </video>
-        </div>
       </div>
     </section1>
     

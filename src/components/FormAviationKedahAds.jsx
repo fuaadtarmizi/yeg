@@ -95,15 +95,13 @@ export default function App() {
           </div>
 
           <div className="grid space-y-4">
-
-      <div className="grid rounded-md space-y-1 ">
-        <h>Email</h>
-      <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md " 
-        placeholder="" 
-        name="Email" 
-        type="text" />
-      </div>
-
+          <div className="grid rounded-md space-y-1 ">
+            <h>Email</h>
+          <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md " 
+            placeholder="" 
+            name="Email" 
+            type="text" />
+          </div>
           <div className="grid space-y-1">
           <h>Umur</h>
           <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="Age" type="text" />

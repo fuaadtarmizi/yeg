@@ -21,7 +21,6 @@ function contactus() {
             }}
             />
     </div>
-
     <div className="grid border-l-2 border-black px-6">
     <div className=" grid justify-start ">
         <h1 className="font-normal text-center text-2xl ">
