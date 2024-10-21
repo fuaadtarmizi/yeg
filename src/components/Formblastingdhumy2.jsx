@@ -208,16 +208,36 @@ export default function App() {
           </p>
           </div>
 
-          <p
-            className="px-4 text-md py-2 cursor-pointer bg-gray-400 font-bold"
-          >
-            Kerjaya
-          </p>
+          <p className="px-4 text-md py-2 cursor-pointer bg-gray-400 font-bold">Kerjaya</p>
           <div className="pl-6 text-sm bg-gray-400">
           <p className=" py-2 cursor-pointer hover:bg-gray-500 rounded-md"
             onClick={() => handleItemClick("SPHU - SIJIL PROFESIONAL PENGURUSAN HAJI & UMRAH")}
           >
             SPHU - SIJIL PROFESIONAL PENGURUSAN HAJI & UMRAH 
+          </p>
+          </div>
+
+          <p className="px-4 text-md py-2 cursor-pointer bg-gray-400 font-bold">ODL Alumni SPHU</p>
+          <div className="pl-6 text-sm bg-gray-400">
+          <p className=" py-2 cursor-pointer hover:bg-gray-500 rounded-md"
+            onClick={() => handleItemClick("Degree Pengurusan Haji & Umrah (ODL Alumni SPHU)")}
+          >Degree Pengurusan Haji & Umrah 
+          </p>
+          </div>
+
+          <p className="px-4 text-md py-2 cursor-pointer bg-gray-300 font-bold">ODL New Student and non SPHU</p>
+          <div className="pl-6 text-sm bg-gray-300">
+          <p className=" py-2 cursor-pointer hover:bg-gray-500 rounded-md"
+            onClick={() => handleItemClick("Degree Pengurusan Haji & Umrah (ODL New Student and non SPHU)")}
+          >Degree Pengurusan Haji & Umrah 
+          </p>
+          </div>
+          
+          <p className="px-4 text-md py-2 cursor-pointer bg-gray-200 font-bold">New Students</p>
+          <div className="pl-6 text-sm bg-gray-200">
+          <p className=" py-2 cursor-pointer hover:bg-gray-500 rounded-md"
+            onClick={() => handleItemClick("Degree Pengurusan Haji & Umrah (New Students)")}
+          >Degree Pengurusan Haji & Umrah 
           </p>
           </div>
         </div>
@@ -275,12 +295,37 @@ export default function App() {
             SPHU - SIJIL PROFESIONAL PENGURUSAN HAJI & UMRAH 
           </p>
           </div>
+
+          <p className="px-4 text-md py-2 cursor-pointer bg-gray-400 font-bold">ODL Alumni SPHU</p>
+          <div className="pl-6 text-sm bg-gray-400">
+          <p className=" py-2 cursor-pointer hover:bg-gray-500 rounded-md"
+            onClick={() => handleItemClick3("Degree Pengurusan Haji & Umrah (ODL Alumni SPHU)")}
+          >Degree Pengurusan Haji & Umrah 
+          </p>
+          </div>
+
+          <p className="px-4 text-md py-2 cursor-pointer bg-gray-300 font-bold">ODL New Student and non SPHU</p>
+          <div className="pl-6 text-sm bg-gray-300">
+          <p className=" py-2 cursor-pointer hover:bg-gray-500 rounded-md"
+            onClick={() => handleItemClick3("Degree Pengurusan Haji & Umrah (ODL New Student and non SPHU)")}
+          >Degree Pengurusan Haji & Umrah 
+          </p>
+          </div>
+          
+          <p className="px-4 text-md py-2 cursor-pointer bg-gray-200 font-bold">New Students</p>
+          <div className="pl-6 text-sm bg-gray-200">
+          <p className=" py-2 cursor-pointer hover:bg-gray-500 rounded-md"
+            onClick={() => handleItemClick3("Degree Pengurusan Haji & Umrah (New Students)")}
+          >Degree Pengurusan Haji & Umrah 
+          </p>
+          </div>
+          
         </div>
       )}
     </div>
 
 
-    <div className="relative inline-block text-left">
+    {/* <div className="relative inline-block text-left">
             <div>Pilihan Program Diploma, Kerjaya atau Work Based Learning (WBL)</div>
       <button
         onClick={toggleDropdown4} 
@@ -331,7 +376,7 @@ export default function App() {
           </div>
         </div>
       )}
-    </div> 
+    </div>  */}
  
 
 

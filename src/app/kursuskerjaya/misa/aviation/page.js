@@ -28,7 +28,7 @@ function page() {
               <div className="flex justify-center">
                 <h className="text-justify">Melangkah ke dalam kerjaya dalam industri teknologi dron membawa pengalaman yang menarik dengan peluang tanpa batas. Sudah semestinya pelatih akan merasai pengalaman-pengalaman yang mencabar kerana bidang ini termasuk dalam kerjaya berteknologi tinggi dan inovatif. Oleh itu, bekerjaya dalam industri ini mampu menawarkan gaji yang lumayan seiring dengan perkembangan kemahiran dan pengetahuan. Menyertai industri yang dinamik ini tidak hanya memberikan pengalaman kerja yang bermakna tetapi juga peluang untuk menyumbang kepada kemajuan global melalui penggunaan teknologi dron yang canggih dan lestari.</h>
               </div>
-              <div className="grid justify-start space-y-2">
+              {/* <div className="grid justify-start space-y-2">
                 <h className="text-justify">:</h>
                 <li className="px-4">Sijil Profesional Pemasangan Paip Gas</li>
                 <li className="px-4">Sijil Profesional Paip dan Jurugegas</li>
@@ -54,7 +54,7 @@ function page() {
                 <li className="px-4">Sihat tubuh badan (Lulus Medikal Klinik Panel Jabatan Laut)</li>
                 <li className="px-4">Bebas penyalahgunaan dadah</li>
                 <li className="px-4">Lelaki sahaja</li>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
