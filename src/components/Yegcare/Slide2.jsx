@@ -19,7 +19,6 @@ function Slide2() {
     </section>
     <div className=" lg:block py-8 lg:py-10 md:[height:80px]"></div>
 
-
     <section>
       <div>
       <div className=" bg-slate-800 w-full h-full px-4 lg:px-28"> 
