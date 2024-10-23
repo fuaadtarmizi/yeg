@@ -154,7 +154,7 @@ function Navbar() {
 
             <MenubarMenu>
                 <MenubarTrigger className="hover:bg-slate-600">
-                    <a className="" href="../article">Article</a></MenubarTrigger>
+                    <a className="" href="../careyeg">Article</a></MenubarTrigger>
             </MenubarMenu>
             <MenubarMenu>
                 <MenubarTrigger className="hover:bg-slate-600">

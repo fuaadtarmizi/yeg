@@ -10,8 +10,6 @@ export default function App() {
     const [alertMessage, setAlertMessage] = useState('');
     const [emailError, setEmailError] = useState('');
 
-    
-
 
     useEffect(() => {
       if (selectedItem1 === 'Whatsup') {
@@ -19,20 +17,17 @@ export default function App() {
       }
     }, [selectedItem1]);
 
-    
 
-    
   function Submit(e) {
     const emailValue = e.target.elements.Email.value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
 
     if (!emailRegex.test(emailValue)) {
       setEmailError('Email must be in a valid format.');
       alert('Email is incorrect!');
       return;
     }
-
+    
     const formEle = document.querySelector("form");
     const formDatab = new FormData(formEle);
 
@@ -41,7 +36,6 @@ export default function App() {
 
 
     fetch(
-
       "https://script.google.com/macros/s/AKfycbxhAUyRvdnq_ZShEIK9s-F9EkjWYMDuRKa8a2Ij_7_10CXTl6q3QsSx9Nb437UBOev2/exec",
       {
         method: "POST",
@@ -226,8 +220,6 @@ export default function App() {
     </div>
     </div> 
     </div>
-    
-   
     </main>
   );
 }
