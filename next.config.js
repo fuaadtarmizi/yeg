@@ -5,7 +5,7 @@ module.exports = {
     // images: {}, 
   },
   output: 'export',
-  images: {
+  images: { 
     unoptimized: true,
   },
 };
