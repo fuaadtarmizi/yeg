@@ -2,7 +2,7 @@ module.exports = {
   swcMinify: false,
   experimental: {
     // Remove or comment out the invalid property if present
-    // images: {},
+    // images: {}, 
   },
   output: 'export',
   images: {
