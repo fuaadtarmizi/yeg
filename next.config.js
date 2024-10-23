@@ -14,18 +14,11 @@
 
 
 
-// module.exports = {
-//   output: 'export', // This is key for static export
-//   swcMinify: false,
-//   images: {
-//     unoptimized: true, // Required for static exports
-//   },
-// };
-
-// next.config.js
 module.exports = {
-  output: 'export',
+  output: 'export', // This is key for static export
+  swcMinify: false,
   images: {
-    unoptimized: true,
+    unoptimized: true, // Required for static exports
   },
 };
+
