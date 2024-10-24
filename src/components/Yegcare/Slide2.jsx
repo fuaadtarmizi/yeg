@@ -1,10 +1,15 @@
 'use client'
 import React from 'react'
 import Image from "next/image"
+import Sidebar from "@/components/Sidebar.jsx"
+import Footer from "@/components/Footer"
 
 function Slide2() {
   return (
     <>
+    <section className="lg:hidden">
+        <Sidebar/>
+    </section>
     <div className="w-full h-full px-4 lg:px-16 grid text-blue-950 lg:py-6">
         <span className="lg:text-5xl text-4xl font-bold py-3 text-center">OUR UNIQUE QUALITIES</span>
       </div>
@@ -152,21 +157,15 @@ function Slide2() {
             </a> */}
         </div>
         </a>
-        
-        
-
-
-
-     
-
-
-
         </div>
         <div className=" text-transparent flex justify-end ">
           <div className="bg-yellow-600 w-1/2 rounded-l-md">d</div>
           </div>
       </div>
     </div>
+    </section>
+    <section>
+      <Footer/>
     </section>
     </>
   )

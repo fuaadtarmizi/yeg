@@ -79,11 +79,8 @@ export default function article() {
         </div>
         </div>
     <div>
-    
-
       <Footer/>
     </div>
     </main>
   )
 }
-
