@@ -8,9 +8,10 @@ import Sidebar from "@/components/Sidebar.jsx"
 export default function article() {
   return (
     <main>
-    <title>YEG Academy - article 7</title>
-        <nav className="hidden lg:block sticky top-0 ">
-            <Navbar/>
+        <nav>
+        <div className="sticky hidden lg:block top-0 z-10">
+            <Navbar/>   
+        </div>
         <div className="lg:hidden">
             <Sidebar/>
         </div>

@@ -20,16 +20,16 @@ export default function home() {
         data-ad-slot="1234567890" // Replace with your ad slot ID
         data-ad-format="auto"
       ></ins> 
-
+      
   <main>
-    <div>
+    <nav>
     <div className="sticky hidden lg:block top-0 z-10">
         <Navbar/>   
     </div>
     <div className="lg:hidden">
         <Sidebar/>
     </div>
-    </div>
+    </nav>
     <div className="fixed bottom-0 w-full flex justify-end p-4">
       <div className=" hover:slide-in-from-left-1 flex items-center right-2  rounded-full bg-yellow-500">
         <h className=" p-3 flex items-center rounded-full font-extrabold">Get in Touch</h>

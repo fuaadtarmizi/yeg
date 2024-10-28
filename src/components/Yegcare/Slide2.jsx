@@ -38,7 +38,7 @@ function Slide2() {
 
       <div className="h-full lg:py-7 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
         <a href="/careyeg/sept2024"
-        className="flex hover:scale-150 duration-300 bg-white rounded-md w-[180px] h-[310px] hover:bg-slate-100">
+        className="rounded-md flex bg-white hover:scale-150 duration-300 top-0 left-0 w-full h-full object-cover">
         <div className="p-2 space-y-3">
         <Image 
             className="w-full"
@@ -58,7 +58,7 @@ function Slide2() {
         </div>
         </a>
         <a href="/"
-        className="flex hover:scale-150 duration-300 bg-white rounded-md w-[180px] h-[310px] hover:bg-slate-100">
+        className="rounded-md flex bg-white hover:scale-150 duration-300 top-0 left-0 w-full h-full object-cover">
         <div className="p-2 flex items-center">
         <Image 
             className="w-full"
@@ -78,7 +78,7 @@ function Slide2() {
         </div>
         </a>
         <a href="/"
-        className="flex hover:scale-150 duration-300 bg-white rounded-md w-[180px] h-[310px] hover:bg-slate-100">
+        className="rounded-md flex bg-white hover:scale-150 duration-300 top-0 left-0 w-full h-full object-cover">
         <div className="p-2 flex items-center">
         <Image 
             className="w-full"
@@ -98,7 +98,7 @@ function Slide2() {
         </div>
         </a>
         <a href="/"
-        className="flex hover:scale-150 duration-300 bg-white rounded-md w-[180px] h-[310px] hover:bg-slate-100">
+        className="rounded-md flex bg-white hover:scale-150 duration-300 top-0 left-0 w-full h-full object-cover">
         <div className="p-2 flex items-center">
         <Image 
             className="w-full"
@@ -118,7 +118,7 @@ function Slide2() {
         </div>
         </a>
         <a href="/careyeg/sept2024"
-        className="flex hover:scale-150 duration-300 bg-white rounded-md w-[180px] h-[310px] hover:bg-slate-100">
+        className="rounded-md flex bg-white hover:scale-150 duration-300 top-0 left-0 w-full h-full object-cover">
         <div className="p-2 flex items-center">
         <Image 
             className="w-full"
@@ -138,7 +138,7 @@ function Slide2() {
         </div>
         </a>
         <a href="/careyeg/sept2024"
-        className="flex hover:scale-150 duration-300 bg-white rounded-md w-[180px] h-[310px] hover:bg-slate-100">
+        className="rounded-md flex bg-white hover:scale-150 duration-300 top-0 left-0 w-full h-full object-cover">
         <div className="p-2 flex items-center">
         <Image 
             className="w-full"
@@ -163,6 +163,12 @@ function Slide2() {
           </div>
       </div>
     </div>
+    </section>
+    <section>
+      <div className="">
+        <h1>Menyediakan Bantuan Kecemasan:</h1>
+        <h1>Makanan dan minuman yang disalurkan secara langsung kepada golongan gelandangan, memastikan mereka mendapat keperluan asas</h1>
+      </div>
     </section>
     <section>
       <Footer/>
