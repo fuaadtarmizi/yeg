@@ -22,14 +22,14 @@ export default function home() {
       ></ins> 
       
   <main>
-    <nav>
+    {/* <nav>
     <div className="sticky hidden lg:block top-0 z-10">
         <Navbar/>   
     </div>
     <div className="lg:hidden">
         <Sidebar/>
     </div>
-    </nav>
+    </nav> */}
     <div className="fixed bottom-0 w-full flex justify-end p-4">
       <div className=" hover:slide-in-from-left-1 flex items-center right-2  rounded-full bg-yellow-500">
         <h className=" p-3 flex items-center rounded-full font-extrabold">Get in Touch</h>
