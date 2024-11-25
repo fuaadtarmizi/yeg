@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
           <meta name="twitter:description" content={metadata.description} />
           <meta name="twitter:image" content="https://www.yegmy.com/yeglogowebsite.svg" />
           <meta name="robots" content="index, follow" />
-          <link rel="icon" href="./yeglogowebsite.svg" sizes="16x16" type="image/svg+xml" />
+          <link rel="icon" href="./yeglogowebsite.svg" sizes="20x20" type="image/svg+xml" />
 
           <script
           async
