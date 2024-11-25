@@ -65,9 +65,9 @@ export default function home() {
       <div className="w-full h-full bg-white rounded-md flex justify-center shadow-md space-x-16">
       <div className="flex items-center">
         <Image
-            src="/innovativelogo.svg"
-            alt="innovativelogo"
-            width="230"
+            src="/iuclogo.png"
+            alt="iuclogo"
+            width="160"
             height="200"
             style={{
               objectFit:"contain",
