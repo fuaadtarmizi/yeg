@@ -14,11 +14,20 @@
 
 
 
+// module.exports = {
+//   output: 'export', // This is key for static export
+//   swcMinify: false,
+//   images: {
+//     unoptimized: true, // Required for static exports
+//   },
+// };
+
+
+/** @type {import('next').NextConfig} */
 module.exports = {
-  output: 'export', // This is key for static export
-  swcMinify: false,
+  output: 'export', // Enables static export
+  swcMinify: false, // Disables SWC minification
   images: {
     unoptimized: true, // Required for static exports
   },
 };
-
