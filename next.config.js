@@ -26,7 +26,6 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   output: 'export', // Enables static export
-  swcMinify: false, // Disables SWC minification
   images: {
     unoptimized: true, // Required for static exports
   },
