@@ -13,20 +13,21 @@
 // next.config.js
 
 
-
+// /** @type {import('next').NextConfig} */
 // module.exports = {
-//   output: 'export', // This is key for static export
-//   swcMinify: false,
+//   output: 'export', // Enables static export
 //   images: {
 //     unoptimized: true, // Required for static exports
 //   },
 // };
 
 
-/** @type {import('next').NextConfig} */
-module.exports = {
-  output: 'export', // Enables static export
-  images: {
-    unoptimized: true, // Required for static exports
-  },
-};
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  output: 'export',
+  
+}
+ 
+module.exports = nextConfig
