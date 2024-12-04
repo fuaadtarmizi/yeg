@@ -5,14 +5,15 @@ import Sidebar from "@/components/Sidebar.jsx"
 import Head from "next/head"
 
 
-
 function page() {
   return (
-    <main>
-      <Head>
+    <>
+    <Head>
         <meta name="description" content="Discover inspiring stories and testimonials from students and partners who have achieved success with YEG Academy" />
         <title>Testimonials - YEG Academy</title>
       </Head>
+    <body>
+      
       {/* <nav className="hidden lg:block sticky top-0 ">
         <Navbar/>
     </nav> */}
@@ -963,7 +964,8 @@ function page() {
     <div>
       <Footer/>
     </div>
-    </main>
+    </body>
+    </>
   )
 }
 
