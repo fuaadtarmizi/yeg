@@ -30,4 +30,3 @@ module.exports = {
     unoptimized: true, // Required for static exports
   },
 };
-module.exports = nextConfig
