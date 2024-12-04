@@ -1,20 +1,21 @@
 import React from 'react'
 import Image from "next/image"
 import Footer from "@/components/Footer.jsx"
-import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
-
+import Head from "next/head"
 
 
 
 function page() {
   return (
     <main>
-      
-      <title>YEG Academy - Testimoni</title>
-      <nav className="hidden lg:block sticky top-0 ">
+      <Head>
+        <meta name="description" content="Discover inspiring stories and testimonials from students and partners who have achieved success with YEG Academy" />
+        <title>Testimonials - YEG Academy</title>
+      </Head>
+      {/* <nav className="hidden lg:block sticky top-0 ">
         <Navbar/>
-    </nav>
+    </nav> */}
       <nav>
     <div className="lg:hidden">
         <Sidebar/>
