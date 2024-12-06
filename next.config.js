@@ -1,16 +1,16 @@
-// module.exports = {
-//   swcMinify: false,
-//   experimental: {
-//     // Remove or comment out the invalid property if present
-//     // images: {}, 
-//   },
-//   output: 'export',
-//   images: { 
-//     unoptimized: true, 
-//   },
-// };
+module.exports = {
+  swcMinify: false,
+  experimental: {
+    // Remove or comment out the invalid property if present
+    // images: {}, 
+  },
+  output: 'export',
+  images: { 
+    unoptimized: true, 
+  },
+};
 
-// next.config.js
+next.config.js
 
 
 // /** @type {import('next').NextConfig} */
@@ -22,12 +22,12 @@
 // };
 
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  images: {
-     unoptimized: true, // Required for static exports
- },
-}
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   output: 'export',
+//   images: {
+//      unoptimized: true, // Required for static exports
+//  },
+// }
  
-module.exports = nextConfig
+// module.exports = nextConfig

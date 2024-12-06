@@ -9,7 +9,7 @@ import Script from 'next/script';
 const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'YEG Academy | Career & Education Platform',
-  description: 'YEG ACADEMY adalah akronim kepada Your Education Guidance yang menyediakan khidmat konsultasi untuk kerjaya dan pendidikan terbaik pada masa kini. Kini, YEG Academy telah berkembang menjadi salah satu platform rujukan pendidikan terkini dan terbesar di Malaysia dengan menawarkan pelbagai bidang sambung belajar dengan penekanan modul pembelajaran berasaskan industri. Oleh itu, YEG Academy menjalinkan usahasama rapat bersama rakan IPT dalam merevolusikan modul diploma sedia ada supaya selaras dengan kehendak industri bagi mencapai 5 kayu ukur utama dalam memastikan graduan memenuhi kriteria seperti kelayakan, pengalaman, pendapatan, pekerjaan dan kebanggaan YEG YEG.',
+  description: 'YEG Academy offers career guidance and industry-focused education programs for your future success in Malaysia.',
   rel:"icon",
   href:"./yeglogowebsite.svg",
 };
@@ -36,7 +36,25 @@ export default function RootLayout({ children }) {
           async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6199758154363864`}
           crossOrigin="anonymous">
-          </script>    
+          </script>
+          <Script
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "EducationalOrganization",
+              "name": "YEG Academy",
+              "url": "https://www.yegmy.com",
+              "description": metadata.description,
+              "logo": "https://www.yegmy.com/yeglogowebsite.svg",
+              "sameAs": [
+                "https://www.facebook.com/YEGAcademy",
+                "https://www.instagram.com/YEGAcademy"
+              ]
+            }),
+          }}
+        />    
       </head>
       <body className={inter.className}>
       <header>
