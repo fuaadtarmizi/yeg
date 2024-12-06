@@ -6,12 +6,14 @@ import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
 import Contactus from "@/components/Contactus.jsx"
 import SliderRamadan from '@/components/SliderRamadan';
+import Head from 'next/head';
 
 
 export default function home() {
 
 
   return (
+    <>
     <html lang="en">
       <ins
         className="adsbygoogle"
@@ -19,17 +21,14 @@ export default function home() {
         data-ad-client="ca-pub-6199758154363864"
         data-ad-slot="1234567890" // Replace with your ad slot ID
         data-ad-format="auto"
-      ></ins> 
+      ></ins>
+
+      <Head>
+        <title>YEG Academy</title>
+        <meta name="description" content="YEG ACADEMY adalah akronim kepada Your Education Guidance yang menyediakan khidmat konsultasi untuk kerjaya dan pendidikan terbaik pada masa kini."/>
+      </Head> 
       
   <main>
-    {/* <nav>
-    <div className="sticky hidden lg:block top-0 z-10">
-        <Navbar/>   
-    </div>
-    <div className="lg:hidden">
-        <Sidebar/>
-    </div>
-    </nav> */}
     <div className="fixed bottom-0 w-full flex justify-end p-4">
       <div className=" hover:slide-in-from-left-1 flex items-center right-2  rounded-full bg-yellow-500">
         <h className=" p-3 flex items-center rounded-full font-extrabold">Get in Touch</h>
@@ -880,7 +879,9 @@ export default function home() {
     
     
     </main>
+    
     </html>
+    </>
     
   )
 }
