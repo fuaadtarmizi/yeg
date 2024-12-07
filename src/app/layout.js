@@ -30,16 +30,16 @@ export default function RootLayout({ children }) {
           <meta name="twitter:description" content={metadata.description} />
           <meta name="twitter:image" content="https://www.yegmy.com/yeglogowebsite.svg" />
           <meta name="robots" content="index, follow" />
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
           <link rel="icon" href="./yeglogowebsite.svg" sizes="20x20" type="image/svg+xml" />
-
           <script
           async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6199758154363864`}
           crossOrigin="anonymous">
           </script>
-          <Script
+
+          <script
           type="application/ld+json"
-          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
@@ -50,11 +50,59 @@ export default function RootLayout({ children }) {
               "logo": "https://www.yegmy.com/yeglogowebsite.svg",
               "sameAs": [
                 "https://www.facebook.com/YEGAcademy",
-                "https://www.instagram.com/YEGAcademy"
+                "https://www.instagram.com/yegacademy.official/"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+603-6143 5073",
+                "contactType": "Customer Service",
+                "areaServed": "MY",
+                "availableLanguage": "English"
+              }
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://www.yegmy.com"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "borangyeg",
+                  "item": "https://www.yegmy.com/borangyeg"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Sijil Profesional Haji Umrah",
+                  "item": "https://www.yegmy.com/kursuskerjaya/sphu"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Misa Oil and Gas",
+                  "item": "https://www.yegmy.com/kursuskerjaya/misa/oilandgas"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 5,
+                  "name": "Article Yeg Academy",
+                  "item": "https://www.yegmy.com/article"
+                }
               ]
             }),
           }}
-        />    
+        />
       </head>
       <body className={inter.className}>
       <header>
@@ -63,25 +111,6 @@ export default function RootLayout({ children }) {
       </header>
       <main>{children}</main>
       <Analytics />
-
-      {/* for google ads */}
-      <Script
-        type="application/ld+json"
-        strategy="beforeInteractive"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "yeg academy",
-            "url": "https://www.yegmy.com",
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": "https://www.yegmy.com/search?q={search_term_string}",
-              "query-input": "required name=search_term_string"
-            }
-          }),
-        }}
-      />
       </body>
     </html>
   )

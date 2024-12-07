@@ -10,100 +10,26 @@ function misa() {
   return (
     <main>
       <title>YEG Academy - Kursus Kerjaya</title>
-      <nav className="hidden lg:block sticky top-0 ">
+      {/* <nav className="hidden lg:block sticky top-0 ">
         <Navbar />
       </nav>
       <nav>
         <div className="lg:hidden">
           <Sidebar />
         </div>
-      </nav>
+      </nav> */}
      
       
       <section>
         <div className="py-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-6">
-
-
-
-
-
-
-
-
-
-          
-
-
-
-
-
-
-
-
-          
-
-
-
-
-
-
-
-
-
         </div>
       </section>
-
-
-
-
 
       <section>
         <div className="py-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-6">
-
-
-
-
-
-          
-
-
-
-
-
-
-
-
-
-
-
-          
+ 
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
-      <section>
-
-          
-          
-
-      </section>
-
-
-
-
-
-
-
-
-
 
 
       <div className="py-8 lg:py-10 md:[height:80px]"></div>

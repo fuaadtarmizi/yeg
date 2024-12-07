@@ -8,14 +8,14 @@ function page() {
   return (
     <div>
         <title>YEG Academy - artikel</title>
-        <nav className="hidden lg:block sticky top-0 ">
+        {/* <nav className="hidden lg:block sticky top-0 ">
         <Navbar/>
     </nav>
       <nav>
     <div className="lg:hidden">
         <Sidebar/>
     </div>
-    </nav>
+    </nav> */}
         <section1 className="">
         <div className="lg:pt-8 px-4 lg:px-28"> 
             <div className="flex justify-center py-8">

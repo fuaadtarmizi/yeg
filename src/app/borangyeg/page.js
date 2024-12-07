@@ -105,14 +105,14 @@ export default function App() {
   return (
     <main>
       <title>YEG Academy - Borang YEG</title>
-        <nav className="hidden lg:block sticky top-0">
+        {/* <nav className="hidden lg:block sticky top-0">
         <Navbar/>
     </nav>
       <nav>
     <div className="lg:hidden">
         <Sidebar/>
     </div>
-    </nav>
+    </nav> */}
 
     
     <div className="bg-black"  >

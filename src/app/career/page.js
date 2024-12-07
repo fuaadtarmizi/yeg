@@ -8,14 +8,8 @@ function career() {
   return (
     <main>
         <title>YEG Academy - Career</title>
-        <nav className="hidden lg:block sticky top-0 ">
-        <Navbar/>
-    </nav>
-      <nav>
-    <div className="lg:hidden">
-        <Sidebar/>
-    </div>
-    </nav>
+        {/* <nav className="hidden lg:block sticky top-0 "><Navbar/></nav>
+      <nav><div className="lg:hidden"><Sidebar/></div></nav> */}
         <div className="pt-8">
             <div className="flex justify-center py-8">
         <div className="group w-3/4 h-full grid justify-center ">

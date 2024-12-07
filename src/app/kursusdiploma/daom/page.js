@@ -10,15 +10,14 @@ function daom() {
   return (
     <main>
       <title>YEG Academy - Program Diploma</title>
-      <nav className="hidden lg:block sticky top-0 ">
+      {/* <nav className="hidden lg:block sticky top-0 ">
         <Navbar/>
     </nav>
       <nav>
     <div className="lg:hidden">
         <Sidebar/>
     </div>
-    </nav>
-      
+    </nav> */}
       <section1>
       <div className="flex justify-center">
       <Image
