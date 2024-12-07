@@ -23,10 +23,10 @@ export default function home() {
         data-ad-format="auto"
       ></ins>
 
-      <Head>
+      {/* <Head>
         <title>YEG Academy</title>
         <meta name="description" content="YEG ACADEMY adalah akronim kepada Your Education Guidance yang menyediakan khidmat konsultasi untuk kerjaya dan pendidikan terbaik pada masa kini."/>
-      </Head> 
+      </Head>  */}
       
   <main>
     <div className="fixed bottom-0 w-full flex justify-end p-4">

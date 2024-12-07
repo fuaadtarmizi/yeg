@@ -8,14 +8,6 @@ import Sidebar from "@/components/Sidebar.jsx"
 export default function article() {
   return (
     <main>
-        <nav>
-        <div className="sticky hidden lg:block top-0 z-10">
-            <Navbar/>   
-        </div>
-        <div className="lg:hidden">
-            <Sidebar/>
-        </div>
-        </nav>
         <section>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 container pt-6">
             <div className="space-y-4 p-4 container">
