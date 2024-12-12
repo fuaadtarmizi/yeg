@@ -98,52 +98,44 @@ export default function App() {
       setSelectedItem2(item);
       setIsOpen2(false);
     };
-    
-    
-
-        
-
+     
   return (
     <main>      
-    <div className="bg-white">
-    <div className=" hidden lg:block"></div>  
-        <div className="p-4  lg:flex justify-center  ">     
-      <div className="lg:w-1/3 ">
-      <form className=" backdrop-blur-lg w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
-      <div className="py-6 text-black text-3xl font-bold">
-             <h>Course Enquiry</h>
-         </div>
-            <div className=" grid space-y-4">
-      <div className="grid rounded-md space-y-1 ">
+    <div className=" w-full">
+        <div className="p-4 lg:flex justify-center">     
+      <div className=" w-full">
+      <form className="backdrop-blur-lg w-full p-6 border space-y-3 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
+        <h className="py-6 text-black text-3xl font-bold">Course Enquiry</h>
+ 
+      <div className="grid rounded-md">
         <h className="">Nama Pelajar</h>
-      <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md " placeholder="" name="Name" type="text" />
+      <input className="bg-gray-200 px-3  hover:shadow-md duration-500 rounded-md " placeholder="" name="Name" type="text" />
       </div>
-          <div className="grid space-y-1">
-          <h>Nombor Telefon Pelajar </h>
-          <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="NumberPhone" type="text" />
-          </div>
-          </div>
-          <div className="grid space-y-4">
-      <div className="grid rounded-md space-y-1 ">
+      <div className="grid rounded-md">
         <h>Email</h>
-      <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md " 
+      <input className="bg-gray-200 px-3 hover:shadow-md duration-500 rounded-md " 
         placeholder="" 
         name="Email" 
         type="text" />
       </div>
-          <div className="grid space-y-1">
-          <h>Umur</h>
-          <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="Age" type="text" />
+      <div className="grid lg:flex  ">
+      <div className="grid">
+            <h>Nombor Telefon Pelajar </h>
+            <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="NumberPhone" type="text" />
           </div>
+          <div className="grid ">
+            <h>Umur</h>
+            <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="Age" type="text" />
           </div>
-          <div>
-          <div className="relative inline-block text-left">
-            <div>Pilihan Program Diploma, Kerjaya atau Work Based Learning (WBL)</div>
+      </div>
+      
+      <div className="w-full relative inline-block text-left">
+        <div>Pilihan Program (MQA)</div>
       <button
         onClick={toggleDropdown} 
         name="Program1"
         type="button"
-        className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
+        className=" bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
       >
         {selectedItem ? selectedItem : "Select Programs"}
       </button>
@@ -187,20 +179,22 @@ export default function App() {
           </div>
         </div>
       )}
-    </div>     
     </div>
+    {/* <div className="grid space-y-1">
+      <h>Nama Penjaga</h>
+      <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentName" type="text" />
+      </div>
+      <div className="grid space-y-1">
+      <h>Nombor Penjaga</h>
+      <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentNumber"  type="text" />
+      </div>  */}
 
-          <div className="grid space-y-1">
-          <h>Nama Penjaga</h>
-          <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentName" type="text" />
-          </div>
 
-          <div className="grid space-y-1">
-          <h>Nombor Penjaga</h>
-          <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentNumber"  type="text" />
-          </div>
-          <div className="grid  text-left">
-        <p className="py-1 text-white">Negeri</p>
+    
+
+          
+      <div className="grid  text-left">
+        <p className="py-1 text-black">Negeri</p>
       <button
         onClick={toggleDropdown2} 
         name="Negeri"
