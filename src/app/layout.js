@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
                 {
                   "@type": "ListItem",
                   "position": 2,
-                  "name": "borangyeg",
+                  "name": "Borang YEG",
                   "item": "https://www.yegmy.com/borangyeg"
                 },
                 {
