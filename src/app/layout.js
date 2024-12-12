@@ -31,7 +31,26 @@ export default function RootLayout({ children }) {
           <meta name="twitter:image" content="https://www.yegmy.com/yeglogowebsite.svg" />
           <meta name="robots" content="index, follow" />
           <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta name="google-site-verification" content="IpMLN0O17LzsxofVFp5HDnRje-CPwKC5j1QK05iBcdM" />
           <link rel="icon" href="./yeglogowebsite.svg" sizes="20x20" type="image/svg+xml" />
+
+          {/* gtag.js */}
+          <Script 
+            async 
+            src="https://www.googletagmanager.com/gtag/js?id=G-QCJEQC9T3Z"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-QCJEQC9T3Z');
+            `}
+          </Script>
+          
+
+
+
           <script
           async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6199758154363864`}
