@@ -95,10 +95,10 @@ function Intro() {
           <div className="py-44">
           </div>
           <div className="h-full grid items-end ">
-            <a href="https://www.utusan.com.my/gaya/2022/04/pu-amin-pu-riz-dilantik-sebagai-pensyarah-yeg-academy/"
+            <a href= "https://malaysiagazette.com/2024/12/17/yeg-academy-uic-kerjasama-perkenal-program-sarjana-muda-pengurusan-haji-dan-umrah/"
             className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
-            <h className="text-yellow-500 font-semibold grid ">APRIL 21,2022</h>
-            <h className="text-slate-800 font-semibold ">PU AMIN, PU RIZ DILANTIK SEBAGAI PENSYARAH YEG ACADEMY - UTUSAN MALAYSIA</h>
+            <h className="text-yellow-500 font-semibold grid ">DECEMBER 17,2024</h>
+            <h className="text-slate-800 font-semibold ">YEG Academy, IUC kerjasama perkenal program Sarjana Muda Pengurusan Haji dan Umrah, Penerbangan</h>
             </a>
             </div>
         </card8>
