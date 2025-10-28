@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image'
 
 
 function Intro() {
@@ -11,7 +11,14 @@ function Intro() {
         <h className="font-semibold text-lg text-center text-yellow-600">WHAT'S ON</h>
           <h className="font-bold font-sans text-6xl text-slate-700">YEG NEWS & EVENTS</h>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-yellow-600 rounded-md">
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row max-w-4xl mx-auto border border-gray-100">
+
+     
+      </div>
+    
+
+
+        {/*<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 rounded-md">
         <card1 className="w-full h-full flex justify-center items-center rounded-md hover:shadow-xl  group " style={{ backgroundImage: 'url("/newss2.jpg")', backgroundSize: 'cover', backgroundPosition: 'fit' }}>
           <div className="py-44 ">
           </div>
@@ -39,7 +46,7 @@ function Intro() {
           </div>
           <div className="h-full grid items-end ">
             <a href="https://www.utusan.com.my/nasional/2023/03/misa-renaco-marine-jalin-kerjasama-lahir-tenaga-mahir/"
-            className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
+            className="bg-white ">
             <h className="text-yellow-500 font-semibold grid ">MARCH 13,2023</h>
             <h className="text-slate-800 font-semibold ">MISA, RANACO MARINE JALIN KERJASAMA LAHIR TENAGA MAHIR MISA - UTUSAN MALAYSIA</h>
             </a>
@@ -56,8 +63,9 @@ function Intro() {
             </a>
             </div>
         </card4>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-4 py-3 bg-slate-700 rounded-md">
+        </div>*/}
+        
+        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-4 py-3 rounded-md">
         <card5 className=" transition w-full h-full flex justify-center  items-center rounded-md hover:shadow-xl group" style={{ backgroundImage: 'url("/newss9.jpg")', backgroundSize: 'cover', backgroundPosition: 'fit' }}>
           <div className="py-44 ">
           </div>
@@ -80,17 +88,17 @@ function Intro() {
             </a>
             </div>
         </card6>
-        <card7 className=" transition w-full h-full flex justify-center  items-center rounded-md hover:shadow-xl group" style={{ backgroundImage: 'url("/newss7.jpeg")', backgroundSize: 'cover', backgroundPosition: 'fit' }}>
+        <card3 className=" transition w-full h-full flex justify-center  items-center rounded-md hover:shadow-xl group" style={{ backgroundImage: 'url("/newss10.jpg")', backgroundSize: 'cover', backgroundPosition: 'fit' }}>
           <div className="py-44 ">
           </div>
           <div className="h-full grid items-end ">
-            <a href="https://malaysiagazette.com/2023/12/05/yeg-academy-mahsa-university-jalin-kerjasama-perkasa-kerjaya-jururawat/"
-            className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
-            <h className="text-yellow-500 font-semibold grid ">AUGUST 18,2022</h>
-            <h className="text-slate-800 font-semibold ">YEG ACADEMY, MAHSA UNIVERSITY JALIN KERJASAMA PERKASA KERJAYA JURURAWAT - MALAYSIAGAZETTE</h>
+            <a href="https://www.utusan.com.my/nasional/2023/03/misa-renaco-marine-jalin-kerjasama-lahir-tenaga-mahir/"
+            className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500 ">
+            <h className="text-yellow-500 font-semibold grid ">MARCH 13,2023</h>
+            <h className="text-slate-800 font-semibold ">MISA, RANACO MARINE JALIN KERJASAMA LAHIR TENAGA MAHIR MISA - UTUSAN MALAYSIA</h>
             </a>
             </div>
-        </card7>
+        </card3>
         <card8 className=" transition w-full h-full flex justify-center  items-center rounded-md hover:shadow-xl group" style={{ backgroundImage: 'url("/newss8.jpeg")', backgroundSize: 'cover', backgroundPosition: 'fit' }}>
           <div className="py-44">
           </div>
@@ -98,7 +106,7 @@ function Intro() {
             <a href= "https://malaysiagazette.com/2024/12/17/yeg-academy-uic-kerjasama-perkenal-program-sarjana-muda-pengurusan-haji-dan-umrah/"
             className="text-left group-hover:bg-white p-2 group-hover:-translate-y-3 transition duration-500">
             <h className="text-yellow-500 font-semibold grid ">DECEMBER 17,2024</h>
-            <h className="text-slate-800 font-semibold ">YEG Academy, IUC kerjasama perkenal program Sarjana Muda Pengurusan Haji dan Umrah, Penerbangan</h>
+            <h className="text-slate-800 font-semibold ">YEG ACADEMY, IUC KERJASAMA PERKENAL PROGRAM SARJANA MUDA PENGURUSAN HAJI DAN UMRAH, PENERBANGAN - MalaysiaGazette</h>
             </a>
             </div>
         </card8>
