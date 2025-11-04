@@ -51,15 +51,15 @@ const carouselData = {
       id: 2, 
       index: 1, 
       title: "LIMA 2025", 
-      date: "DEC 1, 2024", 
-      imageUrl: ["Lima01.jpg" ],
+      date: "MAY 21, 2025", 
+      imageUrl:"Lima01.jpg",
       link: "https://www.instagram.com/reel/DJ4Rks4pfSj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" 
     },
     { 
       id: 3, 
       index: 2, 
       title: "Majlis Mutawwif Profesional 4.0", 
-      date: "DEC 15, 2024", 
+      date: "MAY 31, 2025", 
       imageUrl: "mmp01.jpg", 
       link: "https://www.instagram.com/p/DKTop14Tt4P/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" 
     },
