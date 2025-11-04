@@ -17,19 +17,8 @@ function Intro() {
       
       </div>
       <div className="h-full lg:py-7 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center">
-          
-        <a href="https://www.tiktok.com/@yegacademy/video/7319391659773545730?lang=en"
-        className="flex hover:scale-150 duration-300">
-        <video autoplay="autoplay" 
-                  loop="loop" 
-                  muted="muted"
-                  className="rounded-md  top-0 left-0 w-full h-full object-cover" 
-                  width="390" 
-                  height="890">
-              <source src="./tiktok01.mp4" type="video/mp4"/>
-          </video>
-        </a>
-          <a href="https://www.tiktok.com/@yegacademy/video/7314661907741428993"
+
+         <a href="https://www.tiktok.com/@yegacademy/video/7314661907741428993"
           className=" flex hover:scale-150 duration-500">
           <video autoplay="autoplay" 
                   loop="loop" 
@@ -39,8 +28,19 @@ function Intro() {
                   height="890">
               <source src="tiktok02.mp4" type="video/mp4"/>
           </video>
-          </a>
-          <a href="https://www.tiktok.com/@yegacademy/video/7302099228346600705?lang=en"
+          </a> 
+        <a href="https://www.tikhttps://www.tiktok.com/@yegacademy/video/7568437037389565191?is_from_webapp=1&sender_device=pc&web_id=7563838973358343697tok.com/@yegacademy/video/7319391659773545730?lang=en"
+        className="flex hover:scale-150 duration-500">
+        <video autoplay="autoplay" 
+                  loop="loop" 
+                  muted="muted"
+                  className="rounded-md  top-0 left-0 w-full h-full object-cover" 
+                  width="390" 
+                  height="890">
+              <source src="./tiktok1.mp4" type="video/mp4"/>
+          </video>
+        </a>
+          <a href="https://www.tiktok.com/@yegacademy/video/7542880723204623634?is_from_webapp=1&sender_device=pc&web_id=7563838973358343697"
           className="flex hover:scale-150 duration-500">
           <video autoplay="autoplay" 
                   loop="loop" 
@@ -48,10 +48,10 @@ function Intro() {
                   className="rounded-md top-0 left-0 w-full h-full object-cover" 
                   width="390" 
                   height="890">
-              <source src="tiktok03.mp4" type="video/mp4"/>
+              <source src="tiktok3.mp4" type="video/mp4"/>
           </video>
           </a>
-          <a href="https://www.tiktok.com/@yegacademy/video/7327569127793593602?is_from_webapp=1&sender_device=pc&web_id=7329685069341328898"
+          <a href="https://www.tiktok.com/@yegacademy/video/7551782551027764498?is_from_webapp=1&sender_device=pc&web_id=7563838973358343697"
           className="flex hover:scale-150 duration-500">
           <video autoplay="autoplay" 
                   loop="loop" 
@@ -59,10 +59,10 @@ function Intro() {
                   className="rounded-md top-0 left-0 w-full h-full object-cover" 
                   width="390" 
                   height="890">
-              <source src="tiktok04.mp4" type="video/mp4"/> 
+              <source src="tiktok4.mp4" type="video/mp4"/> 
           </video>
           </a>
-          <a href="https://www.tiktok.com/@yegacademy/video/7318007453159935233?lang=en"
+          <a href="https://www.tiktok.com/@yegacademy/video/7556055376047770887?is_from_webapp=1&sender_device=pc&web_id=7563838973358343697"
           className="flex hover:scale-150 duration-500">
           <video autoplay="autoplay" 
                   loop="loop" 
@@ -70,7 +70,7 @@ function Intro() {
                   className="rounded-md top-0 left-0 w-full h-full object-cover" 
                   width="390" 
                   height="890">
-              <source src="tiktok05.mp4" type="video/mp4"/>
+              <source src="tiktok5.mp4" type="video/mp4"/>
           </video>
           </a>
           <a href="https://www.tiktok.com/@yegacademy/video/7326925324359306498?lang=en"
