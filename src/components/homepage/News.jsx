@@ -181,11 +181,11 @@ function Intro() {
     };
 
     // --- 4. REUSABLE COMPONENT: EVENT CARD (Must be defined before App) ---
-    const EventCard = ({ title, date, imageUrl, imageUrl1, link }) => {
+    const EventCard = ({ title, date, imageUrl, link }) => {
       return (
         <a href={link} target="_blank" rel="noopener noreferrer">
             <article
-              className="relative w-full aspect-[100%/3] overflow-hidden rounded-xl shadow-xl group transition-all duration-500 bg-gray-200 cursor-pointer"
+              className="relative w-full aspect-[3/2] overflow-hidden rounded-xl shadow-xl group transition-all duration-500 bg-gray-200 cursor-pointer"
               style={{ backgroundImage: `url(${imageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
               {/* Dark overlay for contrast */}
@@ -227,7 +227,7 @@ function Intro() {
           </div>
 
           {/* LATEST NEWS ARTICLES Grid */}
-          <div className="max-w-7xl mx-auto mt-10">
+          <div className="max-w-7xl mx-auto mt-15">
             <h3 className="text-2xl font-bold text-slate-800 mb-6 border-b-2 border-yellow-500 inline-block pb-1">NEWS ARTICLES</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 py-3">
               {newsItems.map((item) => (
@@ -242,9 +242,9 @@ function Intro() {
             </div>
           </div>
 
-          {/* UPCOMING EVENTS Slider (Responsive Scrollable List) */}
-          <div className="max-w-7xl mx-auto mt-10">
-            <h3 className="text-2xl font-bold text-slate-800 mb-6 border-b-2 border-yellow-500 inline-block pb-1">EVENTS</h3>
+          {/*EVENTS Slider (Responsive Scrollable List) */}
+          <div className="max-w-7xl mx-auto mt-30">
+            <h3 className="text-2xl font-bold text-slate-800 mb-6 border-b-10 border-yellow-500 inline-block pb-1">EVENTS</h3>
 
             <div className="relative">
                 {/* Custom CSS to hide the scrollbar for a cleaner look */}
