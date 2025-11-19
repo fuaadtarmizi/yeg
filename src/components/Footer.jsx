@@ -31,7 +31,6 @@ function footer() {
             <h>Working hours : 8.30am-5.30pm</h>
             <h>Email: info@yegmy.com</h>
             <div className="grid py-2">
-            <h>Management Office: +603-6144 6558</h>
             <h>Customer Service: +603-6143 5073</h>
             </div>
             <div className="flex space-x-5">
