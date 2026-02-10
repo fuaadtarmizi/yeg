@@ -31,6 +31,7 @@ function footer() {
             <h>Working hours : 8.30am-5.30pm</h>
             <h>Email: info@yegmy.com</h>
             <div className="grid py-2">
+            <h>Management Office: +603-6144 6558</h>
             <h>Customer Service: +603-6143 5073</h>
             </div>
             <div className="flex space-x-5">
@@ -79,7 +80,9 @@ function footer() {
           <h>@ 2023 YEG Academy (M) Sdn Bhd 1334979-W | Hak Cipta Terpelihara</h>
          
           </div>
-         
+          <div className="pt-6 grid space-y-2">
+          <h>Developed by <a href="https://www.tiktok.com/@petalcode">PetalCode Labs</a></h>
+          </div>
           </div>
           </div>
           </div>

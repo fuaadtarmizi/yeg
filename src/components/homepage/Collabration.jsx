@@ -22,7 +22,7 @@ function Collabration() {
           </div>
           <div className="flex items-center">
             <Image
-              src="/collabration/meatech2logo.png"
+              src="/collabration/meatech2logo.svg"
               alt="meatech2logo"
               width={230}
               height={200}
@@ -31,7 +31,7 @@ function Collabration() {
               }}
             />
           </div>
-         {/*} <div className="flex items-center">
+          <div className="flex items-center">
             <Image
               src="/collabration/mahsalogo.svg"
               alt="mahsalogo"
@@ -41,11 +41,21 @@ function Collabration() {
                 objectFit: 'contain',
               }}
             />
-          </div> */}
-
+          </div>
           <div className="flex items-center">
             <Image
-              src="/collabration/meatechlogo.png"
+              src="/collabration/logoamtc.svg"
+              alt="logoamtc"
+              width={180}
+              height={200}
+              style={{
+                objectFit: 'contain',
+              }}
+            />
+          </div>
+          <div className="flex items-center">
+            <Image
+              src="/collabration/meatechlogo.svg"
               alt="meatechlogo"
               width={120}
               height={200}
@@ -54,19 +64,7 @@ function Collabration() {
               }}
             />
           </div>
-           <div className="flex items-center">
-                      <Image
-                        src="/collabration/logoamtc.png"
-                        alt="logoamtc"
-                        width={180}
-                        height={200}
-                        style={{
-                          objectFit: 'contain',
-                        }}
-                      />
-                    </div>
-         {
-         /*}<div className="flex items-center">
+          <div className="flex items-center">
             <Image
               src="/collabration/logopelita.svg"
               alt="logopelita"
@@ -76,8 +74,7 @@ function Collabration() {
                 objectFit: 'contain',
               }}
             />
-          </div> */
-          }
+          </div>
         </div>
       </section>
     </div>
