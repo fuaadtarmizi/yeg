@@ -313,8 +313,6 @@ tambahan, dan terlibat dalam sesi pengajaran dan pembelajaran bersama pakar-paka
         <a href="/" className="px-4 ">Sijil Persediaan Khidmat Pelanggan</a>
         <a href="/" className="px-4 ">Sijil Persediaan Krew Kabin</a>
         <a href="/" className="px-4 ">Sijil Persediaan Pengendalian Darat</a>
-        <a href="/" className="px-4 ">Sijil Profesional Pemasangan Paip Gas</a>
-        <a href="/" className="px-4 ">Sijil Profesional Paip dan Jurugegas</a>
         </div>
       </div>
       <div className="px-3 lg:px-8 grid space-y-6 pt-6">
