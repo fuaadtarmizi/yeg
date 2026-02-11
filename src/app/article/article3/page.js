@@ -242,7 +242,7 @@ pelanggan dan pengendalian darat</a>.</h>
         </div>
     </section1>
     <div>
-      <Footer/>
+  
     </div>
     </main>
   )
