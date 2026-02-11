@@ -38,12 +38,14 @@ function Navbar() {
                 <MenubarSub>
                   <MenubarSubTrigger>
                   <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-                  <a className="text-md font-light ml-2">Program Profesional Haji & Umrah (SPHU)</a></div>
+                  <a className="text-md font-light ml-2">Fakulti Pengurusan Haji & Umrah (FPHU)</a></div>
                   </MenubarSubTrigger>
                   <MenubarSubContent>
-                    <MenubarItem><a className="text-md font-light ml-2" href="/kursuskerjaya/sphu/bhum">Bachelor’s Degree Hajj & Umrah Management</a></MenubarItem>
-                    <MenubarItem><a className="text-md font-light ml-2" href="/kursuskerjaya/sphu/mhum">Master Hajj & Umrah Management</a></MenubarItem>
-                    <MenubarItem><a className="text-md font-light ml-2" href="/kursuskerjaya/sphu/shum">Profesional Hajj & Umrah Certificate</a></MenubarItem>
+                    <MenubarItem><a className="text-md font-light ml-2" href="https://e-dhumy.com/ftd">Diploma + Degree Hajj & Umrah Management</a></MenubarItem>
+                    <MenubarItem><a className="text-md font-light ml-2" href="https://e-dhumy.com/masterhajiumrah">Master Hajj & Umrah Management</a></MenubarItem>
+                    <MenubarItem><a className="text-md font-light ml-2" href="https://e-dhumy.com/sphu">Profesional Hajj & Umrah Certificate</a></MenubarItem>
+                    <MenubarItem><a className="text-md font-light ml-2" href="https://e-dhumy.com/phdhajjumrah">PhD Hajj & Umrah Management</a></MenubarItem>
+
                   </MenubarSubContent>
                 </MenubarSub>
                 <MenubarItem>
