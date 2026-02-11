@@ -76,7 +76,7 @@ function footer() {
           </a>
           </div>
           <div className="grid space-y-6">
-          <h>@ 2023 YEG Academy (M) Sdn Bhd 1334979-W | Hak Cipta Terpelihara</h>
+          <h>@ 2026 YEG Academy (M) Sdn Bhd 1334979-W | Hak Cipta Terpelihara</h>
          
           </div>
          
