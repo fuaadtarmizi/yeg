@@ -12,7 +12,7 @@ function App () {
             <div className="h-full lg:py-6 grid grid-cols-2 md:grid-cols-6 lg:grid-cols-6 gap-4 items-center">
             <a href="https://www.tiktok.com/@aviationcareermalaysia/video/7451964858146311442?is_from_webapp=1&sender_device=pc"
             className="flex hover:scale-150 duration-300">
-            <video autoplay="autoplay" loop="loop" muted="muted"
+            <video autoPlay="autoplay" loop="loop" muted="muted"
                 className="rounded-md top-0 left-0 w-full h-full object-cover" 
                 width="390" 
                 height="890">
