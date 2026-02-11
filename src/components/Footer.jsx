@@ -87,7 +87,7 @@ function footer() {
             <div className=" text-white text-xs grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="grid space-y-3 ">
               <span className="text-xl font-bold py-3">CAREER PROGRAMME</span>
-              <a className="font-medium" href="../kursuskerjaya/sphu">Sijil Program Profesional Haji & Umrah (SPHU)</a>
+              <a className="font-medium" href="../kursuskerjaya/sphu">Fakulti Pengurusan Haji & Umrah (FPHU)</a>
               <a className="font-medium" href="../kursuskerjaya/acm">Aviation Career Malaysia (ACM)</a>              
             </div>
             {/* <div className="grid space-y-3">
