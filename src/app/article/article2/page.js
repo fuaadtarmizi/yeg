@@ -1,7 +1,6 @@
 'use client'
 import Image from "next/image"
 import React from 'react'
-import Footer from "@/components/Footer.jsx"
 import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
 
@@ -198,7 +197,7 @@ yang dipegang.</span>
         </div>
     </section1>
     <div>
-      <Footer/>
+    
     </div>
     
     </main>
