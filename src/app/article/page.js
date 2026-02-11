@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from "@/components/Footer.jsx"
 import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
 
@@ -130,9 +129,6 @@ function page() {
             </div>
         </section3>
         <div className="py-8 lg:py-10 md:[height:80px]"></div>    
-    <div>
-      <Footer/>
-    </div>
     </div>
     
   )
