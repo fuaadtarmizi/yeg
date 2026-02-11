@@ -22,7 +22,7 @@ function Page() {
           <div>
             <Image
               className="w-full drop-shadow-lg"
-              src="/coursehajiumrah.svg"
+              src="/Poster DHUMY Landing Page V6.jpg"
               alt="coursehajiumrah"
               width={900}
               height={200}
@@ -36,9 +36,8 @@ function Page() {
           <div className="lg:py-10 py-6 space-y-4 text-black">
             <div class='space-y-2'>
               <p className="font-bold">
-                IJAZAH SARJANA MUDA PENGURUSAN HAJI DAN UMRAH (Kepujian) – MQA/PA 17040
-              </p>
-              <p>Bachelor’s Degree Hajj & Umrah Management (Hons.) - BHUM</p>
+                DIPLOMA + DEGREE PENGURUSAN HAJI DAN UMRAH (Kepujian) – MQA/FA11377 /  MQA/PA17040
+                </p>
             </div>
             <p>
               Program ini bertujuan melahirkan graduan yang berpengetahuan, berkemahiran dan
