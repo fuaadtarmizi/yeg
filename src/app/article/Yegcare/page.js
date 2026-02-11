@@ -10,9 +10,9 @@ export default function article() {
     <main>
     <title>YEG Academy - article 7</title>
         <nav className="hidden lg:block sticky top-0 ">
-            <Navbar/>
+        
         <div className="lg:hidden">
-            <Sidebar/>
+           
         </div>
         </nav>
         <section>
@@ -81,7 +81,6 @@ export default function article() {
     <div>
     
 
-      <Footer/>
     </div>
     </main>
   )
