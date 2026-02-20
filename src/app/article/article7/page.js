@@ -1,7 +1,6 @@
 'use client'
 import Image from "next/image"
 import React from 'react'
-import Footer from "@/components/Footer.jsx"
 import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
 
@@ -159,9 +158,6 @@ export default function article() {
       </div>
         </div>
     </section>
-    <div>
-      <Footer/>
-    </div>
     </main>
   )
 }
