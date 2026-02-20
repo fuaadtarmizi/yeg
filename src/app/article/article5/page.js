@@ -190,7 +190,7 @@ export default function article() {
         </div>
     </section>
     <div>
-      <Footer/>
+
     </div>
     </main>
   )
