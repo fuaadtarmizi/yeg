@@ -1,7 +1,6 @@
 'use client'
 import Image from "next/image"
 import React from 'react'
-import Footer from "@/components/Footer.jsx"
 import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
 
@@ -71,9 +70,6 @@ export default function article() {
           <h className="font-sans ">Kempen CSR (Corperate Social Responsibility) adalah satu usaha penting dalam membantu golongan gelandangan dan memberi mereka harapan. Setiap sumbangan dan tindakan kecil anda mampu memberikan impak yang besar. Mari kita bersama-sama menyumbang kepada perubahan positif dalam masyarakat.</h>
         </div>
         </div>
-    <div>
-      <Footer/>
-    </div>
     </main>
   )
 }
