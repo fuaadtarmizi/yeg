@@ -1,7 +1,6 @@
 'use client'
 import Image from "next/image"
 import React from 'react'
-import Footer from "@/components/Footer.jsx"
 import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
 
@@ -329,9 +328,6 @@ sambung belajar dan beralih ke sektor ekonomi gig, e-hailing dan sektor pengilan
       </div>
         </div>
     </section3>
-    <div>
-      <Footer/>
-    </div>
     </main>
   )
 }
