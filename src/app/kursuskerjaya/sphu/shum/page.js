@@ -23,8 +23,8 @@ function Page() {
           <div>
             <Image
               className="w-full drop-shadow-lg"
-              src="/coursehajiumrah.svg"
-              alt="coursehajiumrah"
+              src="/sphu.png"
+              alt="Sijil Profesional Haji & Umrah"
               width={900}
               height={200}
               style={{
