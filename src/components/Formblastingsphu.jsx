@@ -112,14 +112,6 @@ export default function App() {
       <div className="py-6 text-black text-3xl font-bold">
              <h>Borang Pendaftaran</h>
          </div>
-      {/* Background image */}
-      < div className="absolute inset-0 bg-repeat"
-        style={{
-          backgroundImage: 'url("/bgkembarahaji.jpg")',
-          backgroundSize: 'auto',
-          backgroundPosition: 'top',
-        }}
-      />
             <div className=" grid space-y-4">
       <div className="grid rounded-md space-y-1 ">
         <h className="">Nama</h>
