@@ -11,7 +11,7 @@ const VideoPlayer1 = () => {
     <div className="flex justify-center">
       <iframe
         className="px-4"
-        width="1000"
+        width="1920"
         height="500"
         src={videoEmbedUrl}
         title="YouTube video player"
@@ -45,15 +45,12 @@ const VideoPlayer2 = () => {
 
 function page() {
   return (
+    
     <div>
       <div className="bg-slate-700">
       <div className="py-2 md:py-3 lg:py-6"></div>
       <div>
-        <Formblastingsphu/>
-      </div>
-      <div className="py-3"></div>
-      <div className=" flex justify-center">
-      <Image
+        <Image
           className="w-full"
           src="/sphu1.jpg"
           alt="sphu1"
@@ -63,6 +60,11 @@ function page() {
             objectFit:"contain",
           }}
         />
+    
+      </div>
+      <div className="py-3"></div>
+      <div className=" flex justify-center">
+          <Formblastingsphu/>
       </div>
       <div className="py-2 md:py-3 lg:py-6"></div>
       <div className="py-2 md:py-3 lg:py-6 bg-white"></div>
