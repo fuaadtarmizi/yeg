@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import Image from "next/image"
 import {
     Menubar,
@@ -16,6 +16,8 @@ import {
   
 
 function Navbar() {
+  const [programOpen, setProgramOpen] = useState(false)
+
   return (
     <nav className="">
         <div className=" hidden lg:block md:block"> 
@@ -32,7 +34,13 @@ function Navbar() {
                 objectFit: "contain",
                 }}/></a></div>
             <div className="bg-slate-800 flex w-full justify-end">
-            <MenubarMenu>
+            {/* Program menu controlled by hover */}
+          <MenubarMenu
+            open={programOpen}
+            onOpenChange={setProgramOpen}
+            onMouseEnter={() => setProgramOpen(true)}
+            onMouseLeave={() => setProgramOpen(false)}
+          >
               <MenubarTrigger>Program</MenubarTrigger>
               <MenubarContent>
                 <MenubarSub>
