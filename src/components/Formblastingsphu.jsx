@@ -110,9 +110,16 @@ export default function App() {
       <div className="lg:w-1/3 ">
       <form className=" backdrop-blur-lg w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
       <div className="py-6 text-black text-3xl font-bold">
-             <h>Borang Pertanyaan</h>
+             <h>Borang Pendaftaran</h>
          </div>
-         
+      {/* Background image */}
+      < div className="absolute inset-0 bg-repeat"
+        style={{
+          backgroundImage: 'url("/bgkembarahaji.jpg")',
+          backgroundSize: 'auto',
+          backgroundPosition: 'top',
+        }}
+      />
             <div className=" grid space-y-4">
       <div className="grid rounded-md space-y-1 ">
         <h className="">Nama</h>
