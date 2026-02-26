@@ -155,13 +155,23 @@ export default function App() {
           <p
             className="px-4 text-md py-2 cursor-pointer bg-gray-400 font-bold"
           >
-            Kerjaya
+            Program
           </p>
           <div className="pl-6 text-sm bg-gray-400">
           <p className=" py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("SPHU - SIJIL PROFESIONAL PENGURUSAN HAJI & UMRAH")}
+            onClick={() => handleItemClick("DIPLOMA + DEGREE PENGURUSAN HAJI & UMRAH (MQA/FA11377 |  MQA/PA17040)")}
           >
-            SPHU - SIJIL PROFESIONAL PENGURUSAN HAJI & UMRAH 
+           DIPLOMA + DEGREE PENGURUSAN HAJI & UMRAH (MQA/FA11377 |  MQA/PA17040)
+          </p>
+           <p className=" py-2 cursor-pointer hover:bg-gray-500 rounded-md"
+            onClick={() => handleItemClick("SARJANA PENGURUSAN HAJI & UMRAH (MQA/PA18797)")}
+          >
+           SARJANA PENGURUSAN HAJI & UMRAH (MQA/PA18797)
+          </p>
+          <p className=" py-2 cursor-pointer hover:bg-gray-500 rounded-md"
+            onClick={() => handleItemClick("PhD PENGURUSAN HAJI & UMRAH (MQA/PA18014)")}
+          >
+           PhD PENGURUSAN HAJI & UMRAH (MQA/PA18014)
           </p>
           </div>
         </div>
