@@ -40,8 +40,8 @@ function page() {
       <div className="bg-white flex justify-center ">
       <Image
           className=""
-          src="/dipdhumy3.png"
-          alt="dipdhumy3"
+          src="/kelebihan.png"
+          alt="kelebihan"
           width="1200"
           height="80"
           style={{
