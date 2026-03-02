@@ -77,7 +77,7 @@ const Navbar = () => {
           <button 
           onClick={toggleNavbar1}
           className="block text-white py-2 px-4 hover:bg-gray-700">
-            Career Program
+            Program
           </button>
 
           {isOpen1 && (
@@ -85,14 +85,16 @@ const Navbar = () => {
           {/* Add your navigation links here */}
             <button 
             onClick={toggleNavbar5}
-            className="block text-white py-2 px-4 " href="../kursuskerjaya/sphu">
-              Sijil Profesional Haji & Umrah (SPHU)
+            className="block text-white py-2 px-4 " href="/">
+             Fakulti Pengurusan Haji & Umrah
             </button>
             {isOpen5 && (
             <div className="lg:hidden mt-4 bg-yellow-500">
               {/* Add your navigation links here */}
+               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursuskerjaya/sphu/bhum">
+                Undergraduate</a>
                 <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursuskerjaya/sphu/bhum">
-                Bachelor’s Degree Hajj & Umrah Management</a>
+                Diploma + Degree Pengurusan Haji & Umrah</a>
                 <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursuskerjaya/sphu/mhum">
                 Master Hajj & Umrah Management</a>
                 
