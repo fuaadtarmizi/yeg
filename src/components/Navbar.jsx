@@ -32,16 +32,20 @@ function Navbar() {
                 objectFit: "contain",
                 }}/></a></div>
             <div className="bg-slate-800 flex w-full justify-end">
-                <MenubarMenu>
+    <MenubarMenu>
   <MenubarTrigger>Program</MenubarTrigger>
   <MenubarContent>
     <MenubarSub>
       <MenubarSubTrigger>
         <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
-          <a className="text-md font-light ml-2">Fakulti Pengurusan Haji & Umrah (FPHU)</a>
+          <a className="text-md font-light ml-2">
+            Fakulti Pengurusan Haji & Umrah (FPHU)
+          </a>
         </div>
       </MenubarSubTrigger>
       <MenubarSubContent>
+        
+        {/* Undergraduate */}
         <MenubarSub>
           <MenubarSubTrigger>
             <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
@@ -56,24 +60,37 @@ function Navbar() {
             </MenubarItem>
           </MenubarSubContent>
         </MenubarSub>
-        <MenubarItem>
-          <a className="text-md font-light ml-2" href="https://e-dhumy.com/masterhajiumrah">
-            Master Hajj & Umrah Management
-          </a>
-        </MenubarItem>
-        <MenubarItem>
-          <a className="text-md font-light ml-2" href="/kursuskerjaya/sphu/shum">
-            Profesional Hajj & Umrah Certificate
-          </a>
-        </MenubarItem>
-        <MenubarItem>
-          <a className="text-md font-light ml-2" href="https://e-dhumy.com/phdhajjumrah">
-            PhD Hajj & Umrah Management
-          </a>
-        </MenubarItem>
+
+        {/* Postgraduate */}
+        <MenubarSub>
+          <MenubarSubTrigger>
+            <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
+              <a className="text-md font-light ml-2">Postgraduate</a>
+            </div>
+          </MenubarSubTrigger>
+          <MenubarSubContent>
+            <MenubarItem>
+              <a className="text-md font-light ml-2" href="https://e-dhumy.com/masterhajiumrah">
+                Master Hajj & Umrah Management
+              </a>
+            </MenubarItem>
+            <MenubarItem>
+              <a className="text-md font-light ml-2" href="/kursuskerjaya/sphu/shum">
+                Profesional Hajj & Umrah Certificate
+              </a>
+            </MenubarItem>
+            <MenubarItem>
+              <a className="text-md font-light ml-2" href="https://e-dhumy.com/phdhajjumrah">
+                PhD Hajj & Umrah Management
+              </a>
+            </MenubarItem>
+          </MenubarSubContent>
+        </MenubarSub>
+
       </MenubarSubContent>
     </MenubarSub>
 
+    {/* Other Program */}
     <MenubarItem>
       <div className="w-full p-2 hover:bg-slate-500 hover:bg-opacity-10">
         <a className="text-md font-light ml-2" href="/kursuskerjaya/acm">
