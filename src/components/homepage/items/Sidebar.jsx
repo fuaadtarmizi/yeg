@@ -94,7 +94,7 @@ const Navbar = () => {
           <button 
           onClick={toggleNavbar1}
           className="block text-white py-2 px-4 hover:bg-gray-700 ">
-            Career Program
+            Program
           </button>
 
           {isOpen1 && (
@@ -108,7 +108,7 @@ const Navbar = () => {
                 <a 
                 onClick={toggleNavbar2}
                 className="block text-white py-2 px-4 hover:bg-gray-700" href="../kursuskerjaya/sphu">
-                Sijil Profesional Haji & Umrah (SPHU)
+                Diploma  + Degree Pengurusan Haji & Umrah
                 </a>
                 <a 
                 onClick={toggleNavbar3}
