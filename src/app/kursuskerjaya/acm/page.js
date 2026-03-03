@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from "next/image"
-import Footer from "@/components/Footer.jsx"
 import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
 import Contactus from '@/components/Contactus'
@@ -126,9 +125,6 @@ function acm() {
           </card5>
         </div>
       </section2>
-      <div>
-      <Footer/>
-    </div>
     </>
   )
 }
