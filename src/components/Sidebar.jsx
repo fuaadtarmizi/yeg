@@ -97,7 +97,7 @@ const Navbar = () => {
                 Undergraduate
                 </button>
                   {isOpen2 && (
-                  <div className="lg:hidden mt-4 bg-yellow-700">
+                  <div className="absolute right-full top-0 bg-yellow-700 w-64 shadow-lg">
                  {/* Add your navigation links here */}
                  <button 
                  onClick={toggleNavbar6}
