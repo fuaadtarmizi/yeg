@@ -24,8 +24,8 @@ function acm() {
                     className="rounded-sm "
                     src="/acm.jpg"
                     alt="acm"
-                    width="900"
-                    height="200"
+                    width="1800"
+                    height="600"
                     style={{
                     objectFit:"contain",
                     }}
