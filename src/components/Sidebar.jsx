@@ -120,6 +120,10 @@ const Navbar = () => {
             </a>
         </div>
           )}
+            
+          </div>
+           )}  
+            
           {/* <button 
             onClick={toggleNavbar6}
             className="block text-white py-2 px-4 hover:bg-gray-700" href="#about">
@@ -178,10 +182,10 @@ const Navbar = () => {
             <a className="rounded-sm bg-yellow-600 hover:bg-yellow-500 duration-300 block text-white py-2 px-4 " href="/borangyeg">
             Contact Us</a>
             </div>
-          )}
-          </div>
-          )}         
-        </nav>
+            )}
+         </nav>
+                
+      
 
 
 
