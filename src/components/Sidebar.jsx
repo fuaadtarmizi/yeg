@@ -85,18 +85,31 @@ const Navbar = () => {
           {/* Add your navigation links here */}
             <button 
             onClick={toggleNavbar5}
-            className="block text-white py-2 px-4 " href="/">
+            className="block text-white py-2 px-4 ">
              Fakulti Pengurusan Haji & Umrah
             </button>
             {isOpen5 && (
             <div className="lg:hidden mt-4 bg-yellow-500">
               {/* Add your navigation links here */}
-               <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursuskerjaya/sphu/bhum">
-                Undergraduate</a>
-                <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursuskerjaya/sphu/bhum">
-                Diploma + Degree Pengurusan Haji & Umrah</a>
+              <button
+              onClick={toggleNavbar2}
+                className="block text-white py-2 px-4 hover:bg-gray-700" href="/">
+                Undergraduate
+                </button>
+                  {isOpen2 && (
+                  <div className="lg:hidden mt-4 bg-yellow-700">
+                 {/* Add your navigation links here */}
+                 <button 
+                 onClick={toggleNavbar6}
+                 className="block text-white py-2 px-4 " href="/">
+                 Diploma + Degree Pengurusan Haji & Umrah
+                 </button>
+                <a className="block text-white py-2 px-4 hover:bg-gray-700" href="/">
+                Postgraduate</a>
                 <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursuskerjaya/sphu/mhum">
                 Master Hajj & Umrah Management</a>
+                 <a className="block text-white py-2 px-4 hover:bg-gray-700" href="./kursuskerjaya/sphu/mhum">
+                PhD Hajj & Umrah Management</a>
                 
             </div>
           )}
@@ -165,6 +178,8 @@ const Navbar = () => {
             <a className="rounded-sm bg-yellow-600 hover:bg-yellow-500 duration-300 block text-white py-2 px-4 " href="/borangyeg">
             Contact Us</a>
             </div>
+          )}
+          </div>
           )}         
         </nav>
 
