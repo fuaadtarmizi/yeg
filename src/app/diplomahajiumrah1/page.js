@@ -26,7 +26,7 @@ function page() {
       </div>
        <Video
           className="w-full"
-          src="VidPower.mp4"
+          src="https://drive.google.com/file/d/18Wg3EHD_4WiiOs_EcORRpQXqOcWDXqgG/view?usp=sharing"
           alt="VidPower"
           width="1500"
           height="80"
