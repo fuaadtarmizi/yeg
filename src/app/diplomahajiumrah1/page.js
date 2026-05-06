@@ -22,28 +22,14 @@ function page() {
       </div>
       <div className="bg-green-800 p-3 flex justify-center py-8">
         <MarqueeBanner />   {}
-          <h className="text-white text-center lg:text-5xl text-3xl font-extrabold">KUOTA TERHAD DIBUKA UNTUK <span className="text-yellow-600">500 PELAJAR</span> SAHAJA </h> </div>
-        <div className="bg-white py-2 md:py-3 lg:py-6"></div>
-
-        <div className="bg-white flex justify-center">
-      <Image
-          className=""
-          src="/dipdhumy2.png"
-          alt="dipdhumy2"
-          width="1300"
-          height="80"
-          style={{
-            objectFit:"contain",
-          }}
-        />
       </div>
-      <div className="bg-white py-2 md:py-3 lg:py-6"></div>
+        <div className="bg-white py-2 md:py-3 lg:py-6"></div>
       <div className="bg-white flex justify-center ">
       <Image
           className=""
           src="MPHU/MPHU LANDING PAGE 2.jpg.jpeg"
           alt="MPHU LANDING PAGE 2"
-          width="1200"
+          width="1500"
           height="80"
           style={{
             objectFit:"contain",
