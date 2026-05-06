@@ -40,7 +40,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="bg-gray-800  p-3 hidden lg:flex lg:items-center lg:justify-between">
+    <nav className="bg-gray-800  p-3 hidden">
       <div className="flex items-center justify-between">
         <a href="/"
         className="text-white font-bold text-xl">
