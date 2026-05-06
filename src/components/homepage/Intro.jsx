@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '@/components/homepage/items/Navbar'
+import Navbar25 from '@/components/homepage/items/Navbar25'
 import Sidebar from '@/components/homepage/items/Sidebar'
 
 function Intro() {
