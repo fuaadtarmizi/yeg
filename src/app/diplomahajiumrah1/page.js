@@ -11,8 +11,8 @@ function page() {
       <div className=" flex justify-center">
       <Image
           className="w-full"
-          src="/FTD Dhumy.jpg.jpeg"
-          alt="FTD Dhumy"
+          src="/MPHU LANDING PAGE.jpg"
+          alt="MPHU LANDING PAGE"
           width="1500"
           height="80"
           style={{
