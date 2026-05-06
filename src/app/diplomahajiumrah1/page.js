@@ -21,19 +21,10 @@ function page() {
           }}
         />
       </div>
-      <div className=" flex justify-center">
+      <div className=" flex justify-center w- full">
         <MarqueeBanner />   {}
       </div>
-       <Video
-          className="w-full"
-          src="https://drive.google.com/file/d/18Wg3EHD_4WiiOs_EcORRpQXqOcWDXqgG/view?usp=sharing"
-          alt="VidPower"
-          width="1500"
-          height="80"
-          style={{
-            objectFit:"contain",
-          }}
-        />
+      
         <div className="bg-white py-2 md:py-3 lg:py-6"></div>
       <div className="bg-white flex justify-center ">
       <Image
