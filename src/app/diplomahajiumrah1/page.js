@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Formblastingdhumyganeral from '@/components/Formblastingdhumy2'
 import MarqueeBanner from '@/components/MarqueenBanner'
+import { Video } from 'lucide-react'
 
 function page() {
   return (
@@ -23,6 +24,16 @@ function page() {
       <div className=" flex justify-center">
         <MarqueeBanner />   {}
       </div>
+       <Video
+          className="w-full"
+          src="VidPower.mp4"
+          alt="VidPower"
+          width="1500"
+          height="80"
+          style={{
+            objectFit:"contain",
+          }}
+        />
         <div className="bg-white py-2 md:py-3 lg:py-6"></div>
       <div className="bg-white flex justify-center ">
       <Image
