@@ -1,17 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
 import Formblastingdhumyganeral from '@/components/Formblastingdhumy2'
-
+import MarqueeBanner from '@/components/MarqueenBanner'
 
 function page() {
   return (
     <div>
       <div className="bg-slate-700">
+         <MarqueeBanner />   {/* ← add here */}
       <div className="py-2 md:py-3 lg:py-6"></div>
       <div className=" flex justify-center">
       <Image
           className="w-full"
-          src="MPHU/MPHU LANDING PAGE.jpg"
+          src="MPHU/MPHU LANDING PAGE.jpg.jpeg"
           alt="MPHU LANDING PAGE"
           width="1500"
           height="80"
