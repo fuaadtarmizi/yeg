@@ -20,21 +20,8 @@ function page() {
           }}
         />
       </div>
-      <div className="bg-green-800 p-3 flex justify-center py-8">
+     
         <MarqueeBanner />   {}
-      </div>
-        <div className="bg-white flex justify-center">
-      <Image
-          className=""
-          src="/dipdhumy2.png"
-          alt="dipdhumy2"
-          width="1300"
-          height="80"
-          style={{
-            objectFit:"contain",
-          }}
-        />
-      </div>
       <div className="bg-white py-2 md:py-3 lg:py-6"></div>
       <div className="bg-white flex justify-center ">
       <Image
