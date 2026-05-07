@@ -22,6 +22,16 @@ function page() {
       </div>
      
         <MarqueeBanner />   {}
+
+    <Image
+         src="https://drive.google.com/uc?export=view&id=18Wg3EHD_4WiiOs_EcORRpQXqOcWDXqgG"
+        alt="Google Drive Image"
+        width={1920}   // widescreen width
+        height={1080}  // widescreen height
+        className="w-screen object-cover"
+        priority
+    />
+
       <div className="bg-white py-2 md:py-3 lg:py-6"></div>
       <div className="bg-white flex justify-center ">
       <Image
