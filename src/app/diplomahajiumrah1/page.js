@@ -24,7 +24,7 @@ function page() {
         <MarqueeBanner />   {}
 
     <Image
-         src="https://drive.google.com/uc?export=view&id=18Wg3EHD_4WiiOs_EcORRpQXqOcWDXqgG"
+         src="https://drive.google.com/file/d/18Wg3EHD_4WiiOs_EcORRpQXqOcWDXqgG/view?usp=drive_link"
         alt="Google Drive Image"
         width={1920}   // widescreen width
         height={1080}  // widescreen height
