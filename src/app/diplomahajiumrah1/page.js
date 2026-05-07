@@ -35,10 +35,10 @@ function page() {
       <div className="bg-white py-2 md:py-3 lg:py-6"></div>
       <div className="bg-white flex justify-center ">
       <Image
-          className=""
+          className="w-full"
           src="MPHU/MPHU LANDING PAGE 2.jpg.jpeg"
           alt="MPHU LANDING PAGE 2"
-          width="1200"
+          width="1500"
           height="80"
           style={{
             objectFit:"contain",
