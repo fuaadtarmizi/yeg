@@ -15,14 +15,26 @@ import 'swiper/css/navigation'
 import 'swiper/css/effect-fade'
 
 const GALLERY_IMAGES = [
-  { src: 'MPHU/Media/1.png', alt: 'Galeri 1', caption: 'Majlis Graduasi' },
-  { src: 'MPHU/Media/2.png', alt: 'Galeri 2', caption: 'Sesi Pembelajaran' },
-  { src: 'MPHU/Media/3.png', alt: 'Galeri 3', caption: 'Aktiviti Kumpulan' },
-  { src: 'MPHU/Media/4.png', alt: 'Galeri 4', caption: 'Bengkel DHUMY' },
-  { src: 'MPHU/Media/5.png', alt: 'Galeri 5', caption: 'Sijil Penyertaan' },
-  { src: 'MPHU/Media/6.png', alt: 'Galeri 6', caption: 'Program Intensif' },
-  { src: 'MPHU/Media/7.png', alt: 'Galeri 7', caption: 'Kelas Praktikal' },
-  { src: 'MPHU/Media/8.png', alt: 'Galeri 8', caption: 'Hari Terbuka' },
+  { src: 'MPHU/Media/1.png', alt: 'Galeri 1' },
+  { src: 'MPHU/Media/2.png', alt: 'Galeri 2' },
+  { src: 'MPHU/Media/3.png', alt: 'Galeri 3' },
+  { src: 'MPHU/Media/4.png', alt: 'Galeri 4' },
+  { src: 'MPHU/Media/5.png', alt: 'Galeri 5' },
+  { src: 'MPHU/Media/6.png', alt: 'Galeri 6' },
+  { src: 'MPHU/Media/7.png', alt: 'Galeri 7' },
+  { src: 'MPHU/Media/8.png', alt: 'Galeri 8' },
+  { src: 'MPHU/Media/9.png', alt: 'Galeri 9' },
+  { src: 'MPHU/Media/10.png', alt: 'Galeri 10' },
+  { src: 'MPHU/Media/11.png', alt: 'Galeri 11' },
+  { src: 'MPHU/Media/12.png', alt: 'Galeri 12' },
+  { src: 'MPHU/Media/13.png', alt: 'Galeri 13' },
+  { src: 'MPHU/Media/14.png', alt: 'Galeri 14' },
+  { src: 'MPHU/Media/15.png', alt: 'Galeri 15' },
+  { src: 'MPHU/Media/16.png', alt: 'Galeri 16' },
+  { src: 'MPHU/Media/17.png', alt: 'Galeri 17' },
+  { src: 'MPHU/Media/18.png', alt: 'Galeri 18' },
+  { src: 'MPHU/Media/19.png', alt: 'Galeri 19' },
+  { src: 'MPHU/Media/20.png', alt: 'Galeri 20' },
 ]
 
 const TESTIMONIALS = [
@@ -373,9 +385,7 @@ function page() {
                     </div>
                 </div>
             </div>
-            <div className="animate-pulse duration-800  bg-green-600 flex justify-center p-2 py-6">
-              <h2 className="text-2xl text-white font-bold font-sans">PENGIKTIRAFAN OLEH <span className="text-yellow-500">MQA</span></h2>
-            </div>
+            
             <div>
               <Formblastingdhumyganeral/>
             </div>
@@ -385,8 +395,8 @@ function page() {
       <div className="bg-white flex justify-center ">
       <Image
           className=""
-          src="/dipdhumy5.png"
-          alt="dipdhumy5"
+          src="/LANDING PAGE.png"
+          alt="LANDING PAGE"
           width="800"
           height="80"
           style={{
