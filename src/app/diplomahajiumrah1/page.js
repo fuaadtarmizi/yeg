@@ -12,7 +12,7 @@ function page() {
       <div className=" flex justify-center">
       <Image
           className="w-full"
-          src="MPHU/MPHU LANDING PAGE.jpg.jpeg"
+          src="MPHU\LANDING PAGE-01.jpeg"
           alt="MPHU LANDING PAGE"
           width="1500"
           height="80"
@@ -25,16 +25,18 @@ function page() {
         <MarqueeBanner />   {}
 
     <video
-     src="https://drive.google.com/file/d/18Wg3EHD_4WiiOs_EcORRpQXqOcWDXqgG/view?usp=drive_link"
+     src="https://drive.google.com/file/d/18Wg3EHD_4WiiOs_EcORRpQXqOcWDXqgG/view?usp=sharing"
     controls
      className="w-screen h-[600px] object-cover"
    />
+   <MarqueeBanner />   {}
+
 
       <div className="bg-white py-2 md:py-3 lg:py-6"></div>
       <div className="bg-white flex justify-center ">
       <Image
           className="w-full"
-          src="MPHU/MPHU LANDING PAGE 2.jpg.jpeg"
+          src="MPHU/LANDING PAGE-02.jpg.jpeg"
           alt="MPHU LANDING PAGE 2"
           width="1500"
           height="80"
