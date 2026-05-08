@@ -4,6 +4,62 @@ import Formblastingdhumyganeral from '@/components/Formblastingdhumy2'
 import MarqueeBanner from '@/components/MarqueenBanner'
 import ReactPlayer from 'react-player'
 
+
+// Swiper
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+import 'swiper/css/effect-fade'
+
+const GALLERY_IMAGES = [
+  { src: '/alumni1.jpg', alt: 'Galeri 1', caption: 'Majlis Graduasi' },
+  { src: '/alumni2.jpg', alt: 'Galeri 2', caption: 'Sesi Pembelajaran' },
+  { src: '/alumni3.jpg', alt: 'Galeri 3', caption: 'Aktiviti Kumpulan' },
+  { src: '/alumni4.jpg', alt: 'Galeri 4', caption: 'Bengkel DHUMY' },
+  { src: '/alumni5.jpg', alt: 'Galeri 5', caption: 'Sijil Penyertaan' },
+  { src: '/alumni1.jpg', alt: 'Galeri 6', caption: 'Program Intensif' },
+  { src: '/alumni2.jpg', alt: 'Galeri 7', caption: 'Kelas Praktikal' },
+  { src: '/alumni3.jpg', alt: 'Galeri 8', caption: 'Hari Terbuka' },
+]
+function PhotoGallery() {
+  const [selectedImage, setSelectedImage] = useState(null)
+  return (
+    <section className="bg-gray-50 py-10 px-4">
+      <div className="text-center mb-8">
+        <h2 className="text-3xl font-bold text-green-800 mb-2">Galeri Kami</h2>
+        <p className="text-gray-500 text-sm">Kenangan indah bersama alumni DHUMY</p>
+        <div className="mt-3 mx-auto w-16 h-1 bg-green-600 rounded-full" />
+      </div>
+      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+        {GALLERY_IMAGES.map((img, index) => (
+          <div
+            key={index}
+            className="relative group cursor-pointer overflow-hidden rounded-xl shadow-md aspect-square"
+            onClick={() => setSelectedImage(img)}
+          >
+            <Image
+              src={img.src}
+              alt={img.alt}
+              fill
+              sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+              style={{ objectFit: 'cover' }}
+              className="transition-transform duration-500 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-green-900 bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-end">
+              <p className="text-white text-xs font-semibold px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {img.caption}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <GalleryModal image={selectedImage} onClose={() => setSelectedImage(null)} />
+    </section>
+  )
+}
+
 function page() {
   return (
     <div>
@@ -24,11 +80,24 @@ function page() {
      
         <MarqueeBanner />   {}
 
-    <video
-     src="https://drive.google.com/file/d/18Wg3EHD_4WiiOs_EcORRpQXqOcWDXqgG/view?usp=sharing"
-    controls
-     className="w-screen h-[600px] object-cover"
-   />
+   
+          <iframe
+            src="https://drive.google.com/file/d/18Wg3EHD_4WiiOs_EcORRpQXqOcWDXqgG/preview"
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              border: 'none',
+              borderRadius: '16px',
+              boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
+            }}
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            title="Video DHUMY"
+            loading="lazy"
+          />
    <MarqueeBanner />   {}
 
 
@@ -238,6 +307,8 @@ function page() {
             <div>
               <Formblastingdhumyganeral/>
             </div>
+            {/* ── PHOTO GALLERY ───────────────────────────────────── */}
+      <PhotoGallery />
             <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
       <div className="bg-white flex justify-center ">
       <Image
