@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function RootLayout({ children }) {
   const pathname = usePathname()
 
-  const hideLayoutPaths = ['/-keep1-/qraviation']
+  const hideLayoutPaths = ['/-keep1-/qraviation', '/MPHU-Sel']
 
   const shouldHideLayout = hideLayoutPaths.includes(pathname)
 
