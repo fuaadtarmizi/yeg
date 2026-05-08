@@ -219,8 +219,8 @@ function page() {
                     </div>
                      <Image
                     className="w-10 h-10 rounded-full bg-slate-300 flex justify-center items-center"
-                        src="/alumni1.jpg"
-                        alt="alumni1"
+                        src="MPHU/Alumni MPHU/FBI Convo.png"
+                        alt="FBI Convo"
                         width="500"
                         height="500"
                         style={{
@@ -228,7 +228,7 @@ function page() {
                         }}
                     />
                     <div className="flex justify-center py-3">
-                        <p className="text-center">Pilih musuh dengan bijak dan jadikan ia menjadi semangat yang baik untuk perjalanan hidup anda</p>
+                        <p className="text-center">Sekarang menyambung Pengajian lebih tinggi di dalam Fakulti Pnegurusan Haji & Umrah</p>
                         
                     </div>
                     <div className="py-6"></div>
@@ -246,8 +246,8 @@ function page() {
                    
                     </div>
                     <div className="grid">
-                        <h3 className="text-base font-medium">Rabieatul Adawiyah</h3>
-                        <p className="text-xs font-light text-slate-500">DHUMY</p>
+                        <h3 className="text-base font-medium">Faizal Ismail</h3>
+                        <p className="text-xs font-light text-slate-500">FPHU</p>
                         </div>
                     </div>
                 </div>
@@ -280,7 +280,7 @@ function page() {
                     />
                     <div className="grid">
                         <h3 className="text-base font-medium">Saidatul Aishah</h3>
-                        <p className="text-xs font-light text-slate-500">DHUMY</p>
+                        <p className="text-xs font-light text-slate-500">Alumni FPHU</p>
                         </div>
                     </div>
                 </div>
@@ -313,7 +313,7 @@ function page() {
                     />
                     <div className="grid">
                         <h3 className="text-base font-medium">Rezza Hussaini</h3>
-                        <p className="text-xs font-light text-slate-500">DHUMY</p>
+                        <p className="text-xs font-light text-slate-500">Alumni FPHU</p>
                         </div>
                     </div>
                 </div>
@@ -347,7 +347,7 @@ function page() {
                     />
                     <div className="grid">
                         <h3 className="text-base font-medium">Muhammad Syimir</h3>
-                        <p className="text-xs font-light text-slate-500">DHUMY</p>
+                        <p className="text-xs font-light text-slate-500">Alumni FPHU</p>
                         
                         </div>
                     </div>
@@ -380,7 +380,7 @@ function page() {
                     />
                     <div className="grid">
                         <h3 className="text-base font-medium">Ismail Sharudin</h3>
-                        <p className="text-xs font-light text-slate-500">DHUMY</p>
+                        <p className="text-xs font-light text-slate-500">Alumni FPHU</p>
                         </div>
                     </div>
                 </div>
