@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Formblastingdhumyganeral from '@/components/Formblastingdhumy2'
 import MarqueeBanner from '@/components/MarqueenBanner'
+import ReactPlayer from 'react-player'
 
 function page() {
   return (
@@ -23,14 +24,11 @@ function page() {
      
         <MarqueeBanner />   {}
 
-    <Image
-         src="https://drive.google.com/file/d/18Wg3EHD_4WiiOs_EcORRpQXqOcWDXqgG/view?usp=drive_link"
-        alt="Google Drive Image"
-        width={1920}   // widescreen width
-        height={1080}  // widescreen height
-        className="w-screen object-cover"
-        priority
-    />
+    <video
+     src="https://drive.google.com/file/d/18Wg3EHD_4WiiOs_EcORRpQXqOcWDXqgG/view?usp=drive_link"
+    controls
+     className="w-screen h-[600px] object-cover"
+   />
 
       <div className="bg-white py-2 md:py-3 lg:py-6"></div>
       <div className="bg-white flex justify-center ">
