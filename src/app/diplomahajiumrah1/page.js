@@ -395,7 +395,7 @@ function page() {
       <div className="bg-white flex justify-center ">
       <Image
           className=""
-          src="MPHU/Alumni MPHU/LANDING PAGE.png"
+          src="MPHU/LANDING PAGE.png"
           alt="LANDING PAGE"
           width="800"
           height="80"
