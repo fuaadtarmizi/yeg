@@ -70,29 +70,10 @@ function PhotoGallery() {
                 className="relative group cursor-pointer overflow-hidden rounded-xl shadow-md aspect-square h-64"
                 onClick={() => setSelectedImage(img)}
               >
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  sizes="25vw"
-                  style={{ objectFit: 'cover' }}
-                  className="transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-green-900 bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-end">
-                  <p className="text-white text-xs font-semibold px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    {img.caption}
-                  </p>
-                </div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
-        <button className="gallery-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-green-600 hover:bg-green-700 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors">
-          ‹
-        </button>
-        <button className="gallery-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-green-600 hover:bg-green-700 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors">
-          ›
-        </button>
       </div>
       <GalleryModal image={selectedImage} onClose={() => setSelectedImage(null)} />
     </section>
@@ -120,19 +101,18 @@ function page() {
      
         <MarqueeBanner />   {}
 
-  <div
+        <div
           className="w-full"
           style={{ position: 'relative', paddingBottom: '56.25%', height: 0, maxWidth: '1500px' }}
         >
           <iframe
             src="https://drive.google.com/file/d/18Wg3EHD_4WiiOs_EcORRpQXqOcWDXqgG/preview"
             style={{
-              position: 'absolute',
+              position: 'center',
               top: 0,
               left: 0,
               width: '100%',
               height: '100%',
-              boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
             }}
             allow="autoplay; encrypted-media"
             allowFullScreen
@@ -140,7 +120,8 @@ function page() {
             loading="lazy"
           />
         </div>
-   <MarqueeBanner />   {}
+
+         <MarqueeBanner />   {}
 
 
       <div className="bg-white py-2 md:py-3 lg:py-6"></div>
@@ -152,7 +133,7 @@ function page() {
           width="1500"
           height="80"
           style={{
-            objectFit:"contain",
+            objectFit:"fill",
           }}
         />
       </div>
