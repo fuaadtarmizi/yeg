@@ -91,10 +91,10 @@ function PhotoGallery() {
   return (
     <section className="bg-gray-50 py-10 px-4">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-green-800 mb-2">
+        <h2 className="text-3xl font-bold text-yellow-800 mb-2">
           GALERI MEDIA DAN AKTIVITI PELAJAR
         </h2>
-        <div className="mt-3 mx-auto w-16 h-1 bg-green-600 rounded-full" />
+        <div className="mt-3 mx-auto w-16 h-1 bg-yellow-600 rounded-full" />
       </div>
       <div className="max-w-6xl mx-auto relative">
         <Swiper
@@ -126,7 +126,7 @@ function PhotoGallery() {
                   style={{ objectFit: 'cover' }}
                   className="transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-green-900 bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-end">
+                <div className="absolute inset-0 bg-yellow-900 bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-end">
                   <p className="text-white text-sm font-semibold px-4 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     {img.caption}
                   </p>
