@@ -41,31 +41,58 @@ function PhotoGallery() {
   return (
     <section className="bg-gray-50 py-10 px-4">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-green-800 mb-2">GALERI MEDIA DAN AKVITI PELAJAR</h2>
+        <h2 className="text-3xl font-bold text-green-800 mb-2">
+          GALERI MEDIA DAN AKTIVITI PELAJAR
+        </h2>
         <div className="mt-3 mx-auto w-16 h-1 bg-green-600 rounded-full" />
       </div>
-      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-5 md:grid-cols-5 gap-3">
-        {GALLERY_IMAGES.map((img, index) => (
-          <div
-            key={index}
-            className="relative group cursor-pointer overflow-hidden rounded-xl shadow-md aspect-square"
-            onClick={() => setSelectedImage(img)}
-          >
-            <Image
-              src={img.src}
-              alt={img.alt}
-              fill
-              sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
-              style={{ objectFit: 'cover' }}
-              className="transition-transform duration-500 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-green-900 bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-end">
-              <p className="text-white text-xs font-semibold px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                {img.caption}
-              </p>
-            </div>
-          </div>
-        ))}
+      <div className="max-w-6xl mx-auto">
+        <Swiper
+          modules={[Autoplay, Pagination, Navigation]}
+          slidesPerView={4}
+          spaceBetween={12}
+          navigation={{
+            nextEl: '.gallery-next',
+            prevEl: '.gallery-prev',
+          }}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 5000 }}
+          breakpoints={{
+            320: { slidesPerView: 1, spaceBetween: 10 },
+            640: { slidesPerView: 2, spaceBetween: 12 },
+            1024: { slidesPerView: 4, spaceBetween: 12 },
+          }}
+          className="relative"
+        >
+          {GALLERY_IMAGES.map((img, index) => (
+            <SwiperSlide key={index}>
+              <div
+                className="relative group cursor-pointer overflow-hidden rounded-xl shadow-md aspect-square h-64"
+                onClick={() => setSelectedImage(img)}
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  sizes="25vw"
+                  style={{ objectFit: 'cover' }}
+                  className="transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-green-900 bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-end">
+                  <p className="text-white text-xs font-semibold px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {img.caption}
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <button className="gallery-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-green-600 hover:bg-green-700 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors">
+          ‹
+        </button>
+        <button className="gallery-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-green-600 hover:bg-green-700 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors">
+          ›
+        </button>
       </div>
       <GalleryModal image={selectedImage} onClose={() => setSelectedImage(null)} />
     </section>
