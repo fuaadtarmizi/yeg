@@ -138,7 +138,7 @@ export default function App() {
       <div className="lg:w-1/3 ">
       <form className=" backdrop-blur-lg w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
       <div className="py-6 text-black text-3xl font-bold">
-             <h>Course Enquiry</h>
+             <h>Sila isi borang di bawah untuk pegawai kami hubungi</h>
          </div>
          
             <div className=" grid space-y-4">
@@ -185,12 +185,12 @@ export default function App() {
   {isOpen && (
     <div className="w-full right-0 mt-2 origin-top-right bg-white border border-gray-200 divide-y rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
       
-      <div className="pl-6 text-sm bg-yellow-500">
+      <div className="pl-6 text-sm bg-white">
         <p
-          className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+          className="px-4 py-2 cursor-pointer hover:bg-white-400 rounded-md"
           onClick={() => handleItemClick("Diploma + Degree")}
         >
-          Diploma + Degree
+         DIPLOMA + DEGREE PENGURUSAN HAJI & UMRAH (MQA/FA 11377 | MQA /PA 18797)
         </p>
       </div>
 
@@ -199,25 +199,25 @@ export default function App() {
           className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
           onClick={() => handleItemClick("Sijil Profesional")}
         >
-          Sijil Profesional
+            Sijil Profesional Pengurusan Haji & Umrah (SPHU) (MQA/PA 18798)
         </p>
       </div>
 
-      <div className="pl-6 text-sm bg-gray-400">
+      <div className="pl-6 text-sm bg-white-400">
         <p
           className="px-4 py-2 cursor-pointer hover:bg-gray-500 rounded-md"
           onClick={() => handleItemClick("Master")}
         >
-          Master
+          IJAZAH PENGURUSAN HAJI & UMRAH (MQA/PA 18799)
         </p>
       </div>
 
-      <div className="pl-6 text-sm bg-gray-300">
+      <div className="pl-6 text-sm bg-white">
         <p
           className="px-4 py-2 cursor-pointer hover:bg-gray-500 rounded-md"
           onClick={() => handleItemClick("PhD")}
         >
-          PhD
+          PhD PENGURUSAN HAJI & UMRAH (MQA/PA 18800)
         </p>
       </div>
     </div>
