@@ -25,6 +25,44 @@ const GALLERY_IMAGES = [
   { src: 'MPHU/Media/8.png', alt: 'Galeri 8', caption: 'Hari Terbuka' },
 ]
 
+const TESTIMONIALS = [
+  {
+    image: '/alumni1.jpg',
+    avatar: '/alumni1.jpg',
+    name: 'Rabieatul Adawiyah',
+    role: 'DHUMY',
+    quote: 'Pilih musuh dengan bijak dan jadikan ia menjadi semangat yang baik untuk perjalanan hidup anda.',
+  },
+  {
+    image: '/alumni2.jpg',
+    avatar: '/alumni2.jpg',
+    name: 'Saidatul Aishah',
+    role: 'DHUMY',
+    quote: 'Ambil hanya 5 mata untuk menjadi orang yang berjaya, sebab selebihnya saya tidak ingat...',
+  },
+  {
+    image: '/alumni3.jpg',
+    avatar: '/alumni3.jpg',
+    name: 'Rezza Hussaini',
+    role: 'DHUMY',
+    quote: 'Percaya pada diri sendiri bahawa anda boleh melakukan apa sahaja yang anda takuti dengan bijak.',
+  },
+  {
+    image: '/alumni4.jpg',
+    avatar: '/alumni4.jpg',
+    name: 'Muhammad Syimir',
+    role: 'DHUMY',
+    quote: 'Semalam adalah sejarah, hari ini adalah hadiah dan esok adalah misteri. Terima kasih YEG Akademi.',
+  },
+  {
+    image: '/alumni5.jpg',
+    avatar: '/alumni5.jpg',
+    name: 'Ismail Sharudin',
+    role: 'DHUMY',
+    quote: 'Jangan percaya sesiapa selain Allah adalah ayat terbaik untuk tidak kemurungan terhadap pasangan.',
+  },
+]
+
 function GalleryModal({ image, onClose }) {
   if (!image) return null
   return (
