@@ -16,13 +16,13 @@ import 'swiper/css/effect-fade'
 
 const GALLERY_IMAGES = [
   { src: 'MPHU/Media/1.png', alt: 'Galeri 1', caption: 'Majlis Graduasi' },
-  { src: 'MPHU/Media/2.jpg', alt: 'Galeri 2', caption: 'Sesi Pembelajaran' },
-  { src: 'MPHU/Media/3.jpg', alt: 'Galeri 3', caption: 'Aktiviti Kumpulan' },
-  { src: 'MPHU/Media/4.jpg', alt: 'Galeri 4', caption: 'Bengkel DHUMY' },
-  { src: 'MPHU/Media/5.jpg', alt: 'Galeri 5', caption: 'Sijil Penyertaan' },
-  { src: 'MPHU/Media/6.jpg', alt: 'Galeri 6', caption: 'Program Intensif' },
-  { src: 'MPHU/Media/7.jpg', alt: 'Galeri 7', caption: 'Kelas Praktikal' },
-  { src: 'MPHU/Media/8.jpg', alt: 'Galeri 8', caption: 'Hari Terbuka' },
+  { src: 'MPHU/Media/2.png', alt: 'Galeri 2', caption: 'Sesi Pembelajaran' },
+  { src: 'MPHU/Media/3.png', alt: 'Galeri 3', caption: 'Aktiviti Kumpulan' },
+  { src: 'MPHU/Media/4.png', alt: 'Galeri 4', caption: 'Bengkel DHUMY' },
+  { src: 'MPHU/Media/5.png', alt: 'Galeri 5', caption: 'Sijil Penyertaan' },
+  { src: 'MPHU/Media/6.png', alt: 'Galeri 6', caption: 'Program Intensif' },
+  { src: 'MPHU/Media/7.png', alt: 'Galeri 7', caption: 'Kelas Praktikal' },
+  { src: 'MPHU/Media/8.png', alt: 'Galeri 8', caption: 'Hari Terbuka' },
 ]
 
 function GalleryModal({ image, onClose }) {
@@ -90,10 +90,14 @@ function page() {
           }}
         />
       </div>
+    
      
         <MarqueeBanner />   {}
 
-    <div>
+  <div
+          className="mx-auto"
+          style={{ position: 'relative', paddingBottom: '56.25%', height: 0, maxWidth: '900px' }}
+        >
           <iframe
             src="https://drive.google.com/file/d/18Wg3EHD_4WiiOs_EcORRpQXqOcWDXqgG/preview"
             style={{
@@ -111,7 +115,7 @@ function page() {
             title="Video DHUMY"
             loading="lazy"
           />
-          </div>
+        </div>
    <MarqueeBanner />   {}
 
 
