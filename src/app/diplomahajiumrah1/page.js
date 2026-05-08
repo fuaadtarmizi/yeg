@@ -28,9 +28,9 @@ const GALLERY_IMAGES = [
 function GalleryModal({ image, onClose }) {
   if (!image) return null
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" onClick={onClose}>
+    <div className="w-full h-full fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" onClick={onClose}>
       <div className="relative" onClick={(e) => e.stopPropagation()}>
-        <Image src={image.src} alt={image.alt} width={500} height={500} style={{ objectFit: 'contain' }} />
+        <Image src={image.src} alt={image.alt} width={700} height={588} style={{ objectFit: 'fill' }} />
         <button onClick={onClose} className="absolute top-2 right-2 bg-white rounded-full p-2">×</button>
       </div>
     </div>
@@ -41,11 +41,10 @@ function PhotoGallery() {
   return (
     <section className="bg-gray-50 py-10 px-4">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-green-800 mb-2">Galeri Kami</h2>
-        <p className="text-gray-500 text-sm">Kenangan indah bersama alumni DHUMY</p>
+        <h2 className="text-3xl font-bold text-green-800 mb-2">GALERI MEDIA DAN AKVITI PELAJAR</h2>
         <div className="mt-3 mx-auto w-16 h-1 bg-green-600 rounded-full" />
       </div>
-      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-5 md:grid-cols-5 gap-3">
         {GALLERY_IMAGES.map((img, index) => (
           <div
             key={index}
@@ -95,8 +94,8 @@ function page() {
         <MarqueeBanner />   {}
 
   <div
-          className="mx-auto"
-          style={{ position: 'relative', paddingBottom: '56.25%', height: 0, maxWidth: '900px' }}
+          className="w-full"
+          style={{ position: 'relative', paddingBottom: '56.25%', height: 0, maxWidth: '1500px' }}
         >
           <iframe
             src="https://drive.google.com/file/d/18Wg3EHD_4WiiOs_EcORRpQXqOcWDXqgG/preview"
@@ -106,8 +105,6 @@ function page() {
               left: 0,
               width: '100%',
               height: '100%',
-              border: 'none',
-              borderRadius: '16px',
               boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
             }}
             allow="autoplay; encrypted-media"
