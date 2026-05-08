@@ -222,10 +222,10 @@ function page() {
                     className="w-10 h-10 rounded-full bg-slate-300 flex justify-center items-center"
                         src="/alumni2.jpg"
                         alt="alumni2"
-                        width="200"
-                        height="200"
+                        width="70%"
+                        height="auto"
                         style={{
-                        objectFit:"cover",
+                        objectFit:"contain",
                         }}
                     />
                     <div className="grid">
