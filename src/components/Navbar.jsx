@@ -42,7 +42,7 @@ function Navbar() {
                   <a className="text-md font-light ml-2">Fakulti Pengurusan Haji & Umrah (FPHU)</a></div>
                   </MenubarSubTrigger>
                   <MenubarSubContent>
-                    <MenubarItem><a className="text-md font-light ml-2" href="/diplomahajiumrah1">Diploma + Degree Hajj & Umrah Management</a></MenubarItem>
+                    <MenubarItem><a className="text-md font-light ml-2" href="/MPHU">Diploma + Degree Hajj & Umrah Management</a></MenubarItem>
                     <MenubarItem><a className="text-md font-light ml-2" href="https://e-dhumy.com/masterhajiumrah">Master Hajj & Umrah Management</a></MenubarItem>
                     <MenubarItem><a className="text-md font-light ml-2" href="/kursuskerjaya/sphu/shum">Profesional Hajj & Umrah Certificate</a></MenubarItem>
                     <MenubarItem><a className="text-md font-light ml-2" href="https://e-dhumy.com/phdhajjumrah">PhD Hajj & Umrah Management</a></MenubarItem>
