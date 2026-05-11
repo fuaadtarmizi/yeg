@@ -16,10 +16,10 @@ import 'swiper/css/navigation'
 const TESTIMONIALS = [
   {
     id: 1,
-    quote: 'Pilih musuh dengan bijak dan jadikan ia menjadi semangat yang baik untuk perjalanan hidup anda',
-    name: 'Rabieatul Adawiyah',
-    role: 'DHUMY',
-    image: '/alumni1.jpg',
+    quote: 'Sekarang : IKON Fakulti Pengurusan Haji & Umrah',
+    name: 'Faizal Ismail (FBI)',
+    role: 'Alumni FPHU',
+    image: 'MPHU/Alumni MPHU/FBI Convo.png',
     stars: 5,
   },
   {
@@ -65,7 +65,9 @@ const GALLERY_IMAGES = [
   { src: 'MPHU/Media/4.png', alt: 'Galeri 4' },
   { src: 'MPHU/Media/5.png', alt: 'Galeri 5' },
   { src: 'MPHU/Media/6.png', alt: 'Galeri 6' },
+   { src: 'MPHU/Media/006.png', alt: 'Galeri 006' },
   { src: 'MPHU/Media/7.png', alt: 'Galeri 7' },
+   { src: 'MPHU/Media/007.png', alt: 'Galeri 007' },
   { src: 'MPHU/Media/8.png', alt: 'Galeri 8' },
   { src: 'MPHU/Media/9.png', alt: 'Galeri 9' },
   { src: 'MPHU/Media/10.png', alt: 'Galeri 10' },
