@@ -1,364 +1,337 @@
 "use client"
-import React, { useState } from 'react';
+import { useState } from "react";
 
-export default function App() {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isOpen1, setIsOpen1] = useState(false);
-    const [isOpen2, setIsOpen2] = useState(false);
-    const [selectedItem, setSelectedItem] = useState(null);
-    const [selectedItem1, setSelectedItem1] = useState(null);
-    const [selectedItem2, setSelectedItem2] = useState(null);
+// List of Malaysian states (change if needed)
+const STATES = [
+  "Johor", "Kedah", "Kelantan", "Kuala Lumpur", "Labuan",
+  "Melaka", "Negeri Sembilan", "Pahang", "Penang", "Perak",
+  "Perlis", "Putrajaya", "Sabah", "Sarawak", "Selangor",
+  "Terengganu"
+];
 
+// List of programs (edit these to match your programs)
+const PROGRAMS = [
+  "DIPLOMA + DEGREE PENGURUSAN HAJI & UMRAH (MQA/FA 11377 | MQA /PA 18797)",
+  " IJAZAH PENGURUSAN HAJI & UMRAH (MQA/PA 18799)",
+  "PhD PENGURUSAN HAJI & UMRAH (MQA/PA 18800)",
+  "Sijil Profesional Pengurusan Haji & Umrah (SPHU) (MQA/PA 18798)",
+];
 
-    
-    
+export default function RegistrationForm() {
+  // Form field values
+  const [formData, setFormData] = useState({
+    Name: "",
+    NumberPhone: "",
+    Email: "",
+    Age: "",
+    Program: "",
+    ParentsName: "",
+    ParentsPhone: "",
+    State: ""
+  });
 
+  // Track loading and success/error status
+  const [status, setStatus] = useState("idle"); // idle | loading | success | error
+  const [errorMessage, setErrorMessage] = useState("");
 
-
-    const [alertMessage, setAlertMessage] = useState('');
-    const [emailError, setEmailError] = useState('');
-
-  function Submit(e) {
-
-    const emailValue = e.target.elements.Email.value;
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-
-    if (!emailRegex.test(emailValue)) {
-      setEmailError('Email must be in a valid format.');
-      alert('Email is incorrect!');
-      return;
-    }
-  
-
-    
-
-
-    const formEle = document.querySelector("form");
-    const formDatab = new FormData(formEle);
-
-    formDatab.append("Program", selectedItem);
-    formDatab.append("Media", selectedItem1);
-    formDatab.append("State", selectedItem2);
-
-fetch("https://script.google.com/macros/s/AKfycbx1PzONNROiUoCBzinvzXJzTMs-eWo7GDozzTgh2X7kbbX4rbxOiNAyFteM-HbyIlbt/exec", 
-   {
-        method: "POST",
-        body: formDatab
-      }
-      
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-
-      
-
-      setAlertMessage('Form submitted successfully!');
-      alert('Penghantaran Berjaya!, Pegawai kami akan menghubungi anda secepat mungkin');
-
+  // Update field when user types
+  function handleChange(e) {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   }
 
+  // Submit form to Google Sheets
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setStatus("loading");
+    setErrorMessage("");
 
+    // The URL from your Google Apps Script deployment
+    // Make sure you set this in your .env.local file!
+    const SCRIPT_URL = process.env.NEXT_PUBLIC_SCRIPT_URL;
 
-    
-  // program yeg
-    const toggleDropdown = () => {
-      setIsOpen(!isOpen);
-    };
-  // media
-    const toggleDropdown1 = () => {
-      setIsOpen1(!isOpen1);
-    };
-  //state  
-  const toggleDropdown2 = () => {
-    setIsOpen2(!isOpen2);
-  };
+    if (!SCRIPT_URL) {
+      setStatus("error");
+      setErrorMessage("Missing NEXT_PUBLIC_SCRIPT_URL in .env.local file");
+      return;
+    }
 
+    try {
+      const response = await fetch(SCRIPT_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+      });
 
- 
+      const result = await response.json();
 
-    // program yeg
-    const handleItemClick = (item) => {
-        setSelectedItem(item);
-        setIsOpen(false);
-      };
-
-    // media 
-      const handleItemClick1 = (item) => {
-        setSelectedItem1(item);
-        setIsOpen1(false);
-      };
-    //state
-    const handleItemClick2 = (item) => {
-      setSelectedItem2(item);
-      setIsOpen2(false);
-    };  
-
-    
-
-        
-      
-    
+      if (result.result === "success") {
+        setStatus("success");
+        // Clear the form after success
+        setFormData({
+          Name: "", NumberPhone: "", Email: "", Age: "",
+          Program: "", ParentsName: "", ParentsPhone: "", State: ""
+        });
+      } else {
+        setStatus("error");
+        setErrorMessage(result.message || "Something went wrong");
+      }
+    } catch (err) {
+      setStatus("error");
+      setErrorMessage("Could not connect. Check your internet or Script URL.");
+    }
+  }
 
   return (
-    <main>
-      <div className="bg-white">
-        <div className="hidden lg:block">j</div>
+    <div style={styles.wrapper}>
+      <div style={styles.card}>
+        <h1 style={styles.title}>Registration Form</h1>
+        <p style={styles.subtitle}>Fill in all fields below to register</p>
 
-        <div className="p-4 lg:flex justify-center">
-          <div className="lg:w-1/3">
-            <form className="backdrop-blur-lg w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
-              <div className="py-6 text-black text-3xl font-bold">
-              </div>
-
-              <div className="grid space-y-4">
-                <div className="grid rounded-md space-y-1">
-                  {/* ✅ FIX 4: Replaced invalid <h> tags with <label> */}
-                  <label className="">Nama Pelajar</label>
-                  <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="Name" type="text" />
-                </div>
-                <div className="grid space-y-1">
-                  <label>Nombor Telefon Pelajar</label>
-                  <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="NumberPhone" type="text" />
-                </div>
-              </div>
-
-              <div className="grid space-y-4">
-                <div className="grid rounded-md space-y-1">
-                  <label>Email</label>
-                  <input
-                    className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md"
-                    placeholder=""
-                    name="Email"
-                    type="text"
-                  />
-                </div>
-                <div className="grid space-y-1">
-                  <label>Umur</label>
-                  <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="Age" type="text" />
-                </div>
-              </div>
-
-              <div className="relative inline-block text-left">
-                <div>Pilihan Program</div>
-                <button
-                  onClick={toggleDropdown}
-                  name="Program"
-                  type="button"
-                  className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
-                >
-                  {selectedItem ? selectedItem : "Select Program"}
-                </button>
-
-                {isOpen && (
-                  <div className="w-full right-0 mt-2 origin-top-right bg-white border border-gray-200 divide-y rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
-
-                    <div className="pl-6 text-sm bg-white">
-                      <p
-                        className="px-4 py-2 cursor-pointer hover:bg-white-400 rounded-md"
-                        onClick={() => handleItemClick("Diploma + Degree")}
-                      >
-                        DIPLOMA + DEGREE PENGURUSAN HAJI & UMRAH (MQA/FA 11377 | MQA /PA 18797)
-                      </p>
-                    </div>
-
-                    <div className="pl-6 text-sm bg-slate-600 text-white">
-                      <p
-                        className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-                        onClick={() => handleItemClick("Sijil Profesional")}
-                      >
-                        Sijil Profesional Pengurusan Haji & Umrah (SPHU) (MQA/PA 18798)
-                      </p>
-                    </div>
-
-                    <div className="pl-6 text-sm bg-white-400">
-                      <p
-                        className="px-4 py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-                        onClick={() => handleItemClick("Master")}
-                      >
-                        IJAZAH PENGURUSAN HAJI & UMRAH (MQA/PA 18799)
-                      </p>
-                    </div>
-
-                    <div className="pl-6 text-sm bg-white">
-                      <p
-                        className="px-4 py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-                        onClick={() => handleItemClick("PhD")}
-                      >
-                        PhD PENGURUSAN HAJI & UMRAH (MQA/PA 18800)
-                      </p>
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              <div className="grid space-y-1">
-                <label>Nama Penjaga</label>
-                <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentName" type="text" />
-              </div>
-
-              <div className="grid space-y-1">
-                <label>Nombor Penjaga</label>
-                <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentNumber" type="text" />
-              </div>
-
-             <div className="grid  text-left">
-        <p className="py-1 text-white">Negeri</p>
-      <button
-        onClick={toggleDropdown2} 
-        name="Negeri"
-        type="button"
-        className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full px-8 py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
-      >
-        {selectedItem2 ? selectedItem2 : "Select State"}
-      </button>
-
-      {isOpen2 && (
-        <div className="w-full right-0 mt-2  origin-top-right bg-white border border-gray-200 divide-y  rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
- 
-          <div className=" text-sm bg-yellow-500">
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Johor")}
-          >
-            Johor
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Kedah")}
-          >
-            Kedah
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Kelantan")}
-          >
-            Kelantan
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Kuala Lumpur")}
-          >
-            Kuala Lumpur
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Labuan")}
-          >
-            Labuan
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Melaka")}
-          >
-            Melaka
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Negeri Sembilan")}
-          >
-            Negeri Sembilan
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Pahang")}
-          >
-            Pahang
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Perak")}
-          >
-            Perak
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Perlis")}
-          >
-            Perlis
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Pulau Pinang")}
-          >
-            Pulau Pinang
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Putrajaya")}
-          >
-            Putrajaya
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Sabah")}
-          >
-            Sabah
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Serawak")}
-          >
-            Serawak
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Selangor")}
-          >
-            Selangor
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Terengganu")}
-          >
-            Terengganu
-          </p>
-          </div>     
-        </div>
-      )}
-    </div>
-
-              <div className="pt-4">
-                <button className="px-6 py-2 border rounded-md bg-yellow-500 hover:bg-yellow-600 hover:shadow-md duration-300" name="Submit" type="submit">Submit</button>
-              </div>
-
-            </form>
-
-            {emailError && (
-              <div className="alert">
-                {emailError}
-              </div>
-            )}
-
-            {alertMessage && (
-              <div className="alert">
-                {alertMessage}
-              </div>
-            )}
+        {/* Success message */}
+        {status === "success" && (
+          <div style={styles.successBox}>
+            ✅ Registration submitted successfully! Check your Google Sheet.
           </div>
-        </div>
+        )}
+
+        {/* Error message */}
+        {status === "error" && (
+          <div style={styles.errorBox}>
+            ❌ Error: {errorMessage}
+          </div>
+        )}
+
+        <form onSubmit={handleSubmit}>
+
+          {/* ---- STUDENT DETAILS ---- */}
+          <h2 style={styles.sectionTitle}>Student Details</h2>
+
+          <div style={styles.field}>
+            <label style={styles.label}>Nama Penuh *</label>
+            <input
+              style={styles.input}
+              type="text"
+              name="Name"
+              value={formData.Name}
+              onChange={handleChange}
+              placeholder="e.g. Ahmad bin Ali"
+              required
+            />
+          </div>
+
+          <div style={styles.field}>
+            <label style={styles.label}>Nombor Telefon *</label>
+            <input
+              style={styles.input}
+              type="tel"
+              name="NumberPhone"
+              value={formData.NumberPhone}
+              onChange={handleChange}
+              placeholder="e.g. 0123456789"
+              required
+            />
+          </div>
+
+          <div style={styles.field}>
+            <label style={styles.label}>E-mail *</label>
+            <input
+              style={styles.input}
+              type="email"
+              name="Email"
+              value={formData.Email}
+              onChange={handleChange}
+              placeholder="e.g. ahmad@email.com"
+              required
+            />
+          </div>
+
+          <div style={styles.field}>
+            <label style={styles.label}>Umur *</label>
+            <input
+              style={styles.input}
+              type="number"
+              name="Age"
+              value={formData.Age}
+              onChange={handleChange}
+              placeholder="e.g. 18"
+              min="1"
+              max="100"
+              required
+            />
+          </div>
+
+        
+
+          {/* ---- PARENT DETAILS ---- */}
+    
+          <div style={styles.field}>
+            <label style={styles.label}>Nama Waris / Penjaga *</label>
+            <input
+              style={styles.input}
+              type="text"
+              name="ParentName"
+              value={formData.ParentName}
+              onChange={handleChange}
+              placeholder="e.g. Ali bin Abu"
+              required
+            />
+          </div>
+
+          <div style={styles.field}>
+            <label style={styles.label}>Nombor Telefon Waris / Penjaga *</label>
+            <input
+              style={styles.input}
+              type="tel"
+              name="ParentNumber"
+              value={formData.ParentNumber}
+              onChange={handleChange}
+              placeholder="e.g. 0129876543"
+              required
+            />
+          </div>
+           <div style={styles.field}>
+            <label style={styles.label}>Program *</label>
+            <select
+              style={styles.input}
+              name="Program"
+              value={formData.Program}
+              onChange={handleChange}
+              required
+            >
+              <option value="">-- Pilih Program --</option>
+              {PROGRAMS.map((prog) => (
+                <option key={prog} value={prog}>{prog}</option>
+              ))}
+            </select>
+          </div>
+
+           <div style={styles.field}>
+            <label style={styles.label}>Pilih Negeri*</label>
+            <select
+              style={styles.input}
+              name="State"
+              value={formData.State}
+              onChange={handleChange}
+              required
+            >
+              <option value="">-- Pilih Negeri --</option>
+              {STATES.map((s) => (
+                <option key={s} value={s}>{s}</option>
+              ))}
+            </select>
+          </div>
+
+          {/* Submit button */}
+          <button
+            type="submit"
+            style={status === "loading" ? styles.buttonLoading : styles.button}
+            disabled={status === "loading"}
+          >
+            {status === "loading" ? "Submitting..." : "Submit Registration"}
+          </button>
+
+        </form>
       </div>
-
-      {/* Success Modal */}
-      {showSuccessModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-4">
-            <h2 className="text-2xl font-bold text-green-600 mb-4">Berjaya!</h2>
-            <p className="text-gray-700 mb-4">Penghantaran Berjaya! Pegawai kami akan menghubungi anda secepat mungkin.</p>
-            <button
-              onClick={() => setShowSuccessModal(false)}
-              className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded"
-            >
-              Tutup
-            </button>
-          </div>
-        </div>
-      )}
-
-      {/* Error Modal */}
-      {showErrorModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-4">
-            <h2 className="text-2xl font-bold text-red-600 mb-4">Ralat!</h2>
-            <p className="text-gray-700 mb-4">Penghantaran gagal. Sila cuba lagi.</p>
-            <button
-              onClick={() => setShowErrorModal(false)}
-              className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded"
-            >
-              Tutup
-            </button>
-          </div>
-        </div>
-      )}
-    </main>
+    </div>
   );
 }
+
+// ---- Basic styles ----
+const styles = {
+  wrapper: {
+    minHeight: "100vh",
+    backgroundColor: "#f5f5f5",
+    display: "flex",
+    justifyContent: "center",
+    padding: "2rem 1rem"
+  },
+  card: {
+    backgroundColor: "#ffffff",
+    borderRadius: "12px",
+    padding: "2rem",
+    width: "100%",
+    maxWidth: "560px",
+    boxShadow: "0 2px 12px rgba(0,0,0,0.08)",
+    height: "fit-content"
+  },
+  title: {
+    fontSize: "24px",
+    fontWeight: "600",
+    marginBottom: "4px",
+    color: "#111"
+  },
+  subtitle: {
+    fontSize: "14px",
+    color: "#666",
+    marginBottom: "1.5rem"
+  },
+  sectionTitle: {
+    fontSize: "16px",
+    fontWeight: "600",
+    color: "#1D9E75",
+    borderBottom: "1px solid #e5e5e5",
+    paddingBottom: "6px",
+    marginTop: "1.5rem",
+    marginBottom: "1rem"
+  },
+  field: {
+    marginBottom: "1rem"
+  },
+  label: {
+    display: "block",
+    fontSize: "13px",
+    fontWeight: "500",
+    color: "#333",
+    marginBottom: "5px"
+  },
+  input: {
+    width: "100%",
+    padding: "10px 12px",
+    fontSize: "14px",
+    border: "1px solid #ddd",
+    borderRadius: "8px",
+    outline: "none",
+    boxSizing: "border-box",
+    backgroundColor: "#fafafa"
+  },
+  button: {
+    width: "100%",
+    padding: "12px",
+    backgroundColor: "#1D9E75",
+    color: "#fff",
+    fontSize: "15px",
+    fontWeight: "600",
+    border: "none",
+    borderRadius: "8px",
+    cursor: "pointer",
+    marginTop: "1.5rem"
+  },
+  buttonLoading: {
+    width: "100%",
+    padding: "12px",
+    backgroundColor: "#aaa",
+    color: "#fff",
+    fontSize: "15px",
+    fontWeight: "600",
+    border: "none",
+    borderRadius: "8px",
+    cursor: "not-allowed",
+    marginTop: "1.5rem"
+  },
+  successBox: {
+    backgroundColor: "#E1F5EE",
+    color: "#0F6E56",
+    padding: "12px 16px",
+    borderRadius: "8px",
+    fontSize: "14px",
+    marginBottom: "1rem"
+  },
+  errorBox: {
+    backgroundColor: "#FCEBEB",
+    color: "#A32D2D",
+    padding: "12px 16px",
+    borderRadius: "8px",
+    fontSize: "14px",
+    marginBottom: "1rem"
+  }
+};
