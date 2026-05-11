@@ -162,6 +162,7 @@ function page() {
      
         <MarqueeBanner />   {}
 
+
   <div
           className="w-full"
           style={{ position: 'relative', paddingBottom: '56.25%', height: 0, maxWidth: '1500px' }}
@@ -404,13 +405,50 @@ function page() {
       </div>
 
             <div>
+              
+         <h2 className="text-3xl font-bold text-yellow-800 mb-2">
+          SILA ISI BORANG UNTUK PEGAWAI KAMI HUBUNGI
+        </h2>
               <Formblastingdhumyganeral/>
             </div> 
 
+          <div className="bg-white py-8 px-4 text-center">
+  <h2 className="text-3xl font-bold text-yellow-800 mb-6">
+    KLIK LINK / QR UNTUK TEMPAH SLOT MPHU
+  </h2>
 
-      </div>
+  <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+    
+    {/* Clickable Link */}
+    <a
+      href="https://yeg.onpay.my/order/form/tiketmphu2026ftd"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 bg-yellow-600 hover:bg-yellow-700 text-white font-semibold text-lg px-8 py-4 rounded-xl shadow-lg transition-colors duration-200"
+    >
+      <span>Tempah Slot MPHU</span>
+    </a>
+
+
+    {/* Divider */}
+    <div className="text-gray-400 font-semibold text-xl">ATAU</div>
+
+    {/* QR Code */}
+    <div className="flex flex-col items-center gap-2">
+      <img
+        src={`https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://yeg.onpay.my/order/form/tiketmphu2026ftd`}
+        alt="QR Code Tempah Slot MPHU"
+        width={180}
+        height={180}
+        className="rounded-xl shadow-md border-4 border-yellow-600"
+      />
+      <p className="text-sm text-gray-500">Imbas QR untuk tempah</p>
     </div>
-  )
-}
+  </div>
+</div>
+</div>
+</div>
 
-export default page
+    )
+}
+ export default Page;
