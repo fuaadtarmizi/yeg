@@ -50,19 +50,15 @@ export default function RegistrationForm() {
     // The URL from your Google Apps Script deployment
     // Make sure you set this in your . .local file!
     
-    if (!SCRIPT_URL) {
-      setStatus("error");
-      setErrorMessage("Missing NEXT_PUBLIC_SCRIPT_URL in .env.local file");
-      return;
-    }
-
+   
     try {
-      const response = await fetch(SCRIPT_URL, {
+      // ✅ Using no-cors mode to fix CORS error with Google Apps Script
+      await fetch(SCRIPT_URL, {
         method: "POST",
+        mode: "no-cors",   // ← KEY FIX
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
       });
-
       const result = await response.json();
 
       if (result.result === "success") {
