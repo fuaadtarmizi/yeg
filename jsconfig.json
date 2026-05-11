@@ -10,6 +10,7 @@
 
 {
   "compilerOptions": {
+    "ignoreDeprecations": "6.0",               // Silence deprecation warnings for TypeScript 6.0
     "target": "ES6",                           // Specify ECMAScript target version
     "module": "ESNext",                        // Specify module code generation
     "moduleResolution": "Node",                // Specify module resolution strategy
