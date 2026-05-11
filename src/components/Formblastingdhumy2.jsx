@@ -47,8 +47,7 @@ export default function RegistrationForm() {
 
     // The URL from your Google Apps Script deployment
     // Make sure you set this in your . .local file!
-    const SCRIPT_URL = process.env.NEXT_PUBLIC_SCRIPT_URL;
-
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwmnU4Ld80SG1UESi-91YSRd2FisefZMpd4_gvITfQ4AcsMkcVE0r56DUyH8RW0UKW3/exec";
     if (!SCRIPT_URL) {
       setStatus("error");
       setErrorMessage("Missing NEXT_PUBLIC_SCRIPT_URL in .env.local file");
