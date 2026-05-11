@@ -50,18 +50,25 @@ export default function App() {
     }
 
     // Send form-encoded data so Apps Script can read e.parameter
-    const formDatab = new FormData(e.target);
-    formDatab.set('Program', selectedItem);
-    formDatab.set('State', selectedItem2);
-    formDatab.set('Source', 'Selangor');
+   const formEl = e.target.elements;
 
-    fetch(
-      "https://script.google.com/macros/s/AKfycbx1PzONNROiUoCBzinvzXJzTMs-eWo7GDozzTgh2X7kbbX4rbxOiNAyFteM-HbyIlbt/exec",
-      {
-        method: "POST",
-        body: formDatab
-      }
-    )
+const params = new URLSearchParams();
+params.append('Name', formEl.Name.value);
+params.append('NumberPhone', formEl.NumberPhone.value);
+params.append('Email', formEl.Email.value);
+params.append('Age', formEl.Age.value);
+params.append('ParentName', formEl.ParentName.value);
+params.append('ParentNumber', formEl.ParentNumber.value);
+params.append('Program', selectedItem);
+params.append('State', selectedItem2);
+
+
+fetch("https://script.google.com/macros/s/AKfycbx1PzONNROiUoCBzinvzXJzTMs-eWo7GDozzTgh2X7kbbX4rbxOiNAyFteM-HbyIlbt/exec", {
+  method: "POST",
+  headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  body: params.toString()
+})
+    
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
