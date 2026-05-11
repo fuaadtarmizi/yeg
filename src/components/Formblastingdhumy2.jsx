@@ -2,88 +2,108 @@
 import React, { useState } from 'react';
 
 export default function App() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isOpen2, setIsOpen2] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen1, setIsOpen1] = useState(false);
+    const [isOpen2, setIsOpen2] = useState(false);
+    const [selectedItem, setSelectedItem] = useState(null);
+    const [selectedItem1, setSelectedItem1] = useState(null);
+    const [selectedItem2, setSelectedItem2] = useState(null);
 
-  const [selectedItem, setSelectedItem] = useState(null);
-  const [selectedItem2, setSelectedItem2] = useState(null);
 
-  const [alertMessage, setAlertMessage] = useState('');
-  const [emailError, setEmailError] = useState('');
-  const [showSuccessModal, setShowSuccessModal] = useState(false);
-  const [showErrorModal, setShowErrorModal] = useState(false);
+    
+    
 
-  // ✅ FIX 1: All toggle/handler functions moved OUTSIDE Submit() to component scope
-  const toggleDropdown = () => setIsOpen(!isOpen);
-  const toggleDropdown2 = () => setIsOpen2(!isOpen2);
 
-  const handleItemClick = (item) => {
-    setSelectedItem(item);
-    setIsOpen(false);
-  };
 
-  const handleItemClick2 = (item) => {
-    setSelectedItem2(item);
-    setIsOpen2(false);
-  };
+    const [alertMessage, setAlertMessage] = useState('');
+    const [emailError, setEmailError] = useState('');
 
   function Submit(e) {
-    e.preventDefault();
-
-    // ✅ FIX 2: Validate dropdowns before submitting
-    if (!selectedItem) {
-      alert('Sila pilih program terlebih dahulu.');
-      return;
-    }
-    if (!selectedItem2) {
-      alert('Sila pilih negeri terlebih dahulu.');
-      return;
-    }
 
     const emailValue = e.target.elements.Email.value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 
     if (!emailRegex.test(emailValue)) {
       setEmailError('Email must be in a valid format.');
       alert('Email is incorrect!');
       return;
     }
+  
 
-    // Send form-encoded data so Apps Script can read e.parameter
-   const formEl = e.target.elements;
-
-const params = new URLSearchParams();
-params.append('Name', formEl.Name.value);
-params.append('NumberPhone', formEl.NumberPhone.value);
-params.append('Email', formEl.Email.value);
-params.append('Age', formEl.Age.value);
-params.append('ParentName', formEl.ParentName.value);
-params.append('ParentNumber', formEl.ParentNumber.value);
-params.append('Program', selectedItem);
-params.append('State', selectedItem2);
-
-
-fetch("https://script.google.com/macros/s/AKfycbx1PzONNROiUoCBzinvzXJzTMs-eWo7GDozzTgh2X7kbbX4rbxOiNAyFteM-HbyIlbt/exec", {
-  method: "POST",
-  headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  body: params.toString()
-})
     
+
+
+    const formEle = document.querySelector("form");
+    const formDatab = new FormData(formEle);
+
+    formDatab.append("Program", selectedItem);
+    formDatab.append("Media", selectedItem1);
+    formDatab.append("State", selectedItem2);
+
+fetch("https://script.google.com/macros/s/AKfycbx1PzONNROiUoCBzinvzXJzTMs-eWo7GDozzTgh2X7kbbX4rbxOiNAyFteM-HbyIlbt/exec", 
+   {
+        method: "POST",
+        body: formDatab
+      }
+      
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        if (data.status === "success") {
-          setAlertMessage('Form submitted successfully!');
-          setShowSuccessModal(true);
-        } else {
-          setShowErrorModal(true);
-        }
       })
       .catch((error) => {
         console.log(error);
-        setShowErrorModal(true);
       });
+
+      
+
+      setAlertMessage('Form submitted successfully!');
+      alert('Penghantaran Berjaya!, Pegawai kami akan menghubungi anda secepat mungkin');
+
   }
+
+
+
+    
+  // program yeg
+    const toggleDropdown = () => {
+      setIsOpen(!isOpen);
+    };
+  // media
+    const toggleDropdown1 = () => {
+      setIsOpen1(!isOpen1);
+    };
+  //state  
+  const toggleDropdown2 = () => {
+    setIsOpen2(!isOpen2);
+  };
+
+
+ 
+
+    // program yeg
+    const handleItemClick = (item) => {
+        setSelectedItem(item);
+        setIsOpen(false);
+      };
+
+    // media 
+      const handleItemClick1 = (item) => {
+        setSelectedItem1(item);
+        setIsOpen1(false);
+      };
+    //state
+    const handleItemClick2 = (item) => {
+      setSelectedItem2(item);
+      setIsOpen2(false);
+    };  
+
+    
+
+        
+      
+    
 
   return (
     <main>
@@ -187,44 +207,105 @@ fetch("https://script.google.com/macros/s/AKfycbx1PzONNROiUoCBzinvzXJzTMs-eWo7GD
                 <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentNumber" type="text" />
               </div>
 
-              <div className="grid text-left">
-                <p className="py-1 text-white">Negeri</p>
-                <button
-                  onClick={toggleDropdown2}
-                  name="Negeri"
-                  type="button"
-                  className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full px-8 py-2 text-sm font-medium text-black border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
-                >
-                  {selectedItem2 ? selectedItem2 : "Select State / Country"}
-                </button>
+             <div className="grid  text-left">
+        <p className="py-1 text-white">Negeri</p>
+      <button
+        onClick={toggleDropdown2} 
+        name="Negeri"
+        type="button"
+        className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full px-8 py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
+      >
+        {selectedItem2 ? selectedItem2 : "Select State"}
+      </button>
 
-                {isOpen2 && (
-                  <div className="w-full right-0 mt-2 origin-top-right bg-white border border-gray-200 divide-y rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
-                    <div className="text-sm bg-yellow-500">
-                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Johor")}>Johor</p>
-                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Kedah")}>Kedah</p>
-                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Kelantan")}>Kelantan</p>
-                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Kuala Lumpur")}>Kuala Lumpur</p>
-                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Labuan")}>Labuan</p>
-                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Melaka")}>Melaka</p>
-                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Negeri Sembilan")}>Negeri Sembilan</p>
-                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Pahang")}>Pahang</p>
-                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Perak")}>Perak</p>
-                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Perlis")}>Perlis</p>
-                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Pulau Pinang")}>Pulau Pinang</p>
-                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Putrajaya")}>Putrajaya</p>
-                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Sabah")}>Sabah</p>
-                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Sarawak")}>Sarawak</p>
-                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Selangor")}>Selangor</p>
-                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Terengganu")}>Terengganu</p>
-                      <div className="bg-slate-800 w-full flex justify-center text-white">International</div>
-                      {/* ✅ FIX 5: Singapore and Brunei now correctly pass their own names */}
-                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Singapore")}>Singapore</p>
-                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Brunei")}>Brunei</p>
-                    </div>
-                  </div>
-                )}
-              </div>
+      {isOpen2 && (
+        <div className="w-full right-0 mt-2  origin-top-right bg-white border border-gray-200 divide-y  rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
+ 
+          <div className=" text-sm bg-yellow-500">
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Johor")}
+          >
+            Johor
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Kedah")}
+          >
+            Kedah
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Kelantan")}
+          >
+            Kelantan
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Kuala Lumpur")}
+          >
+            Kuala Lumpur
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Labuan")}
+          >
+            Labuan
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Melaka")}
+          >
+            Melaka
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Negeri Sembilan")}
+          >
+            Negeri Sembilan
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Pahang")}
+          >
+            Pahang
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Perak")}
+          >
+            Perak
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Perlis")}
+          >
+            Perlis
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Pulau Pinang")}
+          >
+            Pulau Pinang
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Putrajaya")}
+          >
+            Putrajaya
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Sabah")}
+          >
+            Sabah
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Serawak")}
+          >
+            Serawak
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Selangor")}
+          >
+            Selangor
+          </p>
+          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
+            onClick={() => handleItemClick2("Terengganu")}
+          >
+            Terengganu
+          </p>
+          </div>     
+        </div>
+      )}
+    </div>
 
               <div className="pt-4">
                 <button className="px-6 py-2 border rounded-md bg-yellow-500 hover:bg-yellow-600 hover:shadow-md duration-300" name="Submit" type="submit">Submit</button>
