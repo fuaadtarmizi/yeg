@@ -110,28 +110,23 @@ function PhotoGallery() {
             1024: { slidesPerView: 3, spaceBetween: 16 },
             1280: { slidesPerView: 4, spaceBetween: 16 },
           }}
-          className="group"
         >
           {GALLERY_IMAGES.map((img, index) => (
             <SwiperSlide key={index}>
               <div
-                className="relative cursor-pointer overflow-hidden rounded-xl shadow-md "
-                style={{ aspectRatio: '4 / 3' }}   
-                onClick={() => setSelectedImage(img)}
+               style={{ aspectRatio: '980 / 788', position: 'relative' }} 
+              
               >
                 <Image
                   src={img.src}
                   alt={img.alt}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  style={{ objectFit: 'cover' }}
-                  className="transition-transform duration-500 group-hover:scale-110"
+                  style={{ objectFit: 'contain' }}
+                
                 />
-                <div className="absolute inset-0 bg-yellow-900 bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-end">
-                  <p className="text-white text-sm font-semibold px-4 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    {img.caption}
-                  </p>
-                </div>
+               
+                
               </div>
             </SwiperSlide>
           ))}
@@ -405,9 +400,8 @@ function page() {
         />
       </div>
 
-            <div>
-              
-         <h2 className="text-3xl font-bold text-yellow-800 mb-2">
+            <div className="bg-white py-8 px-4 text-center">
+  <h2 className="text-3xl font-bold text-yellow-800 mb-6">
           SILA ISI BORANG UNTUK PEGAWAI KAMI HUBUNGI
         </h2>
               <Formblastingdhumyganeral/>
