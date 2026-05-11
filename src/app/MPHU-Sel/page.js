@@ -40,7 +40,7 @@ const TESTIMONIALS = [
   },
   {
     id: 4,
-    quote: 'Sekarang: ',
+    quote: 'Sekarang: Ketua Operasi Lsgistik FGV Transport Sdn Bhd',
     name: 'Ahmad Hilal',
     role: 'Alumni FPHU',
     image: 'MPHU/Alumni MPHU/Hilal.png',
@@ -51,7 +51,7 @@ const TESTIMONIALS = [
     quote: 'Sekarang: Ketua Operasi Tabung Haji Cawangan Putrajaya ',
     name: 'Ustaz Azmi',
     role: 'Alumni FPHU',
-    image: 'MPHU/Alumni MPHU/Ust Azmi.png',
+    image: 'MPHU/Alumni MPHU/Ust AZMI.png',
     stars: 5,
   },
   {
@@ -60,7 +60,15 @@ const TESTIMONIALS = [
     name: 'Ahmad Najmi',
     role: 'Alumni FPHU',
     image: 'MPHU/Alumni MPHU/Najmi.png',
-    stars: 6,
+    stars: 5,
+  },
+    {
+    id: 7,
+    quote: 'Sekarang: Pengurus YEG Travel SdnBhd ',
+    name: 'Muhammad Eiman',
+    role: 'Alumni FPHU',
+    image: 'MPHU/Alumni MPHU/Eiman.jpeg',
+    stars: 5,
   },
 ]
 
