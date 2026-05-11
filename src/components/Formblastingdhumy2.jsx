@@ -1,34 +1,45 @@
 "use client"
-import React, {useState} from 'react';
-import {useEffect} from 'react';
-import Image from 'next/image'
-import Footer from "@/components/Footer.jsx"
-import Navbar from "@/components/Navbar.jsx"
-import Sidebar from "@/components/Sidebar.jsx"
-
+import React, { useState } from 'react';
 
 export default function App() {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isOpen1, setIsOpen1] = useState(false);
-    const [isOpen2, setIsOpen2] = useState(false);
-    const [isOpen3, setIsOpen3] = useState(false);
-    const [isOpen4, setIsOpen4] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
 
+  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem2, setSelectedItem2] = useState(null);
 
-    const [selectedItem, setSelectedItem] = useState(null);
-    const [selectedItem1, setSelectedItem1] = useState(null);
-    const [selectedItem2, setSelectedItem2] = useState(null);
-    const [selectedItem3, setSelectedItem3] = useState(null);
-    const [selectedItem4, setSelectedItem4] = useState(null);
+  const [alertMessage, setAlertMessage] = useState('');
+  const [emailError, setEmailError] = useState('');
 
+  // ✅ FIX 1: All toggle/handler functions moved OUTSIDE Submit() to component scope
+  const toggleDropdown = () => setIsOpen(!isOpen);
+  const toggleDropdown2 = () => setIsOpen2(!isOpen2);
 
+  const handleItemClick = (item) => {
+    setSelectedItem(item);
+    setIsOpen(false);
+  };
 
-    const [alertMessage, setAlertMessage] = useState('');
-    const [emailError, setEmailError] = useState('');
+  const handleItemClick2 = (item) => {
+    setSelectedItem2(item);
+    setIsOpen2(false);
+  };
 
   function Submit(e) {
-  e.preventDefault(); // ✅ ADD THIS
-  const emailValue = e.target.elements.Email.value;
+    e.preventDefault();
+
+    // ✅ FIX 2: Validate dropdowns before submitting
+    if (!selectedItem) {
+      alert('Sila pilih program terlebih dahulu.');
+      return;
+    }
+    if (!selectedItem2) {
+      alert('Sila pilih negeri terlebih dahulu.');
+      return;
+    }
+
+    const emailValue = e.target.elements.Email.value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailRegex.test(emailValue)) {
       setEmailError('Email must be in a valid format.');
@@ -36,481 +47,192 @@ export default function App() {
       return;
     }
 
+    // ✅ FIX 3: Use FormData so Google Apps Script can read e.parameter correctly
+    // Do NOT set Content-Type manually — browser sets multipart/form-data automatically
     const formEle = document.querySelector("form");
     const formDatab = new FormData(formEle);
-
-    formDatab.append("Program1", selectedItem);
-    formDatab.append("Program2", selectedItem3);
-    formDatab.append("Program3", selectedItem4);
-    formDatab.append("Media", selectedItem1);
-    formDatab.append("State", selectedItem2);
-    
+    formDatab.set('Program1', selectedItem);
+    formDatab.set('State', selectedItem2);
 
     fetch(
       "https://script.google.com/macros/s/AKfycbx1PzONNROiUoCBzinvzXJzTMs-eWo7GDozzTgh2X7kbbX4rbxOiNAyFteM-HbyIlbt/exec",
       {
-       method: "POST",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify({
-    data: {
-      Name: formDatab.get("Name"),
-      NumberPhone: formDatab.get("NumberPhone"),
-      Email: formDatab.get("Email"),
-      Age: formDatab.get("Age"),
-      ParentName: formDatab.get("ParentName"),
-      ParentNumber: formDatab.get("ParentNumber"),
-      Program1: selectedItem,
-      State: selectedItem2,
-    }
-  })
-})
+        method: "POST",
+        body: formDatab
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
+        setAlertMessage('Form submitted successfully!');
+        alert('Penghantaran Berjaya!, Pegawai kami akan menghubungi anda secepat mungkin');
       })
       .catch((error) => {
         console.log(error);
       });
-
-      
-
-      setAlertMessage('Form submitted successfully!');
-      alert('Penghantaran Berjaya!, Pegawai kami akan menghubungi anda secepat mungkin');
-
   }
-    
-  // program yeg 1
-    const toggleDropdown = () => {
-      setIsOpen(!isOpen);
-    };
-
-    // program yeg 2
-    const toggleDropdown3 = () => {
-      setIsOpen3(!isOpen3);
-    };
-
-    // program yeg 3
-    const toggleDropdown4 = () => {
-      setIsOpen4(!isOpen4);
-    };
-
-  // media
-    const toggleDropdown1 = () => {
-      setIsOpen1(!isOpen1);
-    };
-
-  //state  
-    const toggleDropdown2 = () => {
-      setIsOpen2(!isOpen2);
-    };
-
-
-
-    // program yeg 1
-    const handleItemClick = (item) => {
-        setSelectedItem(item);
-        setIsOpen(false);
-      };
-
-      // program yeg 2
-    const handleItemClick3 = (item) => {
-      setSelectedItem3(item);
-      setIsOpen3(false);
-    };
-
-    // program yeg 3
-    const handleItemClick4 = (item) => {
-      setSelectedItem4(item);
-      setIsOpen4(false);
-    };
-
-    // media 
-      const handleItemClick1 = (item) => {
-        setSelectedItem1(item);
-        setIsOpen1(false);
-      };
-    
-    //state
-      const handleItemClick2 = (item) => {
-        setSelectedItem2(item);
-        setIsOpen2(false);
-      };
-    
-
 
   return (
     <main>
-    <div className="bg-white">
-    <div className=" hidden lg:block">j</div>
-        
-        <div className="p-4  lg:flex justify-center  ">     
-      <div className="lg:w-1/3 ">
-      <form className=" backdrop-blur-lg w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
-      <div className="py-6 text-black text-3xl font-bold">
-         </div>
-         
-            <div className=" grid space-y-4">
-      <div className="grid rounded-md space-y-1 ">
-        <h className="">Nama Pelajar</h>
-      <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md " placeholder="" name="Name" type="text" />
-      </div>
-          <div className="grid space-y-1">
-          <h>Nombor Telefon Pelajar </h>
-          <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="NumberPhone" type="text" />
-          </div>
-          </div>
+      <div className="bg-white">
+        <div className="hidden lg:block">j</div>
 
-          <div className="grid space-y-4">
+        <div className="p-4 lg:flex justify-center">
+          <div className="lg:w-1/3">
+            <form className="backdrop-blur-lg w-full p-6 border space-y-5 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
+              <div className="py-6 text-black text-3xl font-bold">
+              </div>
 
-      <div className="grid rounded-md space-y-1 ">
-        <h>Email</h>
-      <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md " 
-        placeholder="" 
-        name="Email" 
-        type="text" />
-      </div>
+              <div className="grid space-y-4">
+                <div className="grid rounded-md space-y-1">
+                  {/* ✅ FIX 4: Replaced invalid <h> tags with <label> */}
+                  <label className="">Nama Pelajar</label>
+                  <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="Name" type="text" />
+                </div>
+                <div className="grid space-y-1">
+                  <label>Nombor Telefon Pelajar</label>
+                  <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="NumberPhone" type="text" />
+                </div>
+              </div>
 
-          <div className="grid space-y-1">
-          <h>Umur</h>
-          <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="Age" type="text" />
-          </div>
-          </div>
+              <div className="grid space-y-4">
+                <div className="grid rounded-md space-y-1">
+                  <label>Email</label>
+                  <input
+                    className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md"
+                    placeholder=""
+                    name="Email"
+                    type="text"
+                  />
+                </div>
+                <div className="grid space-y-1">
+                  <label>Umur</label>
+                  <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="Age" type="text" />
+                </div>
+              </div>
 
+              <div className="relative inline-block text-left">
+                <div>Pilihan Program</div>
+                <button
+                  onClick={toggleDropdown}
+                  name="Program1"
+                  type="button"
+                  className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
+                >
+                  {selectedItem ? selectedItem : "Select Program"}
+                </button>
 
+                {isOpen && (
+                  <div className="w-full right-0 mt-2 origin-top-right bg-white border border-gray-200 divide-y rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
 
-          
-          <div className="relative inline-block text-left">
-  <div>Pilihan Program</div>
-  <button
-    onClick={toggleDropdown}
-    name="Program1"
-    type="button"
-    className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
-  >
-    {selectedItem ? selectedItem : "Select Program"}
-  </button>
+                    <div className="pl-6 text-sm bg-white">
+                      <p
+                        className="px-4 py-2 cursor-pointer hover:bg-white-400 rounded-md"
+                        onClick={() => handleItemClick("Diploma + Degree")}
+                      >
+                        DIPLOMA + DEGREE PENGURUSAN HAJI & UMRAH (MQA/FA 11377 | MQA /PA 18797)
+                      </p>
+                    </div>
 
-  {isOpen && (
-    <div className="w-full right-0 mt-2 origin-top-right bg-white border border-gray-200 divide-y rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
-      
-      <div className="pl-6 text-sm bg-white">
-        <p
-          className="px-4 py-2 cursor-pointer hover:bg-white-400 rounded-md"
-          onClick={() => handleItemClick("Diploma + Degree")}
-        >
-         DIPLOMA + DEGREE PENGURUSAN HAJI & UMRAH (MQA/FA 11377 | MQA /PA 18797)
-        </p>
-      </div>
+                    <div className="pl-6 text-sm bg-slate-600 text-white">
+                      <p
+                        className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
+                        onClick={() => handleItemClick("Sijil Profesional")}
+                      >
+                        Sijil Profesional Pengurusan Haji & Umrah (SPHU) (MQA/PA 18798)
+                      </p>
+                    </div>
 
-      <div className="pl-6 text-sm bg-slate-600 text-white">
-        <p
-          className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-          onClick={() => handleItemClick("Sijil Profesional")}
-        >
-            Sijil Profesional Pengurusan Haji & Umrah (SPHU) (MQA/PA 18798)
-        </p>
-      </div>
+                    <div className="pl-6 text-sm bg-white-400">
+                      <p
+                        className="px-4 py-2 cursor-pointer hover:bg-gray-500 rounded-md"
+                        onClick={() => handleItemClick("Master")}
+                      >
+                        IJAZAH PENGURUSAN HAJI & UMRAH (MQA/PA 18799)
+                      </p>
+                    </div>
 
-      <div className="pl-6 text-sm bg-white-400">
-        <p
-          className="px-4 py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-          onClick={() => handleItemClick("Master")}
-        >
-          IJAZAH PENGURUSAN HAJI & UMRAH (MQA/PA 18799)
-        </p>
-      </div>
+                    <div className="pl-6 text-sm bg-white">
+                      <p
+                        className="px-4 py-2 cursor-pointer hover:bg-gray-500 rounded-md"
+                        onClick={() => handleItemClick("PhD")}
+                      >
+                        PhD PENGURUSAN HAJI & UMRAH (MQA/PA 18800)
+                      </p>
+                    </div>
+                  </div>
+                )}
+              </div>
 
-      <div className="pl-6 text-sm bg-white">
-        <p
-          className="px-4 py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-          onClick={() => handleItemClick("PhD")}
-        >
-          PhD PENGURUSAN HAJI & UMRAH (MQA/PA 18800)
-        </p>
-      </div>
-    </div>
-  )}
-</div>
+              <div className="grid space-y-1">
+                <label>Nama Penjaga</label>
+                <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentName" type="text" />
+              </div>
 
+              <div className="grid space-y-1">
+                <label>Nombor Penjaga</label>
+                <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentNumber" type="text" />
+              </div>
 
+              <div className="grid text-left">
+                <p className="py-1 text-white">Negeri</p>
+                <button
+                  onClick={toggleDropdown2}
+                  name="Negeri"
+                  type="button"
+                  className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full px-8 py-2 text-sm font-medium text-black border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
+                >
+                  {selectedItem2 ? selectedItem2 : "Select State / Country"}
+                </button>
 
-    {/* <div className="relative inline-block text-left">
-            <div>Pilihan Program Diploma, Kerjaya atau Work Based Learning (WBL)</div>
-      <button
-        onClick={toggleDropdown4} 
-        name="Program3"
-        type="button"
-        className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
-      >
-        {selectedItem4 ? selectedItem4 : "Select Programs 3"}
-      </button>
+                {isOpen2 && (
+                  <div className="w-full right-0 mt-2 origin-top-right bg-white border border-gray-200 divide-y rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
+                    <div className="text-sm bg-yellow-500">
+                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Johor")}>Johor</p>
+                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Kedah")}>Kedah</p>
+                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Kelantan")}>Kelantan</p>
+                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Kuala Lumpur")}>Kuala Lumpur</p>
+                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Labuan")}>Labuan</p>
+                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Melaka")}>Melaka</p>
+                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Negeri Sembilan")}>Negeri Sembilan</p>
+                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Pahang")}>Pahang</p>
+                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Perak")}>Perak</p>
+                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Perlis")}>Perlis</p>
+                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Pulau Pinang")}>Pulau Pinang</p>
+                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Putrajaya")}>Putrajaya</p>
+                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Sabah")}>Sabah</p>
+                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Sarawak")}>Sarawak</p>
+                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Selangor")}>Selangor</p>
+                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Terengganu")}>Terengganu</p>
+                      <div className="bg-slate-800 w-full flex justify-center text-white">International</div>
+                      {/* ✅ FIX 5: Singapore and Brunei now correctly pass their own names */}
+                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Singapore")}>Singapore</p>
+                      <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md" onClick={() => handleItemClick2("Brunei")}>Brunei</p>
+                    </div>
+                  </div>
+                )}
+              </div>
 
-      {isOpen4 && (
-        <div className="w-full right-0 mt-2  origin-top-right bg-white border border-gray-200 divide-y  rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
-        
-          <p
-            className="px-4 text-md py-2 cursor-pointer bg-yellow-500 font-bold"
-          >
-            Work Based Learning
-          </p>
-          <div className="pl-6 text-sm bg-yellow-500">
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick4(" DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY-WBL)")}
-          >
-            DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY-WBL) 
-          </p>
-          </div>
-          <p className="px-4 text-md font-bold py-2 hover:bg-gray-200 bg-slate-600"  >
-            Diploma Kovensional
-          </p>
-          <div className="pl-6 text-sm text-white bg-slate-600">
-          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick4("DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY)")}
-          >
-            DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY) 
-          </p>
-          </div>
+              <div className="pt-4">
+                <button className="px-6 py-2 border rounded-md bg-yellow-500 hover:bg-yellow-600 hover:shadow-md duration-300" name="Submit" type="submit">Submit</button>
+              </div>
 
-          <p
-            className="px-4 text-md py-2 cursor-pointer bg-gray-400 font-bold"
-          >
-            Kerjaya
-          </p>
-          <div className="pl-6 text-sm bg-gray-400">
-          <p className=" py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick4("SPHU - SIJIL PROFESIONAL PENGURUSAN HAJI & UMRAH")}
-          >
-            SPHU - SIJIL PROFESIONAL PENGURUSAN HAJI & UMRAH 
-          </p>
+            </form>
+
+            {emailError && (
+              <div className="alert">
+                {emailError}
+              </div>
+            )}
+
+            {alertMessage && (
+              <div className="alert">
+                {alertMessage}
+              </div>
+            )}
           </div>
         </div>
-      )}
-    </div>  */}
- 
-
-
-
-
-
-
-          <div className="grid space-y-1">
-          <h>Nama Penjaga</h>
-          <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentName" type="text" />
-          </div>
-
-          <div className="grid space-y-1">
-          <h>Nombor Penjaga</h>
-          <input className="bg-gray-200 px-3 py-2 hover:shadow-md duration-500 rounded-md" placeholder="" name="ParentNumber"  type="text" />
-          </div>
-
-          <div className="grid  text-left">
-        <p className="py-1 text-white">Negeri</p>
-      <button
-        onClick={toggleDropdown2} 
-        name="Negeri"
-        type="button"
-        className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full px-8 py-2 text-sm font-medium text-black  border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
-      >
-        {selectedItem2 ? selectedItem2 : "Select State / Country"}
-      </button>
-
-      {isOpen2 && (
-        <div className="w-full right-0 mt-2  origin-top-right bg-white border border-gray-200 divide-y  rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
- 
-          <div className=" text-sm bg-yellow-500">
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Johor")}
-          >
-            Johor
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Kedah")}
-          >
-            Kedah
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Kelantan")}
-          >
-            Kelantan
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Kuala Lumpur")}
-          >
-            Kuala Lumpur
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Labuan")}
-          >
-            Labuan
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Melaka")}
-          >
-            Melaka
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Negeri Sembilan")}
-          >
-            Negeri Sembilan
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Pahang")}
-          >
-            Pahang
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Perak")}
-          >
-            Perak
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Perlis")}
-          >
-            Perlis
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Pulau Pinang")}
-          >
-            Pulau Pinang
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Putrajaya")}
-          >
-            Putrajaya
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Sabah")}
-          >
-            Sabah
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Serawak")}
-          >
-            Serawak
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Selangor")}
-          >
-            Selangor
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Terengganu")}
-          >
-            Terengganu
-          </p>
-          <div className="bg-slate-800 w-full flex justify-center text-white">International</div>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Terengganu")}
-          >
-            Singapore
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick2("Terengganu")}
-          >
-            Brunei
-          </p>
-          </div>     
-        </div>
-      )}
-    </div>
-
-
-
-    <div className="pt-4">
-    <button className="px-6 py-2 border rounded-md bg-yellow-500 hover:bg-yellow-600 hover:shadow-md duration-300" name="Submit" type="submit" >Submit</button>
-    </div>
-  
-        </form>
-
-        {emailError && (
-        <div className="alert">
-          {emailError}
-        </div>
-      )}
-
-      {alertMessage && (
-        <div className="alert">
-          {alertMessage}
-        </div>
-        )}
-    </div>
-    </div> 
-    </div>
-    
-   
+      </div>
     </main>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// "use client"
-// import React from 'react'
-
-// export default function page() {
-//     function Submit(e) {
-//         const formEle = document.querySelector("form");
-//         const formDatab = new FormData(formEle);
-//         fetch(
-//           "https://script.google.com/macros/s/AKfycbxGDBvXOji8jirgC_tVHaOTWkKzExfA3KXms1TFcQWLCz1UwkGlvkEtD6BVqzNG0hZfUw/exec",
-//           {
-//             method: "POST",
-//             body: formDatab
-//           }
-//         )
-//           .then((res) => res.json())
-//           .then((data) => {
-//             console.log(data);
-//           })
-//           .catch((error) => {
-//             console.log(error);
-//           });
-//       }
-
-//   return (
-//     <div className=" py-20 flex justify-center">
-        
-//         <form className="bg-slate-100 w-1/4 border grid justify-center p-3 space-y-4 rounded-lg shadow-lg" onSubmit={(e) => Submit(e)}>
-//         <div className="py-4">
-//             <h>FROM YEG</h>
-//         </div>
-//             <div className="border rounded-md hover:shadow-md duration-500">
-//                 <input 
-//                 className="py-2 "
-//                 id="name"
-//                 type="text"
-//                 placeholder="name"
-//                 />
-//             </div>
-//             <div className="border rounded-md hover:shadow-md duration-500">
-//                 <input
-//                 className="py-2"
-//                 id="email"
-//                 type="email"
-//                 placeholder="email"
-//                 />
-//             </div>
-//             <div className="flex justify-center ">
-//             <button className="px-6 py-2 border rounded-md hover:shadow-md duration-500">
-//                 <h>SUBMIT</h>
-//             </button>
-//             </div>
-//         </form>
-//     </div>
-//   )
-// }
