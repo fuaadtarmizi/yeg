@@ -147,7 +147,7 @@ function Countdown() {
     <div className="bg-white py-10 px-4">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold text-yellow-800 mb-2">
-          MASA BERBAKI UNTUK TEMPAH SLOT
+          MASA BERBAKI UNTUK PENGESAHAN KEHADIRAN
         </h2>
         <div className="mt-3 mx-auto w-16 h-1 bg-yellow-600 rounded-full" />
       </div>
