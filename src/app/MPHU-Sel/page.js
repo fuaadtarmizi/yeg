@@ -12,7 +12,7 @@ import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
-import 'swiper/css/effect-fade'
+
 
 const GALLERY_IMAGES = [
   { src: 'MPHU/Media/1.png', alt: 'Galeri 1' },
@@ -103,7 +103,7 @@ function PhotoGallery() {
           spaceBetween={16}
           navigation={true}
           pagination={{ clickable: true }}
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          autoplay={{ delay: 6000, disableOnInteraction: false }}
           breakpoints={{
             320: { slidesPerView: 1, spaceBetween: 10 },
             640: { slidesPerView: 2, spaceBetween: 12 },
@@ -115,7 +115,8 @@ function PhotoGallery() {
           {GALLERY_IMAGES.map((img, index) => (
             <SwiperSlide key={index}>
               <div
-                className="relative cursor-pointer overflow-hidden rounded-xl shadow-md h-72 sm:h-80"
+                className="relative cursor-pointer overflow-hidden rounded-xl shadow-md "
+                style={{ aspectRatio: '4 / 3' }}   
                 onClick={() => setSelectedImage(img)}
               >
                 <Image
