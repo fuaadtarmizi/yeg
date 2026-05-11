@@ -48,7 +48,7 @@ export default function App() {
     
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbxdHilzIxMy79xZeDSifPLBCG-s9fqv2oRYpzPfWYCdOQpFo6eTaSBr7_nsz7a-aDQdXg/exec",
+      "https://sheetdb.io/api/v1/aue6uiazw6p4e",
       {
         method: "POST",
         body: formDatab
