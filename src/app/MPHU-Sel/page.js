@@ -24,7 +24,7 @@ const TESTIMONIALS = [
   },
   {
     id: 2,
-    quote: 'Sekarang : Pelajar Cemerlang Fakulti Pengurusan Haji & Umrah',
+    quote: 'Sekarang : Penerima Anugerah Naib Canselor Fakulti Pengurusan Haji & Umrah',
     name: 'Muhammad Azlie',
     role: 'Alumni FPHU',
     image: 'MPHU/Alumni MPHU/Azlie.png',
@@ -40,8 +40,8 @@ const TESTIMONIALS = [
   },
   {
     id: 4,
-    quote: 'Sekarang: Ketua Operasi Lsgistik FGV Transport Sdn Bhd',
-    name: 'Ahmad Hilal',
+    quote: 'Sekarang: Ketua Operasi Logistik FGV Transport Sdn Bhd',
+    name: 'Haji Ahmad Hilal',
     role: 'Alumni FPHU',
     image: 'MPHU/Alumni MPHU/Hilal.png',
     stars: 5,
@@ -49,7 +49,7 @@ const TESTIMONIALS = [
   {
     id: 5,
     quote: 'Sekarang: Ketua Operasi Tabung Haji Cawangan Putrajaya ',
-    name: 'Ustaz Azmi',
+    name: 'Ustaz Haji Azmir',
     role: 'Alumni FPHU',
     image: 'MPHU/Alumni MPHU/Ust AZMI.png',
     stars: 5,
@@ -64,7 +64,7 @@ const TESTIMONIALS = [
   },
     {
     id: 7,
-    quote: 'Sekarang: Pengurus YEG Travel SdnBhd ',
+    quote: 'Sekarang: Pengurus YEG Travel Sdn Bhd ',
     name: 'Muhammad Eiman',
     role: 'Alumni FPHU',
     image: 'MPHU/Alumni MPHU/Eiman.jpeg',
