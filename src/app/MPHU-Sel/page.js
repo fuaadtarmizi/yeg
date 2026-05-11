@@ -462,14 +462,7 @@ function page() {
 
        <Countdown />  
 
-            <div className="bg-white py-8 px-4 text-center">
-  <h2 className="text-3xl font-bold text-yellow-800 mb-6">
-          SILA ISI BORANG UNTUK PEGAWAI KAMI HUBUNGI
-        </h2>
-              <Formblastingdhumyganeral/>
-            </div> 
-
-          <div className="bg-white py-8 px-4 text-center">
+        <div className="bg-white py-8 px-4 text-center">
   <h2 className="text-3xl font-bold text-yellow-800 mb-6">
     KLIK LINK / QR UNTUK TEMPAH SLOT MPHU
   </h2>
@@ -502,6 +495,15 @@ function page() {
       <p className="text-sm text-gray-500">Imbas QR untuk tempah</p>
     </div>
   </div>
+
+            <div className="bg-white py-8 px-4 text-center">
+  <h2 className="text-3xl font-bold text-yellow-800 mb-6">
+          SILA ISI BORANG UNTUK PEGAWAI KAMI HUBUNGI
+        </h2>
+              <Formblastingdhumyganeral/>
+            </div> 
+
+         
 </div>
 </div>
 </div>
