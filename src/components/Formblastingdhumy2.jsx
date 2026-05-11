@@ -49,27 +49,17 @@ export default function App() {
       return;
     }
 
-    // Prepare data as JSON to match the Google Apps Script
-    const data = {
-      Name: e.target.elements.Name.value,
-      NumberPhone: e.target.elements.NumberPhone.value,
-      Email: e.target.elements.Email.value,
-      Age: e.target.elements.Age.value,
-      ParentName: e.target.elements.ParentName.value,
-      ParentNumber: e.target.elements.ParentNumber.value,
-      Program1: selectedItem,
-      State: selectedItem2,
-      Source: "Selangor"
-    };
+    // Send form-encoded data so Apps Script can read e.parameter
+    const formDatab = new FormData(e.target);
+    formDatab.set('Program', selectedItem);
+    formDatab.set('State', selectedItem2);
+    formDatab.set('Source', 'Selangor');
 
     fetch(
       "https://script.google.com/macros/s/AKfycbx1PzONNROiUoCBzinvzXJzTMs-eWo7GDozzTgh2X7kbbX4rbxOiNAyFteM-HbyIlbt/exec",
       {
         method: "POST",
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ data })
+        body: formDatab
       }
     )
       .then((res) => res.json())
