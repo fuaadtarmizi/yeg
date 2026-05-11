@@ -27,9 +27,8 @@ export default function App() {
     const [emailError, setEmailError] = useState('');
 
   function Submit(e) {
-    const emailValue = e.target.elements.Email.value;
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
+  e.preventDefault(); // ✅ ADD THIS
+  const emailValue = e.target.elements.Email.value;
 
     if (!emailRegex.test(emailValue)) {
       setEmailError('Email must be in a valid format.');
