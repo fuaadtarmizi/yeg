@@ -46,7 +46,7 @@ export default function RegistrationForm() {
     setErrorMessage("");
 
     // The URL from your Google Apps Script deployment
-    // Make sure you set this in your .env.local file!
+    // Make sure you set this in your . .local file!
     const SCRIPT_URL = process.env.NEXT_PUBLIC_SCRIPT_URL;
 
     if (!SCRIPT_URL) {
