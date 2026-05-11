@@ -24,35 +24,43 @@ const TESTIMONIALS = [
   },
   {
     id: 2,
-    quote: 'Ambil hanya 5 mata untuk menjadi orang yang berjaya, sebab selebihnya saya tidak ingat...',
-    name: 'Saidatul Aishah',
-    role: 'DHUMY',
-    image: '/alumni2.jpg',
+    quote: 'Sekarang : Pelajar Cemerlang Fakulti Pengurusan Haji & Umrah',
+    name: 'Muhammad Azlie',
+    role: 'Alumni FPHU',
+    image: 'MPHU/Alumni MPHU/Azlie.png',
     stars: 5,
   },
   {
     id: 3,
-    quote: 'Percaya pada diri sendiri bahawa anda boleh melakukan apa sahaja yang anda takuti dengan bijak',
-    name: 'Rezza Hussaini',
-    role: 'DHUMY',
-    image: '/alumni3.jpg',
+    quote: 'Sekarang: Pegawai Haramain Busyra Holidays Sdn Bhd',
+    name: 'Aishah Azizan',
+    role: 'Alumni FPHU',
+    image: 'MPHU/Alumni MPHU/Aisyah.png',
     stars: 5,
   },
   {
     id: 4,
-    quote: 'Semalam adalah sejarah, hari ini adalah hadiah dan esok adalah misteri. Terima kasih YEG Akademi',
-    name: 'Muhammad Syimir',
-    role: 'DHUMY',
-    image: '/alumni4.jpg',
+    quote: 'Sekarang: ',
+    name: 'Ahmad Hilal',
+    role: 'Alumni FPHU',
+    image: 'MPHU/Alumni MPHU/Hilal.png',
     stars: 5,
   },
   {
     id: 5,
-    quote: 'Jangan percaya sesiapa selain Allah adalah ayat terbaik untuk tidak kemurungan terhadap pasangan',
-    name: 'Ismail Sharudin',
-    role: 'DHUMY',
-    image: '/alumni5.jpg',
+    quote: 'Sekarang: Ketua Operasi Tabung Haji Cawangan Putrajaya ',
+    name: 'Ustaz Azmi',
+    role: 'Alumni FPHU',
+    image: 'MPHU/Alumni MPHU/Ust Azmi.png',
     stars: 5,
+  },
+  {
+    id: 6,
+    quote: 'Sekarang: Pengurus Hijrah Alliance Sdn Bhd',
+    name: 'Ahmad Najmi',
+    role: 'Alumni FPHU',
+    image: 'MPHU/Alumni MPHU/Najmi.png',
+    stars: 6,
   },
 ]
 
@@ -65,9 +73,7 @@ const GALLERY_IMAGES = [
   { src: 'MPHU/Media/4.png', alt: 'Galeri 4' },
   { src: 'MPHU/Media/5.png', alt: 'Galeri 5' },
   { src: 'MPHU/Media/6.png', alt: 'Galeri 6' },
-   { src: 'MPHU/Media/006.png', alt: 'Galeri 006' },
   { src: 'MPHU/Media/7.png', alt: 'Galeri 7' },
-   { src: 'MPHU/Media/007.png', alt: 'Galeri 007' },
   { src: 'MPHU/Media/8.png', alt: 'Galeri 8' },
   { src: 'MPHU/Media/9.png', alt: 'Galeri 9' },
   { src: 'MPHU/Media/10.png', alt: 'Galeri 10' },
@@ -352,7 +358,7 @@ function page() {
 
         <div className="bg-white py-8 px-4 text-center">
   <h2 className="text-3xl font-bold text-yellow-800 mb-6">
-    KLIK LINK / QR UNTUK TEMPAH SLOT MPHU
+    KLIK LINK / QR UNTUK TEMPAH TIKET MPHU
   </h2>
 
   <div className="flex flex-col md:flex-row items-center justify-center gap-8">
@@ -364,7 +370,7 @@ function page() {
       rel="noopener noreferrer"
       className="inline-flex items-center gap-2 bg-yellow-600 hover:bg-yellow-700 text-white font-semibold text-lg px-8 py-4 rounded-xl shadow-lg transition-colors duration-200"
     >
-      <span>Tempah Slot MPHU</span>
+      <span>Tempah Tiket MPHU</span>
     </a>
 
 
@@ -375,7 +381,7 @@ function page() {
     <div className="flex flex-col items-center gap-2">
       <img
         src={`https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://yeg.onpay.my/order/form/tiketmphu2026ftd`}
-        alt="QR Code Tempah Slot MPHU"
+        alt="QR Code Tempah Tiket MPHU"
         width={180}
         height={180}
         className="rounded-xl shadow-md border-4 border-yellow-600"
