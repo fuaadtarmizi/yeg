@@ -48,13 +48,25 @@ export default function App() {
     
 
     fetch(
-      "https://sheetdb.io/api/v1/aue6uiazw6p4e",
+      "https://script.google.com/macros/s/AKfycbx1PzONNROiUoCBzinvzXJzTMs-eWo7GDozzTgh2X7kbbX4rbxOiNAyFteM-HbyIlbt/exec",
       {
-        method: "POST",
-        body: formDatab
-      }
-      
-    )
+       method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    data: {
+      Name: formDatab.get("Name"),
+      NumberPhone: formDatab.get("NumberPhone"),
+      Email: formDatab.get("Email"),
+      Age: formDatab.get("Age"),
+      ParentName: formDatab.get("ParentName"),
+      ParentNumber: formDatab.get("ParentNumber"),
+      Program1: selectedItem,
+      State: selectedItem2,
+    }
+  })
+})
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
