@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Formblastingdhumyganeral from '@/components/Formblastingdhumy2'
 import MarqueeBanner from '@/components/MarqueenBanner'
 import ReactPlayer from 'react-player'
+import Countdown from '@/components/Countdown'
 
 
 // Swiper
@@ -37,6 +38,66 @@ const GALLERY_IMAGES = [
   { src: 'MPHU/Media/20.png', alt: 'Galeri 20' },
 ]
 
+
+
+function Countdown() {
+  const TARGET = new Date('2026-05-23T00:00:00')
+  const [time, setTime] = useState({ d: 0, h: 0, m: 0, s: 0 })
+
+  useEffect(() => {
+    const tick = () => {
+      const diff = TARGET - new Date()
+      if (diff <= 0) return setTime({ d: 0, h: 0, m: 0, s: 0 })
+      setTime({
+        d: Math.floor(diff / 86400000),
+        h: Math.floor((diff % 86400000) / 3600000),
+        m: Math.floor((diff % 3600000) / 60000),
+        s: Math.floor((diff % 60000) / 1000),
+      })
+    }
+    tick()
+    const id = setInterval(tick, 1000)
+    return () => clearInterval(id)
+  }, [])
+
+  const pad = (n) => String(n).padStart(2, '0')
+
+  const Box = ({ val, label }) => (
+    <div className="flex flex-col items-center gap-3">
+      <div className="bg-yellow-800 border-4 border-yellow-500 w-20 h-20 md:w-24 md:h-24 rounded-xl flex items-center justify-center shadow-lg relative overflow-hidden">
+        {/* mid-line divider */}
+        <div className="absolute left-0 right-0 top-1/2 h-px bg-yellow-600 opacity-50" />
+        <span className="text-3xl md:text-4xl font-bold text-white font-mono tracking-widest z-10">
+          {pad(val)}
+        </span>
+      </div>
+      <span className="text-xs tracking-[3px] uppercase text-yellow-700 font-semibold">
+        {label}
+      </span>
+    </div>
+  )
+
+  return (
+    <div className="bg-white py-10 px-4">
+      <div className="text-center mb-8">
+        <h2 className="text-3xl font-bold text-yellow-800 mb-2">
+          MASA BERBAKI UNTUK TEMPAH SLOT
+        </h2>
+        <div className="mt-3 mx-auto w-16 h-1 bg-yellow-600 rounded-full" />
+      </div>
+
+      <div className="flex justify-center items-center gap-3 md:gap-5 flex-wrap">
+        <Box val={time.d} label="hari" />
+        <span className="text-4xl font-bold text-yellow-600 font-mono mb-6 opacity-80">:</span>
+        <Box val={time.h} label="jam" />
+        <span className="text-4xl font-bold text-yellow-600 font-mono mb-6 opacity-80">:</span>
+        <Box val={time.m} label="minit" />
+        <span className="text-4xl font-bold text-yellow-600 font-mono mb-6 opacity-80">:</span>
+        <Box val={time.s} label="saat" />
+      </div>
+    </div>
+  )
+}
 const TESTIMONIALS = [
   {
     image: '/alumni1.jpg',
@@ -399,6 +460,8 @@ function page() {
           }}
         />
       </div>
+
+       <Countdown />  
 
             <div className="bg-white py-8 px-4 text-center">
   <h2 className="text-3xl font-bold text-yellow-800 mb-6">
