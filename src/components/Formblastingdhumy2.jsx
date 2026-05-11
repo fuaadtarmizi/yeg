@@ -17,6 +17,8 @@ const PROGRAMS = [
   "Sijil Profesional Pengurusan Haji & Umrah (SPHU) (MQA/PA 18798)",
 ];
 
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwmnU4Ld80SG1UESi-91YSRd2FisefZMpd4_gvITfQ4AcsMkcVE0r56DUyH8RW0UKW3/exec";
+
 export default function RegistrationForm() {
   // Form field values
   const [formData, setFormData] = useState({
@@ -47,7 +49,7 @@ export default function RegistrationForm() {
 
     // The URL from your Google Apps Script deployment
     // Make sure you set this in your . .local file!
-    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwmnU4Ld80SG1UESi-91YSRd2FisefZMpd4_gvITfQ4AcsMkcVE0r56DUyH8RW0UKW3/exec";
+    
     if (!SCRIPT_URL) {
       setStatus("error");
       setErrorMessage("Missing NEXT_PUBLIC_SCRIPT_URL in .env.local file");
@@ -67,8 +69,8 @@ export default function RegistrationForm() {
         setStatus("success");
         // Clear the form after success
         setFormData({
-          Name: "", NumberPhone: "", Email: "", Age: "",
-          Program: "", ParentsName: "", ParentsPhone: "", State: ""
+          Name: "", NumberPhone: "", Email: "", Age: "", ParentsName: "", ParentsPhone: "",
+          Program: "", State: ""
         });
       } else {
         setStatus("error");
