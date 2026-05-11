@@ -10,6 +10,8 @@ export default function App() {
 
   const [alertMessage, setAlertMessage] = useState('');
   const [emailError, setEmailError] = useState('');
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [showErrorModal, setShowErrorModal] = useState(false);
 
   // ✅ FIX 1: All toggle/handler functions moved OUTSIDE Submit() to component scope
   const toggleDropdown = () => setIsOpen(!isOpen);
@@ -47,28 +49,42 @@ export default function App() {
       return;
     }
 
-    // ✅ FIX 3: Use FormData so Google Apps Script can read e.parameter correctly
-    // Do NOT set Content-Type manually — browser sets multipart/form-data automatically
-    const formEle = document.querySelector("form");
-    const formDatab = new FormData(formEle);
-    formDatab.set('Program1', selectedItem);
-    formDatab.set('State', selectedItem2);
+    // Prepare data as JSON to match the Google Apps Script
+    const data = {
+      Name: e.target.elements.Name.value,
+      NumberPhone: e.target.elements.NumberPhone.value,
+      Email: e.target.elements.Email.value,
+      Age: e.target.elements.Age.value,
+      ParentName: e.target.elements.ParentName.value,
+      ParentNumber: e.target.elements.ParentNumber.value,
+      Program1: selectedItem,
+      State: selectedItem2,
+      Source: "Selangor"
+    };
 
     fetch(
       "https://script.google.com/macros/s/AKfycbx1PzONNROiUoCBzinvzXJzTMs-eWo7GDozzTgh2X7kbbX4rbxOiNAyFteM-HbyIlbt/exec",
       {
         method: "POST",
-        body: formDatab
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ data })
       }
     )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        setAlertMessage('Form submitted successfully!');
-        alert('Penghantaran Berjaya!, Pegawai kami akan menghubungi anda secepat mungkin');
+        if (data.status === "success") {
+          setAlertMessage('Form submitted successfully!');
+          setShowSuccessModal(true);
+        } else {
+          setShowErrorModal(true);
+        }
       })
       .catch((error) => {
         console.log(error);
+        setShowErrorModal(true);
       });
   }
 
@@ -115,7 +131,7 @@ export default function App() {
                 <div>Pilihan Program</div>
                 <button
                   onClick={toggleDropdown}
-                  name="Program1"
+                  name="Program"
                   type="button"
                   className="bg-yellow-500 hover:bg-yellow-600 inline-flex justify-center w-full py-2 text-sm font-medium text-black border border-transparent rounded-md focus:outline-none focus:border-indigo-700 focus:ring focus:ring-indigo-200 active:bg-indigo-800"
                 >
@@ -233,6 +249,38 @@ export default function App() {
           </div>
         </div>
       </div>
+
+      {/* Success Modal */}
+      {showSuccessModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-4">
+            <h2 className="text-2xl font-bold text-green-600 mb-4">Berjaya!</h2>
+            <p className="text-gray-700 mb-4">Penghantaran Berjaya! Pegawai kami akan menghubungi anda secepat mungkin.</p>
+            <button
+              onClick={() => setShowSuccessModal(false)}
+              className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Error Modal */}
+      {showErrorModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-4">
+            <h2 className="text-2xl font-bold text-red-600 mb-4">Ralat!</h2>
+            <p className="text-gray-700 mb-4">Penghantaran gagal. Sila cuba lagi.</p>
+            <button
+              onClick={() => setShowErrorModal(false)}
+              className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      )}
     </main>
   );
 }
