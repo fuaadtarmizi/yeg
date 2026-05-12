@@ -94,7 +94,7 @@ export default function FormMPHUSelangor() {
         {/* Error message */}
         {status === "error" && (
           <div style={styles.errorBox}>
-            ❌ Error: {errorMessage}
+            {errorMessage}
           </div>
         )}
 
