@@ -19,7 +19,7 @@ const PROGRAMS = [
 
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwmnU4Ld80SG1UESi-91YSRd2FisefZMpd4_gvITfQ4AcsMkcVE0r56DUyH8RW0UKW3/exec";
 
-export default function RegistrationForm() {
+export default function FormMPHUSelangor() {
   // Form field values
   const [formData, setFormData] = useState({
     Name: "",
@@ -74,7 +74,7 @@ export default function RegistrationForm() {
       }
     } catch (err) {
       setStatus("error");
-      setErrorMessage("Could not connect. Check your internet or Script URL.");
+      setErrorMessage("");
     }
   }
 

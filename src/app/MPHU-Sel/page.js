@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react'   
 import Image from 'next/image'
-import Formblastingdhumyganeral from '@/components/Formblastingdhumy2'
+import Formblastingdhumyganeral from '@/components/FormMPHUSelangor'
 import MarqueeBanner from '@/components/MarqueenBanner'
 import ReactPlayer from 'react-player'
 
