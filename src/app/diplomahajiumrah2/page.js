@@ -1,7 +1,7 @@
 
 import React from 'react'
 import Image from 'next/image'
-import Formblastingdhumy2 from '@/components/Formblastingdhumy2'
+import Formblastingdhumy2 from '@/components/FormMPHUN9'
 
 
 function page() {
