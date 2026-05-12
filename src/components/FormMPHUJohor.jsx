@@ -53,7 +53,7 @@ export default function FormMPHUJohor() {
    
     try {
       // ✅ Using no-cors mode to fix CORS error with Google Apps Script
-      await fetch(SCRIPT_URL, {
+      const response = await fetch(SCRIPT_URL, {
         method: "POST",
         mode: "no-cors",   // ← KEY FIX
         headers: { "Content-Type": "application/json" },

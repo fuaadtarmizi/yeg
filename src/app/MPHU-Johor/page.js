@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react'   
 import Image from 'next/image'
-import FormMPHUSelangor from '@/components/FormMPHUJohor'
+import FormMPHUJohor from '@/components/FormMPHUJohor'
 import MarqueeBanner from '@/components/MarqueenBanner'
 import ReactPlayer from 'react-player'
 
