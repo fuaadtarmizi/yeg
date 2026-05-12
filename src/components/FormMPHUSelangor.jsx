@@ -59,7 +59,7 @@ export default function FormMPHUSelangor() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
       });
-      const result = await response.json();
+     setStatus("success");
 
       if (result.result === "success") {
         setStatus("success");
