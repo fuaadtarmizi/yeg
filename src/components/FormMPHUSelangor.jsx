@@ -81,8 +81,7 @@ export default function FormMPHUSelangor() {
   return (
     <div style={styles.wrapper}>
       <div style={styles.card}>
-        <h1 style={styles.title}>Registration Form</h1>
-        <p style={styles.subtitle}>Fill in all fields below to register</p>
+ 
 
         {/* Success message */}
         {status === "success" && (
