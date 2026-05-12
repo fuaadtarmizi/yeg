@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react'   
 import Image from 'next/image'
-import Formblastingdhumyganeral from '@/components/FormMPHUJohor'
+import FormMPHUSelangor from '@/components/FormMPHUJohor'
 import MarqueeBanner from '@/components/MarqueenBanner'
 import ReactPlayer from 'react-player'
 
@@ -402,10 +402,8 @@ function page() {
   <h2 className="text-3xl font-bold text-yellow-800 mb-6">
           SILA ISI BORANG UNTUK PEGAWAI KAMI HUBUNGI
         </h2>
-              <Formblastingdhumyganeral/>
-            </div> 
-
-         
+              <FormMPHUJohor/>
+</div>
 </div>
 </div>
 </div>

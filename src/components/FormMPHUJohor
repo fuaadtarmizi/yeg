@@ -19,7 +19,7 @@ const PROGRAMS = [
 
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzDzjbKpkrNJ3WwKQK0uzsFTltE7zO2jCLUzxccttAEL8Rwy9THfLefOfFTzfnKJGBkSA/exec";
 
-export default function FormMPHUSelangor() {
+export default function FormMPHUJohor() {
   // Form field values
   const [formData, setFormData] = useState({
     Name: "",

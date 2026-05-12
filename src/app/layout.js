@@ -5,9 +5,7 @@ import { usePathname } from 'next/navigation'
 import { Analytics } from '@vercel/analytics/react'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
-import Navbar from '@/components/Navbar'
-import Sidebar from '@/components/Sidebar'
-import Footer from '@/components/Footer'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -37,10 +35,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {!shouldHideLayout && <Navbar />}
-        {!shouldHideLayout && <Sidebar />}
         <main>{children}</main>
-        {!shouldHideLayout && <Footer />}
         <Analytics />
       </body>
     </html>
