@@ -254,10 +254,11 @@ function page() {
             style={{ position: 'relative', paddingBottom: '56.25%', height: 0, maxWidth: '1500px' }}
           >
   <iframe
-    src=" https://youtu.be/GOB1FnFUL5c?si=jnaNXlaOMGyfQzyr"
+
+    src="https://www.youtube.com/embed/GOB1FnFUL5c"
     style={{
       position: 'absolute',
-      top: 0,
+      top: 20,
       left: 0,
       width: '100%',
       height: '100%',
