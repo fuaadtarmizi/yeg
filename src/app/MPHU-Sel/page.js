@@ -284,6 +284,19 @@ function page() {
           }}
         />
       </div>
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+    
+    {/* Clickable Link */}
+    <a
+      href="https://drive.google.com/file/d/1EGMm2gSmdjkT7LRsPPNRK3AI6RSF_6wj/view?usp=sharing"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 bg-yellow-600 hover:bg-yellow-700 text-white font-semibold text-lg px-8 py-4 rounded-xl shadow-lg transition-colors duration-200"
+    >
+      <span>MUAT TURUN MAJALAH KHIBRAH</span>
+    </a>
+
+    </div>
       {/* ── TESTIMONIALS ────────────────────────────────────── */}
       <div className="bg-white px-6 py-10">
         <div className="text-center mb-8">
