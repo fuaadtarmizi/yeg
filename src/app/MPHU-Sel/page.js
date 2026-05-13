@@ -268,23 +268,25 @@ function page() {
             loading="lazy"
           />
         </div>
+             
+             
              <div className="flex flex-col md:flex-row items-center justify-center gap-8">
     
-    {/* Clickable Link */}
-    <a
-      href="https://drive.google.com/file/d/1EGMm2gSmdjkT7LRsPPNRK3AI6RSF_6wj/view?usp=sharing"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 bg-yellow-600 hover:bg-yellow-700 text-white font-semibold text-lg px-8 py-4 rounded-xl shadow-lg transition-colors duration-200"
-    >
-      <span>MUAT TURUN MAJALAH KHIBRAH</span>
-    </a>
+               {/* Clickable Link */}
+             <a
+                href="https://drive.google.com/file/d/1EGMm2gSmdjkT7LRsPPNRK3AI6RSF_6wj/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+               className="inline-flex items-center gap-2 bg-yellow-600 hover:bg-yellow-700 text-white font-semibold text-lg px-8 py-4 rounded-xl shadow-lg transition-colors duration-200"
+               >
+               <span>MUAT TURUN PROPEKTUS FAKULTI</span>
+              </a>
 
-    </div>
+             </div>
         <div
-  className="w-full"
-  style={{ position: 'relative', paddingBottom: '56.25%', height: 0, maxWidth: '1500px' }}
->
+            className="w-full"
+            style={{ position: 'relative', paddingBottom: '56.25%', height: 0, maxWidth: '1500px' }}
+          >
   <iframe
     src="https://www.youtube.com/embed/VtmT163K3Yc"
     style={{
