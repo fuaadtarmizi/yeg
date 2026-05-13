@@ -14,7 +14,8 @@
 .marquee-track {
           display: inline-block;
           white-space: nowrap;
-          animation: marquee 30s linear infinite;
+          animation: marquee 20s linear infinite;
+          paddingRight: '50px';
         }
 
         .marquee-text {
@@ -25,8 +26,8 @@
         }
 
  @keyframes marquee {
-          from{ transform: translateX(100%); }
-          to { transform: translateX(-100%); }
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-50%); }  /* -50% because 2 copies */
         }
       
 
