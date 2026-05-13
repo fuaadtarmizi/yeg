@@ -316,7 +316,7 @@ const styles = {
   },
   successBox: {
     backgroundColor: "#E1F5EE",
-    color: "#0F6E56",
+    color: "#cea902",
     padding: "12px 16px",
     borderRadius: "8px",
     fontSize: "14px",
