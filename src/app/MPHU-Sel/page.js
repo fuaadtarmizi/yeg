@@ -268,26 +268,26 @@ function page() {
             loading="lazy"
           />
         </div>
-         <div
-          className="w-full"
-          style={{ position: 'relative', paddingBottom: '56.25%', height: 0, maxWidth: '1500px' }}
-        >
-          <iframe
-            src="https://www.youtube.com/watch?v=VtmT163K3Yc"
-            style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              width: '100%',
-              height: '100%',
-              boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
-            }}
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            title="Video DHUMY"
-            loading="lazy"
-          />
-        </div>
+        <div
+  className="w-full"
+  style={{ position: 'relative', paddingBottom: '56.25%', height: 0, maxWidth: '1500px' }}
+>
+  <iframe
+    src="https://www.youtube.com/embed/VtmT163K3Yc"
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
+    }}
+    allow="autoplay; encrypted-media"
+    allowFullScreen
+    title="Video DHUMY"
+    loading="lazy"
+  />
+</div>
    <MarqueeBanner />   {}
 
 
