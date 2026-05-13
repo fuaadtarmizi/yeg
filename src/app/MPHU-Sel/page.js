@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import FormMPHUSelangor from '@/components/FormMPHUSelangor'
 import MarqueeBanner from '@/components/MarqueenBanner'
+import MarqueeBanner2 from '@/components/MarqueenBanner2'
 import ReactPlayer from 'react-player'
 
 
@@ -249,25 +250,27 @@ function page() {
 
 
   <div
-          className="w-full"
-          style={{ position: 'relative', paddingBottom: '56.25%', height: 0, maxWidth: '1500px' }}
-        >
-          <iframe
-            src="https://drive.google.com/file/d/18Wg3EHD_4WiiOs_EcORRpQXqOcWDXqgG/preview"
-            style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              width: '100%',
-              height: '100%',
-              boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
-            }}
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            title="Video DHUMY"
-            loading="lazy"
-          />
-        </div>
+            className="w-full"
+            style={{ position: 'relative', paddingBottom: '56.25%', height: 0, maxWidth: '1500px' }}
+          >
+  <iframe
+    src=" https://youtu.be/GOB1FnFUL5c?si=jnaNXlaOMGyfQzyr"
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
+    }}
+    allow="autoplay; encrypted-media"
+    allowFullScreen
+    title="Video DHUMY"
+    loading="lazy"
+  />
+</div>
+           
+        
              
             <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
             <div className="bg-white flex justify-center">
@@ -276,7 +279,7 @@ function page() {
                className=""
               src="\MPHU\prospektus.gif"
               alt="LANDING PAGE"
-              width="80"
+              width="200"
               height="80"
               style={{
                 objectFit: "contain",
@@ -304,7 +307,7 @@ function page() {
     loading="lazy"
   />
 </div>
-   <MarqueeBanner />   {}
+   <MarqueeBanner2 />   {}
 
 
       <div className="bg-white py-2 md:py-3 lg:py-6"></div>

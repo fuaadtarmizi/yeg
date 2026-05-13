@@ -14,12 +14,12 @@
 .marquee-track {
           display: inline-block;
           white-space: nowrap;
-          animation: marquee 10s linear infinite;
+          animation: marquee 25s linear infinite;
         }
 
         .marquee-text {
           font-size: 23px;
-          font-weight: 600;
+          font-weight: 700;
           color: #fff;
           letter-spacing: 0.05em;
         }
