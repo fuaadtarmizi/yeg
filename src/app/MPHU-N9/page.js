@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import FormMPHUN9 from '@/components/FormMPHUN9'
 import MarqueeBanner from '@/components/MarqueenBanner'
+import MarqueeBanner2 from '@/components/MarqueenBanner2'
 import ReactPlayer from 'react-player'
 
 
@@ -268,7 +269,7 @@ function page() {
             loading="lazy"
           />
         </div>
-   <MarqueeBanner />   {}
+   <MarqueeBanner2/>   {}
 
 
 
