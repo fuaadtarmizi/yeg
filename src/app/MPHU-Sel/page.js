@@ -278,7 +278,7 @@ function page() {
             <a href="https://drive.google.com/file/d/1EGMm2gSmdjkT7LRsPPNRK3AI6RSF_6wj/view" target="_blank" rel="noopener noreferrer">
               <Image
                className=""
-               src="\MPHU\prospektus.gif"
+               src="\MPHU\prospektus.png"
                alt="LANDING PAGE"
                width="400"
                height="80"
@@ -291,7 +291,7 @@ function page() {
            <a href=" https://forms.gle/sbYV8i4XGm1c1fud9" target="_blank" rel="noopener noreferrer">
              <Image
                className=""
-              src="\MPHU\gFormButton.gif"
+              src="\MPHU\gForm.png"
               alt="LANDING PAGE"
               width="400"
               height="80"
