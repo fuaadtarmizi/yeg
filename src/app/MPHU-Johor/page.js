@@ -271,6 +271,84 @@ function page() {
    <MarqueeBanner />   {}
 
 
+
+  <div
+            className="w-full"
+            style={{ position: 'relative', paddingBottom: '56.25%', height: 0, maxWidth: '1500px' }}
+          >
+  <iframe
+
+    src="https://www.youtube.com/embed/GOB1FnFUL5c"
+    style={{
+      position: 'absolute',
+      top: 20,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
+    }}
+    allow="autoplay; encrypted-media"
+    allowFullScreen
+    title="Video DHUMY"
+    loading="lazy"
+  />
+</div>
+           
+        
+             
+            <div className="bg-white py-2 md:py-3 lg:py-86  gap-3" ></div>
+            <div className="bg-white flex justify-center align=center gap-6">
+            <a href="https://drive.google.com/file/d/1EGMm2gSmdjkT7LRsPPNRK3AI6RSF_6wj/view" target="_blank" rel="noopener noreferrer" className="bounce-link">
+              <Image
+               className="bounce-img"
+               src="\MPHU\prospektus.png"
+               alt="LANDING PAGE"
+               width="400"
+               height="80"
+               style={{
+                  objectFit: "contain",
+                 }}
+               />
+            </a>
+           
+           <a href=" https://forms.gle/sbYV8i4XGm1c1fud9" target="_blank" rel="noopener noreferrer"  className="bounce-link">
+             <Image
+               className="bounce-img"
+              src="\MPHU\gForm.png"
+              alt="LANDING PAGE"
+              width="400"
+              height="80"
+              style={{
+                objectFit: "contain",
+              }}
+    />
+     </a>
+
+ 
+          </div>
+        <div
+            className="w-full"
+            style={{ position: 'relative', paddingBottom: '56.25%', height: 0, maxWidth: '1500px' }}
+          >
+  <iframe
+    src="https://www.youtube.com/embed/VtmT163K3Yc"
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
+    }}
+    allow="autoplay; encrypted-media"
+    allowFullScreen
+    title="Video DHUMY"
+    loading="lazy"
+  />
+</div>
+   <MarqueeBanner2 />   {}
+
+
       <div className="bg-white py-2 md:py-3 lg:py-6"></div>
       <div className="bg-white flex justify-center ">
       <Image
@@ -283,6 +361,8 @@ function page() {
             objectFit:"contain",
           }}
         />
+      </div>
+ 
       </div>
       {/* ── TESTIMONIALS ────────────────────────────────────── */}
       <div className="bg-white px-6 py-10">
@@ -406,7 +486,7 @@ function page() {
 </div>
 </div>
 </div>
-</div>
+
 
     )
 }

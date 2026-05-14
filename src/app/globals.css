@@ -29,6 +29,19 @@
           0%   { transform: translateX(0); }
           100% { transform: translateX(-50%); }  /* -50% because 2 copies */
         }
+
+        .bounce-link {
+    display: inline-block;
+  }
+  
+  .bounce-img {
+    animation: bounce 0.9s infinite alternate;
+  }
+
+  @keyframes bounce {
+    0%   { transform: translateY(0); }
+    100% { transform: translateY(-12px); }
+  }
       
 
 .animate-slow-infinite-scroll {
