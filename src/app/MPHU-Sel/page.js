@@ -73,8 +73,6 @@ const TESTIMONIALS = [
   },
 ]
 
-
-
 const GALLERY_IMAGES = [
   { src: 'MPHU/Media/1.png', alt: 'Galeri 1' },
   { src: 'MPHU/Media/2.png', alt: 'Galeri 2' },
