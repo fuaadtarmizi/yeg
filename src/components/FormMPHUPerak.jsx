@@ -1,0 +1,333 @@
+"use client"
+import { useState } from "react";
+
+// List of Malaysian states (change if needed)
+const STATES = [
+  "Johor", "Kedah", "Kelantan", "Kuala Lumpur", "Labuan",
+  "Melaka", "Negeri Sembilan", "Pahang", "Penang", "Perak",
+  "Perlis", "Putrajaya", "Sabah", "Sarawak", "Selangor",
+  "Terengganu"
+];
+
+// List of programs (edit these to match your programs)
+const PROGRAMS = [
+  "DIPLOMA + DEGREE PENGURUSAN HAJI & UMRAH (MQA/FA 11377 | MQA /PA 18797)",
+  " IJAZAH PENGURUSAN HAJI & UMRAH (MQA/PA 18799)",
+  "PhD PENGURUSAN HAJI & UMRAH (MQA/PA 18800)",
+  "Sijil Profesional Pengurusan Haji & Umrah",
+];
+
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwd_MS3dXQCxEHCrb0u4qPQfDfPDeHfMDIOHabrIkOaDSHVtyYT2oEUtTGixayokmDE/exec";
+
+export default function FormMPHUPerak() {
+  // Form field values
+  const [formData, setFormData] = useState({
+    Name: "",
+    NumberPhone: "",
+    Email: "",
+    Age: "",
+    Program: "",
+    ParentsName: "",
+    ParentsPhone: "",
+    State: ""
+  });
+
+  // Track loading and success/error status
+  const [status, setStatus] = useState("idle"); // idle | loading | success | error
+  const [errorMessage, setErrorMessage] = useState("");
+
+  // Update field when user types
+  function handleChange(e) {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  }
+
+  // Submit form to Google Sheets
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setStatus("loading");
+    setErrorMessage("");
+
+    // The URL from your Google Apps Script deployment
+    // Make sure you set this in your . .local file!
+    
+   
+    try {
+      // ✅ Using no-cors mode to fix CORS error with Google Apps Script
+      await fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",   // ← KEY FIX
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+      });
+     setStatus("success");
+
+      if (result.result === "success") {
+        setStatus("success");
+        // Clear the form after success
+        setFormData({
+          Name: "", NumberPhone: "", Email: "", Age: "", ParentsName: "", ParentsPhone: "",
+          Program: "", State: ""
+        });
+      } else {
+        setStatus("error");
+        setErrorMessage(result.message || "Something went wrong");
+      }
+    } catch (err) {
+      setStatus("error");
+      setErrorMessage("");
+    }
+  }
+
+  return (
+    <div style={styles.wrapper}>
+      <div style={styles.card}>
+ 
+
+        {/* Success message */}
+        {status === "success" && (
+          <div style={styles.successBox}>
+            ✅ Registration submitted successfully! Check your Google Sheet.
+          </div>
+        )}
+
+        {/* Error message */}
+        {status === "error" && (
+          <div style={styles.errorBox}>
+            {errorMessage}
+          </div>
+        )}
+
+        <form onSubmit={handleSubmit}>
+
+          {/* ---- STUDENT DETAILS ---- */}
+          <h2 style={styles.sectionTitle}>Student Details</h2>
+
+          <div style={styles.field}>
+            <label style={styles.label}>Nama Penuh *</label>
+            <input
+              style={styles.input}
+              type="text"
+              name="Name"
+              value={formData.Name}
+              onChange={handleChange}
+              placeholder="e.g. Ahmad bin Ali"
+              required
+            />
+          </div>
+
+          <div style={styles.field}>
+            <label style={styles.label}>Nombor Telefon *</label>
+            <input
+              style={styles.input}
+              type="tel"
+              name="NumberPhone"
+              value={formData.NumberPhone}
+              onChange={handleChange}
+              placeholder="e.g. 0123456789"
+              required
+            />
+          </div>
+
+          <div style={styles.field}>
+            <label style={styles.label}>E-mail *</label>
+            <input
+              style={styles.input}
+              type="email"
+              name="Email"
+              value={formData.Email}
+              onChange={handleChange}
+              placeholder="e.g. ahmad@email.com"
+              required
+            />
+          </div>
+
+          <div style={styles.field}>
+            <label style={styles.label}>Umur *</label>
+            <input
+              style={styles.input}
+              type="number"
+              name="Age"
+              value={formData.Age}
+              onChange={handleChange}
+              placeholder="e.g. 18"
+              min="1"
+              max="100"
+              required
+            />
+          </div>
+
+        
+
+          {/* ---- PARENT DETAILS ---- */}
+    
+          <div style={styles.field}>
+            <label style={styles.label}>Nama Waris / Penjaga *</label>
+            <input
+              style={styles.input}
+              type="text"
+              name="ParentName"
+              value={formData.ParentName}
+              onChange={handleChange}
+              placeholder="e.g. Ali bin Abu"
+              required
+            />
+          </div>
+
+          <div style={styles.field}>
+            <label style={styles.label}>Nombor Telefon Waris / Penjaga *</label>
+            <input
+              style={styles.input}
+              type="tel"
+              name="ParentNumber"
+              value={formData.ParentNumber}
+              onChange={handleChange}
+              placeholder="e.g. 0129876543"
+              required
+            />
+          </div>
+           <div style={styles.field}>
+            <label style={styles.label}>Program</label>
+            <select
+              style={styles.input}
+              name="Program"
+              value={formData.Program}
+              onChange={handleChange}
+              required
+            >
+              <option value="">-- Pilih Program --</option>
+              {PROGRAMS.map((prog) => (
+                <option key={prog} value={prog}>{prog}</option>
+              ))}
+            </select>
+          </div>
+
+           <div style={styles.field}>
+            <label style={styles.label}>Lokasi Tempat Tinggal</label>
+            <select
+              style={styles.input}
+              name="State"
+              value={formData.State}
+              onChange={handleChange}
+              required
+            >
+              <option value="">-- Pilih Negeri --</option>
+              {STATES.map((s) => (
+                <option key={s} value={s}>{s}</option>
+              ))}
+            </select>
+          </div>
+
+          {/* Submit button */}
+          <button
+            type="submit"
+            style={status === "loading" ? styles.buttonLoading : styles.button}
+            disabled={status === "loading"}
+          >
+            {status === "loading" ? "Submitting..." : "Submit Registration"}
+          </button>
+
+        </form>
+      </div>
+    </div>
+  );
+}
+
+// ---- Basic styles ----
+const styles = {
+  wrapper: {
+    minHeight: "100vh",
+    backgroundColor: "#f5f5f5",
+    display: "flex",
+    justifyContent: "center",
+    padding: "2rem 1rem"
+  },
+  card: {
+    backgroundColor: "#ffffff",
+    borderRadius: "12px",
+    padding: "2rem",
+    width: "100%",
+    maxWidth: "560px",
+    boxShadow: "0 2px 12px rgba(0,0,0,0.08)",
+    height: "fit-content"
+  },
+  title: {
+    fontSize: "24px",
+    fontWeight: "600",
+    marginBottom: "4px",
+    color: "#111"
+  },
+  subtitle: {
+    fontSize: "14px",
+    color: "#666",
+    marginBottom: "1.5rem"
+  },
+  sectionTitle: {
+    fontSize: "16px",
+    fontWeight: "600",
+    color: "#9d8327",
+    borderBottom: "1px solid #e5e5e5",
+    paddingBottom: "6px",
+    marginTop: "1.5rem",
+    marginBottom: "1rem"
+  },
+  field: {
+    marginBottom: "1rem"
+  },
+  label: {
+    display: "block",
+    fontSize: "13px",
+    fontWeight: "500",
+    color: "#333",
+    marginBottom: "5px"
+  },
+  input: {
+    width: "100%",
+    padding: "10px 12px",
+    fontSize: "14px",
+    border: "1px solid #ddd",
+    borderRadius: "8px",
+    outline: "none",
+    boxSizing: "border-box",
+    backgroundColor: "#fafafa"
+  },
+  button: {
+    width: "100%",
+    padding: "12px",
+    backgroundColor: "#9d8327",
+    color: "#fff",
+    fontSize: "15px",
+    fontWeight: "600",
+    border: "none",
+    borderRadius: "8px",
+    cursor: "pointer",
+    marginTop: "1.5rem"
+  },
+  buttonLoading: {
+    width: "100%",
+    padding: "12px",
+    backgroundColor: "#aaa",
+    color: "#fff",
+    fontSize: "15px",
+    fontWeight: "600",
+    border: "none",
+    borderRadius: "8px",
+    cursor: "not-allowed",
+    marginTop: "1.5rem"
+  },
+  successBox: {
+    backgroundColor: "#E1F5EE",
+    color: "#6bbc53",
+    padding: "12px 16px",
+    borderRadius: "8px",
+    fontSize: "14px",
+    marginBottom: "1rem"
+  },
+  errorBox: {
+    backgroundColor: "#FCEBEB",
+    color: "#A32D2D",
+    padding: "12px 16px",
+    borderRadius: "8px",
+    fontSize: "14px",
+    marginBottom: "1rem"
+  }
+};
