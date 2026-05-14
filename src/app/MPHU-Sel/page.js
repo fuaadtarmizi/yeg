@@ -270,27 +270,26 @@ function page() {
     loading="lazy"
   />
 </div>
-  </div> 
+           
         
              
             <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
             <div className="bg-white flex justify-center">
-           <a href="https://drive.google.com/file/d/1EGMm2gSmdjkT7LRsPPNRK3AI6RSF_6wj/view" target="_blank" rel="noopener noreferrer">
-          <Image
+            <a href="https://drive.google.com/file/d/1EGMm2gSmdjkT7LRsPPNRK3AI6RSF_6wj/view" target="_blank" rel="noopener noreferrer">
+              <Image
                className=""
-              src="\MPHU\prospektus.gif"
-              alt="LANDING PAGE"
-              width="200"
-              height="80"
-              style={{
-                objectFit: "contain",
-              }}
-    />
-  </a>
-  <div className="bg-white py-2 md:py-3 lg:py-86">.</div>
-            <div className="bg-white flex justify-center">
+               src="\MPHU\prospektus.gif"
+               alt="LANDING PAGE"
+               width="200"
+               height="80"
+               style={{
+                  objectFit: "contain",
+                 }}
+               />
+            </a>
+           
            <a href=" https://forms.gle/sbYV8i4XGm1c1fud9" target="_blank" rel="noopener noreferrer">
-          <Image
+             <Image
                className=""
               src="\MPHU\prospektus.gif"
               alt="LANDING PAGE"
@@ -303,7 +302,7 @@ function page() {
      </a>
 
  
-</div>
+          </div>
         <div
             className="w-full"
             style={{ position: 'relative', paddingBottom: '56.25%', height: 0, maxWidth: '1500px' }}
