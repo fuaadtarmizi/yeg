@@ -17,7 +17,7 @@ const PROGRAMS = [
   "Sijil Profesional Pengurusan Haji & Umrah",
 ];
 
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby5hvY-f0EODCOMu55A4bUQaVp_czp99sTw_PTW3O4A8UtKfTAbYfqbTM6aMq4fMTqH/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby5hvY-f0EODCOMu55A4bUQaVp_czp99sTw_PTW3O4A8UtKfTAbYfqbTM6aMq4fMTqH/execnpm run devn";
 
 export default function FormMPHUTerengganu() {
   // Form field values
