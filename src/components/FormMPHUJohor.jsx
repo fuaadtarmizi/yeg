@@ -59,7 +59,7 @@ export default function FormMPHUJohor() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
       });
-      const result = await response.json();
+       setStatus("success");
 
       if (result.result === "success") {
         setStatus("success");
@@ -75,6 +75,10 @@ export default function FormMPHUJohor() {
     } catch (err) {
       setStatus("error");
       setErrorMessage("");
+      setFormData({
+          Name: "", NumberPhone: "", Email: "", Age: "", ParentsName: "", ParentsPhone: "",
+          Program: "", State: ""
+        });
     }
   }
 
@@ -264,7 +268,7 @@ const styles = {
   sectionTitle: {
     fontSize: "16px",
     fontWeight: "600",
-    color: "#1D9E75",
+    color: "#9d8327",
     borderBottom: "1px solid #e5e5e5",
     paddingBottom: "6px",
     marginTop: "1.5rem",
@@ -293,7 +297,7 @@ const styles = {
   button: {
     width: "100%",
     padding: "12px",
-    backgroundColor: "#1D9E75",
+    backgroundColor: "#9d8327",
     color: "#fff",
     fontSize: "15px",
     fontWeight: "600",

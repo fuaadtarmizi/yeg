@@ -13,6 +13,7 @@ import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
+import FormMPHUPenang from '@/components/FormMPHUPenang'
 
 const TESTIMONIALS = [
   {
@@ -456,7 +457,7 @@ function page() {
   <h2 className="text-3xl font-bold text-yellow-800 mb-6">
           SILA ISI BORANG UNTUK PEGAWAI KAMI HUBUNGI ANDA
         </h2>
-              <FormMPHUSelangor/>
+              <FormMPHUPenang/>
 </div>
 </div>
 </div>

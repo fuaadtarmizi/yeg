@@ -456,7 +456,7 @@ function page() {
   <h2 className="text-3xl font-bold text-yellow-800 mb-6">
           SILA ISI BORANG UNTUK PEGAWAI KAMI HUBUNGI ANDA
         </h2>
-              <FormMPHUSelangor/>
+              <FormMPHUKelantan/>
 </div>
 </div>
 </div>

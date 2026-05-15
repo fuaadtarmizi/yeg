@@ -75,6 +75,10 @@ export default function FormMPHUPerak() {
     } catch (err) {
       setStatus("error");
       setErrorMessage("");
+      setFormData({
+          Name: "", NumberPhone: "", Email: "", Age: "", ParentsName: "", ParentsPhone: "",
+          Program: "", State: ""
+        });
     }
   }
 
