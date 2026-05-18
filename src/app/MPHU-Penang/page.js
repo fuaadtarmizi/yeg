@@ -13,7 +13,6 @@ import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
-import FormMPHUPenang from '@/components/FormMPHUPenang'
 
 const TESTIMONIALS = [
   {
