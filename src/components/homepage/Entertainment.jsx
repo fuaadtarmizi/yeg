@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from "next/image"
+import ReactPlayer from 'react-player'
 
 
 
@@ -17,18 +18,16 @@ function Intro() {
       
       </div>
       <div className="h-full lg:py-7 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center">
-
-         <a href="https://www.tiktok.com/@yegacademy/video/7314661907741428993"
-          className=" flex hover:scale-150 duration-500">
-          <video autoplay="autoplay" 
+          <ReactPlayer
+         url="https://www.tiktok.com/@yegacademy/video/7314661907741428993"
+         
                   loop="loop" 
                   muted="muted"
                   className="rounded-md  top-0 left-0 w-full h-full object-cover" 
                   width="390" 
                   height="890">
-              <source src="tiktok02.mp4" type="video/mp4"/>
-          </video>
-          </a> 
+              
+          </ReactPlayer>
         <a href="https://www.tikhttps://www.tiktok.com/@yegacademy/video/7568437037389565191?is_from_webapp=1&sender_device=pc&web_id=7563838973358343697tok.com/@yegacademy/video/7319391659773545730?lang=en"
         className="flex hover:scale-150 duration-500">
         <video autoplay="autoplay" 
