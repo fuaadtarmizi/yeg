@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Image from "next/image"
 
 
-const Navbar = () => {
+const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
@@ -12,8 +12,6 @@ const Navbar = () => {
   const [isOpen4, setIsOpen4] = useState(false);
   const [isOpen5, setIsOpen5] = useState(false);
   const [isOpen6, setIsOpen6] = useState(false);
-  
-  
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -40,7 +38,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="bg-gray-800  p-3 hidden">
+    <nav className="bg-gray-800 p-3 lg:hidden">
       <div className="flex items-center justify-between">
         <a href="/"
         className="text-white font-bold text-xl">
@@ -329,5 +327,5 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Sidebar;
 
