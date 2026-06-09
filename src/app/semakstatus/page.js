@@ -269,6 +269,7 @@ import SliderKonvo from '@/components/lpdegreehajumrah/SliderKonvo'
 import IjazahDownloadButtonPDF from '@/components/IjazahDownloadButtonPDF'
 import DiplomaDownloadButtonPDF from '@/components/DiplomaDownloadButtonPDF'
 
+import { assetPath } from "@/lib/assetPath";
 
 
 function page() {
@@ -328,7 +329,7 @@ function page() {
               controls
               autoPlay  // Add this attribute for autoplay
               className="w-full">
-              <source src="/videosemakstatus2.mp4" type="video/mp4"/>
+              <source src={assetPath("/videosemakstatus2.mp4")} type="video/mp4"/>
             </video>
           </div>
           </section>
@@ -338,7 +339,7 @@ function page() {
               <video
               controls
               autoPlay  // Add this attribute for autoplay
-              className=""><source src="/videosemakstatus.mp4" type="video/mp4"/>
+              className=""><source src={assetPath("/videosemakstatus.mp4")} type="video/mp4"/>
             </video>
           </div>
           </section>

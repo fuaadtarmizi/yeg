@@ -3,6 +3,7 @@ import Card from '@/components/ui/card'
 import Image from 'next/image'
 import React from 'react';
 
+import { assetPath } from "@/lib/assetPath";
 function App () {
   return (
     <main>
@@ -16,7 +17,7 @@ function App () {
                 className="rounded-md top-0 left-0 w-full h-full object-cover" 
                 width="390" 
                 height="890">
-                <source src="/testiav1.mp4" type="video/mp4"/>
+                <source src={assetPath("/testiav1.mp4")} type="video/mp4"/>
             </video>
             </a>
             <a href="https://www.tiktok.com/@aviationcareermalaysia/video/7450090315135913223?is_from_webapp=1&sender_device=pc"
@@ -25,7 +26,7 @@ function App () {
                 className="rounded-md top-0 left-0 w-full h-full object-cover" 
                 width="390" 
                 height="890">
-                <source src="/testiav2.mp4" type="video/mp4"/>
+                <source src={assetPath("/testiav2.mp4")} type="video/mp4"/>
             </video>
             </a>
             <a href="https://www.tiktok.com/@aviationcareermalaysia/video/7451557161961901330?is_from_webapp=1&sender_device=pc"
@@ -34,7 +35,7 @@ function App () {
                 className="rounded-md top-0 left-0 w-full h-full object-cover" 
                 width="390" 
                 height="890">
-                <source src="/testiav3.mp4" type="video/mp4"/>
+                <source src={assetPath("/testiav3.mp4")} type="video/mp4"/>
             </video>
             </a>
             <a href="https://www.tiktok.com/@aviationcareermalaysia/video/7454506824889322770?is_from_webapp=1&sender_device=pc"
@@ -43,7 +44,7 @@ function App () {
                 className="rounded-md top-0 left-0 w-full h-full object-cover" 
                 width="390" 
                 height="890">
-                <source src="/testiav4.mp4" type="video/mp4"/>
+                <source src={assetPath("/testiav4.mp4")} type="video/mp4"/>
             </video>
             </a>
             <a href="https://www.tiktok.com/@aviationcareermalaysia/video/7455629587309923592?is_from_webapp=1&sender_device=pc"
@@ -52,7 +53,7 @@ function App () {
                 className="rounded-md top-0 left-0 w-full h-full object-cover" 
                 width="390" 
                 height="890">
-                <source src="/testiav5.mp4" type="video/mp4"/>
+                <source src={assetPath("/testiav5.mp4")} type="video/mp4"/>
             </video>
             </a>
             <a href="https://www.tiktok.com/@aviationcareermalaysia/video/7456757559236644114?is_from_webapp=1&sender_device=pc"
@@ -61,7 +62,7 @@ function App () {
                 className="rounded-md top-0 left-0 w-full h-full object-cover" 
                 width="390" 
                 height="890">
-                <source src="/testiav6.mp4" type="video/mp4"/>
+                <source src={assetPath("/testiav6.mp4")} type="video/mp4"/>
             </video>
             </a>
             </div>

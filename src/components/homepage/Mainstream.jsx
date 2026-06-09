@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from "next/image"
 import ReactPlayer from 'react-player'
-
+import { assetPath } from "@/lib/assetPath"
 
 function Intro() {
   return (
@@ -14,7 +14,7 @@ function Intro() {
       <div className="w-full h-full grid  lg:grid-cols-12 gap-2 md:col-span-2 py-2 p-2 bg-slate-100">
       
         <div className="flex justify-center w-full h-full mx-auto col-span-12 md:col-span-6 lg:col-span-6 md:order-2">
-           <video src="/carousel14.mp4"
+           <video src={assetPath('/carousel14.mp4')}
          controls autoPlay muted playsInline className="w-full h-full object-cover"/>
               
         </div>

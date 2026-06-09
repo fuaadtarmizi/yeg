@@ -7,6 +7,7 @@ import Referencephone from '@/components/avmcareer/Referencephone'
 import Benafit from '@/components/avmcareer/Benefit'
 import Syarat from '@/components/avmcareer/Syarat'
 
+import { assetPath } from "@/lib/assetPath";
 function page() {
   
   return (
@@ -41,7 +42,7 @@ function page() {
           loop
           muted
           className="w-full max-w-4xl rounded shadow-lg">
-          <source src="/MHI.mp4" type="video/mp4" />
+          <source src={assetPath("/MHI.mp4")} type="video/mp4" />
         </video>
       </div>
       </section>

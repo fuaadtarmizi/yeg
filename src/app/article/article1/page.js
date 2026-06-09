@@ -5,6 +5,7 @@ import Footer from "@/components/Footer.jsx"
 import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
 
+import { assetPath } from "@/lib/assetPath";
 export default function article() {
   return (
     <main>
@@ -27,7 +28,7 @@ export default function article() {
                         className="rounded-md"
                         muted playsInline
                     >
-                        <source src="/yegintro.mp4" type="video/mp4" />
+                        <source src={assetPath("/yegintro.mp4")} type="video/mp4" />
                     </video>
                 </div>
                 </div>

@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import Formblastingmaritim from '@/components/Formblastingmaritim'
 
+import { assetPath } from "@/lib/assetPath";
 
 function page() {
   return (
@@ -37,7 +38,7 @@ function page() {
         autoPlay  // Add this attribute for autoplay
         className=""
       >
-        <source src="/scalffoldingvideo.mp4" type="video/mp4" /> 
+        <source src={assetPath("/scalffoldingvideo.mp4")} type="video/mp4" /> 
       </video>
         </div>
       </div>

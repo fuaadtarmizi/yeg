@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from "next/image"
+import { assetPath } from "@/lib/assetPath"
 
 
 
@@ -13,11 +14,11 @@ function Intro() {
       </div>
       <div className="w-full h-full grid  lg:grid-cols-12 gap-8 md:col-span-2 py-10 p-2 bg-slate-100">
       <div className="flex justify-center w-full h-full mx-auto col-span-12 md:col-span-6 lg:col-span-6 md:order-2">
-            <video controls className=""><source src="/MHI.mp4" type="video/mp4" />
+            <video controls className=""><source src={assetPath('/MHI.mp4')} type="video/mp4" />
           </video>
         </div>
         <div className="flex justify-center w-full h-full mx-auto col-span-12 md:col-span-6 lg:col-span-6 md:order-2">
-            <video controls className=""><source src="/NLKO.mp4" type="video/mp4" />
+            <video controls className=""><source src={assetPath('/NLKO.mp4')} type="video/mp4" />
           </video>
         </div>  
       </div>

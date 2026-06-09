@@ -10,7 +10,8 @@ import CountAnimate3 from '@/components/fis/CountAnimate3.jsx'
 import CountAnimate4 from '@/components/fis/CountAnimate4.jsx'
 import PercentFis from '@/components/fis/PercentFis'
 import Table from '@/components/fis/Table'
-import Slider from '@/components/fis/Slider'            
+import Slider from '@/components/fis/Slider'
+import { assetPath } from "@/lib/assetPath";            
 
 export default function App() {
 
@@ -116,7 +117,7 @@ export default function App() {
                     controls
                     autoPlay  // Add this attribute for autoplay
                     className=""
-                  ><source src="/carousel14.mp4" type="video/mp4"/>
+                  ><source src={assetPath("/carousel14.mp4")} type="video/mp4"/>
                   </video>
                 </div>
                 <div className=" w-auto grid lg:mx-auto md:mx-16 col-span-12 md:col-span-6 gap-6 lg:col-span-5 md:order-3 space-y-2">   
@@ -157,7 +158,7 @@ export default function App() {
                   controls
                   autoPlay  // Add this attribute for autoplay
                   className=""
-                ><source src="/carousel14.mp4" type="video/mp4"/>
+                ><source src={assetPath("/carousel14.mp4")} type="video/mp4"/>
                 </video>  
                 </div>
                 <div className="flex justify-center w-full h-full mx-auto col-span-12 md:col-span-6 lg:col-span-6 md:order-2">

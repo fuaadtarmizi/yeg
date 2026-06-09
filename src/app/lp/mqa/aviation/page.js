@@ -7,6 +7,7 @@ import Syarat from '@/components/mqaaviation/Syarat'
 import Benefit from '@/components/mqaaviation/Benefit'
 import Reference from '@/components/mqaaviation/Reference'
 
+import { assetPath } from "@/lib/assetPath";
 function page() {
   const targetDate = new Date('2024-06-09T23:59:59');
   return (
@@ -36,7 +37,7 @@ function page() {
           loop
           muted
           className="w-full max-w-4xl rounded shadow-lg">
-          <source src="/MHI.mp4" type="video/mp4" />
+          <source src={assetPath("/MHI.mp4")} type="video/mp4" />
         </video>
       </div>
       </section>

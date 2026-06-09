@@ -5,6 +5,7 @@ import Footer from "@/components/Footer.jsx"
 import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
 
+import { assetPath } from "@/lib/assetPath";
 export default function article() {
   return (
     <main>
@@ -92,7 +93,7 @@ export default function article() {
                     controls
                     utoPlay
                     className="w-full">
-                    <source src="/videosemakstatus2.mp4" type="video/mp4" />
+                    <source src={assetPath("/videosemakstatus2.mp4")} type="video/mp4" />
                   </video>
                 </div>
                 </div>

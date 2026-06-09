@@ -3,7 +3,7 @@ import React from 'react'
 import Footer from "@/components/Footer.jsx"
 import Navbar from "@/components/Navbar.jsx"
 import Sidebar from "@/components/Sidebar.jsx"
-
+import { assetPath } from "@/lib/assetPath"
 
 function Intro() {
   return (
@@ -14,7 +14,7 @@ function Intro() {
     <div className="absolute top-0 left-0 h-full w-1/4 "></div>
     <div className="bg-black max-w-full lg:px-3 flex justify-center ">
         <video
-         src ="/yegintro.mp4" controls autoPlay muted playsInline className="w-full h-full object-cover" />
+         src={assetPath('/yegintro.mp4')} controls autoPlay muted playsInline className="w-full h-full object-cover" />
       </div>
         </section>
         </>

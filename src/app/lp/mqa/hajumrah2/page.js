@@ -12,6 +12,7 @@ import Facility from '@/components/mqahajumrah/Facility'
 import Reference from '@/components/mqahajumrah/Reference'
 import Subject from '@/components/mqahajumrah/Subject'
 
+import { assetPath } from "@/lib/assetPath";
 
 function page() {
   return (
@@ -43,7 +44,7 @@ function page() {
           loop
           muted
           className="w-full max-w-4xl rounded shadow-lg">
-          <source src="/videosemakstatus.mp4" type="video/mp4" />
+          <source src={assetPath("/videosemakstatus.mp4")} type="video/mp4" />
         </video>
       </div>
       </section>
