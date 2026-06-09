@@ -23,11 +23,11 @@ export default function article() {
                     <video
                     height={400}
                         controls
-                        aautoPlay  // Add this attribute for autoplay
+                        autoPlay  // Add this attribute for autoplay
                         className="rounded-md"
-                        
+                        muted playsInline
                     >
-                        <source src="yegintro.mp4" type="video/mp4" />
+                        <source src="/yegintro.mp4" type="video/mp4" />
                     </video>
                 </div>
                 </div>

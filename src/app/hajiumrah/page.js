@@ -116,7 +116,7 @@ export default function App() {
                     controls
                     autoPlay  // Add this attribute for autoplay
                     className=""
-                  ><source src="carousel14.mp4" type="video/mp4"/>
+                  ><source src="/carousel14.mp4" type="video/mp4"/>
                   </video>
                 </div>
                 <div className=" w-auto grid lg:mx-auto md:mx-16 col-span-12 md:col-span-6 gap-6 lg:col-span-5 md:order-3 space-y-2">   
@@ -157,7 +157,7 @@ export default function App() {
                   controls
                   autoPlay  // Add this attribute for autoplay
                   className=""
-                ><source src="carousel14.mp4" type="video/mp4"/>
+                ><source src="/carousel14.mp4" type="video/mp4"/>
                 </video>  
                 </div>
                 <div className="flex justify-center w-full h-full mx-auto col-span-12 md:col-span-6 lg:col-span-6 md:order-2">
