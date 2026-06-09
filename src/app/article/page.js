@@ -129,7 +129,8 @@ function page() {
             </div>
         </section3>
         <div className="py-8 lg:py-10 md:[height:80px]"></div>    
-    </div>
+  </main>
+
     
   )
 }
