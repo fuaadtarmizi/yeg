@@ -7,9 +7,17 @@ import Sidebar from "@/components/Sidebar.jsx"
 
 export default function article() {
   return (
-    <main>        
-        <section>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 container pt-6 ">
+    <main>
+      <header className="sticky top-0 z-50 bg-white shadow-sm">
+        <div className="hidden lg:block">
+          <Navbar />
+        </div>
+        <div className="block lg:hidden">
+          <Sidebar />
+        </div>
+      </header>
+      <section>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 container pt-6 ">
             <div className="space-y-4 p-4 container w-full h-full flex flex-col justify-between">
               <div className="grid space-y-8 ">
                 <h className="text-base text-red-500 font-bold">Tawaran Sambung Belajar</h>

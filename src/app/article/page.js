@@ -5,17 +5,17 @@ import Sidebar from "@/components/Sidebar.jsx"
 
 function page() {
   return (
-    <div>
-        <title>YEG Academy - artikel</title>
-        {/* <nav className="hidden lg:block sticky top-0 ">
-        <Navbar/>
-    </nav>
-      <nav>
-    <div className="lg:hidden">
-        <Sidebar/>
-    </div>
-    </nav> */}
-        <section1 className="">
+    <main>
+      <title>YEG Academy - artikel</title>
+      <header className="sticky top-0 z-50 bg-white shadow-sm">
+        <div className="hidden lg:block">
+          <Navbar />
+        </div>
+        <div className="block lg:hidden">
+          <Sidebar />
+        </div>
+      </header>
+      <section1 className="">
         <div className="lg:pt-8 px-4 lg:px-28"> 
             <div className="flex justify-center py-8">
         <div className="group w-3/4 h-full grid justify-center ">
