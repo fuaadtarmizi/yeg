@@ -28,7 +28,7 @@ function Intro() {
                   height="890">
               
           </ReactPlayer>
-          <a href="https://www.tiktok.com/@yegacademy/video/7319391659773545730?lang=en"
+          <a href="https://youtube.com/shorts/kK_GpuY4o94?si=JqXHfWOmAteYALkW"
         className="flex hover:scale-150 duration-500">
         <video autoPlay 
                   loop 
