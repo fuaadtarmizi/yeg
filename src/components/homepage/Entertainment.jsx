@@ -18,16 +18,17 @@ function Intro() {
       
       </div>
       <div className="h-full lg:py-7 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center">
-          <ReactPlayer
-         url="https://www.tiktok.com/@yegacademy/video/7314661907741428993"
-         
-                  loop="loop" 
-                  muted="muted"
-                  className="rounded-md  top-0 left-0 w-full h-full object-cover" 
-                  width="390" 
-                  height="890">
+        <iframe src="https://www.tiktok.com/@yegacademy/video/7314661907741428993"
+         className="rounded-md  top-0 left-0 w-full h-full object-cover" 
+         width="390"
+          height="890"></iframe>
+      
               
-           {/*</ReactPlayer>
+         <iframe src="https://www.tiktok.com/@yegacademy/video/7314661907741428993"
+         className="rounded-md  top-0 left-0 w-full h-full object-cover" 
+         width="390" 
+         height="890"></iframe>
+          
          <a href="https://youtube.com/shorts/kK_GpuY4o94?si=JqXHfWOmAteYALkW"
         className="flex hover:scale-150 duration-500">
         <video autoPlay 
@@ -39,21 +40,7 @@ function Intro() {
               <source src="/tiktok1.mp4" type="video/mp4"/>
           </video>
         </a>
-        <iframe
-    src="https://www.youtube.com/embed/VtmT163K3Yc"
-    style={{
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      width: '100%',
-      height: '100%',
-      boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
-    }}
-    allow="autoplay; encrypted-media"
-    allowFullScreen
-    title="Video DHUMY"
-    loading="lazy"
-  />
+        <iframe>
           <a href="https://www.tiktok.com/@yegacademy/video/7542880723204623634?is_from_webapp=1&sender_device=pc&web_id=7563838973358343697"
           className="flex hover:scale-150 duration-500">
           <video autoPlay 
@@ -97,59 +84,12 @@ function Intro() {
                   height="890">
               <source src='/tiktok06.mp4' type="video/mp4"/>
           </video>
-          </a>*/}
-          </ReactPlayer>
+          </a>
+          </iframe>
+    
 
-{/* YouTube Embed */}
 
 
-{/* TikTok 3 */}
-<a href="https://www.tiktok.com/@yegacademy/video/7542880723204623634" target="_blank" rel="noopener noreferrer">
-  <iframe
-    src="https://www.tiktok.com/embed/v2/7542880723204623634"
-    width="390"
-    height="890"
-    style={{ border: 'none', borderRadius: '8px', pointerEvents: 'none' }}
-    allow="autoplay; encrypted-media"
-    allowFullScreen
-  />
-</a>
-
-{/* TikTok 4 */}
-<a href="https://www.tiktok.com/@yegacademy/video/7551782551027764498" target="_blank" rel="noopener noreferrer">
-  <iframe
-    src="https://www.tiktok.com/embed/v2/7551782551027764498"
-    width="390"
-    height="890"
-    style={{ border: 'none', borderRadius: '8px', pointerEvents: 'none' }}
-    allow="autoplay; encrypted-media"
-    allowFullScreen
-  />
-</a>
-
-{/* TikTok 5 */}
-<a href="https://www.tiktok.com/@yegacademy/video/7556055376047770887" target="_blank" rel="noopener noreferrer">
-  <iframe
-    src="https://www.tiktok.com/embed/v2/7556055376047770887"
-    width="390"
-    height="890"
-    style={{ border: 'none', borderRadius: '8px', pointerEvents: 'none' }}
-    allow="autoplay; encrypted-media"
-    allowFullScreen
-  />
-</a>
-
-{/* TikTok 6 */}
-<a href="https://www.tiktok.com/@yegacademy/video/7326925324359306498" target="_blank" rel="noopener noreferrer">
-  <iframe
-    src="https://www.tiktok.com/embed/v2/7326925324359306498"
-    width="390"
-    height="890"
-    style={{ border: 'none', borderRadius: '8px', pointerEvents: 'none' }}
-    allow="autoplay; encrypted-media"
-    allowFullScreen
-  />
-</a>
         </div>
         <div className=" text-transparent flex justify-end ">
           <div className="bg-yellow-600 w-1/2 rounded-l-md">d</div>
