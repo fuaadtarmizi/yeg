@@ -101,21 +101,7 @@ function Intro() {
           </ReactPlayer>
 
 {/* YouTube Embed */}
-<iframe
-  src="https://www.youtube.com/embed/VtmT163K3Yc"
-  style={{
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
-  }}
-  allow="autoplay; encrypted-media"
-  allowFullScreen
-  title="Video DHUMY"
-  loading="lazy"
-/>
+
 
 {/* TikTok 3 */}
 <iframe
@@ -152,8 +138,10 @@ function Intro() {
 
 {/* TikTok 6 */}
 <iframe
-  src="https://www.tiktok.com/embed/v2/7326925324359306498"
-  className="rounded-md"
+  href="https://www.tiktok.com/@yegacademy/video/7326925324359306498?lang=en"
+          className="rounded-md flex hover:scale-150 duration-300"
+  src='/tiktok06.mp4' type="video/mp4"
+
   style={{ width: '390px', height: '890px', border: 'none' }}
   allow="autoplay; encrypted-media"
   allowFullScreen
