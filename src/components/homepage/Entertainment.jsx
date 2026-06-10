@@ -104,50 +104,52 @@ function Intro() {
 
 
 {/* TikTok 3 */}
-<iframe
-  src="https://www.tiktok.com/embed/v2/7542880723204623634"
-  className="rounded-md"
-  style={{ width: '390px', height: '890px', border: 'none' }}
-  allow="autoplay; encrypted-media"
-  allowFullScreen
-  title="TikTok 3"
-  loading="lazy"
-/>
+<a href="https://www.tiktok.com/@yegacademy/video/7542880723204623634" target="_blank" rel="noopener noreferrer">
+  <iframe
+    src="https://www.tiktok.com/embed/v2/7542880723204623634"
+    width="390"
+    height="890"
+    style={{ border: 'none', borderRadius: '8px', pointerEvents: 'none' }}
+    allow="autoplay; encrypted-media"
+    allowFullScreen
+  />
+</a>
 
 {/* TikTok 4 */}
-<iframe
-  src="https://www.tiktok.com/embed/v2/7551782551027764498"
-  className="rounded-md"
-  style={{ width: '390px', height: '890px', border: 'none' }}
-  allow="autoplay; encrypted-media"
-  allowFullScreen
-  title="TikTok 4"
-  loading="lazy"
-/>
+<a href="https://www.tiktok.com/@yegacademy/video/7551782551027764498" target="_blank" rel="noopener noreferrer">
+  <iframe
+    src="https://www.tiktok.com/embed/v2/7551782551027764498"
+    width="390"
+    height="890"
+    style={{ border: 'none', borderRadius: '8px', pointerEvents: 'none' }}
+    allow="autoplay; encrypted-media"
+    allowFullScreen
+  />
+</a>
 
 {/* TikTok 5 */}
-<iframe
-  src="https://www.tiktok.com/embed/v2/7556055376047770887"
-  className="rounded-md"
-  style={{ width: '390px', height: '890px', border: 'none' }}
-  allow="autoplay; encrypted-media"
-  allowFullScreen
-  title="TikTok 5"
-  loading="lazy"
-/>
+<a href="https://www.tiktok.com/@yegacademy/video/7556055376047770887" target="_blank" rel="noopener noreferrer">
+  <iframe
+    src="https://www.tiktok.com/embed/v2/7556055376047770887"
+    width="390"
+    height="890"
+    style={{ border: 'none', borderRadius: '8px', pointerEvents: 'none' }}
+    allow="autoplay; encrypted-media"
+    allowFullScreen
+  />
+</a>
 
 {/* TikTok 6 */}
-<iframe
-  href="https://www.tiktok.com/@yegacademy/video/7326925324359306498?lang=en"
-          className="rounded-md flex hover:scale-150 duration-300"
-  src='/tiktok06.mp4' type="video/mp4"
-
-  style={{ width: '390px', height: '890px', border: 'none' }}
-  allow="autoplay; encrypted-media"
-  allowFullScreen
-  title="TikTok 6"
-  loading="lazy"
-/>
+<a href="https://www.tiktok.com/@yegacademy/video/7326925324359306498" target="_blank" rel="noopener noreferrer">
+  <iframe
+    src="https://www.tiktok.com/embed/v2/7326925324359306498"
+    width="390"
+    height="890"
+    style={{ border: 'none', borderRadius: '8px', pointerEvents: 'none' }}
+    allow="autoplay; encrypted-media"
+    allowFullScreen
+  />
+</a>
         </div>
         <div className=" text-transparent flex justify-end ">
           <div className="bg-yellow-600 w-1/2 rounded-l-md">d</div>
