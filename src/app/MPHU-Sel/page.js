@@ -4,7 +4,7 @@ import Image from 'next/image'
 import FormMPHUSelangor from '@/components/FormMPHUSelangor'
 import MarqueeBanner from '@/components/MarqueenBanner'
 import MarqueeBanner2 from '@/components/MarqueenBanner2'
-import ReactPlayer from 'react-player'
+
 
 
 // Swiper

@@ -28,7 +28,7 @@ function Intro() {
                   height="890">
               
           </ReactPlayer>
-          <a href="https://youtube.com/shorts/kK_GpuY4o94?si=JqXHfWOmAteYALkW"
+          {/*<a href="https://youtube.com/shorts/kK_GpuY4o94?si=JqXHfWOmAteYALkW"
         className="flex hover:scale-150 duration-500">
         <video autoPlay 
                   loop 
@@ -38,7 +38,22 @@ function Intro() {
                   height="890">
               <source src="/tiktok1.mp4" type="video/mp4"/>
           </video>
-        </a>
+        </a>*/}
+        <iframe
+    src="https://www.youtube.com/embed/VtmT163K3Yc"
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
+    }}
+    allow="autoplay; encrypted-media"
+    allowFullScreen
+    title="Video DHUMY"
+    loading="lazy"
+  />
           <a href="https://www.tiktok.com/@yegacademy/video/7542880723204623634?is_from_webapp=1&sender_device=pc&web_id=7563838973358343697"
           className="flex hover:scale-150 duration-500">
           <video autoPlay 
