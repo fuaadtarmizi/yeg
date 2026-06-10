@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from "next/image"
 import ReactPlayer from 'react-player'
-import { assetPath } from "@/lib/assetPath"
+
 
 function Intro() {
   return (
