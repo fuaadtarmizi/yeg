@@ -5,15 +5,16 @@ import { usePathname } from 'next/navigation'
 import { Analytics } from '@vercel/analytics/react'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
-import Header from '@/components/Header.jsx'
-import Footer from '@/components/Footer.jsx'
+import Navbar from '@/components/Navbar'
+import Sidebar from '@/components/Sidebar'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children }) {
   const pathname = usePathname()
 
-  const hideLayoutPaths = ['/-keep1-/qraviation', '/MPHU-Sel', '/MPHU']
+  const hideLayoutPaths = ['/-keep1-/qraviation']
 
   const shouldHideLayout = hideLayoutPaths.includes(pathname)
 
@@ -36,7 +37,8 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {!shouldHideLayout && <Header />}
+        {!shouldHideLayout && <Navbar />}
+        {!shouldHideLayout && <Sidebar />}
         <main>{children}</main>
         {!shouldHideLayout && <Footer />}
         <Analytics />
