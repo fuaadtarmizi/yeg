@@ -27,8 +27,8 @@ function Intro() {
                   width="390" 
                   height="890">
               
-          </ReactPlayer>
-          {/*<a href="https://youtube.com/shorts/kK_GpuY4o94?si=JqXHfWOmAteYALkW"
+           {/*</ReactPlayer>
+         <a href="https://youtube.com/shorts/kK_GpuY4o94?si=JqXHfWOmAteYALkW"
         className="flex hover:scale-150 duration-500">
         <video autoPlay 
                   loop 
@@ -38,7 +38,7 @@ function Intro() {
                   height="890">
               <source src="/tiktok1.mp4" type="video/mp4"/>
           </video>
-        </a>*/}
+        </a>
         <iframe
     src="https://www.youtube.com/embed/VtmT163K3Yc"
     style={{
@@ -97,7 +97,69 @@ function Intro() {
                   height="890">
               <source src='/tiktok06.mp4' type="video/mp4"/>
           </video>
-          </a>
+          </a>*/}
+          </ReactPlayer>
+
+{/* YouTube Embed */}
+<iframe
+  src="https://www.youtube.com/embed/VtmT163K3Yc"
+  style={{
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
+  }}
+  allow="autoplay; encrypted-media"
+  allowFullScreen
+  title="Video DHUMY"
+  loading="lazy"
+/>
+
+{/* TikTok 3 */}
+<iframe
+  src="https://www.tiktok.com/embed/v2/7542880723204623634"
+  className="rounded-md"
+  style={{ width: '390px', height: '890px', border: 'none' }}
+  allow="autoplay; encrypted-media"
+  allowFullScreen
+  title="TikTok 3"
+  loading="lazy"
+/>
+
+{/* TikTok 4 */}
+<iframe
+  src="https://www.tiktok.com/embed/v2/7551782551027764498"
+  className="rounded-md"
+  style={{ width: '390px', height: '890px', border: 'none' }}
+  allow="autoplay; encrypted-media"
+  allowFullScreen
+  title="TikTok 4"
+  loading="lazy"
+/>
+
+{/* TikTok 5 */}
+<iframe
+  src="https://www.tiktok.com/embed/v2/7556055376047770887"
+  className="rounded-md"
+  style={{ width: '390px', height: '890px', border: 'none' }}
+  allow="autoplay; encrypted-media"
+  allowFullScreen
+  title="TikTok 5"
+  loading="lazy"
+/>
+
+{/* TikTok 6 */}
+<iframe
+  src="https://www.tiktok.com/embed/v2/7326925324359306498"
+  className="rounded-md"
+  style={{ width: '390px', height: '890px', border: 'none' }}
+  allow="autoplay; encrypted-media"
+  allowFullScreen
+  title="TikTok 6"
+  loading="lazy"
+/>
         </div>
         <div className=" text-transparent flex justify-end ">
           <div className="bg-yellow-600 w-1/2 rounded-l-md">d</div>
