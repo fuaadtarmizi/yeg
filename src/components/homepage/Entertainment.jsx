@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from "next/image"
 import ReactPlayer from 'react-player'
-import { assetPath } from "@/lib/assetPath"
+
 
 
 function Intro() {
@@ -36,7 +36,7 @@ function Intro() {
                   className="rounded-md  top-0 left-0 w-full h-full object-cover" 
                   width="390" 
                   height="890">
-              <source src={assetPath('/tiktok1.mp4')} type="video/mp4"/>
+              <source src="/tiktok1.mp4" type="video/mp4"/>
           </video>
         </a>
           <a href="https://www.tiktok.com/@yegacademy/video/7542880723204623634?is_from_webapp=1&sender_device=pc&web_id=7563838973358343697"
@@ -47,7 +47,7 @@ function Intro() {
                   className="rounded-md top-0 left-0 w-full h-full object-cover" 
                   width="390" 
                   height="890">
-              <source src={assetPath('/tiktok3.mp4')} type="video/mp4"/>
+              <source src="/tiktok3.mp4" type="video/mp4"/>
           </video>
           </a>
           <a href="https://www.tiktok.com/@yegacademy/video/7551782551027764498?is_from_webapp=1&sender_device=pc&web_id=7563838973358343697"
@@ -58,7 +58,7 @@ function Intro() {
                   className="rounded-md top-0 left-0 w-full h-full object-cover" 
                   width="390" 
                   height="890">
-              <source src={assetPath('/tiktok4.mp4')} type="video/mp4"/> 
+              <source src='/tiktok4.mp4' type="video/mp4"/> 
           </video>
           </a>
           <a href="https://www.tiktok.com/@yegacademy/video/7556055376047770887?is_from_webapp=1&sender_device=pc&web_id=7563838973358343697"
@@ -69,7 +69,7 @@ function Intro() {
                   className="rounded-md top-0 left-0 w-full h-full object-cover" 
                   width="390" 
                   height="890">
-              <source src={assetPath('/tiktok5.mp4')} type="video/mp4"/>
+              <source src='/tiktok5.mp4' type="video/mp4"/>
           </video>
           </a>
           <a href="https://www.tiktok.com/@yegacademy/video/7326925324359306498?lang=en"
@@ -80,7 +80,7 @@ function Intro() {
                   className="rounded-md top-0 left-0 w-full h-full object-cover" 
                   width="390" 
                   height="890">
-              <source src={assetPath('/tiktok06.mp4')} type="video/mp4"/>
+              <source src='/tiktok06.mp4' type="video/mp4"/>
           </video>
           </a>
         </div>
