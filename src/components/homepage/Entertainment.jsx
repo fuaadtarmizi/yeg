@@ -28,7 +28,7 @@ const videoItems = [
   },
 ]
 
-function Entertainment() {
+function Intro() {
   return (
     <section className="bg-slate-900 text-white py-10 px-4 lg:px-28">
       <div className="mx-auto max-w-7xl">
@@ -64,8 +64,12 @@ function VideoCard({ src, href, episode }) {
         loop
         muted
         playsInline
+        preload="auto"
         className="absolute inset-0 h-full w-full object-cover"
+       onError={(e) => console.log('Video error:', src, e)}  
+        onCanPlay={(e) => e.target.play()}     
       >
+
         <source src={src} type="video/mp4" />
       </video>
 
@@ -80,4 +84,4 @@ function VideoCard({ src, href, episode }) {
   )
 }
 
-export default Entertainment
+export default Intro
