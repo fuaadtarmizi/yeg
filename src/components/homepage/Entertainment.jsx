@@ -2,7 +2,7 @@
 
 const videoItems = [
   {
-    src: 'tiktok1.mp4',
+    src: 'https://res.cloudinary.com/dgo7vkfxs/video/upload/v1781505452/tiktok1_kpqabm.mp4',
     href: 'https://www.tiktok.com/@yegacademy/video/7314661907741428993',
     episode: 'Episode 1',
   },
