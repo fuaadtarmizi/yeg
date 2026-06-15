@@ -2,27 +2,27 @@
 
 const videoItems = [
   {
-    src: '/tiktok1.mp4',
+    src: 'tiktok1.mp4',
     href: 'https://www.tiktok.com/@yegacademy/video/7314661907741428993',
     episode: 'Episode 1',
   },
   {
-    src: '/tiktok3.mp4',
+    src: 'tiktok3.mp4',
     href: 'https://www.tiktok.com/@yegacademy/video/7542880723204623634',
     episode: 'Episode 2',
   },
   {
-    src: '/tiktok4.mp4',
+    src: 'tiktok4.mp4',
     href: 'https://www.tiktok.com/@yegacademy/video/7551782551027764498',
     episode: 'Episode 3',
   },
   {
-    src: '/tiktok5.mp4',
+    src: 'tiktok5.mp4',
     href: 'https://www.tiktok.com/@yegacademy/video/7556055376047770887',
     episode: 'Episode 4',
   },
   {
-    src: '/tiktok06.mp4',
+    src: 'tiktok06.mp4',
     href: 'https://www.tiktok.com/@yegacademy/video/7326925324359306498',
     episode: 'Episode 5',
   },
@@ -66,9 +66,10 @@ function VideoCard({ src, href, episode }) {
         playsInline
         preload="auto"
         className="absolute inset-0 h-full w-full object-cover"
-       onError={(e) => console.log('Video error:', src, e)}  
-        onCanPlay={(e) => e.target.play()}     
-      >
+       onLoadStart={() => console.log('Loading:', src)}
+  onLoadedData={() => console.log('Loaded:', src)}
+  onError={(e) => console.log('Error:', src, e.target.error)}
+>
 
         <source src={src} type="video/mp4" />
       </video>
