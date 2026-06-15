@@ -2,7 +2,7 @@
 
 const videoItems = [
   {
-    src: 'https://res.cloudinary.com/dgo7vkfxs/video/upload/v1781505452/tiktok1_kpqabm.mp4',
+    src: 'tiktok1.mp4',
     href: 'https://www.tiktok.com/@yegacademy/video/7314661907741428993',
     episode: 'Episode 1',
   },
@@ -57,7 +57,7 @@ function VideoCard({ src, href, episode }) {
       target="_blank"
       rel="noopener noreferrer"
       className="relative overflow-hidden rounded-3xl bg-slate-800 shadow-xl shadow-black/20 transition-transform duration-300 hover:-translate-y-1 hover:shadow-black/30"
-      style={{ aspectRatio: '9/16', minHeight: '320px' }}
+      style={{ width: "390", height: "890" }}
     >
       <video
         autoPlay
