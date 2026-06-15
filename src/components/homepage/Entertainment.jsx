@@ -18,10 +18,12 @@ function Intro() {
       
       </div>
       <div className="h-full lg:py-7 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center">
-        <iframe src="https://www.tiktok.com/@yegacademy/video/7314661907741428993"
-         className="rounded-md  top-0 left-0 w-full h-full object-cover" 
-         width="390"
-          height="890"></iframe>
+        <a href="https://www.tiktok.com/@yegacademy/video/7314661907741428993">
+        <video autoPlay 
+                  loop 
+                  muted>
+              <source src="/tiktok1.mp4" type="video/mp4"/>
+          </video></a>
       
               
          <iframe src="https://www.tiktok.com/@yegacademy/video/7314661907741428993"
