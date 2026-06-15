@@ -1,179 +1,83 @@
-import React from 'react'
+﻿import React from 'react'
 
+const videoItems = [
+  {
+    src: '/tiktok1.mp4',
+    href: 'https://www.tiktok.com/@yegacademy/video/7314661907741428993',
+    episode: 'Episode 1',
+  },
+  {
+    src: '/tiktok3.mp4',
+    href: 'https://www.tiktok.com/@yegacademy/video/7542880723204623634',
+    episode: 'Episode 2',
+  },
+  {
+    src: '/tiktok4.mp4',
+    href: 'https://www.tiktok.com/@yegacademy/video/7551782551027764498',
+    episode: 'Episode 3',
+  },
+  {
+    src: '/tiktok5.mp4',
+    href: 'https://www.tiktok.com/@yegacademy/video/7556055376047770887',
+    episode: 'Episode 4',
+  },
+  {
+    src: '/tiktok06.mp4',
+    href: 'https://www.tiktok.com/@yegacademy/video/7326925324359306498',
+    episode: 'Episode 5',
+  },
+]
 
-
-{/*function Intro() {
+function Entertainment() {
   return (
-    <>
-    <section>
-      <div className=" bg-slate-800 w-full h-full px-4 lg:px-28"> 
-        <div className="bg-yellow-600 w-1/2 text-transparent rounded-r-md">a</div>
-        <div className="w-full h-full grid grid-cols-1 lg:grid-cols-3 lg:py-6">
-        <div className="grid py-3 ">
-      <h2 className="text-base font-semibold text-yellow-800 ">OUR ENTERTAINMENT:</h2>
-      <h2 className="text-4xl font-extrabold text-white ">EXPLORE OUR PROGRAMME ON MEDIA SOCIAL</h2>
-      </div>
-      
-      </div>
-      <div className="h-full lg:py-7 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center">
-        <a href="https://www.tiktok.com/@yegacademy/video/7314661907741428993">
-        <video autoPlay loop muted playsInline
-                  className="rounded-md  top-0 left-0 w-full h-full object-cover" 
-                  width="390" 
-                  height="890">
-              <source src="/tiktok1.mp4" type="video/mp4"/>
-          </video></a>
-      
-              
-         <iframe src="https://www.tiktok.com/@yegacademy/video/7314661907741428993"
-         className="rounded-md  top-0 left-0 w-full h-full object-cover" 
-         width="390" 
-         height="890"></iframe>
-          
-         <a href="https://youtube.com/shorts/kK_GpuY4o94?si=JqXHfWOmAteYALkW"
-        className="flex hover:scale-150 duration-500">
-        <video autoPlay 
-                  loop 
-                  muted
-                  className="rounded-md  top-0 left-0 w-full h-full object-cover" 
-                  width="390" 
-                  height="890">
-              <source src="/tiktok1.mp4" type="video/mp4"/>
-          </video>
-        </a>
-        <iframe>
-          <a href="https://www.tiktok.com/@yegacademy/video/7542880723204623634?is_from_webapp=1&sender_device=pc&web_id=7563838973358343697"
-          className="flex hover:scale-150 duration-500">
-          <video autoPlay 
-                  loop 
-                  muted
-                  className="rounded-md top-0 left-0 w-full h-full object-cover" 
-                  width="390" 
-                  height="890">
-              <source src="/tiktok3.mp4" type="video/mp4"/>
-          </video>
-          </a>
-          <a href="https://www.tiktok.com/@yegacademy/video/7551782551027764498?is_from_webapp=1&sender_device=pc&web_id=7563838973358343697"
-          className="flex hover:scale-150 duration-500">
-          <video autoPlay 
-                  loop 
-                  muted
-                  className="rounded-md top-0 left-0 w-full h-full object-cover" 
-                  width="390" 
-                  height="890">
-              <source src='/tiktok4.mp4' type="video/mp4"/> 
-          </video>
-          </a>
-          <a href="https://www.tiktok.com/@yegacademy/video/7556055376047770887?is_from_webapp=1&sender_device=pc&web_id=7563838973358343697"
-          className="flex hover:scale-150 duration-500">
-          <video autoPlay 
-                  loop 
-                  muted
-                  className="rounded-md top-0 left-0 w-full h-full object-cover" 
-                  width="390" 
-                  height="890">
-              <source src='/tiktok5.mp4' type="video/mp4"/>
-          </video>
-          </a>
-          <a href="https://www.tiktok.com/@yegacademy/video/7326925324359306498?lang=en"
-          className="flex hover:scale-150 duration-300">
-          <video autoPlay 
-                  loop 
-                  muted
-                  className="rounded-md top-0 left-0 w-full h-full object-cover" 
-                  width="390" 
-                  height="890">
-              <source src='/tiktok06.mp4' type="video/mp4"/>
-          </video>
-          </a>
-          </iframe>
-    
-
-
-
-        </div>
-        <div className=" text-transparent flex justify-end ">
-          <div className="bg-yellow-600 w-1/2 rounded-l-md">d</div>
-          </div>
-      </div>
-    </section>
-    </>
-    
-  )
-}
-
-export default Intro;*/}
-function Intro() {
-  const videos = [
-    { src: '/tiktok1.mp4',  href: 'https://youtube.com/shorts/kK_GpuY4o94' },
-    { src: '/tiktok3.mp4',  href: 'https://www.tiktok.com/@yegacademy/video/7542880723204623634' },
-    { src: '/tiktok4.mp4',  href: 'https://www.tiktok.com/@yegacademy/video/7551782551027764498' },
-    { src: '/tiktok5.mp4',  href: 'https://www.tiktok.com/@yegacademy/video/7556055376047770887' },
-    { src: '/tiktok06.mp4', href: 'https://www.tiktok.com/@yegacademy/video/7326925324359306498' },
-  ]
-
-  return (
-    <section>
-      <div className="bg-slate-800 w-full h-full px-4 lg:px-28">
-        <div className="bg-yellow-600 w-1/2 text-transparent rounded-r-md">a</div>
-
-        <div className="w-full h-full grid grid-cols-1 lg:grid-cols-3 lg:py-6">
-          <div className="grid py-3">
-            <h2 className="text-base font-semibold text-yellow-800">OUR ENTERTAINMENT:</h2>
-            <h2 className="text-4xl font-extrabold text-white">EXPLORE OUR PROGRAMME ON MEDIA SOCIAL</h2>
-          </div>
+    <section className="bg-slate-900 text-white py-10 px-4 lg:px-28">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-8 max-w-3xl">
+          <p className="text-sm font-semibold uppercase text-yellow-400">OUR ENTERTAINMENT</p>
+          <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl">Explore our programme on social media</h2>
+          <p className="mt-4 text-sm text-slate-300 sm:text-base">
+            Watch the latest YEG Academy shorts and social clips from TikTok and YouTube.
+          </p>
         </div>
 
-        <div className="h-full lg:py-7 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center">
-
-          {/* TikTok iframes */}
-          <iframe
-            src="https://www.tiktok.com/embed/7314661907741428993"
-            className="rounded-md w-full"
-            width="390"
-            height="890"
-            allowFullScreen
-          />
-          <iframe
-            src="https://www.tiktok.com/embed/7314661907741428993"
-            className="rounded-md w-full"
-            width="390"
-            height="890"
-            allowFullScreen
-          />
-
-          {/* Local MP4 videos with overlay link */}
-          {videos.map((v, i) => (
-            <div key={i} className="relative hover:scale-150 duration-500">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="rounded-md w-full h-full object-cover"
-                width="390"
-                height="890"
-              >
-                <source src={v.src} type="video/mp4" />
-              </video>
-              {/* Transparent clickable overlay */}
-              
-                href={v.href}
-                target="_blank"
-                rel="noreferrer"
-                className="absolute inset-0"
-             
-            </div>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {videoItems.map((item, index) => (
+            <VideoCard key={index} {...item} />
           ))}
-
-        </div>
-
-        <div className="text-transparent flex justify-end">
-          <div className="bg-yellow-600 w-1/2 rounded-l-md">d</div>
         </div>
       </div>
     </section>
   )
 }
 
-export default Intro
+function VideoCard({ src, href, episode }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="relative overflow-hidden rounded-3xl bg-slate-800 shadow-xl shadow-black/20 transition-transform duration-300 hover:-translate-y-1 hover:shadow-black/30"
+      style={{ aspectRatio: '9/16', minHeight: '320px' }}
+    >
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 h-full w-full object-cover"
+      >
+        <source src={src} type="video/mp4" />
+      </video>
+
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent" />
+
+      <div className="absolute inset-x-0 bottom-0 p-4">
+        <span className="inline-flex rounded-full bg-yellow-600 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-slate-950">
+          {episode}
+        </span>
+      </div>
+    </a>
+  )
+}
+
+export default Entertainment
