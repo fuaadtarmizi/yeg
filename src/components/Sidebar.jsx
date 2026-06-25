@@ -82,7 +82,7 @@ const Sidebar = () => {
           {/* Add your navigation links here */}
             <button 
             onClick={toggleNavbar5}
-            className="block text-white py-2 px-4 ">
+            className="block text-whitepy-2 px-4 hover:bg-gray-700" href="../kursusdiploma/dhumy"> 
              Fakulti Pengurusan Haji & Umrah
             </button>
             {isOpen5 && (
