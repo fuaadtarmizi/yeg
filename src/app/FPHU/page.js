@@ -228,7 +228,7 @@ function PhotoGallery() {
 function page() {
   return (
   <div>
-      <div className="bg-slate-700">
+
       <div className="py-2 md:py-3 lg:py-6"></div>
       <div className=" flex justify-center">
         {/*
@@ -244,16 +244,14 @@ function page() {
         />
           */}
       </div>
-  
-     
-        <MarqueeBanner />   {}
+   {}
   
 
   <div
             className="w-full"
             style={{ position: 'relative', paddingBottom: '56.25%', height: 0, maxWidth: '1500px' }}
           >
-          
+    {/* <video}      
   <iframe
 
     src="https://www.youtube.com/embed/GOB1FnFUL5c"
@@ -270,6 +268,7 @@ function page() {
     title="Video DHUMY"
     loading="lazy"
   />
+  */}
 </div>
            
         
@@ -463,7 +462,7 @@ function page() {
 </div>
 </div>
 </div>
-</div>
+
 
     )
 }
