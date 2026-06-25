@@ -11,7 +11,7 @@ function Intro() {
         <div className="absolute top-0 left-0 h-full w-1/4"></div>
         <div className="bg-black max-w-full lg:px-3 flex justify-center">
           <video 
-            className="w-[1400px] h-auto"
+            className="w-[2000px] h-auto"
             controls 
             playsInline 
             autoPlay

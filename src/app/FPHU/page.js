@@ -227,10 +227,11 @@ function PhotoGallery() {
 
 function page() {
   return (
-    <div>
+  <div>
       <div className="bg-slate-700">
       <div className="py-2 md:py-3 lg:py-6"></div>
       <div className=" flex justify-center">
+        {/*
       <Image
           className="w-full"
           src="/MPHU/LANDING PAGE-01.jpeg"
@@ -241,16 +242,18 @@ function page() {
             objectFit:"contain",
           }}
         />
+          */}
       </div>
-    
+  
      
         <MarqueeBanner />   {}
-
+  
 
   <div
             className="w-full"
             style={{ position: 'relative', paddingBottom: '56.25%', height: 0, maxWidth: '1500px' }}
           >
+          
   <iframe
 
     src="https://www.youtube.com/embed/GOB1FnFUL5c"
