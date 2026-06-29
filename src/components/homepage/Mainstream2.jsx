@@ -14,8 +14,7 @@ function Intro() {
         className="w-[1000px] h-auto"
         controls
         playsInline
-        autoPlay
-        muted
+      
       
     >
         <source src="/MHI.mp4" type="video/mp4" />
@@ -28,8 +27,7 @@ function Intro() {
             className="w-[1000px] h-auto"
             controls 
             playsInline 
-            autoPlay
-            muted
+         
         
           >
             <source src="/NLKO.mp4" type="video/mp4" />
