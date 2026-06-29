@@ -12,29 +12,15 @@ function Intro() {
 
       <div className="w-full h-full grid lg:grid-cols-12 gap-8 py-10 p-2 bg-slate-100">
         <div className="flex justify-center w-full h-full mx-auto col-span-12 lg:col-span-6">
-          <video
-            className="w-full h-auto"
-            controls
-            playsInline
-            muted
-            preload="metadata"
-          >
-            <source src="/MHI.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+         <video controls playsInline preload="none">
+  <source src="/MHI.mp4" type="video/mp4" />
+</video>
         </div>
 
         <div className="flex justify-center w-full h-full mx-auto col-span-12 lg:col-span-6">
-          <video
-            className="w-full h-auto"
-            controls
-            playsInline
-            muted
-            preload="metadata"
-          >
-            <source src="/NLKO.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <video controls playsInline preload="none">
+         <source src="/NLKO.mp4" type="video/mp4" />
+</video>
         </div>
       </div>
       <div className="py-8 lg:py-10"></div>
