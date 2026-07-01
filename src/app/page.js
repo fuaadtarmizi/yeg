@@ -3,8 +3,8 @@
 import Intro from '@/components/homepage/Intro'
 import Collabration from '@/components/homepage/Collabration'
 import SliderRamadan from '@/components/homepage/SliderRamadan'
-import Mainstream from '@/components/homepage/Mainstream'
-import Mainstream2 from '@/components/homepage/Mainstream2'
+//import Mainstream from '@/components/homepage/Mainstream'
+// import Mainstream2 from '@/components/homepage/Mainstream2'
 import Qualities from '@/components/homepage/Qualities'
 import Courses from '@/components/homepage/Courses'
 import Trendmark from '@/components/homepage/Trendmark'
@@ -37,8 +37,8 @@ export default function home() {
         </div>
 
         <SliderRamadan />
-        <Mainstream />
-        <Mainstream2 />
+        {/*<Mainstream /> 
+         <Mainstream2 /> */}
         <Qualities />
         <Courses />
         <Trendmark />
