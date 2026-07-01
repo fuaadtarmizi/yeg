@@ -179,21 +179,7 @@ export default function App() {
           >
             DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY-WBL) 
           </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA PENGURUSAN PERHOTELAN (DHM-WBL)")}
-          >
-            DIPLOMA PENGURUSAN PERHOTELAN (DHM-WBL)
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA SENI KULINARI (DCA-WBL)")}
-          >
-            DIPLOMA SENI KULINARI (DCA-WBL)
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA PENDIDIKAN AWAL KANAK-KANAK (DEC-WBL)")}
-          >
-            DIPLOMA PENDIDIKAN AWAL KANAK-KANAK (DEC-WBL)
-          </p>
+         
           <p className="px-4 py-2 cursor-pointer hover:bg-yellow-400 rounded-md"
             onClick={() => handleItemClick("DIPLOMA PENGURUSAN KARGO UDARA (DACM-WBL)")}
           >
@@ -221,21 +207,7 @@ export default function App() {
           >
             DIPLOMA PENGURUSAN HAJI & UMRAH (DHUMY) 
           </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA PENGURUSAN PERHOTELAN (DHM)")}
-          >
-            DIPLOMA PENGURUSAN PERHOTELAN (DHM)
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA KEJURURAWATAN (DNUR)")}
-          >
-            DIPLOMA KEJURURAWATAN (DNUR)
-          </p>
-          <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
-            onClick={() => handleItemClick("DIPLOMA PENGUATKUASA UNDANG-UNDANG (DLE)")}
-          >
-            DIPLOMA PENGUATKUASA UNDANG-UNDANG (DLE)
-          </p>
+      
           <p className="px-4 py-2 cursor-pointer hover:bg-slate-400 rounded-md"
             onClick={() => handleItemClick("DIPLOMA PENGURUSAN KARGO UDARA (DACM)")}
           >
@@ -290,31 +262,7 @@ export default function App() {
           >
             AVIATION - TICKETING
           </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("OIL & GAS - PIPE GAS INSULATION")}
-          >
-            OIL & GAS - PIPE GAS INSULATION
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("OIL & GAS - RIGGER FITTER")}
-          >
-            OIL & GAS - RIGGER FITTER
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("OIL & GAS - CULINARY")}
-          >
-            OIL & GAS - CULINARY
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("OIL & GAS - PIPE GAS INSULATION")}
-          >
-            OIL & GAS - PIPE GAS INSULATION
-          </p>
-          <p className="py-2 cursor-pointer hover:bg-gray-500 rounded-md"
-            onClick={() => handleItemClick("MARITIME - DECK RATING & ENGINE RATING")}
-          >
-            MARITIME - DECK RATING & ENGINE RATING
-          </p>
+
           </div>
         </div>
       )}
@@ -512,7 +460,6 @@ export default function App() {
     </div> 
     </div>
     <div>
-      <Footer/>
     </div>
     </main>
   );
