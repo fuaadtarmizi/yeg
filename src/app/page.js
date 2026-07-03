@@ -1,7 +1,7 @@
 'use client'
 
 import Intro from '@/components/homepage/Intro'
-import Collabration from '@/components/homepage/Collabration'
+//import Collabration from '@/components/homepage/Collabration'
 import SliderRamadan from '@/components/homepage/SliderRamadan'
 //import Mainstream from '@/components/homepage/Mainstream'
 // import Mainstream2 from '@/components/homepage/Mainstream2'
@@ -27,7 +27,7 @@ export default function home() {
 
       <main>
         <Intro />
-        <Collabration />
+       {/* <Collabration /> */}
         
         {/* Fixed Contact Button */}
         <div className="static">
