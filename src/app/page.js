@@ -46,7 +46,7 @@ export default function home() {
         <Trendmark2 />
         <Entertainment />
         <News />
-        <div>update-test</div>
+        <div>update-1</div>
       </main>
     </>
   )
